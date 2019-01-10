@@ -1,69 +1,56 @@
-import os;
-import sys;
+import os
+import uuid
 
 listOfFiles = list()
 for (dirpath, dirnamonth, filenamonth) in os.walk("abstracts"):
-	listOfFiles += [os.path.join(dirpath, file) for file in filenamonth]
-lines = 0
-
-nameOfFiles = list()
-month = ""
-year = ""
-completeDate = ""
-maskedDate = ""
-filename_ = ""
-journalInitials = ""
-fileContent = ""
+    listOfFiles += [os.path.join(dirpath, file) for file in filenamonth]
 
 for file in listOfFiles:
-
     if file.endswith(".txt"):
+        caminho = file.split('/')
+        caminho = caminho[caminho.__len__()-1]
+        caminho = caminho.replace("..", ".")
+
+        stringData = caminho[:10]
+        completeDate = stringData.split('-')
+        completeDate = ''.join(completeDate) + '12.0000'
+
+        line1 = "TOP|"+completeDate+"|"+caminho+'\n'
+
+        line2 = "COL|Journal Abstracts, Red Hen Lab"+'\n'
+
+        line3 = "UID|"+uuid.uuid4().hex+'\n'
+
+        line5 = "CMT|"+'\n'
+
+        line6 = "CC1|ENG"+'\n'
+
+        line9 = "END|"+completeDate+"|"+caminho+'\n'
+
 
         with open(file) as f:
             lines = [line.rstrip('\n') for line in open(file)]
+            head, sep, tail = lines[0].partition("FN ")
+            fonte = tail.replace(" ", "_").lower()
 
-    	
-    		print(*lines, sep = x+" \n")  
-		sys.exit()
+            for l in lines:
+                l.replace("\ufeff", "")
 
-            # head, sep, tail = lines[0].partition("FN ")
-            # fonte = tail.replace(" ", "_").lower()
+                if l.startswith("TI "):
+                    subLine = l[2:]
+                    trimmedSubLine = subLine.strip()
+                    line7 = "TTL|"+trimmedSubLine+'\n'
 
+                if l.startswith("SO "):
+                    subLine = l[2:]
+                    trimmedSubLine = subLine.strip()
+                    line4 = "SRC|"+trimmedSubLine+'\n'
 
-            # for l in lines:
-            # 	print(l)
-            #     l.replace("\ufeff", "")
+                if l.startswith("AB "):
+                    subLine = l[2:]
+                    trimmedSubLine = subLine.strip()
+                    line8 = "CON|"+trimmedSubLine+'\n'
 
-            #     if l.startswith("PD "):
-            #         month = l.replace("PD ", "")
-            #         month = month.replace(" ", "-")
-            #         month = month.replace("JAN", "01")
-            #         month = month.replace("FEB", "02")
-            #         month = month.replace("MAR", "03")
-            #         month = month.replace("APR", "04")
-            #         month = month.replace("MAY", "05")
-            #         month = month.replace("JUN", "06")
-            #         month = month.replace("JUL", "07")
-            #         month = month.replace("AUG", "08")
-            #         month = month.replace("SEP", "09")
-            #         month = month.replace("OCT", "10")
-            #         month = month.replace("NOV", "11")
-            #         month = month.replace("DEC", "12")
-
-            #     if l.startswith("PY "):
-            #         year = l.replace("PY ", "")
-
-            #     if l.startswith("DI "):
-            #         doi = l.replace("DI ", "")
-
-            #     if l.startswith("SO "):
-            #         journal = l.replace("SO ", "")
-            #         fonte += "-"
-            #         fonte += journal.replace(" ", "_").lower()
-
-            #     if l.startswith("AU "):
-            #         autorL = l.replace("AU ", "")
-            #         autor, sep, tail = autorL.partition(', ')
-
-
-			
+            stringFinal = line1 + line2 + line3 + line4 + line5 + line6 + line7 + line8 + line9
+            with open("headers/" + caminho, "w+") as fileReady:
+                fileReady.write(stringFinal)

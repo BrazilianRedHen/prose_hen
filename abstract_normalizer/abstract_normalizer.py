@@ -1,4 +1,4 @@
-import os;
+import os
 
 listOfFiles = list()
 for (dirpath, dirnames, filenames) in os.walk("."):

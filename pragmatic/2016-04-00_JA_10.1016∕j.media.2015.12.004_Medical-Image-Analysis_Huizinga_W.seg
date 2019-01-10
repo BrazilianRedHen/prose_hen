@@ -1,0 +1,16 @@
+PCA-based groupwise image registration for quantitative MRI
+Quantitative magnetic resonance imaging (qMRI) is a technique for estimating quantitative tissue properties, such as the T5 and T2 relaxation times, apparent diffusion coefficient (ADC), and various perfusion measures.
+This estimation is achieved by acquiring multiple images with different acquisition parameters (or at multiple time points after injection of a contrast agent) and by fitting a qMRI signal model to the image intensities.
+Image registration is often necessary to compensate for misalignments due to subject motion and/or geometric distortions caused by the acquisition.
+However, large differences in image appearance make accurate image registration challenging.
+In this work, we propose a groupwise image registration method for compensating misalignment in qMRI.
+The groupwise formulation of the method eliminates the requirement of choosing a reference image, thus avoiding a registration bias.
+The method minimizes a cost function that is based on principal component analysis (PCA), exploiting the fact that intensity changes in qMRI can be described by a low-dimensional signal model, but not requiring knowledge on the specific acquisition model.
+The method was evaluated on 4D CT data of the lungs, and both real and synthetic images of five different qMRI applications: T-1 mapping in a porcine heart, combined T-1 and T-2 mapping in carotid arteries, ADC mapping in the abdomen, diffusion tensor mapping in the brain, and dynamic contrast-enhanced mapping in the abdomen.
+Each application is based on a different acquisition model.
+The method is compared to a mutual information-based pairwise registration method and four other state-of-the-art groupwise registration methods.
+Registration accuracy is evaluated in terms of the precision of the estimated qMRI parameters, overlap of segmented structures, distance between corresponding landmarks, and smoothness of the deformation.
+In all qMRI applications the proposed method performed better than or equally well as competing methods, while avoiding the need to choose a reference image.
+It is also shown that the results of the conventional pairwise approach do depend on the choice of this reference image.
+We therefore conclude that our groupwise registration method with a similarity measure based on PCA is the preferred technique for compensating misalignments in qMRI.
+(C) 2015 Elsevier B.V. All rights reserved.

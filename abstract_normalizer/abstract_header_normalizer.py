@@ -2,14 +2,18 @@ import os
 import uuid
 
 listOfFiles = list()
-for (dirpath, dirnamonth, filenamonth) in os.walk("abstracts"):
+for (dirpath, dirnamonth, filenamonth) in os.walk("../abstracts_unsorted"):
     listOfFiles += [os.path.join(dirpath, file) for file in filenamonth]
+
 
 for file in listOfFiles:
     if file.endswith(".txt"):
         caminho = file.split('/')
         caminho = caminho[caminho.__len__()-1]
         caminho = caminho.replace("..", ".")
+        caminho = caminho.replace("\xe2\x88\x95", "**")
+
+        print(caminho)
 
         stringData = caminho[:10]
         completeDate = stringData.split('-')
@@ -27,6 +31,10 @@ for file in listOfFiles:
 
         line9 = "END|"+completeDate+"|"+caminho+'\n'
 
+        line7_1 = ""
+
+        line7_2 = ""
+
 
         with open(file) as f:
             lines = [line.rstrip('\n') for line in open(file)]
@@ -39,7 +47,12 @@ for file in listOfFiles:
                 if l.startswith("TI "):
                     subLine = l[2:]
                     trimmedSubLine = subLine.strip()
-                    line7 = "TTL|"+trimmedSubLine+'\n'
+                    line7_1 = "TTL|"+trimmedSubLine
+
+                if l.startswith("   "):
+                    subLine = l[2:]
+                    trimmedSubLine = subLine.strip()
+                    line7_2 = trimmedSubLine
 
                 if l.startswith("SO "):
                     subLine = l[2:]
@@ -51,6 +64,6 @@ for file in listOfFiles:
                     trimmedSubLine = subLine.strip()
                     line8 = "CON|"+trimmedSubLine+'\n'
 
-            stringFinal = line1 + line2 + line3 + line4 + line5 + line6 + line7 + line8 + line9
-            with open("headers/" + caminho, "w+") as fileReady:
+            stringFinal = line1 + line2 + line3 + line4 + line5 + line6 + line7_1 + " " +line7_2 + '\n' + line8 + line9
+            with open("../headers/" + caminho, "w+") as fileReady:
                 fileReady.write(stringFinal)

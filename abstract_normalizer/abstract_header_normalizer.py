@@ -2,14 +2,14 @@ import os
 import uuid
 
 listOfFiles = list()
-for (dirpath, dirnamonth, filenamonth) in os.walk("../abstracts_unsorted"):
+for (dirpath, dirnamonth, filenamonth) in os.walk("../abstracts"):
     listOfFiles += [os.path.join(dirpath, file) for file in filenamonth]
 
 
 for file in listOfFiles:
     if file.endswith(".txt"):
         caminho = file.split('/')
-        caminho = caminho[caminho.__len__()-1]
+        caminho = caminho[caminho.__len__()-2]+"/"+caminho[caminho.__len__()-1]
         caminho = caminho.replace("..", ".")
         caminho = caminho.replace("\xe2\x88\x95", "**")
 

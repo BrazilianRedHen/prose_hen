@@ -44,11 +44,13 @@ for file in listOfFiles:
             for l in lines:
                 l.replace("\ufeff", "")
 
+                #first part of title
                 if l.startswith("TI "):
                     subLine = l[2:]
                     trimmedSubLine = subLine.strip()
                     line7_1 = "TTL|"+trimmedSubLine
 
+                #second part of title
                 if l.startswith("   "):
                     subLine = l[2:]
                     trimmedSubLine = subLine.strip()

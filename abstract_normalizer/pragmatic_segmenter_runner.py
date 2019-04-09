@@ -1,6 +1,6 @@
 import os
 listOfFiles = list()
-for (dirpath, dirnamonth, filenamonth) in os.walk("headers"):
+for (dirpath, dirnamonth, filenamonth) in os.walk("../headers"):
     listOfFiles += [os.path.join(dirpath, file) for file in filenamonth]
 
 for file in listOfFiles:
@@ -26,7 +26,7 @@ for file in listOfFiles:
                     sendToPragmatic += " "
                     sendToPragmatic += l[4:]
 
-            with open("pragmatic/cache/" + caminho[:-3]+'seg', "w+") as fileReady:
+            with open("../pragmatic/cache/" + caminho[:-3]+'seg', "w+") as fileReady:
                 fileReady.write(sendToPragmatic)
 
             pragmaticReturn = os.system('ruby ps.rb "' + caminho[:-3]+'seg' + '"')

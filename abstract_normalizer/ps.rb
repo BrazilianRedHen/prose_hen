@@ -2,7 +2,7 @@ require 'pragmatic_segmenter'
 
 fileLocation = ARGV[0]
 content = ""
-f = File.open("pragmatic/cache/"+fileLocation, "r")
+f = File.open("../pragmatic/cache/"+fileLocation, "r")
 f.each_line do |line|
 	if content == ""
 		content += line
@@ -22,6 +22,6 @@ segments.each do |seg|
 end
 
 
-f = File.open("pragmatic/"+fileLocation, "w+")
+f = File.open("../pragmatic/"+fileLocation, "w+")
 f.write(stringFinal)
 f.close

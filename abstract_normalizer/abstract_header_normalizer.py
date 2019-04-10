@@ -1,5 +1,6 @@
 import os
 import uuid
+import re
 
 listOfFiles = list()
 for (dirpath, dirnamonth, filenamonth) in os.walk("../abstracts"):
@@ -41,20 +42,17 @@ for file in listOfFiles:
             head, sep, tail = lines[0].partition("FN ")
             fonte = tail.replace(" ", "_").lower()
 
+            r = re.search("TI (.+)\n(   (.+)|)", "\n".join(map(str, lines)))
+
+            if r:
+                line7_1 = "TTL|"+r.group(1)
+
+                if r.group(2):
+                    line7_2 = r.group(2).strip()
+
+
             for l in lines:
                 l.replace("\ufeff", "")
-
-                #first part of title
-                if l.startswith("TI "):
-                    subLine = l[2:]
-                    trimmedSubLine = subLine.strip()
-                    line7_1 = "TTL|"+trimmedSubLine
-
-                #second part of title
-                if l.startswith("   "):
-                    subLine = l[2:]
-                    trimmedSubLine = subLine.strip()
-                    line7_2 = trimmedSubLine
 
                 if l.startswith("SO "):
                     subLine = l[2:]

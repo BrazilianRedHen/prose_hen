@@ -19,8 +19,12 @@ for file in listOfFiles:
             for l in lines:
                 l.replace("\ufeff", "")
 
-                if l.startswith("TTL|"):
+
+                if l.startswith("SRC|"):
                     sendToPragmatic = l[4:] + '\n'
+
+                if l.startswith("TTL|"):
+                    sendToPragmatic += l[4:] + '\n'
 
                 if l.startswith("CON|"):
                     sendToPragmatic += " "

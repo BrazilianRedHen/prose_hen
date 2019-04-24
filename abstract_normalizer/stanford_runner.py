@@ -16,6 +16,7 @@ for file in listOfFiles:
 	caminho = file.split('/')
 	if caminho[2] != "cache":
 		stanfordFileName = caminho[2]
+		stanfordFileName = os.path.splitext(stanfordFileName)[0]
 		
 		with open(file) as f:
 
@@ -23,7 +24,7 @@ for file in listOfFiles:
 
 			annotatedText = nlp.annotate(text, properties=props)
 
-			with open("../stanford/" + stanfordFileName, "w+") as fileReady:
+			with open("../stanford/" + stanfordFileName+".stf", "w+") as fileReady:
 				fileReady.write(annotatedText)
 
 nlp.close()

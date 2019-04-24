@@ -21,10 +21,10 @@ for file in listOfFiles:
 
 
                 if l.startswith("SRC|"):
-                    sendToPragmatic = l[4:] + '\n'
+                    sendToPragmatic = l[4:].capitalize().strip() + '.' + '\n'
 
                 if l.startswith("TTL|"):
-                    sendToPragmatic += l[4:] + '\n'
+                    sendToPragmatic += l[4:].strip() + '.' + '\n'
 
                 if l.startswith("CON|"):
                     sendToPragmatic += " "

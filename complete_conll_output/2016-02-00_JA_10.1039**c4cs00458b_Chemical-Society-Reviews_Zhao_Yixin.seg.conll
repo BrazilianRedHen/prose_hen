@@ -1,6 +1,12 @@
-1	chemical	_	CHEMICAL	_	NN	0	_	_	_	_	_	chemical.n	Substance	O
-2	society	_	UNK	_	NNP	0	_	_	_	_	_	_	_	B-Origin
-3	reviews	_	UNK	_	NNP	0	_	_	_	_	_	_	_	I-Origin
+1	chemical	_	Chemical	_	NNP	0	_	_	_	_	_	chemical.n	Substance	O
+2	society	_	society	_	NN	0	_	_	_	_	_	_	_	O
+3	reviews	_	review	_	NNS	0	_	_	_	_	_	_	_	O
+4	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+
+1	chemical	_	Chemical	_	NNP	0	_	_	_	_	_	_	_	S-Descriptor
+2	society	_	society	_	NN	0	_	_	_	_	_	society.n	Organization	O
+3	reviews	_	review	_	NNS	0	_	_	_	_	_	_	_	S-Organization
+4	.	_	.	_	.	0	_	_	_	_	_	_	_	O
 
 1	unk	_	UNK	_	JJ	1	_	_	_	_	_	_	_	B-Time
 2	hybrid	_	UNK	_	JJ	1	_	_	_	_	_	_	_	I-Time
@@ -10,8 +16,9 @@
 6	for	_	for	_	IN	1	_	_	_	_	_	_	_	I-Suspect
 7	optoelectronic	_	UNK	_	JJ	1	_	_	_	_	_	_	_	I-Suspect
 8	and	_	and	_	CC	1	_	_	_	_	_	_	_	I-Suspect
-9	electronic	_	electronic	_	JJ	1	_	_	_	_	_	_	_	O
-10	applications	_	application	_	NNS	1	_	_	_	_	_	_	_	O
+9	electronic	_	electronic	_	JJ	1	_	_	_	_	_	_	_	B-Incident
+10	applications	_	application	_	NNS	1	_	_	_	_	_	_	_	I-Incident
+11	.	_	.	_	.	1	_	_	_	_	_	_	_	I-Incident
 
 1	unk	_	UNK	_	JJ	1	_	_	_	_	_	_	_	B-Time
 2	hybrid	_	UNK	_	JJ	1	_	_	_	_	_	_	_	I-Time
@@ -23,17 +30,19 @@
 8	and	_	and	_	CC	1	_	_	_	_	_	_	_	B-Degree
 9	electronic	_	electronic	_	JJ	1	_	_	_	_	_	_	_	I-Degree
 10	applications	_	application	_	NNS	1	_	_	_	_	_	_	_	I-Degree
+11	.	_	.	_	.	1	_	_	_	_	_	_	_	I-Degree
 
-1	unk	_	UNK	_	JJ	1	_	_	_	_	_	_	_	B-Goal
-2	hybrid	_	UNK	_	JJ	1	_	_	_	_	_	_	_	I-Goal
-3	lead	_	lead	_	NN	1	_	_	_	_	_	_	_	I-Goal
-4	halide	_	UNK	_	NN	1	_	_	_	_	_	_	_	I-Goal
-5	unk	_	UNK	_	VBZ	1	_	_	_	_	_	_	_	I-Goal
-6	for	_	for	_	IN	1	_	_	_	_	_	_	_	I-Goal
-7	optoelectronic	_	UNK	_	JJ	1	_	_	_	_	_	_	_	I-Goal
-8	and	_	and	_	CC	1	_	_	_	_	_	_	_	I-Goal
-9	electronic	_	electronic	_	JJ	1	_	_	_	_	_	_	_	I-Goal
+1	unk	_	UNK	_	JJ	1	_	_	_	_	_	_	_	B-Time
+2	hybrid	_	UNK	_	JJ	1	_	_	_	_	_	_	_	I-Time
+3	lead	_	lead	_	NN	1	_	_	_	_	_	_	_	I-Time
+4	halide	_	UNK	_	NN	1	_	_	_	_	_	_	_	I-Time
+5	unk	_	UNK	_	VBZ	1	_	_	_	_	_	_	_	I-Time
+6	for	_	for	_	IN	1	_	_	_	_	_	_	_	I-Time
+7	optoelectronic	_	UNK	_	JJ	1	_	_	_	_	_	_	_	I-Time
+8	and	_	and	_	CC	1	_	_	_	_	_	_	_	I-Time
+9	electronic	_	electronic	_	JJ	1	_	_	_	_	_	_	_	I-Time
 10	applications	_	application	_	NNS	1	_	_	_	_	_	application.n	Purpose	O
+11	.	_	.	_	.	1	_	_	_	_	_	_	_	S-Agent
 
 1	organic	_	UNK	_	NNP	2	_	_	_	_	_	_	_	O
 2	and	_	and	_	CC	2	_	_	_	_	_	_	_	O

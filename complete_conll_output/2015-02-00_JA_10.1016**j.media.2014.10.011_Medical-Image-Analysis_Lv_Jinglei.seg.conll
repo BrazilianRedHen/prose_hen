@@ -1,14 +1,25 @@
+1	medical	_	Medical	_	JJ	0	_	_	_	_	_	_	_	S-Ground
+2	image	_	image	_	NN	0	_	_	_	_	_	image.n	Sensation	S-Degree
+3	analysis	_	analysis	_	NN	0	_	_	_	_	_	_	_	O
+4	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+
+1	medical	_	Medical	_	JJ	0	_	_	_	_	_	_	_	B-Purpose
+2	image	_	image	_	NN	0	_	_	_	_	_	_	_	I-Purpose
+3	analysis	_	analysis	_	NN	0	_	_	_	_	_	analysis.n	Scrutiny	S-Degree
+4	.	_	.	_	.	0	_	_	_	_	_	_	_	S-Purpose
+
 1	sparse	_	UNK	_	JJ	1	_	_	_	_	_	_	_	O
 2	representation	_	UNK	_	NN	1	_	_	_	_	_	_	_	O
 3	of	_	of	_	IN	1	_	_	_	_	_	of.prep	Age	S-Degree
 4	unk	_	UNK	_	JJ	1	_	_	_	_	_	_	_	B-Age
 5	fmri	_	UNK	_	NN	1	_	_	_	_	_	_	_	I-Age
-6	signals	_	signal	_	NNS	1	_	_	_	_	_	_	_	I-Age
-7	for	_	for	_	IN	1	_	_	_	_	_	_	_	I-Age
-8	identification	_	identification	_	NN	1	_	_	_	_	_	_	_	I-Age
-9	of	_	of	_	IN	1	_	_	_	_	_	_	_	I-Age
-10	functional	_	UNK	_	JJ	1	_	_	_	_	_	_	_	I-Age
-11	networks	_	network	_	NNS	1	_	_	_	_	_	_	_	I-Age
+6	signals	_	signal	_	NNS	1	_	_	_	_	_	_	_	B-Degree
+7	for	_	for	_	IN	1	_	_	_	_	_	_	_	I-Degree
+8	identification	_	identification	_	NN	1	_	_	_	_	_	_	_	I-Degree
+9	of	_	of	_	IN	1	_	_	_	_	_	_	_	I-Degree
+10	functional	_	UNK	_	JJ	1	_	_	_	_	_	_	_	I-Degree
+11	networks	_	network	_	NNS	1	_	_	_	_	_	_	_	I-Degree
+12	.	_	.	_	.	1	_	_	_	_	_	_	_	I-Degree
 
 1	sparse	_	UNK	_	JJ	1	_	_	_	_	_	_	_	B-Time
 2	representation	_	UNK	_	NN	1	_	_	_	_	_	_	_	I-Time
@@ -16,11 +27,12 @@
 4	unk	_	UNK	_	JJ	1	_	_	_	_	_	_	_	I-Time
 5	fmri	_	UNK	_	NN	1	_	_	_	_	_	_	_	I-Time
 6	signals	_	signal	_	NNS	1	_	_	_	_	_	signal.n	Communication	O
-7	for	_	for	_	IN	1	_	_	_	_	_	_	_	B-Purpose
-8	identification	_	identification	_	NN	1	_	_	_	_	_	_	_	I-Purpose
-9	of	_	of	_	IN	1	_	_	_	_	_	_	_	I-Purpose
-10	functional	_	UNK	_	JJ	1	_	_	_	_	_	_	_	I-Purpose
-11	networks	_	network	_	NNS	1	_	_	_	_	_	_	_	I-Purpose
+7	for	_	for	_	IN	1	_	_	_	_	_	_	_	B-Manner
+8	identification	_	identification	_	NN	1	_	_	_	_	_	_	_	I-Manner
+9	of	_	of	_	IN	1	_	_	_	_	_	_	_	I-Manner
+10	functional	_	UNK	_	JJ	1	_	_	_	_	_	_	_	I-Manner
+11	networks	_	network	_	NNS	1	_	_	_	_	_	_	_	I-Manner
+12	.	_	.	_	.	1	_	_	_	_	_	_	_	I-Manner
 
 1	sparse	_	UNK	_	JJ	1	_	_	_	_	_	_	_	O
 2	representation	_	UNK	_	NN	1	_	_	_	_	_	_	_	O
@@ -33,6 +45,7 @@
 9	of	_	of	_	IN	1	_	_	_	_	_	_	_	I-Manner
 10	functional	_	UNK	_	JJ	1	_	_	_	_	_	_	_	I-Manner
 11	networks	_	network	_	NNS	1	_	_	_	_	_	_	_	I-Manner
+12	.	_	.	_	.	1	_	_	_	_	_	_	_	I-Manner
 
 1	sparse	_	UNK	_	JJ	1	_	_	_	_	_	_	_	B-Obligation
 2	representation	_	UNK	_	NN	1	_	_	_	_	_	_	_	I-Obligation
@@ -41,10 +54,11 @@
 5	fmri	_	UNK	_	NN	1	_	_	_	_	_	_	_	I-Obligation
 6	signals	_	signal	_	NNS	1	_	_	_	_	_	_	_	I-Obligation
 7	for	_	for	_	IN	1	_	_	_	_	_	_	_	I-Obligation
-8	identification	_	identification	_	NN	1	_	_	_	_	_	identification.n	Documents	O
-9	of	_	of	_	IN	1	_	_	_	_	_	_	_	B-Bearer
-10	functional	_	UNK	_	JJ	1	_	_	_	_	_	_	_	I-Bearer
-11	networks	_	network	_	NNS	1	_	_	_	_	_	_	_	I-Bearer
+8	identification	_	identification	_	NN	1	_	_	_	_	_	identification.n	Documents	I-Obligation
+9	of	_	of	_	IN	1	_	_	_	_	_	_	_	I-Obligation
+10	functional	_	UNK	_	JJ	1	_	_	_	_	_	_	_	I-Obligation
+11	networks	_	network	_	NNS	1	_	_	_	_	_	_	_	I-Obligation
+12	.	_	.	_	.	1	_	_	_	_	_	_	_	I-Obligation
 
 1	sparse	_	UNK	_	JJ	1	_	_	_	_	_	_	_	B-Connections
 2	representation	_	UNK	_	NN	1	_	_	_	_	_	_	_	I-Connections
@@ -57,6 +71,7 @@
 9	of	_	of	_	IN	1	_	_	_	_	_	_	_	I-Connections
 10	functional	_	UNK	_	JJ	1	_	_	_	_	_	_	_	I-Connections
 11	networks	_	network	_	NNS	1	_	_	_	_	_	network.n	Network	O
+12	.	_	.	_	.	1	_	_	_	_	_	_	_	O
 
 1	there	_	There	_	EX	2	_	_	_	_	_	there.adv	Locative_relation	O
 2	have	_	have	_	VBP	2	_	_	_	_	_	_	_	B-Figure

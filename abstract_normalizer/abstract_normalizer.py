@@ -1,12 +1,13 @@
+# -*- coding: UTF-8 -*-
 import os
 
 listOfFiles = list()
-for (dirpath, dirnames, filenames) in os.walk("."):
+for (dirpath, dirnames, filenames) in os.walk("../raw"):
     listOfFiles += [os.path.join(dirpath, file) for file in filenames]
 lines = 0
 
 nameOfFiles = list()
-mes = ""
+date = ""
 ano = ""
 fonte = ""
 autor = ""
@@ -17,26 +18,20 @@ for file in listOfFiles:
         with open(file) as f:
             lines = [line.rstrip('\n') for line in open(file)]
             head, sep, tail = lines[0].partition("FN ")
-            fonte = tail.replace(" ", "_").lower()
+            
+            mes = ""
+            ano = ""
+            fonte = ""
+            autor = ""
+            doi = ""
 
             for l in lines:
                 l.replace("\ufeff", "")
 
                 if l.startswith("PD "):
-                    mes = l.replace("PD ", "")
-                    mes = mes.replace(" ", "-")
-                    mes = mes.replace("JAN", "01")
-                    mes = mes.replace("FEB", "02")
-                    mes = mes.replace("MAR", "03")
-                    mes = mes.replace("APR", "04")
-                    mes = mes.replace("MAY", "05")
-                    mes = mes.replace("JUN", "06")
-                    mes = mes.replace("JUL", "07")
-                    mes = mes.replace("AUG", "08")
-                    mes = mes.replace("SEP", "09")
-                    mes = mes.replace("OCT", "10")
-                    mes = mes.replace("NOV", "11")
-                    mes = mes.replace("DEC", "12")
+                    date = l.replace("PD ", "")
+                    date = date.replace(" ", "-")
+                    date = date.lower()
 
                 if l.startswith("PY "):
                     ano = l.replace("PY ", "")
@@ -46,45 +41,67 @@ for file in listOfFiles:
 
                 if l.startswith("SO "):
                     journal = l.replace("SO ", "")
-                    fonte += "-"
-                    fonte += journal.replace(" ", "_").lower()
+                    fonte += journal.replace(" ", "-").lower()
 
-                if l.startswith("AU "):
-                    autorL = l.replace("AU ", "")
-                    autor, sep, tail = autorL.partition(', ')
+                if l.startswith("AF "):
+                    autorComplete = l.replace("AF ", "")
+                    autorLast, sep, autorFirstComplete = autorComplete.partition(', ')
+                    autorLast = autorLast.replace(" ", "-").lower()
+                    
 
+                    aux = 2 # this is two taking into consideration that an abreviated name is the first letter of the name plus a comma eg. D.
+                    autorFirstList = autorFirstComplete.split(" ")
+                    if len(autorFirstList) == 1 and len(autorFirstList[0]) != aux:
+                        autorFirst = autorFirstList[0]
+                    else:
+                        
+                        for autorName in autorFirstList:
+                            if len(autorName) > aux and len(autorName) != aux:
+                                autorFirst = autorName
+                                break
+                            else:
+                                autorFirst = ""
+                    autorFirst = autorFirst.lower()
+
+            #start assembling string
             stringFileName = str(ano)
 
-            if mes != "":
+            if date != "":
                 stringFileName += "-"
-                stringFileName += str(mes)
+                stringFileName += str(date)
             else:
                 stringFileName += "00"
 
-            stringFileName += "_"
-            stringFileName += str(fonte)
-
+            #separating Date and DOI putting the annotation name
+            stringFileName += "_JA_"
+            
             if doi != "":
-                stringFileName += "-"
                 stringFileName += doi
             else:
-                stringFileName += "00.0000∕0000000000000000"
+                stringFileName += "00-0000_0000000000000000"
 
-            stringFileName += "-"
-            stringFileName += str(autor)
+            #separating DOI and file source
+            stringFileName += "_"+str(fonte)
+
+            #adding first author name
+            stringFileName += "_"
+            stringFileName += str(autorLast)
+            if autorFirst != "":
+                stringFileName += "_"
+                stringFileName += str(autorFirst)
+
+            #slashes are underscores
+            #dots are dashes
+            stringFileName = stringFileName.replace("/", "_")
+            stringFileName = stringFileName.replace(".", "-")
+
+            #adding extention
             stringFileName += ".txt"
 
-            stringFileName = stringFileName.replace("/", "\u2215")
-
-            mes = ""
-            ano = ""
-            fonte = ""
-            autor = ""
-            doi = ""
 
             nameOfFiles.append(stringFileName)
 
-            with open("testes/"+stringFileName, "w+") as fileReady:
+            with open("../abstracts/"+ano+"/"+stringFileName, "w+") as fileReady:
                 for lineInFile in f:
                     fileReady.write(lineInFile)
 

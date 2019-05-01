@@ -9,6 +9,8 @@ for file in listOfFiles:
         caminho = caminho[caminho.__len__()-1]
         caminho = caminho.replace("..", ".")
 
+        print(caminho)
+
         sendToPragmatic = ''
 
         with open(file) as f:
@@ -34,3 +36,4 @@ for file in listOfFiles:
                 fileReady.write(sendToPragmatic)
 
             pragmaticReturn = os.system('ruby ps.rb "' + caminho[:-3]+'seg' + '"')
+print("end")

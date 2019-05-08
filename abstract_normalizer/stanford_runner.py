@@ -5,7 +5,7 @@ from stanfordcorenlp import StanfordCoreNLP
 
 nlp = StanfordCoreNLP(r'/var/python/stanford-corenlp-full-2018-10-05')
 
-props={'annotators': 'tokenize,ssplit,pos','pipelineLanguage':'en','outputFormat':'json'}
+props={'annotators': 'tokenize,ssplit,pos,lemma','pipelineLanguage':'en','outputFormat':'json'}
 
 listOfFiles = list()
 for (dirpath, dirnamonth, filenamonth) in os.walk("../pragmatic"):

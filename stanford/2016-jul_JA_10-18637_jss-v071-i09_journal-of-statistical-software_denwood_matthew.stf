@@ -2,6 +2,118 @@
   "sentences": [
     {
       "index": 0,
+      "parse": "(ROOT\n  (NP\n    (NP (NNP Journal))\n    (PP (IN of)\n      (NP (JJ statistical) (NN software)))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "Journal"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "software",
+          "dependent": 2,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 4,
+          "governorGloss": "software",
+          "dependent": 3,
+          "dependentGloss": "statistical"
+        },
+        {
+          "dep": "nmod",
+          "governor": 1,
+          "governorGloss": "Journal",
+          "dependent": 4,
+          "dependentGloss": "software"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "Journal",
+          "dependent": 5,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "Journal"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "software",
+          "dependent": 2,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 4,
+          "governorGloss": "software",
+          "dependent": 3,
+          "dependentGloss": "statistical"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 1,
+          "governorGloss": "Journal",
+          "dependent": 4,
+          "dependentGloss": "software"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "Journal",
+          "dependent": 5,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "Journal"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "software",
+          "dependent": 2,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 4,
+          "governorGloss": "software",
+          "dependent": 3,
+          "dependentGloss": "statistical"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 1,
+          "governorGloss": "Journal",
+          "dependent": 4,
+          "dependentGloss": "software"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "Journal",
+          "dependent": 5,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -62,6 +174,559 @@
     },
     {
       "index": 1,
+      "parse": "(ROOT\n  (NP\n    (NP (NNS runjags))\n    (: :)\n    (NP\n      (NP (DT An) (NN R) (NN Package))\n      (VP (VBG Providing)\n        (NP\n          (NP (NNP Interface) (NNP Utilities))\n          (, ,)\n          (NP (NNP Model) (NNPS Templates))\n          (, ,)\n          (NP (JJ Parallel) (NNP Computing) (NNS Methods))\n          (CC and)\n          (NP (JJ Additional) (NNS Distributions)))\n        (PP (IN for)\n          (NP\n            (NP (NNP MCMC) (NNS Models))\n            (PP (IN in)\n              (NP (NNP JAGS)))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "runjags"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "runjags",
+          "dependent": 2,
+          "dependentGloss": ":"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "Package",
+          "dependent": 3,
+          "dependentGloss": "An"
+        },
+        {
+          "dep": "compound",
+          "governor": 5,
+          "governorGloss": "Package",
+          "dependent": 4,
+          "dependentGloss": "R"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "runjags",
+          "dependent": 5,
+          "dependentGloss": "Package"
+        },
+        {
+          "dep": "acl",
+          "governor": 5,
+          "governorGloss": "Package",
+          "dependent": 6,
+          "dependentGloss": "Providing"
+        },
+        {
+          "dep": "compound",
+          "governor": 8,
+          "governorGloss": "Utilities",
+          "dependent": 7,
+          "dependentGloss": "Interface"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "Providing",
+          "dependent": 8,
+          "dependentGloss": "Utilities"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "Utilities",
+          "dependent": 9,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "Templates",
+          "dependent": 10,
+          "dependentGloss": "Model"
+        },
+        {
+          "dep": "conj",
+          "governor": 8,
+          "governorGloss": "Utilities",
+          "dependent": 11,
+          "dependentGloss": "Templates"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "Utilities",
+          "dependent": 12,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "amod",
+          "governor": 15,
+          "governorGloss": "Methods",
+          "dependent": 13,
+          "dependentGloss": "Parallel"
+        },
+        {
+          "dep": "compound",
+          "governor": 15,
+          "governorGloss": "Methods",
+          "dependent": 14,
+          "dependentGloss": "Computing"
+        },
+        {
+          "dep": "conj",
+          "governor": 8,
+          "governorGloss": "Utilities",
+          "dependent": 15,
+          "dependentGloss": "Methods"
+        },
+        {
+          "dep": "cc",
+          "governor": 8,
+          "governorGloss": "Utilities",
+          "dependent": 16,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 18,
+          "governorGloss": "Distributions",
+          "dependent": 17,
+          "dependentGloss": "Additional"
+        },
+        {
+          "dep": "conj",
+          "governor": 8,
+          "governorGloss": "Utilities",
+          "dependent": 18,
+          "dependentGloss": "Distributions"
+        },
+        {
+          "dep": "case",
+          "governor": 21,
+          "governorGloss": "Models",
+          "dependent": 19,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "compound",
+          "governor": 21,
+          "governorGloss": "Models",
+          "dependent": 20,
+          "dependentGloss": "MCMC"
+        },
+        {
+          "dep": "nmod",
+          "governor": 6,
+          "governorGloss": "Providing",
+          "dependent": 21,
+          "dependentGloss": "Models"
+        },
+        {
+          "dep": "case",
+          "governor": 23,
+          "governorGloss": "JAGS",
+          "dependent": 22,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod",
+          "governor": 21,
+          "governorGloss": "Models",
+          "dependent": 23,
+          "dependentGloss": "JAGS"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "runjags",
+          "dependent": 24,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "runjags"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "runjags",
+          "dependent": 2,
+          "dependentGloss": ":"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "Package",
+          "dependent": 3,
+          "dependentGloss": "An"
+        },
+        {
+          "dep": "compound",
+          "governor": 5,
+          "governorGloss": "Package",
+          "dependent": 4,
+          "dependentGloss": "R"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "runjags",
+          "dependent": 5,
+          "dependentGloss": "Package"
+        },
+        {
+          "dep": "acl",
+          "governor": 5,
+          "governorGloss": "Package",
+          "dependent": 6,
+          "dependentGloss": "Providing"
+        },
+        {
+          "dep": "compound",
+          "governor": 8,
+          "governorGloss": "Utilities",
+          "dependent": 7,
+          "dependentGloss": "Interface"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "Providing",
+          "dependent": 8,
+          "dependentGloss": "Utilities"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "Utilities",
+          "dependent": 9,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "Templates",
+          "dependent": 10,
+          "dependentGloss": "Model"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "Providing",
+          "dependent": 11,
+          "dependentGloss": "Templates"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 8,
+          "governorGloss": "Utilities",
+          "dependent": 11,
+          "dependentGloss": "Templates"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "Utilities",
+          "dependent": 12,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "amod",
+          "governor": 15,
+          "governorGloss": "Methods",
+          "dependent": 13,
+          "dependentGloss": "Parallel"
+        },
+        {
+          "dep": "compound",
+          "governor": 15,
+          "governorGloss": "Methods",
+          "dependent": 14,
+          "dependentGloss": "Computing"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "Providing",
+          "dependent": 15,
+          "dependentGloss": "Methods"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 8,
+          "governorGloss": "Utilities",
+          "dependent": 15,
+          "dependentGloss": "Methods"
+        },
+        {
+          "dep": "cc",
+          "governor": 8,
+          "governorGloss": "Utilities",
+          "dependent": 16,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 18,
+          "governorGloss": "Distributions",
+          "dependent": 17,
+          "dependentGloss": "Additional"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "Providing",
+          "dependent": 18,
+          "dependentGloss": "Distributions"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 8,
+          "governorGloss": "Utilities",
+          "dependent": 18,
+          "dependentGloss": "Distributions"
+        },
+        {
+          "dep": "case",
+          "governor": 21,
+          "governorGloss": "Models",
+          "dependent": 19,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "compound",
+          "governor": 21,
+          "governorGloss": "Models",
+          "dependent": 20,
+          "dependentGloss": "MCMC"
+        },
+        {
+          "dep": "nmod:for",
+          "governor": 6,
+          "governorGloss": "Providing",
+          "dependent": 21,
+          "dependentGloss": "Models"
+        },
+        {
+          "dep": "case",
+          "governor": 23,
+          "governorGloss": "JAGS",
+          "dependent": 22,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 21,
+          "governorGloss": "Models",
+          "dependent": 23,
+          "dependentGloss": "JAGS"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "runjags",
+          "dependent": 24,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "runjags"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "runjags",
+          "dependent": 2,
+          "dependentGloss": ":"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "Package",
+          "dependent": 3,
+          "dependentGloss": "An"
+        },
+        {
+          "dep": "compound",
+          "governor": 5,
+          "governorGloss": "Package",
+          "dependent": 4,
+          "dependentGloss": "R"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "runjags",
+          "dependent": 5,
+          "dependentGloss": "Package"
+        },
+        {
+          "dep": "acl",
+          "governor": 5,
+          "governorGloss": "Package",
+          "dependent": 6,
+          "dependentGloss": "Providing"
+        },
+        {
+          "dep": "compound",
+          "governor": 8,
+          "governorGloss": "Utilities",
+          "dependent": 7,
+          "dependentGloss": "Interface"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "Providing",
+          "dependent": 8,
+          "dependentGloss": "Utilities"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "Utilities",
+          "dependent": 9,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "Templates",
+          "dependent": 10,
+          "dependentGloss": "Model"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "Providing",
+          "dependent": 11,
+          "dependentGloss": "Templates"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 8,
+          "governorGloss": "Utilities",
+          "dependent": 11,
+          "dependentGloss": "Templates"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "Utilities",
+          "dependent": 12,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "amod",
+          "governor": 15,
+          "governorGloss": "Methods",
+          "dependent": 13,
+          "dependentGloss": "Parallel"
+        },
+        {
+          "dep": "compound",
+          "governor": 15,
+          "governorGloss": "Methods",
+          "dependent": 14,
+          "dependentGloss": "Computing"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "Providing",
+          "dependent": 15,
+          "dependentGloss": "Methods"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 8,
+          "governorGloss": "Utilities",
+          "dependent": 15,
+          "dependentGloss": "Methods"
+        },
+        {
+          "dep": "cc",
+          "governor": 8,
+          "governorGloss": "Utilities",
+          "dependent": 16,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 18,
+          "governorGloss": "Distributions",
+          "dependent": 17,
+          "dependentGloss": "Additional"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "Providing",
+          "dependent": 18,
+          "dependentGloss": "Distributions"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 8,
+          "governorGloss": "Utilities",
+          "dependent": 18,
+          "dependentGloss": "Distributions"
+        },
+        {
+          "dep": "case",
+          "governor": 21,
+          "governorGloss": "Models",
+          "dependent": 19,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "compound",
+          "governor": 21,
+          "governorGloss": "Models",
+          "dependent": 20,
+          "dependentGloss": "MCMC"
+        },
+        {
+          "dep": "nmod:for",
+          "governor": 6,
+          "governorGloss": "Providing",
+          "dependent": 21,
+          "dependentGloss": "Models"
+        },
+        {
+          "dep": "case",
+          "governor": 23,
+          "governorGloss": "JAGS",
+          "dependent": 22,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 21,
+          "governorGloss": "Models",
+          "dependent": 23,
+          "dependentGloss": "JAGS"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "runjags",
+          "dependent": 24,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -331,6 +996,1147 @@
     },
     {
       "index": 2,
+      "parse": "(ROOT\n  (S\n    (S\n      (NP (DT The) (NNS runjags) (NN package))\n      (VP (VBZ provides)\n        (NP\n          (NP (DT a) (NN set))\n          (PP (IN of)\n            (NP\n              (NP (NN interface) (NNS functions)\n                (S\n                  (VP (TO to)\n                    (VP (VB facilitate)\n                      (S\n                        (VP (VBG running)\n                          (S\n                            (NP (NNP Markov) (NN chain) (NNP Monte) (NNP Carlo))\n                            (NP\n                              (NP (NNS models))\n                              (PP (IN in)\n                                (NP (NN JAGS)))))))\n                      (PP (IN from) (IN within)\n                        (NP\n                          (NP (NNP R.) (NNP Automated) (NN calculation))\n                          (PP (IN of)\n                            (NP (JJ appropriate) (NN convergence)\n                              (CC and)\n                              (NN sample) (NN length) (NNS diagnostics)))))))))\n              (, ,)\n              (NP\n                (NP (JJ user-friendly) (NN access))\n                (PP (TO to)\n                  (NP\n                    (ADJP (RB commonly) (VBN used))\n                    (JJ graphical) (NNS outputs))))\n              (CC and)\n              (NP (NN summary) (NNS statistics)))))))\n    (, ,)\n    (CC and)\n    (S\n      (NP\n        (NP (JJ parallelized) (NNS methods))\n        (PP (IN of)\n          (NP (VBG running) (NNS JAGS))))\n      (VP (VBP are)\n        (VP (VBN provided))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "provides"
+        },
+        {
+          "dep": "det",
+          "governor": 3,
+          "governorGloss": "package",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "package",
+          "dependent": 2,
+          "dependentGloss": "runjags"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "provides",
+          "dependent": 3,
+          "dependentGloss": "package"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "set",
+          "dependent": 5,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "provides",
+          "dependent": 6,
+          "dependentGloss": "set"
+        },
+        {
+          "dep": "case",
+          "governor": 9,
+          "governorGloss": "functions",
+          "dependent": 7,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "functions",
+          "dependent": 8,
+          "dependentGloss": "interface"
+        },
+        {
+          "dep": "nmod",
+          "governor": 6,
+          "governorGloss": "set",
+          "dependent": 9,
+          "dependentGloss": "functions"
+        },
+        {
+          "dep": "mark",
+          "governor": 11,
+          "governorGloss": "facilitate",
+          "dependent": 10,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "acl",
+          "governor": 9,
+          "governorGloss": "functions",
+          "dependent": 11,
+          "dependentGloss": "facilitate"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 11,
+          "governorGloss": "facilitate",
+          "dependent": 12,
+          "dependentGloss": "running"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "Carlo",
+          "dependent": 13,
+          "dependentGloss": "Markov"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "Carlo",
+          "dependent": 14,
+          "dependentGloss": "chain"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "Carlo",
+          "dependent": 15,
+          "dependentGloss": "Monte"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 17,
+          "governorGloss": "models",
+          "dependent": 16,
+          "dependentGloss": "Carlo"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 12,
+          "governorGloss": "running",
+          "dependent": 17,
+          "dependentGloss": "models"
+        },
+        {
+          "dep": "case",
+          "governor": 19,
+          "governorGloss": "JAGS",
+          "dependent": 18,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod",
+          "governor": 17,
+          "governorGloss": "models",
+          "dependent": 19,
+          "dependentGloss": "JAGS"
+        },
+        {
+          "dep": "case",
+          "governor": 24,
+          "governorGloss": "calculation",
+          "dependent": 20,
+          "dependentGloss": "from"
+        },
+        {
+          "dep": "case",
+          "governor": 24,
+          "governorGloss": "calculation",
+          "dependent": 21,
+          "dependentGloss": "within"
+        },
+        {
+          "dep": "compound",
+          "governor": 24,
+          "governorGloss": "calculation",
+          "dependent": 22,
+          "dependentGloss": "R."
+        },
+        {
+          "dep": "compound",
+          "governor": 24,
+          "governorGloss": "calculation",
+          "dependent": 23,
+          "dependentGloss": "Automated"
+        },
+        {
+          "dep": "nmod",
+          "governor": 11,
+          "governorGloss": "facilitate",
+          "dependent": 24,
+          "dependentGloss": "calculation"
+        },
+        {
+          "dep": "case",
+          "governor": 27,
+          "governorGloss": "convergence",
+          "dependent": 25,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 27,
+          "governorGloss": "convergence",
+          "dependent": 26,
+          "dependentGloss": "appropriate"
+        },
+        {
+          "dep": "nmod",
+          "governor": 24,
+          "governorGloss": "calculation",
+          "dependent": 27,
+          "dependentGloss": "convergence"
+        },
+        {
+          "dep": "cc",
+          "governor": 27,
+          "governorGloss": "convergence",
+          "dependent": 28,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 31,
+          "governorGloss": "diagnostics",
+          "dependent": 29,
+          "dependentGloss": "sample"
+        },
+        {
+          "dep": "compound",
+          "governor": 31,
+          "governorGloss": "diagnostics",
+          "dependent": 30,
+          "dependentGloss": "length"
+        },
+        {
+          "dep": "conj",
+          "governor": 27,
+          "governorGloss": "convergence",
+          "dependent": 31,
+          "dependentGloss": "diagnostics"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "functions",
+          "dependent": 32,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "amod",
+          "governor": 34,
+          "governorGloss": "access",
+          "dependent": 33,
+          "dependentGloss": "user-friendly"
+        },
+        {
+          "dep": "conj",
+          "governor": 9,
+          "governorGloss": "functions",
+          "dependent": 34,
+          "dependentGloss": "access"
+        },
+        {
+          "dep": "case",
+          "governor": 39,
+          "governorGloss": "outputs",
+          "dependent": 35,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "advmod",
+          "governor": 37,
+          "governorGloss": "used",
+          "dependent": 36,
+          "dependentGloss": "commonly"
+        },
+        {
+          "dep": "amod",
+          "governor": 39,
+          "governorGloss": "outputs",
+          "dependent": 37,
+          "dependentGloss": "used"
+        },
+        {
+          "dep": "amod",
+          "governor": 39,
+          "governorGloss": "outputs",
+          "dependent": 38,
+          "dependentGloss": "graphical"
+        },
+        {
+          "dep": "nmod",
+          "governor": 34,
+          "governorGloss": "access",
+          "dependent": 39,
+          "dependentGloss": "outputs"
+        },
+        {
+          "dep": "cc",
+          "governor": 9,
+          "governorGloss": "functions",
+          "dependent": 40,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 42,
+          "governorGloss": "statistics",
+          "dependent": 41,
+          "dependentGloss": "summary"
+        },
+        {
+          "dep": "conj",
+          "governor": 9,
+          "governorGloss": "functions",
+          "dependent": 42,
+          "dependentGloss": "statistics"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "provides",
+          "dependent": 43,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 4,
+          "governorGloss": "provides",
+          "dependent": 44,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 46,
+          "governorGloss": "methods",
+          "dependent": 45,
+          "dependentGloss": "parallelized"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 51,
+          "governorGloss": "provided",
+          "dependent": 46,
+          "dependentGloss": "methods"
+        },
+        {
+          "dep": "case",
+          "governor": 49,
+          "governorGloss": "JAGS",
+          "dependent": 47,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 49,
+          "governorGloss": "JAGS",
+          "dependent": 48,
+          "dependentGloss": "running"
+        },
+        {
+          "dep": "nmod",
+          "governor": 46,
+          "governorGloss": "methods",
+          "dependent": 49,
+          "dependentGloss": "JAGS"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 51,
+          "governorGloss": "provided",
+          "dependent": 50,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "conj",
+          "governor": 4,
+          "governorGloss": "provides",
+          "dependent": 51,
+          "dependentGloss": "provided"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "provides",
+          "dependent": 52,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "provides"
+        },
+        {
+          "dep": "det",
+          "governor": 3,
+          "governorGloss": "package",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "package",
+          "dependent": 2,
+          "dependentGloss": "runjags"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "provides",
+          "dependent": 3,
+          "dependentGloss": "package"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "set",
+          "dependent": 5,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "provides",
+          "dependent": 6,
+          "dependentGloss": "set"
+        },
+        {
+          "dep": "case",
+          "governor": 9,
+          "governorGloss": "functions",
+          "dependent": 7,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "functions",
+          "dependent": 8,
+          "dependentGloss": "interface"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 6,
+          "governorGloss": "set",
+          "dependent": 9,
+          "dependentGloss": "functions"
+        },
+        {
+          "dep": "mark",
+          "governor": 11,
+          "governorGloss": "facilitate",
+          "dependent": 10,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "acl:to",
+          "governor": 9,
+          "governorGloss": "functions",
+          "dependent": 11,
+          "dependentGloss": "facilitate"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 11,
+          "governorGloss": "facilitate",
+          "dependent": 12,
+          "dependentGloss": "running"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "Carlo",
+          "dependent": 13,
+          "dependentGloss": "Markov"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "Carlo",
+          "dependent": 14,
+          "dependentGloss": "chain"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "Carlo",
+          "dependent": 15,
+          "dependentGloss": "Monte"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 17,
+          "governorGloss": "models",
+          "dependent": 16,
+          "dependentGloss": "Carlo"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 12,
+          "governorGloss": "running",
+          "dependent": 17,
+          "dependentGloss": "models"
+        },
+        {
+          "dep": "case",
+          "governor": 19,
+          "governorGloss": "JAGS",
+          "dependent": 18,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 17,
+          "governorGloss": "models",
+          "dependent": 19,
+          "dependentGloss": "JAGS"
+        },
+        {
+          "dep": "case",
+          "governor": 24,
+          "governorGloss": "calculation",
+          "dependent": 20,
+          "dependentGloss": "from"
+        },
+        {
+          "dep": "case",
+          "governor": 24,
+          "governorGloss": "calculation",
+          "dependent": 21,
+          "dependentGloss": "within"
+        },
+        {
+          "dep": "compound",
+          "governor": 24,
+          "governorGloss": "calculation",
+          "dependent": 22,
+          "dependentGloss": "R."
+        },
+        {
+          "dep": "compound",
+          "governor": 24,
+          "governorGloss": "calculation",
+          "dependent": 23,
+          "dependentGloss": "Automated"
+        },
+        {
+          "dep": "nmod:within",
+          "governor": 11,
+          "governorGloss": "facilitate",
+          "dependent": 24,
+          "dependentGloss": "calculation"
+        },
+        {
+          "dep": "case",
+          "governor": 27,
+          "governorGloss": "convergence",
+          "dependent": 25,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 27,
+          "governorGloss": "convergence",
+          "dependent": 26,
+          "dependentGloss": "appropriate"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 24,
+          "governorGloss": "calculation",
+          "dependent": 27,
+          "dependentGloss": "convergence"
+        },
+        {
+          "dep": "cc",
+          "governor": 27,
+          "governorGloss": "convergence",
+          "dependent": 28,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 31,
+          "governorGloss": "diagnostics",
+          "dependent": 29,
+          "dependentGloss": "sample"
+        },
+        {
+          "dep": "compound",
+          "governor": 31,
+          "governorGloss": "diagnostics",
+          "dependent": 30,
+          "dependentGloss": "length"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 24,
+          "governorGloss": "calculation",
+          "dependent": 31,
+          "dependentGloss": "diagnostics"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 27,
+          "governorGloss": "convergence",
+          "dependent": 31,
+          "dependentGloss": "diagnostics"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "functions",
+          "dependent": 32,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "amod",
+          "governor": 34,
+          "governorGloss": "access",
+          "dependent": 33,
+          "dependentGloss": "user-friendly"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 6,
+          "governorGloss": "set",
+          "dependent": 34,
+          "dependentGloss": "access"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 9,
+          "governorGloss": "functions",
+          "dependent": 34,
+          "dependentGloss": "access"
+        },
+        {
+          "dep": "case",
+          "governor": 39,
+          "governorGloss": "outputs",
+          "dependent": 35,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "advmod",
+          "governor": 37,
+          "governorGloss": "used",
+          "dependent": 36,
+          "dependentGloss": "commonly"
+        },
+        {
+          "dep": "amod",
+          "governor": 39,
+          "governorGloss": "outputs",
+          "dependent": 37,
+          "dependentGloss": "used"
+        },
+        {
+          "dep": "amod",
+          "governor": 39,
+          "governorGloss": "outputs",
+          "dependent": 38,
+          "dependentGloss": "graphical"
+        },
+        {
+          "dep": "nmod:to",
+          "governor": 34,
+          "governorGloss": "access",
+          "dependent": 39,
+          "dependentGloss": "outputs"
+        },
+        {
+          "dep": "cc",
+          "governor": 9,
+          "governorGloss": "functions",
+          "dependent": 40,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 42,
+          "governorGloss": "statistics",
+          "dependent": 41,
+          "dependentGloss": "summary"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 6,
+          "governorGloss": "set",
+          "dependent": 42,
+          "dependentGloss": "statistics"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 9,
+          "governorGloss": "functions",
+          "dependent": 42,
+          "dependentGloss": "statistics"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "provides",
+          "dependent": 43,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 4,
+          "governorGloss": "provides",
+          "dependent": 44,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 46,
+          "governorGloss": "methods",
+          "dependent": 45,
+          "dependentGloss": "parallelized"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 51,
+          "governorGloss": "provided",
+          "dependent": 46,
+          "dependentGloss": "methods"
+        },
+        {
+          "dep": "case",
+          "governor": 49,
+          "governorGloss": "JAGS",
+          "dependent": 47,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 49,
+          "governorGloss": "JAGS",
+          "dependent": 48,
+          "dependentGloss": "running"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 46,
+          "governorGloss": "methods",
+          "dependent": 49,
+          "dependentGloss": "JAGS"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 51,
+          "governorGloss": "provided",
+          "dependent": 50,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 4,
+          "governorGloss": "provides",
+          "dependent": 51,
+          "dependentGloss": "provided"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "provides",
+          "dependent": 52,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "provides"
+        },
+        {
+          "dep": "det",
+          "governor": 3,
+          "governorGloss": "package",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "package",
+          "dependent": 2,
+          "dependentGloss": "runjags"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "provides",
+          "dependent": 3,
+          "dependentGloss": "package"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "set",
+          "dependent": 5,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "provides",
+          "dependent": 6,
+          "dependentGloss": "set"
+        },
+        {
+          "dep": "case",
+          "governor": 9,
+          "governorGloss": "functions",
+          "dependent": 7,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "functions",
+          "dependent": 8,
+          "dependentGloss": "interface"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 6,
+          "governorGloss": "set",
+          "dependent": 9,
+          "dependentGloss": "functions"
+        },
+        {
+          "dep": "mark",
+          "governor": 11,
+          "governorGloss": "facilitate",
+          "dependent": 10,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "acl:to",
+          "governor": 9,
+          "governorGloss": "functions",
+          "dependent": 11,
+          "dependentGloss": "facilitate"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 11,
+          "governorGloss": "facilitate",
+          "dependent": 12,
+          "dependentGloss": "running"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "Carlo",
+          "dependent": 13,
+          "dependentGloss": "Markov"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "Carlo",
+          "dependent": 14,
+          "dependentGloss": "chain"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "Carlo",
+          "dependent": 15,
+          "dependentGloss": "Monte"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 17,
+          "governorGloss": "models",
+          "dependent": 16,
+          "dependentGloss": "Carlo"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 12,
+          "governorGloss": "running",
+          "dependent": 17,
+          "dependentGloss": "models"
+        },
+        {
+          "dep": "case",
+          "governor": 19,
+          "governorGloss": "JAGS",
+          "dependent": 18,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 17,
+          "governorGloss": "models",
+          "dependent": 19,
+          "dependentGloss": "JAGS"
+        },
+        {
+          "dep": "case",
+          "governor": 24,
+          "governorGloss": "calculation",
+          "dependent": 20,
+          "dependentGloss": "from"
+        },
+        {
+          "dep": "case",
+          "governor": 24,
+          "governorGloss": "calculation",
+          "dependent": 21,
+          "dependentGloss": "within"
+        },
+        {
+          "dep": "compound",
+          "governor": 24,
+          "governorGloss": "calculation",
+          "dependent": 22,
+          "dependentGloss": "R."
+        },
+        {
+          "dep": "compound",
+          "governor": 24,
+          "governorGloss": "calculation",
+          "dependent": 23,
+          "dependentGloss": "Automated"
+        },
+        {
+          "dep": "nmod:within",
+          "governor": 11,
+          "governorGloss": "facilitate",
+          "dependent": 24,
+          "dependentGloss": "calculation"
+        },
+        {
+          "dep": "case",
+          "governor": 27,
+          "governorGloss": "convergence",
+          "dependent": 25,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 27,
+          "governorGloss": "convergence",
+          "dependent": 26,
+          "dependentGloss": "appropriate"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 24,
+          "governorGloss": "calculation",
+          "dependent": 27,
+          "dependentGloss": "convergence"
+        },
+        {
+          "dep": "cc",
+          "governor": 27,
+          "governorGloss": "convergence",
+          "dependent": 28,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 31,
+          "governorGloss": "diagnostics",
+          "dependent": 29,
+          "dependentGloss": "sample"
+        },
+        {
+          "dep": "compound",
+          "governor": 31,
+          "governorGloss": "diagnostics",
+          "dependent": 30,
+          "dependentGloss": "length"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 24,
+          "governorGloss": "calculation",
+          "dependent": 31,
+          "dependentGloss": "diagnostics"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 27,
+          "governorGloss": "convergence",
+          "dependent": 31,
+          "dependentGloss": "diagnostics"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "functions",
+          "dependent": 32,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "amod",
+          "governor": 34,
+          "governorGloss": "access",
+          "dependent": 33,
+          "dependentGloss": "user-friendly"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 6,
+          "governorGloss": "set",
+          "dependent": 34,
+          "dependentGloss": "access"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 9,
+          "governorGloss": "functions",
+          "dependent": 34,
+          "dependentGloss": "access"
+        },
+        {
+          "dep": "case",
+          "governor": 39,
+          "governorGloss": "outputs",
+          "dependent": 35,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "advmod",
+          "governor": 37,
+          "governorGloss": "used",
+          "dependent": 36,
+          "dependentGloss": "commonly"
+        },
+        {
+          "dep": "amod",
+          "governor": 39,
+          "governorGloss": "outputs",
+          "dependent": 37,
+          "dependentGloss": "used"
+        },
+        {
+          "dep": "amod",
+          "governor": 39,
+          "governorGloss": "outputs",
+          "dependent": 38,
+          "dependentGloss": "graphical"
+        },
+        {
+          "dep": "nmod:to",
+          "governor": 34,
+          "governorGloss": "access",
+          "dependent": 39,
+          "dependentGloss": "outputs"
+        },
+        {
+          "dep": "cc",
+          "governor": 9,
+          "governorGloss": "functions",
+          "dependent": 40,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 42,
+          "governorGloss": "statistics",
+          "dependent": 41,
+          "dependentGloss": "summary"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 6,
+          "governorGloss": "set",
+          "dependent": 42,
+          "dependentGloss": "statistics"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 9,
+          "governorGloss": "functions",
+          "dependent": 42,
+          "dependentGloss": "statistics"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "provides",
+          "dependent": 43,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 4,
+          "governorGloss": "provides",
+          "dependent": 44,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 46,
+          "governorGloss": "methods",
+          "dependent": 45,
+          "dependentGloss": "parallelized"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 51,
+          "governorGloss": "provided",
+          "dependent": 46,
+          "dependentGloss": "methods"
+        },
+        {
+          "dep": "case",
+          "governor": 49,
+          "governorGloss": "JAGS",
+          "dependent": 47,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 49,
+          "governorGloss": "JAGS",
+          "dependent": 48,
+          "dependentGloss": "running"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 46,
+          "governorGloss": "methods",
+          "dependent": 49,
+          "dependentGloss": "JAGS"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 51,
+          "governorGloss": "provided",
+          "dependent": 50,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 4,
+          "governorGloss": "provides",
+          "dependent": 51,
+          "dependentGloss": "provided"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "provides",
+          "dependent": 52,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -908,6 +2714,475 @@
     },
     {
       "index": 3,
+      "parse": "(ROOT\n  (S\n    (NP (NN Template) (NN model) (NNS specifications))\n    (VP (MD can)\n      (VP (VB be)\n        (VP (VBN generated)\n          (S\n            (VP (VBG using)\n              (NP (DT a) (JJ standard) (JJ lme4-style) (NN formula) (NN interface))\n              (S\n                (VP (TO to)\n                  (VP (VB assist)\n                    (S\n                      (NP (NNS users))\n                      (ADJP (RBR less) (JJ familiar)\n                        (PP (IN with)\n                          (NP (DT the) (NNS BUGS) (NN syntax)))))))))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "generated"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "specifications",
+          "dependent": 1,
+          "dependentGloss": "Template"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "specifications",
+          "dependent": 2,
+          "dependentGloss": "model"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 6,
+          "governorGloss": "generated",
+          "dependent": 3,
+          "dependentGloss": "specifications"
+        },
+        {
+          "dep": "aux",
+          "governor": 6,
+          "governorGloss": "generated",
+          "dependent": 4,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 6,
+          "governorGloss": "generated",
+          "dependent": 5,
+          "dependentGloss": "be"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 6,
+          "governorGloss": "generated",
+          "dependent": 7,
+          "dependentGloss": "using"
+        },
+        {
+          "dep": "det",
+          "governor": 12,
+          "governorGloss": "interface",
+          "dependent": 8,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "amod",
+          "governor": 12,
+          "governorGloss": "interface",
+          "dependent": 9,
+          "dependentGloss": "standard"
+        },
+        {
+          "dep": "amod",
+          "governor": 12,
+          "governorGloss": "interface",
+          "dependent": 10,
+          "dependentGloss": "lme4-style"
+        },
+        {
+          "dep": "compound",
+          "governor": 12,
+          "governorGloss": "interface",
+          "dependent": 11,
+          "dependentGloss": "formula"
+        },
+        {
+          "dep": "dobj",
+          "governor": 7,
+          "governorGloss": "using",
+          "dependent": 12,
+          "dependentGloss": "interface"
+        },
+        {
+          "dep": "mark",
+          "governor": 14,
+          "governorGloss": "assist",
+          "dependent": 13,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "advcl",
+          "governor": 7,
+          "governorGloss": "using",
+          "dependent": 14,
+          "dependentGloss": "assist"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 17,
+          "governorGloss": "familiar",
+          "dependent": 15,
+          "dependentGloss": "users"
+        },
+        {
+          "dep": "advmod",
+          "governor": 17,
+          "governorGloss": "familiar",
+          "dependent": 16,
+          "dependentGloss": "less"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 14,
+          "governorGloss": "assist",
+          "dependent": 17,
+          "dependentGloss": "familiar"
+        },
+        {
+          "dep": "case",
+          "governor": 21,
+          "governorGloss": "syntax",
+          "dependent": 18,
+          "dependentGloss": "with"
+        },
+        {
+          "dep": "det",
+          "governor": 21,
+          "governorGloss": "syntax",
+          "dependent": 19,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "compound",
+          "governor": 21,
+          "governorGloss": "syntax",
+          "dependent": 20,
+          "dependentGloss": "BUGS"
+        },
+        {
+          "dep": "nmod",
+          "governor": 17,
+          "governorGloss": "familiar",
+          "dependent": 21,
+          "dependentGloss": "syntax"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "generated",
+          "dependent": 22,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "generated"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "specifications",
+          "dependent": 1,
+          "dependentGloss": "Template"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "specifications",
+          "dependent": 2,
+          "dependentGloss": "model"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 6,
+          "governorGloss": "generated",
+          "dependent": 3,
+          "dependentGloss": "specifications"
+        },
+        {
+          "dep": "aux",
+          "governor": 6,
+          "governorGloss": "generated",
+          "dependent": 4,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 6,
+          "governorGloss": "generated",
+          "dependent": 5,
+          "dependentGloss": "be"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 6,
+          "governorGloss": "generated",
+          "dependent": 7,
+          "dependentGloss": "using"
+        },
+        {
+          "dep": "det",
+          "governor": 12,
+          "governorGloss": "interface",
+          "dependent": 8,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "amod",
+          "governor": 12,
+          "governorGloss": "interface",
+          "dependent": 9,
+          "dependentGloss": "standard"
+        },
+        {
+          "dep": "amod",
+          "governor": 12,
+          "governorGloss": "interface",
+          "dependent": 10,
+          "dependentGloss": "lme4-style"
+        },
+        {
+          "dep": "compound",
+          "governor": 12,
+          "governorGloss": "interface",
+          "dependent": 11,
+          "dependentGloss": "formula"
+        },
+        {
+          "dep": "dobj",
+          "governor": 7,
+          "governorGloss": "using",
+          "dependent": 12,
+          "dependentGloss": "interface"
+        },
+        {
+          "dep": "mark",
+          "governor": 14,
+          "governorGloss": "assist",
+          "dependent": 13,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "advcl:to",
+          "governor": 7,
+          "governorGloss": "using",
+          "dependent": 14,
+          "dependentGloss": "assist"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 17,
+          "governorGloss": "familiar",
+          "dependent": 15,
+          "dependentGloss": "users"
+        },
+        {
+          "dep": "advmod",
+          "governor": 17,
+          "governorGloss": "familiar",
+          "dependent": 16,
+          "dependentGloss": "less"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 14,
+          "governorGloss": "assist",
+          "dependent": 17,
+          "dependentGloss": "familiar"
+        },
+        {
+          "dep": "case",
+          "governor": 21,
+          "governorGloss": "syntax",
+          "dependent": 18,
+          "dependentGloss": "with"
+        },
+        {
+          "dep": "det",
+          "governor": 21,
+          "governorGloss": "syntax",
+          "dependent": 19,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "compound",
+          "governor": 21,
+          "governorGloss": "syntax",
+          "dependent": 20,
+          "dependentGloss": "BUGS"
+        },
+        {
+          "dep": "nmod:with",
+          "governor": 17,
+          "governorGloss": "familiar",
+          "dependent": 21,
+          "dependentGloss": "syntax"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "generated",
+          "dependent": 22,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "generated"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "specifications",
+          "dependent": 1,
+          "dependentGloss": "Template"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "specifications",
+          "dependent": 2,
+          "dependentGloss": "model"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 6,
+          "governorGloss": "generated",
+          "dependent": 3,
+          "dependentGloss": "specifications"
+        },
+        {
+          "dep": "aux",
+          "governor": 6,
+          "governorGloss": "generated",
+          "dependent": 4,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 6,
+          "governorGloss": "generated",
+          "dependent": 5,
+          "dependentGloss": "be"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 6,
+          "governorGloss": "generated",
+          "dependent": 7,
+          "dependentGloss": "using"
+        },
+        {
+          "dep": "det",
+          "governor": 12,
+          "governorGloss": "interface",
+          "dependent": 8,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "amod",
+          "governor": 12,
+          "governorGloss": "interface",
+          "dependent": 9,
+          "dependentGloss": "standard"
+        },
+        {
+          "dep": "amod",
+          "governor": 12,
+          "governorGloss": "interface",
+          "dependent": 10,
+          "dependentGloss": "lme4-style"
+        },
+        {
+          "dep": "compound",
+          "governor": 12,
+          "governorGloss": "interface",
+          "dependent": 11,
+          "dependentGloss": "formula"
+        },
+        {
+          "dep": "dobj",
+          "governor": 7,
+          "governorGloss": "using",
+          "dependent": 12,
+          "dependentGloss": "interface"
+        },
+        {
+          "dep": "mark",
+          "governor": 14,
+          "governorGloss": "assist",
+          "dependent": 13,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "advcl:to",
+          "governor": 7,
+          "governorGloss": "using",
+          "dependent": 14,
+          "dependentGloss": "assist"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 17,
+          "governorGloss": "familiar",
+          "dependent": 15,
+          "dependentGloss": "users"
+        },
+        {
+          "dep": "advmod",
+          "governor": 17,
+          "governorGloss": "familiar",
+          "dependent": 16,
+          "dependentGloss": "less"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 14,
+          "governorGloss": "assist",
+          "dependent": 17,
+          "dependentGloss": "familiar"
+        },
+        {
+          "dep": "case",
+          "governor": 21,
+          "governorGloss": "syntax",
+          "dependent": 18,
+          "dependentGloss": "with"
+        },
+        {
+          "dep": "det",
+          "governor": 21,
+          "governorGloss": "syntax",
+          "dependent": 19,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "compound",
+          "governor": 21,
+          "governorGloss": "syntax",
+          "dependent": 20,
+          "dependentGloss": "BUGS"
+        },
+        {
+          "dep": "nmod:with",
+          "governor": 17,
+          "governorGloss": "familiar",
+          "dependent": 21,
+          "dependentGloss": "syntax"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "generated",
+          "dependent": 22,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -1155,6 +3430,727 @@
     },
     {
       "index": 4,
+      "parse": "(ROOT\n  (S\n    (NP (VBN Automated) (NN simulation) (NN study) (NNS functions))\n    (VP (VBP are)\n      (VP (VBN implemented)\n        (S\n          (VP (TO to)\n            (VP (VB facilitate)\n              (NP\n                (NP (NN model) (NN performance) (NN assessment))\n                (, ,)\n                (CONJP (RB as) (RB well) (IN as))\n                (NP (JJ drop-k) (NN type) (NN cross-validation) (NNS studies))\n                (, ,)\n                (S\n                  (VP (VBG using)\n                    (NP\n                      (NP (JJ high) (NN performance) (NN computing) (NNS clusters))\n                      (PP (JJ such) (IN as)\n                        (NP\n                          (NP (DT those))\n                          (VP (VBN provided)\n                            (PP (IN by)\n                              (NP (NN parallel)))))))))))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "implemented"
+        },
+        {
+          "dep": "amod",
+          "governor": 4,
+          "governorGloss": "functions",
+          "dependent": 1,
+          "dependentGloss": "Automated"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "functions",
+          "dependent": 2,
+          "dependentGloss": "simulation"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "functions",
+          "dependent": 3,
+          "dependentGloss": "study"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 6,
+          "governorGloss": "implemented",
+          "dependent": 4,
+          "dependentGloss": "functions"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 6,
+          "governorGloss": "implemented",
+          "dependent": 5,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "mark",
+          "governor": 8,
+          "governorGloss": "facilitate",
+          "dependent": 7,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 6,
+          "governorGloss": "implemented",
+          "dependent": 8,
+          "dependentGloss": "facilitate"
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "assessment",
+          "dependent": 9,
+          "dependentGloss": "model"
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "assessment",
+          "dependent": 10,
+          "dependentGloss": "performance"
+        },
+        {
+          "dep": "dobj",
+          "governor": 8,
+          "governorGloss": "facilitate",
+          "dependent": 11,
+          "dependentGloss": "assessment"
+        },
+        {
+          "dep": "punct",
+          "governor": 11,
+          "governorGloss": "assessment",
+          "dependent": 12,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 11,
+          "governorGloss": "assessment",
+          "dependent": 13,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "mwe",
+          "governor": 13,
+          "governorGloss": "as",
+          "dependent": 14,
+          "dependentGloss": "well"
+        },
+        {
+          "dep": "mwe",
+          "governor": 13,
+          "governorGloss": "as",
+          "dependent": 15,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "amod",
+          "governor": 19,
+          "governorGloss": "studies",
+          "dependent": 16,
+          "dependentGloss": "drop-k"
+        },
+        {
+          "dep": "compound",
+          "governor": 19,
+          "governorGloss": "studies",
+          "dependent": 17,
+          "dependentGloss": "type"
+        },
+        {
+          "dep": "compound",
+          "governor": 19,
+          "governorGloss": "studies",
+          "dependent": 18,
+          "dependentGloss": "cross-validation"
+        },
+        {
+          "dep": "conj",
+          "governor": 11,
+          "governorGloss": "assessment",
+          "dependent": 19,
+          "dependentGloss": "studies"
+        },
+        {
+          "dep": "punct",
+          "governor": 11,
+          "governorGloss": "assessment",
+          "dependent": 20,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "conj",
+          "governor": 11,
+          "governorGloss": "assessment",
+          "dependent": 21,
+          "dependentGloss": "using"
+        },
+        {
+          "dep": "amod",
+          "governor": 25,
+          "governorGloss": "clusters",
+          "dependent": 22,
+          "dependentGloss": "high"
+        },
+        {
+          "dep": "compound",
+          "governor": 25,
+          "governorGloss": "clusters",
+          "dependent": 23,
+          "dependentGloss": "performance"
+        },
+        {
+          "dep": "compound",
+          "governor": 25,
+          "governorGloss": "clusters",
+          "dependent": 24,
+          "dependentGloss": "computing"
+        },
+        {
+          "dep": "dobj",
+          "governor": 21,
+          "governorGloss": "using",
+          "dependent": 25,
+          "dependentGloss": "clusters"
+        },
+        {
+          "dep": "case",
+          "governor": 28,
+          "governorGloss": "those",
+          "dependent": 26,
+          "dependentGloss": "such"
+        },
+        {
+          "dep": "mwe",
+          "governor": 26,
+          "governorGloss": "such",
+          "dependent": 27,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "nmod",
+          "governor": 25,
+          "governorGloss": "clusters",
+          "dependent": 28,
+          "dependentGloss": "those"
+        },
+        {
+          "dep": "acl",
+          "governor": 28,
+          "governorGloss": "those",
+          "dependent": 29,
+          "dependentGloss": "provided"
+        },
+        {
+          "dep": "case",
+          "governor": 31,
+          "governorGloss": "parallel",
+          "dependent": 30,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "nmod",
+          "governor": 29,
+          "governorGloss": "provided",
+          "dependent": 31,
+          "dependentGloss": "parallel"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "implemented",
+          "dependent": 32,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "implemented"
+        },
+        {
+          "dep": "amod",
+          "governor": 4,
+          "governorGloss": "functions",
+          "dependent": 1,
+          "dependentGloss": "Automated"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "functions",
+          "dependent": 2,
+          "dependentGloss": "simulation"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "functions",
+          "dependent": 3,
+          "dependentGloss": "study"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 6,
+          "governorGloss": "implemented",
+          "dependent": 4,
+          "dependentGloss": "functions"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 8,
+          "governorGloss": "facilitate",
+          "dependent": 4,
+          "dependentGloss": "functions"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 6,
+          "governorGloss": "implemented",
+          "dependent": 5,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "mark",
+          "governor": 8,
+          "governorGloss": "facilitate",
+          "dependent": 7,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 6,
+          "governorGloss": "implemented",
+          "dependent": 8,
+          "dependentGloss": "facilitate"
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "assessment",
+          "dependent": 9,
+          "dependentGloss": "model"
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "assessment",
+          "dependent": 10,
+          "dependentGloss": "performance"
+        },
+        {
+          "dep": "dobj",
+          "governor": 8,
+          "governorGloss": "facilitate",
+          "dependent": 11,
+          "dependentGloss": "assessment"
+        },
+        {
+          "dep": "punct",
+          "governor": 11,
+          "governorGloss": "assessment",
+          "dependent": 12,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 11,
+          "governorGloss": "assessment",
+          "dependent": 13,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "mwe",
+          "governor": 13,
+          "governorGloss": "as",
+          "dependent": 14,
+          "dependentGloss": "well"
+        },
+        {
+          "dep": "mwe",
+          "governor": 13,
+          "governorGloss": "as",
+          "dependent": 15,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "amod",
+          "governor": 19,
+          "governorGloss": "studies",
+          "dependent": 16,
+          "dependentGloss": "drop-k"
+        },
+        {
+          "dep": "compound",
+          "governor": 19,
+          "governorGloss": "studies",
+          "dependent": 17,
+          "dependentGloss": "type"
+        },
+        {
+          "dep": "compound",
+          "governor": 19,
+          "governorGloss": "studies",
+          "dependent": 18,
+          "dependentGloss": "cross-validation"
+        },
+        {
+          "dep": "dobj",
+          "governor": 8,
+          "governorGloss": "facilitate",
+          "dependent": 19,
+          "dependentGloss": "studies"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 11,
+          "governorGloss": "assessment",
+          "dependent": 19,
+          "dependentGloss": "studies"
+        },
+        {
+          "dep": "punct",
+          "governor": 11,
+          "governorGloss": "assessment",
+          "dependent": 20,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "dobj",
+          "governor": 8,
+          "governorGloss": "facilitate",
+          "dependent": 21,
+          "dependentGloss": "using"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 11,
+          "governorGloss": "assessment",
+          "dependent": 21,
+          "dependentGloss": "using"
+        },
+        {
+          "dep": "amod",
+          "governor": 25,
+          "governorGloss": "clusters",
+          "dependent": 22,
+          "dependentGloss": "high"
+        },
+        {
+          "dep": "compound",
+          "governor": 25,
+          "governorGloss": "clusters",
+          "dependent": 23,
+          "dependentGloss": "performance"
+        },
+        {
+          "dep": "compound",
+          "governor": 25,
+          "governorGloss": "clusters",
+          "dependent": 24,
+          "dependentGloss": "computing"
+        },
+        {
+          "dep": "dobj",
+          "governor": 21,
+          "governorGloss": "using",
+          "dependent": 25,
+          "dependentGloss": "clusters"
+        },
+        {
+          "dep": "case",
+          "governor": 28,
+          "governorGloss": "those",
+          "dependent": 26,
+          "dependentGloss": "such"
+        },
+        {
+          "dep": "mwe",
+          "governor": 26,
+          "governorGloss": "such",
+          "dependent": 27,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "nmod:such_as",
+          "governor": 25,
+          "governorGloss": "clusters",
+          "dependent": 28,
+          "dependentGloss": "those"
+        },
+        {
+          "dep": "acl",
+          "governor": 28,
+          "governorGloss": "those",
+          "dependent": 29,
+          "dependentGloss": "provided"
+        },
+        {
+          "dep": "case",
+          "governor": 31,
+          "governorGloss": "parallel",
+          "dependent": 30,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "nmod:by",
+          "governor": 29,
+          "governorGloss": "provided",
+          "dependent": 31,
+          "dependentGloss": "parallel"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "implemented",
+          "dependent": 32,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "implemented"
+        },
+        {
+          "dep": "amod",
+          "governor": 4,
+          "governorGloss": "functions",
+          "dependent": 1,
+          "dependentGloss": "Automated"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "functions",
+          "dependent": 2,
+          "dependentGloss": "simulation"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "functions",
+          "dependent": 3,
+          "dependentGloss": "study"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 6,
+          "governorGloss": "implemented",
+          "dependent": 4,
+          "dependentGloss": "functions"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 8,
+          "governorGloss": "facilitate",
+          "dependent": 4,
+          "dependentGloss": "functions"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 6,
+          "governorGloss": "implemented",
+          "dependent": 5,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "mark",
+          "governor": 8,
+          "governorGloss": "facilitate",
+          "dependent": 7,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 6,
+          "governorGloss": "implemented",
+          "dependent": 8,
+          "dependentGloss": "facilitate"
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "assessment",
+          "dependent": 9,
+          "dependentGloss": "model"
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "assessment",
+          "dependent": 10,
+          "dependentGloss": "performance"
+        },
+        {
+          "dep": "dobj",
+          "governor": 8,
+          "governorGloss": "facilitate",
+          "dependent": 11,
+          "dependentGloss": "assessment"
+        },
+        {
+          "dep": "punct",
+          "governor": 11,
+          "governorGloss": "assessment",
+          "dependent": 12,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 11,
+          "governorGloss": "assessment",
+          "dependent": 13,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "mwe",
+          "governor": 13,
+          "governorGloss": "as",
+          "dependent": 14,
+          "dependentGloss": "well"
+        },
+        {
+          "dep": "mwe",
+          "governor": 13,
+          "governorGloss": "as",
+          "dependent": 15,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "amod",
+          "governor": 19,
+          "governorGloss": "studies",
+          "dependent": 16,
+          "dependentGloss": "drop-k"
+        },
+        {
+          "dep": "compound",
+          "governor": 19,
+          "governorGloss": "studies",
+          "dependent": 17,
+          "dependentGloss": "type"
+        },
+        {
+          "dep": "compound",
+          "governor": 19,
+          "governorGloss": "studies",
+          "dependent": 18,
+          "dependentGloss": "cross-validation"
+        },
+        {
+          "dep": "dobj",
+          "governor": 8,
+          "governorGloss": "facilitate",
+          "dependent": 19,
+          "dependentGloss": "studies"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 11,
+          "governorGloss": "assessment",
+          "dependent": 19,
+          "dependentGloss": "studies"
+        },
+        {
+          "dep": "punct",
+          "governor": 11,
+          "governorGloss": "assessment",
+          "dependent": 20,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "dobj",
+          "governor": 8,
+          "governorGloss": "facilitate",
+          "dependent": 21,
+          "dependentGloss": "using"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 11,
+          "governorGloss": "assessment",
+          "dependent": 21,
+          "dependentGloss": "using"
+        },
+        {
+          "dep": "amod",
+          "governor": 25,
+          "governorGloss": "clusters",
+          "dependent": 22,
+          "dependentGloss": "high"
+        },
+        {
+          "dep": "compound",
+          "governor": 25,
+          "governorGloss": "clusters",
+          "dependent": 23,
+          "dependentGloss": "performance"
+        },
+        {
+          "dep": "compound",
+          "governor": 25,
+          "governorGloss": "clusters",
+          "dependent": 24,
+          "dependentGloss": "computing"
+        },
+        {
+          "dep": "dobj",
+          "governor": 21,
+          "governorGloss": "using",
+          "dependent": 25,
+          "dependentGloss": "clusters"
+        },
+        {
+          "dep": "case",
+          "governor": 28,
+          "governorGloss": "those",
+          "dependent": 26,
+          "dependentGloss": "such"
+        },
+        {
+          "dep": "mwe",
+          "governor": 26,
+          "governorGloss": "such",
+          "dependent": 27,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "nmod:such_as",
+          "governor": 25,
+          "governorGloss": "clusters",
+          "dependent": 28,
+          "dependentGloss": "those"
+        },
+        {
+          "dep": "acl",
+          "governor": 28,
+          "governorGloss": "those",
+          "dependent": 29,
+          "dependentGloss": "provided"
+        },
+        {
+          "dep": "case",
+          "governor": 31,
+          "governorGloss": "parallel",
+          "dependent": 30,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "nmod:by",
+          "governor": 29,
+          "governorGloss": "provided",
+          "dependent": 31,
+          "dependentGloss": "parallel"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "implemented",
+          "dependent": 32,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -1512,6 +4508,671 @@
     },
     {
       "index": 5,
+      "parse": "(ROOT\n  (S\n    (NP\n      (NP (DT A) (NN module) (NN extension))\n      (PP (IN for)\n        (NP (NNP JAGS))))\n    (VP (VBZ is)\n      (ADVP (RB also))\n      (VP (VBN included)\n        (PP (IN within)\n          (NP (NNS runjags)))\n        (, ,)\n        (S\n          (VP (VBG providing)\n            (NP\n              (NP (DT the) (NNP Pareto) (NN family))\n              (PP (IN of)\n                (NP\n                  (NP (NNS distributions))\n                  (CC and)\n                  (NP\n                    (NP (DT a) (NN series))\n                    (PP (IN of)\n                      (NP\n                        (NP (JJ minimally-informative) (NNS priors))\n                        (PP (VBG including)\n                          (NP\n                            (NP (DT the) (NNP DuMouchel))\n                            (CC and)\n                            (NP (JJ half-Cauchy) (NNS priors))))))))))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 8,
+          "dependentGloss": "included"
+        },
+        {
+          "dep": "det",
+          "governor": 3,
+          "governorGloss": "extension",
+          "dependent": 1,
+          "dependentGloss": "A"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "extension",
+          "dependent": 2,
+          "dependentGloss": "module"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 8,
+          "governorGloss": "included",
+          "dependent": 3,
+          "dependentGloss": "extension"
+        },
+        {
+          "dep": "case",
+          "governor": 5,
+          "governorGloss": "JAGS",
+          "dependent": 4,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "nmod",
+          "governor": 3,
+          "governorGloss": "extension",
+          "dependent": 5,
+          "dependentGloss": "JAGS"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 8,
+          "governorGloss": "included",
+          "dependent": 6,
+          "dependentGloss": "is"
+        },
+        {
+          "dep": "advmod",
+          "governor": 8,
+          "governorGloss": "included",
+          "dependent": 7,
+          "dependentGloss": "also"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "runjags",
+          "dependent": 9,
+          "dependentGloss": "within"
+        },
+        {
+          "dep": "nmod",
+          "governor": 8,
+          "governorGloss": "included",
+          "dependent": 10,
+          "dependentGloss": "runjags"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "included",
+          "dependent": 11,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "xcomp",
+          "governor": 8,
+          "governorGloss": "included",
+          "dependent": 12,
+          "dependentGloss": "providing"
+        },
+        {
+          "dep": "det",
+          "governor": 15,
+          "governorGloss": "family",
+          "dependent": 13,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "compound",
+          "governor": 15,
+          "governorGloss": "family",
+          "dependent": 14,
+          "dependentGloss": "Pareto"
+        },
+        {
+          "dep": "dobj",
+          "governor": 12,
+          "governorGloss": "providing",
+          "dependent": 15,
+          "dependentGloss": "family"
+        },
+        {
+          "dep": "case",
+          "governor": 17,
+          "governorGloss": "distributions",
+          "dependent": 16,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod",
+          "governor": 15,
+          "governorGloss": "family",
+          "dependent": 17,
+          "dependentGloss": "distributions"
+        },
+        {
+          "dep": "cc",
+          "governor": 17,
+          "governorGloss": "distributions",
+          "dependent": 18,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "det",
+          "governor": 20,
+          "governorGloss": "series",
+          "dependent": 19,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "conj",
+          "governor": 17,
+          "governorGloss": "distributions",
+          "dependent": 20,
+          "dependentGloss": "series"
+        },
+        {
+          "dep": "case",
+          "governor": 23,
+          "governorGloss": "priors",
+          "dependent": 21,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 23,
+          "governorGloss": "priors",
+          "dependent": 22,
+          "dependentGloss": "minimally-informative"
+        },
+        {
+          "dep": "nmod",
+          "governor": 20,
+          "governorGloss": "series",
+          "dependent": 23,
+          "dependentGloss": "priors"
+        },
+        {
+          "dep": "case",
+          "governor": 26,
+          "governorGloss": "DuMouchel",
+          "dependent": 24,
+          "dependentGloss": "including"
+        },
+        {
+          "dep": "det",
+          "governor": 26,
+          "governorGloss": "DuMouchel",
+          "dependent": 25,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nmod",
+          "governor": 23,
+          "governorGloss": "priors",
+          "dependent": 26,
+          "dependentGloss": "DuMouchel"
+        },
+        {
+          "dep": "cc",
+          "governor": 26,
+          "governorGloss": "DuMouchel",
+          "dependent": 27,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 29,
+          "governorGloss": "priors",
+          "dependent": 28,
+          "dependentGloss": "half-Cauchy"
+        },
+        {
+          "dep": "conj",
+          "governor": 26,
+          "governorGloss": "DuMouchel",
+          "dependent": 29,
+          "dependentGloss": "priors"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "included",
+          "dependent": 30,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 8,
+          "dependentGloss": "included"
+        },
+        {
+          "dep": "det",
+          "governor": 3,
+          "governorGloss": "extension",
+          "dependent": 1,
+          "dependentGloss": "A"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "extension",
+          "dependent": 2,
+          "dependentGloss": "module"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 8,
+          "governorGloss": "included",
+          "dependent": 3,
+          "dependentGloss": "extension"
+        },
+        {
+          "dep": "case",
+          "governor": 5,
+          "governorGloss": "JAGS",
+          "dependent": 4,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "nmod:for",
+          "governor": 3,
+          "governorGloss": "extension",
+          "dependent": 5,
+          "dependentGloss": "JAGS"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 8,
+          "governorGloss": "included",
+          "dependent": 6,
+          "dependentGloss": "is"
+        },
+        {
+          "dep": "advmod",
+          "governor": 8,
+          "governorGloss": "included",
+          "dependent": 7,
+          "dependentGloss": "also"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "runjags",
+          "dependent": 9,
+          "dependentGloss": "within"
+        },
+        {
+          "dep": "nmod:within",
+          "governor": 8,
+          "governorGloss": "included",
+          "dependent": 10,
+          "dependentGloss": "runjags"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "included",
+          "dependent": 11,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "xcomp",
+          "governor": 8,
+          "governorGloss": "included",
+          "dependent": 12,
+          "dependentGloss": "providing"
+        },
+        {
+          "dep": "det",
+          "governor": 15,
+          "governorGloss": "family",
+          "dependent": 13,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "compound",
+          "governor": 15,
+          "governorGloss": "family",
+          "dependent": 14,
+          "dependentGloss": "Pareto"
+        },
+        {
+          "dep": "dobj",
+          "governor": 12,
+          "governorGloss": "providing",
+          "dependent": 15,
+          "dependentGloss": "family"
+        },
+        {
+          "dep": "case",
+          "governor": 17,
+          "governorGloss": "distributions",
+          "dependent": 16,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 15,
+          "governorGloss": "family",
+          "dependent": 17,
+          "dependentGloss": "distributions"
+        },
+        {
+          "dep": "cc",
+          "governor": 17,
+          "governorGloss": "distributions",
+          "dependent": 18,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "det",
+          "governor": 20,
+          "governorGloss": "series",
+          "dependent": 19,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 15,
+          "governorGloss": "family",
+          "dependent": 20,
+          "dependentGloss": "series"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 17,
+          "governorGloss": "distributions",
+          "dependent": 20,
+          "dependentGloss": "series"
+        },
+        {
+          "dep": "case",
+          "governor": 23,
+          "governorGloss": "priors",
+          "dependent": 21,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 23,
+          "governorGloss": "priors",
+          "dependent": 22,
+          "dependentGloss": "minimally-informative"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 20,
+          "governorGloss": "series",
+          "dependent": 23,
+          "dependentGloss": "priors"
+        },
+        {
+          "dep": "case",
+          "governor": 26,
+          "governorGloss": "DuMouchel",
+          "dependent": 24,
+          "dependentGloss": "including"
+        },
+        {
+          "dep": "det",
+          "governor": 26,
+          "governorGloss": "DuMouchel",
+          "dependent": 25,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nmod:including",
+          "governor": 23,
+          "governorGloss": "priors",
+          "dependent": 26,
+          "dependentGloss": "DuMouchel"
+        },
+        {
+          "dep": "cc",
+          "governor": 26,
+          "governorGloss": "DuMouchel",
+          "dependent": 27,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 29,
+          "governorGloss": "priors",
+          "dependent": 28,
+          "dependentGloss": "half-Cauchy"
+        },
+        {
+          "dep": "nmod:including",
+          "governor": 23,
+          "governorGloss": "priors",
+          "dependent": 29,
+          "dependentGloss": "priors"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 26,
+          "governorGloss": "DuMouchel",
+          "dependent": 29,
+          "dependentGloss": "priors"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "included",
+          "dependent": 30,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 8,
+          "dependentGloss": "included"
+        },
+        {
+          "dep": "det",
+          "governor": 3,
+          "governorGloss": "extension",
+          "dependent": 1,
+          "dependentGloss": "A"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "extension",
+          "dependent": 2,
+          "dependentGloss": "module"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 8,
+          "governorGloss": "included",
+          "dependent": 3,
+          "dependentGloss": "extension"
+        },
+        {
+          "dep": "case",
+          "governor": 5,
+          "governorGloss": "JAGS",
+          "dependent": 4,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "nmod:for",
+          "governor": 3,
+          "governorGloss": "extension",
+          "dependent": 5,
+          "dependentGloss": "JAGS"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 8,
+          "governorGloss": "included",
+          "dependent": 6,
+          "dependentGloss": "is"
+        },
+        {
+          "dep": "advmod",
+          "governor": 8,
+          "governorGloss": "included",
+          "dependent": 7,
+          "dependentGloss": "also"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "runjags",
+          "dependent": 9,
+          "dependentGloss": "within"
+        },
+        {
+          "dep": "nmod:within",
+          "governor": 8,
+          "governorGloss": "included",
+          "dependent": 10,
+          "dependentGloss": "runjags"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "included",
+          "dependent": 11,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "xcomp",
+          "governor": 8,
+          "governorGloss": "included",
+          "dependent": 12,
+          "dependentGloss": "providing"
+        },
+        {
+          "dep": "det",
+          "governor": 15,
+          "governorGloss": "family",
+          "dependent": 13,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "compound",
+          "governor": 15,
+          "governorGloss": "family",
+          "dependent": 14,
+          "dependentGloss": "Pareto"
+        },
+        {
+          "dep": "dobj",
+          "governor": 12,
+          "governorGloss": "providing",
+          "dependent": 15,
+          "dependentGloss": "family"
+        },
+        {
+          "dep": "case",
+          "governor": 17,
+          "governorGloss": "distributions",
+          "dependent": 16,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 15,
+          "governorGloss": "family",
+          "dependent": 17,
+          "dependentGloss": "distributions"
+        },
+        {
+          "dep": "cc",
+          "governor": 17,
+          "governorGloss": "distributions",
+          "dependent": 18,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "det:qmod",
+          "governor": 23,
+          "governorGloss": "priors",
+          "dependent": 19,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "mwe",
+          "governor": 19,
+          "governorGloss": "a",
+          "dependent": 20,
+          "dependentGloss": "series"
+        },
+        {
+          "dep": "mwe",
+          "governor": 19,
+          "governorGloss": "a",
+          "dependent": 21,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 23,
+          "governorGloss": "priors",
+          "dependent": 22,
+          "dependentGloss": "minimally-informative"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 15,
+          "governorGloss": "family",
+          "dependent": 23,
+          "dependentGloss": "priors"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 17,
+          "governorGloss": "distributions",
+          "dependent": 23,
+          "dependentGloss": "priors"
+        },
+        {
+          "dep": "case",
+          "governor": 26,
+          "governorGloss": "DuMouchel",
+          "dependent": 24,
+          "dependentGloss": "including"
+        },
+        {
+          "dep": "det",
+          "governor": 26,
+          "governorGloss": "DuMouchel",
+          "dependent": 25,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nmod:including",
+          "governor": 23,
+          "governorGloss": "priors",
+          "dependent": 26,
+          "dependentGloss": "DuMouchel"
+        },
+        {
+          "dep": "cc",
+          "governor": 26,
+          "governorGloss": "DuMouchel",
+          "dependent": 27,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 29,
+          "governorGloss": "priors",
+          "dependent": 28,
+          "dependentGloss": "half-Cauchy"
+        },
+        {
+          "dep": "nmod:including",
+          "governor": 23,
+          "governorGloss": "priors",
+          "dependent": 29,
+          "dependentGloss": "priors"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 26,
+          "governorGloss": "DuMouchel",
+          "dependent": 29,
+          "dependentGloss": "priors"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "included",
+          "dependent": 30,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -1847,6 +5508,699 @@
     },
     {
       "index": 6,
+      "parse": "(ROOT\n  (S\n    (NP (DT This) (NN paper))\n    (VP\n      (VP (VBZ outlines)\n        (NP\n          (NP (DT the) (JJ primary) (NNS functions))\n          (PP (IN of)\n            (NP (DT this) (NN package)))))\n      (, ,)\n      (CC and)\n      (VP (VBZ gives)\n        (NP\n          (NP (DT an) (NN illustration))\n          (PP (IN of)\n            (NP (DT a) (NN simulation) (NN study)))\n          (S\n            (VP (TO to)\n              (VP (VB assess)\n                (NP\n                  (NP (DT the) (NN sensitivity))\n                  (PP (IN of)\n                    (NP (CD two))))))))\n        (NP\n          (NP (JJ equivalent) (NN model) (NNS formulations))\n          (PP (TO to)\n            (NP (JJ different) (JJ prior) (NNS distributions))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "outlines"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "paper",
+          "dependent": 1,
+          "dependentGloss": "This"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "outlines",
+          "dependent": 2,
+          "dependentGloss": "paper"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "functions",
+          "dependent": 4,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 6,
+          "governorGloss": "functions",
+          "dependent": 5,
+          "dependentGloss": "primary"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "outlines",
+          "dependent": 6,
+          "dependentGloss": "functions"
+        },
+        {
+          "dep": "case",
+          "governor": 9,
+          "governorGloss": "package",
+          "dependent": 7,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 9,
+          "governorGloss": "package",
+          "dependent": 8,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "nmod",
+          "governor": 6,
+          "governorGloss": "functions",
+          "dependent": 9,
+          "dependentGloss": "package"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "outlines",
+          "dependent": 10,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 3,
+          "governorGloss": "outlines",
+          "dependent": 11,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj",
+          "governor": 3,
+          "governorGloss": "outlines",
+          "dependent": 12,
+          "dependentGloss": "gives"
+        },
+        {
+          "dep": "det",
+          "governor": 14,
+          "governorGloss": "illustration",
+          "dependent": 13,
+          "dependentGloss": "an"
+        },
+        {
+          "dep": "iobj",
+          "governor": 12,
+          "governorGloss": "gives",
+          "dependent": 14,
+          "dependentGloss": "illustration"
+        },
+        {
+          "dep": "case",
+          "governor": 18,
+          "governorGloss": "study",
+          "dependent": 15,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 18,
+          "governorGloss": "study",
+          "dependent": 16,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "compound",
+          "governor": 18,
+          "governorGloss": "study",
+          "dependent": 17,
+          "dependentGloss": "simulation"
+        },
+        {
+          "dep": "nmod",
+          "governor": 14,
+          "governorGloss": "illustration",
+          "dependent": 18,
+          "dependentGloss": "study"
+        },
+        {
+          "dep": "mark",
+          "governor": 20,
+          "governorGloss": "assess",
+          "dependent": 19,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "acl",
+          "governor": 14,
+          "governorGloss": "illustration",
+          "dependent": 20,
+          "dependentGloss": "assess"
+        },
+        {
+          "dep": "det",
+          "governor": 22,
+          "governorGloss": "sensitivity",
+          "dependent": 21,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 20,
+          "governorGloss": "assess",
+          "dependent": 22,
+          "dependentGloss": "sensitivity"
+        },
+        {
+          "dep": "case",
+          "governor": 24,
+          "governorGloss": "two",
+          "dependent": 23,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod",
+          "governor": 22,
+          "governorGloss": "sensitivity",
+          "dependent": 24,
+          "dependentGloss": "two"
+        },
+        {
+          "dep": "amod",
+          "governor": 27,
+          "governorGloss": "formulations",
+          "dependent": 25,
+          "dependentGloss": "equivalent"
+        },
+        {
+          "dep": "compound",
+          "governor": 27,
+          "governorGloss": "formulations",
+          "dependent": 26,
+          "dependentGloss": "model"
+        },
+        {
+          "dep": "dobj",
+          "governor": 12,
+          "governorGloss": "gives",
+          "dependent": 27,
+          "dependentGloss": "formulations"
+        },
+        {
+          "dep": "case",
+          "governor": 31,
+          "governorGloss": "distributions",
+          "dependent": 28,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "amod",
+          "governor": 31,
+          "governorGloss": "distributions",
+          "dependent": 29,
+          "dependentGloss": "different"
+        },
+        {
+          "dep": "amod",
+          "governor": 31,
+          "governorGloss": "distributions",
+          "dependent": 30,
+          "dependentGloss": "prior"
+        },
+        {
+          "dep": "nmod",
+          "governor": 27,
+          "governorGloss": "formulations",
+          "dependent": 31,
+          "dependentGloss": "distributions"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "outlines",
+          "dependent": 32,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "outlines"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "paper",
+          "dependent": 1,
+          "dependentGloss": "This"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "outlines",
+          "dependent": 2,
+          "dependentGloss": "paper"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 12,
+          "governorGloss": "gives",
+          "dependent": 2,
+          "dependentGloss": "paper"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "functions",
+          "dependent": 4,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 6,
+          "governorGloss": "functions",
+          "dependent": 5,
+          "dependentGloss": "primary"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "outlines",
+          "dependent": 6,
+          "dependentGloss": "functions"
+        },
+        {
+          "dep": "case",
+          "governor": 9,
+          "governorGloss": "package",
+          "dependent": 7,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 9,
+          "governorGloss": "package",
+          "dependent": 8,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 6,
+          "governorGloss": "functions",
+          "dependent": 9,
+          "dependentGloss": "package"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "outlines",
+          "dependent": 10,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 3,
+          "governorGloss": "outlines",
+          "dependent": 11,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 3,
+          "governorGloss": "outlines",
+          "dependent": 12,
+          "dependentGloss": "gives"
+        },
+        {
+          "dep": "det",
+          "governor": 14,
+          "governorGloss": "illustration",
+          "dependent": 13,
+          "dependentGloss": "an"
+        },
+        {
+          "dep": "iobj",
+          "governor": 12,
+          "governorGloss": "gives",
+          "dependent": 14,
+          "dependentGloss": "illustration"
+        },
+        {
+          "dep": "case",
+          "governor": 18,
+          "governorGloss": "study",
+          "dependent": 15,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 18,
+          "governorGloss": "study",
+          "dependent": 16,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "compound",
+          "governor": 18,
+          "governorGloss": "study",
+          "dependent": 17,
+          "dependentGloss": "simulation"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 14,
+          "governorGloss": "illustration",
+          "dependent": 18,
+          "dependentGloss": "study"
+        },
+        {
+          "dep": "mark",
+          "governor": 20,
+          "governorGloss": "assess",
+          "dependent": 19,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "acl:to",
+          "governor": 14,
+          "governorGloss": "illustration",
+          "dependent": 20,
+          "dependentGloss": "assess"
+        },
+        {
+          "dep": "det",
+          "governor": 22,
+          "governorGloss": "sensitivity",
+          "dependent": 21,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 20,
+          "governorGloss": "assess",
+          "dependent": 22,
+          "dependentGloss": "sensitivity"
+        },
+        {
+          "dep": "case",
+          "governor": 24,
+          "governorGloss": "two",
+          "dependent": 23,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 22,
+          "governorGloss": "sensitivity",
+          "dependent": 24,
+          "dependentGloss": "two"
+        },
+        {
+          "dep": "amod",
+          "governor": 27,
+          "governorGloss": "formulations",
+          "dependent": 25,
+          "dependentGloss": "equivalent"
+        },
+        {
+          "dep": "compound",
+          "governor": 27,
+          "governorGloss": "formulations",
+          "dependent": 26,
+          "dependentGloss": "model"
+        },
+        {
+          "dep": "dobj",
+          "governor": 12,
+          "governorGloss": "gives",
+          "dependent": 27,
+          "dependentGloss": "formulations"
+        },
+        {
+          "dep": "case",
+          "governor": 31,
+          "governorGloss": "distributions",
+          "dependent": 28,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "amod",
+          "governor": 31,
+          "governorGloss": "distributions",
+          "dependent": 29,
+          "dependentGloss": "different"
+        },
+        {
+          "dep": "amod",
+          "governor": 31,
+          "governorGloss": "distributions",
+          "dependent": 30,
+          "dependentGloss": "prior"
+        },
+        {
+          "dep": "nmod:to",
+          "governor": 27,
+          "governorGloss": "formulations",
+          "dependent": 31,
+          "dependentGloss": "distributions"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "outlines",
+          "dependent": 32,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "outlines"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "paper",
+          "dependent": 1,
+          "dependentGloss": "This"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "outlines",
+          "dependent": 2,
+          "dependentGloss": "paper"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 12,
+          "governorGloss": "gives",
+          "dependent": 2,
+          "dependentGloss": "paper"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "functions",
+          "dependent": 4,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 6,
+          "governorGloss": "functions",
+          "dependent": 5,
+          "dependentGloss": "primary"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "outlines",
+          "dependent": 6,
+          "dependentGloss": "functions"
+        },
+        {
+          "dep": "case",
+          "governor": 9,
+          "governorGloss": "package",
+          "dependent": 7,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 9,
+          "governorGloss": "package",
+          "dependent": 8,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 6,
+          "governorGloss": "functions",
+          "dependent": 9,
+          "dependentGloss": "package"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "outlines",
+          "dependent": 10,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 3,
+          "governorGloss": "outlines",
+          "dependent": 11,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 3,
+          "governorGloss": "outlines",
+          "dependent": 12,
+          "dependentGloss": "gives"
+        },
+        {
+          "dep": "det",
+          "governor": 14,
+          "governorGloss": "illustration",
+          "dependent": 13,
+          "dependentGloss": "an"
+        },
+        {
+          "dep": "iobj",
+          "governor": 12,
+          "governorGloss": "gives",
+          "dependent": 14,
+          "dependentGloss": "illustration"
+        },
+        {
+          "dep": "case",
+          "governor": 18,
+          "governorGloss": "study",
+          "dependent": 15,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 18,
+          "governorGloss": "study",
+          "dependent": 16,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "compound",
+          "governor": 18,
+          "governorGloss": "study",
+          "dependent": 17,
+          "dependentGloss": "simulation"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 14,
+          "governorGloss": "illustration",
+          "dependent": 18,
+          "dependentGloss": "study"
+        },
+        {
+          "dep": "mark",
+          "governor": 20,
+          "governorGloss": "assess",
+          "dependent": 19,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "acl:to",
+          "governor": 14,
+          "governorGloss": "illustration",
+          "dependent": 20,
+          "dependentGloss": "assess"
+        },
+        {
+          "dep": "det",
+          "governor": 22,
+          "governorGloss": "sensitivity",
+          "dependent": 21,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 20,
+          "governorGloss": "assess",
+          "dependent": 22,
+          "dependentGloss": "sensitivity"
+        },
+        {
+          "dep": "case",
+          "governor": 24,
+          "governorGloss": "two",
+          "dependent": 23,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 22,
+          "governorGloss": "sensitivity",
+          "dependent": 24,
+          "dependentGloss": "two"
+        },
+        {
+          "dep": "amod",
+          "governor": 27,
+          "governorGloss": "formulations",
+          "dependent": 25,
+          "dependentGloss": "equivalent"
+        },
+        {
+          "dep": "compound",
+          "governor": 27,
+          "governorGloss": "formulations",
+          "dependent": 26,
+          "dependentGloss": "model"
+        },
+        {
+          "dep": "dobj",
+          "governor": 12,
+          "governorGloss": "gives",
+          "dependent": 27,
+          "dependentGloss": "formulations"
+        },
+        {
+          "dep": "case",
+          "governor": 31,
+          "governorGloss": "distributions",
+          "dependent": 28,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "amod",
+          "governor": 31,
+          "governorGloss": "distributions",
+          "dependent": 29,
+          "dependentGloss": "different"
+        },
+        {
+          "dep": "amod",
+          "governor": 31,
+          "governorGloss": "distributions",
+          "dependent": 30,
+          "dependentGloss": "prior"
+        },
+        {
+          "dep": "nmod:to",
+          "governor": 27,
+          "governorGloss": "formulations",
+          "dependent": 31,
+          "dependentGloss": "distributions"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "outlines",
+          "dependent": 32,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,

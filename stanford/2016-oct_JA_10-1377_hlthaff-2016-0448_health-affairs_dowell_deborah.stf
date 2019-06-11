@@ -2,6 +2,76 @@
   "sentences": [
     {
       "index": 0,
+      "parse": "(ROOT\n  (NP\n    (NP (NNP Health))\n    (NP (NNS affairs))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "Health"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "Health",
+          "dependent": 2,
+          "dependentGloss": "affairs"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "Health",
+          "dependent": 3,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "Health"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "Health",
+          "dependent": 2,
+          "dependentGloss": "affairs"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "Health",
+          "dependent": 3,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "Health"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "Health",
+          "dependent": 2,
+          "dependentGloss": "affairs"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "Health",
+          "dependent": 3,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -40,6 +110,405 @@
     },
     {
       "index": 1,
+      "parse": "(ROOT\n  (S\n    (NP\n      (NP (JJ Mandatory) (NNP Provider) (NNP Review)\n        (CC And)\n        (NNP Pain) (NNP Clinic))\n      (SBAR\n        (S\n          (NP (NNP Laws))\n          (VP (VB Reduce)\n            (S\n              (NP (DT The) (NNS Amounts))\n              (PP (IN Of)\n                (NP (NNS Opioids))))))))\n    (VP (VBN Prescribed)\n      (S\n        (NP (CC And))\n        (NP (NNP Overdose) (NNP Death) (NNP Rates))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 13,
+          "dependentGloss": "Prescribed"
+        },
+        {
+          "dep": "amod",
+          "governor": 3,
+          "governorGloss": "Review",
+          "dependent": 1,
+          "dependentGloss": "Mandatory"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "Review",
+          "dependent": 2,
+          "dependentGloss": "Provider"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 13,
+          "governorGloss": "Prescribed",
+          "dependent": 3,
+          "dependentGloss": "Review"
+        },
+        {
+          "dep": "cc",
+          "governor": 3,
+          "governorGloss": "Review",
+          "dependent": 4,
+          "dependentGloss": "And"
+        },
+        {
+          "dep": "compound",
+          "governor": 6,
+          "governorGloss": "Clinic",
+          "dependent": 5,
+          "dependentGloss": "Pain"
+        },
+        {
+          "dep": "conj",
+          "governor": 3,
+          "governorGloss": "Review",
+          "dependent": 6,
+          "dependentGloss": "Clinic"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 8,
+          "governorGloss": "Reduce",
+          "dependent": 7,
+          "dependentGloss": "Laws"
+        },
+        {
+          "dep": "acl:relcl",
+          "governor": 3,
+          "governorGloss": "Review",
+          "dependent": 8,
+          "dependentGloss": "Reduce"
+        },
+        {
+          "dep": "det",
+          "governor": 10,
+          "governorGloss": "Amounts",
+          "dependent": 9,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 8,
+          "governorGloss": "Reduce",
+          "dependent": 10,
+          "dependentGloss": "Amounts"
+        },
+        {
+          "dep": "case",
+          "governor": 12,
+          "governorGloss": "Opioids",
+          "dependent": 11,
+          "dependentGloss": "Of"
+        },
+        {
+          "dep": "dep",
+          "governor": 10,
+          "governorGloss": "Amounts",
+          "dependent": 12,
+          "dependentGloss": "Opioids"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 17,
+          "governorGloss": "Rates",
+          "dependent": 14,
+          "dependentGloss": "And"
+        },
+        {
+          "dep": "compound",
+          "governor": 17,
+          "governorGloss": "Rates",
+          "dependent": 15,
+          "dependentGloss": "Overdose"
+        },
+        {
+          "dep": "compound",
+          "governor": 17,
+          "governorGloss": "Rates",
+          "dependent": 16,
+          "dependentGloss": "Death"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 13,
+          "governorGloss": "Prescribed",
+          "dependent": 17,
+          "dependentGloss": "Rates"
+        },
+        {
+          "dep": "punct",
+          "governor": 13,
+          "governorGloss": "Prescribed",
+          "dependent": 18,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 13,
+          "dependentGloss": "Prescribed"
+        },
+        {
+          "dep": "amod",
+          "governor": 3,
+          "governorGloss": "Review",
+          "dependent": 1,
+          "dependentGloss": "Mandatory"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "Review",
+          "dependent": 2,
+          "dependentGloss": "Provider"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 13,
+          "governorGloss": "Prescribed",
+          "dependent": 3,
+          "dependentGloss": "Review"
+        },
+        {
+          "dep": "cc",
+          "governor": 3,
+          "governorGloss": "Review",
+          "dependent": 4,
+          "dependentGloss": "And"
+        },
+        {
+          "dep": "compound",
+          "governor": 6,
+          "governorGloss": "Clinic",
+          "dependent": 5,
+          "dependentGloss": "Pain"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 3,
+          "governorGloss": "Review",
+          "dependent": 6,
+          "dependentGloss": "Clinic"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 13,
+          "governorGloss": "Prescribed",
+          "dependent": 6,
+          "dependentGloss": "Clinic"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 8,
+          "governorGloss": "Reduce",
+          "dependent": 7,
+          "dependentGloss": "Laws"
+        },
+        {
+          "dep": "acl:relcl",
+          "governor": 3,
+          "governorGloss": "Review",
+          "dependent": 8,
+          "dependentGloss": "Reduce"
+        },
+        {
+          "dep": "det",
+          "governor": 10,
+          "governorGloss": "Amounts",
+          "dependent": 9,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 8,
+          "governorGloss": "Reduce",
+          "dependent": 10,
+          "dependentGloss": "Amounts"
+        },
+        {
+          "dep": "case",
+          "governor": 12,
+          "governorGloss": "Opioids",
+          "dependent": 11,
+          "dependentGloss": "Of"
+        },
+        {
+          "dep": "dep",
+          "governor": 10,
+          "governorGloss": "Amounts",
+          "dependent": 12,
+          "dependentGloss": "Opioids"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 17,
+          "governorGloss": "Rates",
+          "dependent": 14,
+          "dependentGloss": "And"
+        },
+        {
+          "dep": "compound",
+          "governor": 17,
+          "governorGloss": "Rates",
+          "dependent": 15,
+          "dependentGloss": "Overdose"
+        },
+        {
+          "dep": "compound",
+          "governor": 17,
+          "governorGloss": "Rates",
+          "dependent": 16,
+          "dependentGloss": "Death"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 13,
+          "governorGloss": "Prescribed",
+          "dependent": 17,
+          "dependentGloss": "Rates"
+        },
+        {
+          "dep": "punct",
+          "governor": 13,
+          "governorGloss": "Prescribed",
+          "dependent": 18,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 13,
+          "dependentGloss": "Prescribed"
+        },
+        {
+          "dep": "amod",
+          "governor": 3,
+          "governorGloss": "Review",
+          "dependent": 1,
+          "dependentGloss": "Mandatory"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "Review",
+          "dependent": 2,
+          "dependentGloss": "Provider"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 13,
+          "governorGloss": "Prescribed",
+          "dependent": 3,
+          "dependentGloss": "Review"
+        },
+        {
+          "dep": "cc",
+          "governor": 3,
+          "governorGloss": "Review",
+          "dependent": 4,
+          "dependentGloss": "And"
+        },
+        {
+          "dep": "compound",
+          "governor": 6,
+          "governorGloss": "Clinic",
+          "dependent": 5,
+          "dependentGloss": "Pain"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 3,
+          "governorGloss": "Review",
+          "dependent": 6,
+          "dependentGloss": "Clinic"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 13,
+          "governorGloss": "Prescribed",
+          "dependent": 6,
+          "dependentGloss": "Clinic"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 8,
+          "governorGloss": "Reduce",
+          "dependent": 7,
+          "dependentGloss": "Laws"
+        },
+        {
+          "dep": "acl:relcl",
+          "governor": 3,
+          "governorGloss": "Review",
+          "dependent": 8,
+          "dependentGloss": "Reduce"
+        },
+        {
+          "dep": "det",
+          "governor": 10,
+          "governorGloss": "Amounts",
+          "dependent": 9,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 8,
+          "governorGloss": "Reduce",
+          "dependent": 10,
+          "dependentGloss": "Amounts"
+        },
+        {
+          "dep": "case",
+          "governor": 12,
+          "governorGloss": "Opioids",
+          "dependent": 11,
+          "dependentGloss": "Of"
+        },
+        {
+          "dep": "dep",
+          "governor": 10,
+          "governorGloss": "Amounts",
+          "dependent": 12,
+          "dependentGloss": "Opioids"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 17,
+          "governorGloss": "Rates",
+          "dependent": 14,
+          "dependentGloss": "And"
+        },
+        {
+          "dep": "compound",
+          "governor": 17,
+          "governorGloss": "Rates",
+          "dependent": 15,
+          "dependentGloss": "Overdose"
+        },
+        {
+          "dep": "compound",
+          "governor": 17,
+          "governorGloss": "Rates",
+          "dependent": 16,
+          "dependentGloss": "Death"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 13,
+          "governorGloss": "Prescribed",
+          "dependent": 17,
+          "dependentGloss": "Rates"
+        },
+        {
+          "dep": "punct",
+          "governor": 13,
+          "governorGloss": "Prescribed",
+          "dependent": 18,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -243,6 +712,454 @@
     },
     {
       "index": 2,
+      "parse": "(ROOT\n  (S\n    (S\n      (VP (TO To)\n        (VP (VB address)\n          (S\n            (NP (DT the) (NN opioid) (NN overdose))\n            (ADJP (JJ epidemic)\n              (PP (IN in)\n                (NP (DT the) (NNP United) (NNPS States))))))))\n    (, ,)\n    (NP (NNS states))\n    (VP (VBP have)\n      (VP (VBN implemented)\n        (NP (NNS policies))\n        (S\n          (VP (TO to)\n            (VP (VB reduce)\n              (NP\n                (ADJP (JJ inappropriate) (JJ opioid))\n                (NN prescribing)))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 14,
+          "dependentGloss": "implemented"
+        },
+        {
+          "dep": "mark",
+          "governor": 2,
+          "governorGloss": "address",
+          "dependent": 1,
+          "dependentGloss": "To"
+        },
+        {
+          "dep": "advcl",
+          "governor": 14,
+          "governorGloss": "implemented",
+          "dependent": 2,
+          "dependentGloss": "address"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "overdose",
+          "dependent": 3,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "compound",
+          "governor": 5,
+          "governorGloss": "overdose",
+          "dependent": 4,
+          "dependentGloss": "opioid"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "epidemic",
+          "dependent": 5,
+          "dependentGloss": "overdose"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "address",
+          "dependent": 6,
+          "dependentGloss": "epidemic"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "States",
+          "dependent": 7,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "det",
+          "governor": 10,
+          "governorGloss": "States",
+          "dependent": 8,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "compound",
+          "governor": 10,
+          "governorGloss": "States",
+          "dependent": 9,
+          "dependentGloss": "United"
+        },
+        {
+          "dep": "nmod",
+          "governor": 6,
+          "governorGloss": "epidemic",
+          "dependent": 10,
+          "dependentGloss": "States"
+        },
+        {
+          "dep": "punct",
+          "governor": 14,
+          "governorGloss": "implemented",
+          "dependent": 11,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nsubj",
+          "governor": 14,
+          "governorGloss": "implemented",
+          "dependent": 12,
+          "dependentGloss": "states"
+        },
+        {
+          "dep": "aux",
+          "governor": 14,
+          "governorGloss": "implemented",
+          "dependent": 13,
+          "dependentGloss": "have"
+        },
+        {
+          "dep": "dobj",
+          "governor": 14,
+          "governorGloss": "implemented",
+          "dependent": 15,
+          "dependentGloss": "policies"
+        },
+        {
+          "dep": "mark",
+          "governor": 17,
+          "governorGloss": "reduce",
+          "dependent": 16,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "advcl",
+          "governor": 14,
+          "governorGloss": "implemented",
+          "dependent": 17,
+          "dependentGloss": "reduce"
+        },
+        {
+          "dep": "amod",
+          "governor": 19,
+          "governorGloss": "opioid",
+          "dependent": 18,
+          "dependentGloss": "inappropriate"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "prescribing",
+          "dependent": 19,
+          "dependentGloss": "opioid"
+        },
+        {
+          "dep": "dobj",
+          "governor": 17,
+          "governorGloss": "reduce",
+          "dependent": 20,
+          "dependentGloss": "prescribing"
+        },
+        {
+          "dep": "punct",
+          "governor": 14,
+          "governorGloss": "implemented",
+          "dependent": 21,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 14,
+          "dependentGloss": "implemented"
+        },
+        {
+          "dep": "mark",
+          "governor": 2,
+          "governorGloss": "address",
+          "dependent": 1,
+          "dependentGloss": "To"
+        },
+        {
+          "dep": "advcl:to",
+          "governor": 14,
+          "governorGloss": "implemented",
+          "dependent": 2,
+          "dependentGloss": "address"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "overdose",
+          "dependent": 3,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "compound",
+          "governor": 5,
+          "governorGloss": "overdose",
+          "dependent": 4,
+          "dependentGloss": "opioid"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "epidemic",
+          "dependent": 5,
+          "dependentGloss": "overdose"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "address",
+          "dependent": 6,
+          "dependentGloss": "epidemic"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "States",
+          "dependent": 7,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "det",
+          "governor": 10,
+          "governorGloss": "States",
+          "dependent": 8,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "compound",
+          "governor": 10,
+          "governorGloss": "States",
+          "dependent": 9,
+          "dependentGloss": "United"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 6,
+          "governorGloss": "epidemic",
+          "dependent": 10,
+          "dependentGloss": "States"
+        },
+        {
+          "dep": "punct",
+          "governor": 14,
+          "governorGloss": "implemented",
+          "dependent": 11,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nsubj",
+          "governor": 14,
+          "governorGloss": "implemented",
+          "dependent": 12,
+          "dependentGloss": "states"
+        },
+        {
+          "dep": "aux",
+          "governor": 14,
+          "governorGloss": "implemented",
+          "dependent": 13,
+          "dependentGloss": "have"
+        },
+        {
+          "dep": "dobj",
+          "governor": 14,
+          "governorGloss": "implemented",
+          "dependent": 15,
+          "dependentGloss": "policies"
+        },
+        {
+          "dep": "mark",
+          "governor": 17,
+          "governorGloss": "reduce",
+          "dependent": 16,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "advcl:to",
+          "governor": 14,
+          "governorGloss": "implemented",
+          "dependent": 17,
+          "dependentGloss": "reduce"
+        },
+        {
+          "dep": "amod",
+          "governor": 19,
+          "governorGloss": "opioid",
+          "dependent": 18,
+          "dependentGloss": "inappropriate"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "prescribing",
+          "dependent": 19,
+          "dependentGloss": "opioid"
+        },
+        {
+          "dep": "dobj",
+          "governor": 17,
+          "governorGloss": "reduce",
+          "dependent": 20,
+          "dependentGloss": "prescribing"
+        },
+        {
+          "dep": "punct",
+          "governor": 14,
+          "governorGloss": "implemented",
+          "dependent": 21,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 14,
+          "dependentGloss": "implemented"
+        },
+        {
+          "dep": "mark",
+          "governor": 2,
+          "governorGloss": "address",
+          "dependent": 1,
+          "dependentGloss": "To"
+        },
+        {
+          "dep": "advcl:to",
+          "governor": 14,
+          "governorGloss": "implemented",
+          "dependent": 2,
+          "dependentGloss": "address"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "overdose",
+          "dependent": 3,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "compound",
+          "governor": 5,
+          "governorGloss": "overdose",
+          "dependent": 4,
+          "dependentGloss": "opioid"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "epidemic",
+          "dependent": 5,
+          "dependentGloss": "overdose"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "address",
+          "dependent": 6,
+          "dependentGloss": "epidemic"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "States",
+          "dependent": 7,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "det",
+          "governor": 10,
+          "governorGloss": "States",
+          "dependent": 8,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "compound",
+          "governor": 10,
+          "governorGloss": "States",
+          "dependent": 9,
+          "dependentGloss": "United"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 6,
+          "governorGloss": "epidemic",
+          "dependent": 10,
+          "dependentGloss": "States"
+        },
+        {
+          "dep": "punct",
+          "governor": 14,
+          "governorGloss": "implemented",
+          "dependent": 11,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nsubj",
+          "governor": 14,
+          "governorGloss": "implemented",
+          "dependent": 12,
+          "dependentGloss": "states"
+        },
+        {
+          "dep": "aux",
+          "governor": 14,
+          "governorGloss": "implemented",
+          "dependent": 13,
+          "dependentGloss": "have"
+        },
+        {
+          "dep": "dobj",
+          "governor": 14,
+          "governorGloss": "implemented",
+          "dependent": 15,
+          "dependentGloss": "policies"
+        },
+        {
+          "dep": "mark",
+          "governor": 17,
+          "governorGloss": "reduce",
+          "dependent": 16,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "advcl:to",
+          "governor": 14,
+          "governorGloss": "implemented",
+          "dependent": 17,
+          "dependentGloss": "reduce"
+        },
+        {
+          "dep": "amod",
+          "governor": 19,
+          "governorGloss": "opioid",
+          "dependent": 18,
+          "dependentGloss": "inappropriate"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "prescribing",
+          "dependent": 19,
+          "dependentGloss": "opioid"
+        },
+        {
+          "dep": "dobj",
+          "governor": 17,
+          "governorGloss": "reduce",
+          "dependent": 20,
+          "dependentGloss": "prescribing"
+        },
+        {
+          "dep": "punct",
+          "governor": 14,
+          "governorGloss": "implemented",
+          "dependent": 21,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -479,6 +1396,573 @@
     },
     {
       "index": 3,
+      "parse": "(ROOT\n  (S\n    (NP (DT These) (NNS policies))\n    (VP (MD could)\n      (VP (VB affect)\n        (S\n          (NP (DT the) (JJ coincident) (NN heroin) (NN overdose))\n          (ADJP (JJ epidemic)\n            (PP (IN by)\n              (S\n                (VP (CC either)\n                  (VP (VBG driving)\n                    (NP\n                      (NP (DT the) (NN substitution))\n                      (PP (IN of)\n                        (NP\n                          (NP (NN heroin))\n                          (PP (IN for)\n                            (NP (NNS opioids)))))))\n                  (CC or)\n                  (VP (VBG reducing)\n                    (NP\n                      (NP (JJ simultaneous) (NN use))\n                      (PP (IN of)\n                        (NP (DT both) (NNS substances))))))))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "affect"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "policies",
+          "dependent": 1,
+          "dependentGloss": "These"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "affect",
+          "dependent": 2,
+          "dependentGloss": "policies"
+        },
+        {
+          "dep": "aux",
+          "governor": 4,
+          "governorGloss": "affect",
+          "dependent": 3,
+          "dependentGloss": "could"
+        },
+        {
+          "dep": "det",
+          "governor": 8,
+          "governorGloss": "overdose",
+          "dependent": 5,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 8,
+          "governorGloss": "overdose",
+          "dependent": 6,
+          "dependentGloss": "coincident"
+        },
+        {
+          "dep": "compound",
+          "governor": 8,
+          "governorGloss": "overdose",
+          "dependent": 7,
+          "dependentGloss": "heroin"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 9,
+          "governorGloss": "epidemic",
+          "dependent": 8,
+          "dependentGloss": "overdose"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 4,
+          "governorGloss": "affect",
+          "dependent": 9,
+          "dependentGloss": "epidemic"
+        },
+        {
+          "dep": "mark",
+          "governor": 12,
+          "governorGloss": "driving",
+          "dependent": 10,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "cc:preconj",
+          "governor": 12,
+          "governorGloss": "driving",
+          "dependent": 11,
+          "dependentGloss": "either"
+        },
+        {
+          "dep": "advcl",
+          "governor": 9,
+          "governorGloss": "epidemic",
+          "dependent": 12,
+          "dependentGloss": "driving"
+        },
+        {
+          "dep": "det",
+          "governor": 14,
+          "governorGloss": "substitution",
+          "dependent": 13,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 12,
+          "governorGloss": "driving",
+          "dependent": 14,
+          "dependentGloss": "substitution"
+        },
+        {
+          "dep": "case",
+          "governor": 16,
+          "governorGloss": "heroin",
+          "dependent": 15,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod",
+          "governor": 14,
+          "governorGloss": "substitution",
+          "dependent": 16,
+          "dependentGloss": "heroin"
+        },
+        {
+          "dep": "case",
+          "governor": 18,
+          "governorGloss": "opioids",
+          "dependent": 17,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "nmod",
+          "governor": 16,
+          "governorGloss": "heroin",
+          "dependent": 18,
+          "dependentGloss": "opioids"
+        },
+        {
+          "dep": "cc",
+          "governor": 12,
+          "governorGloss": "driving",
+          "dependent": 19,
+          "dependentGloss": "or"
+        },
+        {
+          "dep": "conj",
+          "governor": 12,
+          "governorGloss": "driving",
+          "dependent": 20,
+          "dependentGloss": "reducing"
+        },
+        {
+          "dep": "amod",
+          "governor": 22,
+          "governorGloss": "use",
+          "dependent": 21,
+          "dependentGloss": "simultaneous"
+        },
+        {
+          "dep": "dobj",
+          "governor": 20,
+          "governorGloss": "reducing",
+          "dependent": 22,
+          "dependentGloss": "use"
+        },
+        {
+          "dep": "case",
+          "governor": 25,
+          "governorGloss": "substances",
+          "dependent": 23,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 25,
+          "governorGloss": "substances",
+          "dependent": 24,
+          "dependentGloss": "both"
+        },
+        {
+          "dep": "nmod",
+          "governor": 22,
+          "governorGloss": "use",
+          "dependent": 25,
+          "dependentGloss": "substances"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "affect",
+          "dependent": 26,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "affect"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "policies",
+          "dependent": 1,
+          "dependentGloss": "These"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "affect",
+          "dependent": 2,
+          "dependentGloss": "policies"
+        },
+        {
+          "dep": "aux",
+          "governor": 4,
+          "governorGloss": "affect",
+          "dependent": 3,
+          "dependentGloss": "could"
+        },
+        {
+          "dep": "det",
+          "governor": 8,
+          "governorGloss": "overdose",
+          "dependent": 5,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 8,
+          "governorGloss": "overdose",
+          "dependent": 6,
+          "dependentGloss": "coincident"
+        },
+        {
+          "dep": "compound",
+          "governor": 8,
+          "governorGloss": "overdose",
+          "dependent": 7,
+          "dependentGloss": "heroin"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 9,
+          "governorGloss": "epidemic",
+          "dependent": 8,
+          "dependentGloss": "overdose"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 4,
+          "governorGloss": "affect",
+          "dependent": 9,
+          "dependentGloss": "epidemic"
+        },
+        {
+          "dep": "mark",
+          "governor": 12,
+          "governorGloss": "driving",
+          "dependent": 10,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "cc:preconj",
+          "governor": 12,
+          "governorGloss": "driving",
+          "dependent": 11,
+          "dependentGloss": "either"
+        },
+        {
+          "dep": "advcl:by",
+          "governor": 9,
+          "governorGloss": "epidemic",
+          "dependent": 12,
+          "dependentGloss": "driving"
+        },
+        {
+          "dep": "det",
+          "governor": 14,
+          "governorGloss": "substitution",
+          "dependent": 13,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 12,
+          "governorGloss": "driving",
+          "dependent": 14,
+          "dependentGloss": "substitution"
+        },
+        {
+          "dep": "case",
+          "governor": 16,
+          "governorGloss": "heroin",
+          "dependent": 15,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 14,
+          "governorGloss": "substitution",
+          "dependent": 16,
+          "dependentGloss": "heroin"
+        },
+        {
+          "dep": "case",
+          "governor": 18,
+          "governorGloss": "opioids",
+          "dependent": 17,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "nmod:for",
+          "governor": 16,
+          "governorGloss": "heroin",
+          "dependent": 18,
+          "dependentGloss": "opioids"
+        },
+        {
+          "dep": "cc",
+          "governor": 12,
+          "governorGloss": "driving",
+          "dependent": 19,
+          "dependentGloss": "or"
+        },
+        {
+          "dep": "advcl:by",
+          "governor": 9,
+          "governorGloss": "epidemic",
+          "dependent": 20,
+          "dependentGloss": "reducing"
+        },
+        {
+          "dep": "conj:or",
+          "governor": 12,
+          "governorGloss": "driving",
+          "dependent": 20,
+          "dependentGloss": "reducing"
+        },
+        {
+          "dep": "amod",
+          "governor": 22,
+          "governorGloss": "use",
+          "dependent": 21,
+          "dependentGloss": "simultaneous"
+        },
+        {
+          "dep": "dobj",
+          "governor": 20,
+          "governorGloss": "reducing",
+          "dependent": 22,
+          "dependentGloss": "use"
+        },
+        {
+          "dep": "case",
+          "governor": 25,
+          "governorGloss": "substances",
+          "dependent": 23,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 25,
+          "governorGloss": "substances",
+          "dependent": 24,
+          "dependentGloss": "both"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 22,
+          "governorGloss": "use",
+          "dependent": 25,
+          "dependentGloss": "substances"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "affect",
+          "dependent": 26,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "affect"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "policies",
+          "dependent": 1,
+          "dependentGloss": "These"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "affect",
+          "dependent": 2,
+          "dependentGloss": "policies"
+        },
+        {
+          "dep": "aux",
+          "governor": 4,
+          "governorGloss": "affect",
+          "dependent": 3,
+          "dependentGloss": "could"
+        },
+        {
+          "dep": "det",
+          "governor": 8,
+          "governorGloss": "overdose",
+          "dependent": 5,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 8,
+          "governorGloss": "overdose",
+          "dependent": 6,
+          "dependentGloss": "coincident"
+        },
+        {
+          "dep": "compound",
+          "governor": 8,
+          "governorGloss": "overdose",
+          "dependent": 7,
+          "dependentGloss": "heroin"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 9,
+          "governorGloss": "epidemic",
+          "dependent": 8,
+          "dependentGloss": "overdose"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 4,
+          "governorGloss": "affect",
+          "dependent": 9,
+          "dependentGloss": "epidemic"
+        },
+        {
+          "dep": "mark",
+          "governor": 12,
+          "governorGloss": "driving",
+          "dependent": 10,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "cc:preconj",
+          "governor": 12,
+          "governorGloss": "driving",
+          "dependent": 11,
+          "dependentGloss": "either"
+        },
+        {
+          "dep": "advcl:by",
+          "governor": 9,
+          "governorGloss": "epidemic",
+          "dependent": 12,
+          "dependentGloss": "driving"
+        },
+        {
+          "dep": "det",
+          "governor": 14,
+          "governorGloss": "substitution",
+          "dependent": 13,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 12,
+          "governorGloss": "driving",
+          "dependent": 14,
+          "dependentGloss": "substitution"
+        },
+        {
+          "dep": "case",
+          "governor": 16,
+          "governorGloss": "heroin",
+          "dependent": 15,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 14,
+          "governorGloss": "substitution",
+          "dependent": 16,
+          "dependentGloss": "heroin"
+        },
+        {
+          "dep": "case",
+          "governor": 18,
+          "governorGloss": "opioids",
+          "dependent": 17,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "nmod:for",
+          "governor": 16,
+          "governorGloss": "heroin",
+          "dependent": 18,
+          "dependentGloss": "opioids"
+        },
+        {
+          "dep": "cc",
+          "governor": 12,
+          "governorGloss": "driving",
+          "dependent": 19,
+          "dependentGloss": "or"
+        },
+        {
+          "dep": "advcl:by",
+          "governor": 9,
+          "governorGloss": "epidemic",
+          "dependent": 20,
+          "dependentGloss": "reducing"
+        },
+        {
+          "dep": "conj:or",
+          "governor": 12,
+          "governorGloss": "driving",
+          "dependent": 20,
+          "dependentGloss": "reducing"
+        },
+        {
+          "dep": "amod",
+          "governor": 22,
+          "governorGloss": "use",
+          "dependent": 21,
+          "dependentGloss": "simultaneous"
+        },
+        {
+          "dep": "dobj",
+          "governor": 20,
+          "governorGloss": "reducing",
+          "dependent": 22,
+          "dependentGloss": "use"
+        },
+        {
+          "dep": "case",
+          "governor": 25,
+          "governorGloss": "substances",
+          "dependent": 23,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 25,
+          "governorGloss": "substances",
+          "dependent": 24,
+          "dependentGloss": "both"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 22,
+          "governorGloss": "use",
+          "dependent": 25,
+          "dependentGloss": "substances"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "affect",
+          "dependent": 26,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -770,6 +2254,881 @@
     },
     {
       "index": 4,
+      "parse": "(ROOT\n  (S\n    (NP (PRP We))\n    (VP (VBD used)\n      (S\n        (NP\n          (NP (NNP IMS) (NNP Health) (POS 's))\n          (NNP National) (NNP Prescription) (NNP Audit)\n          (CC and)\n          (NN government) (NN mortality) (NNS data))\n        (VP (TO to)\n          (VP (VB examine)\n            (NP\n              (NP (DT the) (NN effect))\n              (PP (IN of)\n                (NP (DT these)\n                  (UCP\n                    (NP\n                      (NP (NNS policies))\n                      (PP (IN on)\n                        (NP (JJ opioid) (NN prescribing))))\n                    (CC and)\n                    (PP (IN on)\n                      (NP (NN prescription) (NN opioid)\n                        (CC and)\n                        (NN heroin))))\n                  (NN overdose) (NN death) (NNS rates))))\n            (PP (IN in)\n              (NP (DT the) (NNP United) (NNPS States)))\n            (PP (IN during)\n              (NP (CD 2006-13)))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "used"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "used",
+          "dependent": 1,
+          "dependentGloss": "We"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "Health",
+          "dependent": 3,
+          "dependentGloss": "IMS"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 8,
+          "governorGloss": "Audit",
+          "dependent": 4,
+          "dependentGloss": "Health"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "Health",
+          "dependent": 5,
+          "dependentGloss": "'s"
+        },
+        {
+          "dep": "compound",
+          "governor": 8,
+          "governorGloss": "Audit",
+          "dependent": 6,
+          "dependentGloss": "National"
+        },
+        {
+          "dep": "compound",
+          "governor": 8,
+          "governorGloss": "Audit",
+          "dependent": 7,
+          "dependentGloss": "Prescription"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "used",
+          "dependent": 8,
+          "dependentGloss": "Audit"
+        },
+        {
+          "dep": "cc",
+          "governor": 8,
+          "governorGloss": "Audit",
+          "dependent": 9,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 12,
+          "governorGloss": "data",
+          "dependent": 10,
+          "dependentGloss": "government"
+        },
+        {
+          "dep": "compound",
+          "governor": 12,
+          "governorGloss": "data",
+          "dependent": 11,
+          "dependentGloss": "mortality"
+        },
+        {
+          "dep": "conj",
+          "governor": 8,
+          "governorGloss": "Audit",
+          "dependent": 12,
+          "dependentGloss": "data"
+        },
+        {
+          "dep": "mark",
+          "governor": 14,
+          "governorGloss": "examine",
+          "dependent": 13,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "used",
+          "dependent": 14,
+          "dependentGloss": "examine"
+        },
+        {
+          "dep": "det",
+          "governor": 16,
+          "governorGloss": "effect",
+          "dependent": 15,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 14,
+          "governorGloss": "examine",
+          "dependent": 16,
+          "dependentGloss": "effect"
+        },
+        {
+          "dep": "case",
+          "governor": 31,
+          "governorGloss": "rates",
+          "dependent": 17,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 31,
+          "governorGloss": "rates",
+          "dependent": 18,
+          "dependentGloss": "these"
+        },
+        {
+          "dep": "compound",
+          "governor": 31,
+          "governorGloss": "rates",
+          "dependent": 19,
+          "dependentGloss": "policies"
+        },
+        {
+          "dep": "case",
+          "governor": 22,
+          "governorGloss": "prescribing",
+          "dependent": 20,
+          "dependentGloss": "on"
+        },
+        {
+          "dep": "amod",
+          "governor": 22,
+          "governorGloss": "prescribing",
+          "dependent": 21,
+          "dependentGloss": "opioid"
+        },
+        {
+          "dep": "nmod",
+          "governor": 19,
+          "governorGloss": "policies",
+          "dependent": 22,
+          "dependentGloss": "prescribing"
+        },
+        {
+          "dep": "cc",
+          "governor": 19,
+          "governorGloss": "policies",
+          "dependent": 23,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "case",
+          "governor": 26,
+          "governorGloss": "opioid",
+          "dependent": 24,
+          "dependentGloss": "on"
+        },
+        {
+          "dep": "compound",
+          "governor": 26,
+          "governorGloss": "opioid",
+          "dependent": 25,
+          "dependentGloss": "prescription"
+        },
+        {
+          "dep": "conj",
+          "governor": 19,
+          "governorGloss": "policies",
+          "dependent": 26,
+          "dependentGloss": "opioid"
+        },
+        {
+          "dep": "cc",
+          "governor": 26,
+          "governorGloss": "opioid",
+          "dependent": 27,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj",
+          "governor": 26,
+          "governorGloss": "opioid",
+          "dependent": 28,
+          "dependentGloss": "heroin"
+        },
+        {
+          "dep": "compound",
+          "governor": 31,
+          "governorGloss": "rates",
+          "dependent": 29,
+          "dependentGloss": "overdose"
+        },
+        {
+          "dep": "compound",
+          "governor": 31,
+          "governorGloss": "rates",
+          "dependent": 30,
+          "dependentGloss": "death"
+        },
+        {
+          "dep": "nmod",
+          "governor": 16,
+          "governorGloss": "effect",
+          "dependent": 31,
+          "dependentGloss": "rates"
+        },
+        {
+          "dep": "case",
+          "governor": 35,
+          "governorGloss": "States",
+          "dependent": 32,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "det",
+          "governor": 35,
+          "governorGloss": "States",
+          "dependent": 33,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "compound",
+          "governor": 35,
+          "governorGloss": "States",
+          "dependent": 34,
+          "dependentGloss": "United"
+        },
+        {
+          "dep": "nmod",
+          "governor": 14,
+          "governorGloss": "examine",
+          "dependent": 35,
+          "dependentGloss": "States"
+        },
+        {
+          "dep": "case",
+          "governor": 37,
+          "governorGloss": "2006-13",
+          "dependent": 36,
+          "dependentGloss": "during"
+        },
+        {
+          "dep": "nmod",
+          "governor": 14,
+          "governorGloss": "examine",
+          "dependent": 37,
+          "dependentGloss": "2006-13"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "used",
+          "dependent": 38,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "used"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "used",
+          "dependent": 1,
+          "dependentGloss": "We"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "Health",
+          "dependent": 3,
+          "dependentGloss": "IMS"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 8,
+          "governorGloss": "Audit",
+          "dependent": 4,
+          "dependentGloss": "Health"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "Health",
+          "dependent": 5,
+          "dependentGloss": "'s"
+        },
+        {
+          "dep": "compound",
+          "governor": 8,
+          "governorGloss": "Audit",
+          "dependent": 6,
+          "dependentGloss": "National"
+        },
+        {
+          "dep": "compound",
+          "governor": 8,
+          "governorGloss": "Audit",
+          "dependent": 7,
+          "dependentGloss": "Prescription"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "used",
+          "dependent": 8,
+          "dependentGloss": "Audit"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 14,
+          "governorGloss": "examine",
+          "dependent": 8,
+          "dependentGloss": "Audit"
+        },
+        {
+          "dep": "cc",
+          "governor": 8,
+          "governorGloss": "Audit",
+          "dependent": 9,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 12,
+          "governorGloss": "data",
+          "dependent": 10,
+          "dependentGloss": "government"
+        },
+        {
+          "dep": "compound",
+          "governor": 12,
+          "governorGloss": "data",
+          "dependent": 11,
+          "dependentGloss": "mortality"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "used",
+          "dependent": 12,
+          "dependentGloss": "data"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 8,
+          "governorGloss": "Audit",
+          "dependent": 12,
+          "dependentGloss": "data"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 14,
+          "governorGloss": "examine",
+          "dependent": 12,
+          "dependentGloss": "data"
+        },
+        {
+          "dep": "mark",
+          "governor": 14,
+          "governorGloss": "examine",
+          "dependent": 13,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "used",
+          "dependent": 14,
+          "dependentGloss": "examine"
+        },
+        {
+          "dep": "det",
+          "governor": 16,
+          "governorGloss": "effect",
+          "dependent": 15,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 14,
+          "governorGloss": "examine",
+          "dependent": 16,
+          "dependentGloss": "effect"
+        },
+        {
+          "dep": "case",
+          "governor": 31,
+          "governorGloss": "rates",
+          "dependent": 17,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 31,
+          "governorGloss": "rates",
+          "dependent": 18,
+          "dependentGloss": "these"
+        },
+        {
+          "dep": "compound",
+          "governor": 31,
+          "governorGloss": "rates",
+          "dependent": 19,
+          "dependentGloss": "policies"
+        },
+        {
+          "dep": "case",
+          "governor": 22,
+          "governorGloss": "prescribing",
+          "dependent": 20,
+          "dependentGloss": "on"
+        },
+        {
+          "dep": "amod",
+          "governor": 22,
+          "governorGloss": "prescribing",
+          "dependent": 21,
+          "dependentGloss": "opioid"
+        },
+        {
+          "dep": "nmod:on",
+          "governor": 19,
+          "governorGloss": "policies",
+          "dependent": 22,
+          "dependentGloss": "prescribing"
+        },
+        {
+          "dep": "cc",
+          "governor": 19,
+          "governorGloss": "policies",
+          "dependent": 23,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "case",
+          "governor": 26,
+          "governorGloss": "opioid",
+          "dependent": 24,
+          "dependentGloss": "on"
+        },
+        {
+          "dep": "compound",
+          "governor": 26,
+          "governorGloss": "opioid",
+          "dependent": 25,
+          "dependentGloss": "prescription"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 19,
+          "governorGloss": "policies",
+          "dependent": 26,
+          "dependentGloss": "opioid"
+        },
+        {
+          "dep": "compound",
+          "governor": 31,
+          "governorGloss": "rates",
+          "dependent": 26,
+          "dependentGloss": "opioid"
+        },
+        {
+          "dep": "cc",
+          "governor": 26,
+          "governorGloss": "opioid",
+          "dependent": 27,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 19,
+          "governorGloss": "policies",
+          "dependent": 28,
+          "dependentGloss": "heroin"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 26,
+          "governorGloss": "opioid",
+          "dependent": 28,
+          "dependentGloss": "heroin"
+        },
+        {
+          "dep": "compound",
+          "governor": 31,
+          "governorGloss": "rates",
+          "dependent": 29,
+          "dependentGloss": "overdose"
+        },
+        {
+          "dep": "compound",
+          "governor": 31,
+          "governorGloss": "rates",
+          "dependent": 30,
+          "dependentGloss": "death"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 16,
+          "governorGloss": "effect",
+          "dependent": 31,
+          "dependentGloss": "rates"
+        },
+        {
+          "dep": "case",
+          "governor": 35,
+          "governorGloss": "States",
+          "dependent": 32,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "det",
+          "governor": 35,
+          "governorGloss": "States",
+          "dependent": 33,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "compound",
+          "governor": 35,
+          "governorGloss": "States",
+          "dependent": 34,
+          "dependentGloss": "United"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 14,
+          "governorGloss": "examine",
+          "dependent": 35,
+          "dependentGloss": "States"
+        },
+        {
+          "dep": "case",
+          "governor": 37,
+          "governorGloss": "2006-13",
+          "dependent": 36,
+          "dependentGloss": "during"
+        },
+        {
+          "dep": "nmod:during",
+          "governor": 14,
+          "governorGloss": "examine",
+          "dependent": 37,
+          "dependentGloss": "2006-13"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "used",
+          "dependent": 38,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "used"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "used",
+          "dependent": 1,
+          "dependentGloss": "We"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "Health",
+          "dependent": 3,
+          "dependentGloss": "IMS"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 8,
+          "governorGloss": "Audit",
+          "dependent": 4,
+          "dependentGloss": "Health"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "Health",
+          "dependent": 5,
+          "dependentGloss": "'s"
+        },
+        {
+          "dep": "compound",
+          "governor": 8,
+          "governorGloss": "Audit",
+          "dependent": 6,
+          "dependentGloss": "National"
+        },
+        {
+          "dep": "compound",
+          "governor": 8,
+          "governorGloss": "Audit",
+          "dependent": 7,
+          "dependentGloss": "Prescription"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "used",
+          "dependent": 8,
+          "dependentGloss": "Audit"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 14,
+          "governorGloss": "examine",
+          "dependent": 8,
+          "dependentGloss": "Audit"
+        },
+        {
+          "dep": "cc",
+          "governor": 8,
+          "governorGloss": "Audit",
+          "dependent": 9,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 12,
+          "governorGloss": "data",
+          "dependent": 10,
+          "dependentGloss": "government"
+        },
+        {
+          "dep": "compound",
+          "governor": 12,
+          "governorGloss": "data",
+          "dependent": 11,
+          "dependentGloss": "mortality"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "used",
+          "dependent": 12,
+          "dependentGloss": "data"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 8,
+          "governorGloss": "Audit",
+          "dependent": 12,
+          "dependentGloss": "data"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 14,
+          "governorGloss": "examine",
+          "dependent": 12,
+          "dependentGloss": "data"
+        },
+        {
+          "dep": "mark",
+          "governor": 14,
+          "governorGloss": "examine",
+          "dependent": 13,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "used",
+          "dependent": 14,
+          "dependentGloss": "examine"
+        },
+        {
+          "dep": "det",
+          "governor": 16,
+          "governorGloss": "effect",
+          "dependent": 15,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 14,
+          "governorGloss": "examine",
+          "dependent": 16,
+          "dependentGloss": "effect"
+        },
+        {
+          "dep": "case",
+          "governor": 31,
+          "governorGloss": "rates",
+          "dependent": 17,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 31,
+          "governorGloss": "rates",
+          "dependent": 18,
+          "dependentGloss": "these"
+        },
+        {
+          "dep": "compound",
+          "governor": 31,
+          "governorGloss": "rates",
+          "dependent": 19,
+          "dependentGloss": "policies"
+        },
+        {
+          "dep": "case",
+          "governor": 22,
+          "governorGloss": "prescribing",
+          "dependent": 20,
+          "dependentGloss": "on"
+        },
+        {
+          "dep": "amod",
+          "governor": 22,
+          "governorGloss": "prescribing",
+          "dependent": 21,
+          "dependentGloss": "opioid"
+        },
+        {
+          "dep": "nmod:on",
+          "governor": 19,
+          "governorGloss": "policies",
+          "dependent": 22,
+          "dependentGloss": "prescribing"
+        },
+        {
+          "dep": "cc",
+          "governor": 19,
+          "governorGloss": "policies",
+          "dependent": 23,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "case",
+          "governor": 26,
+          "governorGloss": "opioid",
+          "dependent": 24,
+          "dependentGloss": "on"
+        },
+        {
+          "dep": "compound",
+          "governor": 26,
+          "governorGloss": "opioid",
+          "dependent": 25,
+          "dependentGloss": "prescription"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 19,
+          "governorGloss": "policies",
+          "dependent": 26,
+          "dependentGloss": "opioid"
+        },
+        {
+          "dep": "compound",
+          "governor": 31,
+          "governorGloss": "rates",
+          "dependent": 26,
+          "dependentGloss": "opioid"
+        },
+        {
+          "dep": "cc",
+          "governor": 26,
+          "governorGloss": "opioid",
+          "dependent": 27,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 19,
+          "governorGloss": "policies",
+          "dependent": 28,
+          "dependentGloss": "heroin"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 26,
+          "governorGloss": "opioid",
+          "dependent": 28,
+          "dependentGloss": "heroin"
+        },
+        {
+          "dep": "compound",
+          "governor": 31,
+          "governorGloss": "rates",
+          "dependent": 29,
+          "dependentGloss": "overdose"
+        },
+        {
+          "dep": "compound",
+          "governor": 31,
+          "governorGloss": "rates",
+          "dependent": 30,
+          "dependentGloss": "death"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 16,
+          "governorGloss": "effect",
+          "dependent": 31,
+          "dependentGloss": "rates"
+        },
+        {
+          "dep": "case",
+          "governor": 35,
+          "governorGloss": "States",
+          "dependent": 32,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "det",
+          "governor": 35,
+          "governorGloss": "States",
+          "dependent": 33,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "compound",
+          "governor": 35,
+          "governorGloss": "States",
+          "dependent": 34,
+          "dependentGloss": "United"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 14,
+          "governorGloss": "examine",
+          "dependent": 35,
+          "dependentGloss": "States"
+        },
+        {
+          "dep": "case",
+          "governor": 37,
+          "governorGloss": "2006-13",
+          "dependent": 36,
+          "dependentGloss": "during"
+        },
+        {
+          "dep": "nmod:during",
+          "governor": 14,
+          "governorGloss": "examine",
+          "dependent": 37,
+          "dependentGloss": "2006-13"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "used",
+          "dependent": 38,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -1193,6 +3552,839 @@
     },
     {
       "index": 5,
+      "parse": "(ROOT\n  (S\n    (NP (DT The) (NN analysis))\n    (VP (VBD revealed)\n      (SBAR (IN that)\n        (S\n          (NP\n            (NP (VBN combined) (NN implementation))\n            (PP (IN of)\n              (NP\n                (NP (VBN mandated) (NN provider) (NN review))\n                (PP (IN of)\n                  (NP\n                    (NP (JJ state-run) (NN prescription) (NN drug))\n                    (VP (VBG monitoring)\n                      (NP (NN program) (NNS data)\n                        (CC and)\n                        (NN pain) (NN clinic) (NNS laws))))))))\n          (VP (VBD reduced)\n            (NP\n              (NP (JJ opioid) (NNS amounts))\n              (VP (VBN prescribed)\n                (PP (IN by)\n                  (NP (CD 8) (NN percent)\n                    (CC and)\n                    (NN prescription) (NN opioid) (NN overdose) (NN death) (NNS rates)))\n                (PP (IN by)\n                  (NP (CD 12) (NN percent)))))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "revealed"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "analysis",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "revealed",
+          "dependent": 2,
+          "dependentGloss": "analysis"
+        },
+        {
+          "dep": "mark",
+          "governor": 22,
+          "governorGloss": "reduced",
+          "dependent": 4,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "amod",
+          "governor": 6,
+          "governorGloss": "implementation",
+          "dependent": 5,
+          "dependentGloss": "combined"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 22,
+          "governorGloss": "reduced",
+          "dependent": 6,
+          "dependentGloss": "implementation"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "review",
+          "dependent": 7,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "review",
+          "dependent": 8,
+          "dependentGloss": "mandated"
+        },
+        {
+          "dep": "compound",
+          "governor": 10,
+          "governorGloss": "review",
+          "dependent": 9,
+          "dependentGloss": "provider"
+        },
+        {
+          "dep": "nmod",
+          "governor": 6,
+          "governorGloss": "implementation",
+          "dependent": 10,
+          "dependentGloss": "review"
+        },
+        {
+          "dep": "case",
+          "governor": 14,
+          "governorGloss": "drug",
+          "dependent": 11,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 14,
+          "governorGloss": "drug",
+          "dependent": 12,
+          "dependentGloss": "state-run"
+        },
+        {
+          "dep": "compound",
+          "governor": 14,
+          "governorGloss": "drug",
+          "dependent": 13,
+          "dependentGloss": "prescription"
+        },
+        {
+          "dep": "nmod",
+          "governor": 10,
+          "governorGloss": "review",
+          "dependent": 14,
+          "dependentGloss": "drug"
+        },
+        {
+          "dep": "acl",
+          "governor": 14,
+          "governorGloss": "drug",
+          "dependent": 15,
+          "dependentGloss": "monitoring"
+        },
+        {
+          "dep": "compound",
+          "governor": 17,
+          "governorGloss": "data",
+          "dependent": 16,
+          "dependentGloss": "program"
+        },
+        {
+          "dep": "dobj",
+          "governor": 15,
+          "governorGloss": "monitoring",
+          "dependent": 17,
+          "dependentGloss": "data"
+        },
+        {
+          "dep": "cc",
+          "governor": 17,
+          "governorGloss": "data",
+          "dependent": 18,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 21,
+          "governorGloss": "laws",
+          "dependent": 19,
+          "dependentGloss": "pain"
+        },
+        {
+          "dep": "compound",
+          "governor": 21,
+          "governorGloss": "laws",
+          "dependent": 20,
+          "dependentGloss": "clinic"
+        },
+        {
+          "dep": "conj",
+          "governor": 17,
+          "governorGloss": "data",
+          "dependent": 21,
+          "dependentGloss": "laws"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 3,
+          "governorGloss": "revealed",
+          "dependent": 22,
+          "dependentGloss": "reduced"
+        },
+        {
+          "dep": "amod",
+          "governor": 24,
+          "governorGloss": "amounts",
+          "dependent": 23,
+          "dependentGloss": "opioid"
+        },
+        {
+          "dep": "dobj",
+          "governor": 22,
+          "governorGloss": "reduced",
+          "dependent": 24,
+          "dependentGloss": "amounts"
+        },
+        {
+          "dep": "acl",
+          "governor": 24,
+          "governorGloss": "amounts",
+          "dependent": 25,
+          "dependentGloss": "prescribed"
+        },
+        {
+          "dep": "case",
+          "governor": 28,
+          "governorGloss": "percent",
+          "dependent": 26,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "nummod",
+          "governor": 28,
+          "governorGloss": "percent",
+          "dependent": 27,
+          "dependentGloss": "8"
+        },
+        {
+          "dep": "nmod",
+          "governor": 25,
+          "governorGloss": "prescribed",
+          "dependent": 28,
+          "dependentGloss": "percent"
+        },
+        {
+          "dep": "cc",
+          "governor": 28,
+          "governorGloss": "percent",
+          "dependent": 29,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 34,
+          "governorGloss": "rates",
+          "dependent": 30,
+          "dependentGloss": "prescription"
+        },
+        {
+          "dep": "compound",
+          "governor": 34,
+          "governorGloss": "rates",
+          "dependent": 31,
+          "dependentGloss": "opioid"
+        },
+        {
+          "dep": "compound",
+          "governor": 34,
+          "governorGloss": "rates",
+          "dependent": 32,
+          "dependentGloss": "overdose"
+        },
+        {
+          "dep": "compound",
+          "governor": 34,
+          "governorGloss": "rates",
+          "dependent": 33,
+          "dependentGloss": "death"
+        },
+        {
+          "dep": "conj",
+          "governor": 28,
+          "governorGloss": "percent",
+          "dependent": 34,
+          "dependentGloss": "rates"
+        },
+        {
+          "dep": "case",
+          "governor": 37,
+          "governorGloss": "percent",
+          "dependent": 35,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "nummod",
+          "governor": 37,
+          "governorGloss": "percent",
+          "dependent": 36,
+          "dependentGloss": "12"
+        },
+        {
+          "dep": "nmod",
+          "governor": 25,
+          "governorGloss": "prescribed",
+          "dependent": 37,
+          "dependentGloss": "percent"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "revealed",
+          "dependent": 38,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "revealed"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "analysis",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "revealed",
+          "dependent": 2,
+          "dependentGloss": "analysis"
+        },
+        {
+          "dep": "mark",
+          "governor": 22,
+          "governorGloss": "reduced",
+          "dependent": 4,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "amod",
+          "governor": 6,
+          "governorGloss": "implementation",
+          "dependent": 5,
+          "dependentGloss": "combined"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 22,
+          "governorGloss": "reduced",
+          "dependent": 6,
+          "dependentGloss": "implementation"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "review",
+          "dependent": 7,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "review",
+          "dependent": 8,
+          "dependentGloss": "mandated"
+        },
+        {
+          "dep": "compound",
+          "governor": 10,
+          "governorGloss": "review",
+          "dependent": 9,
+          "dependentGloss": "provider"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 6,
+          "governorGloss": "implementation",
+          "dependent": 10,
+          "dependentGloss": "review"
+        },
+        {
+          "dep": "case",
+          "governor": 14,
+          "governorGloss": "drug",
+          "dependent": 11,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 14,
+          "governorGloss": "drug",
+          "dependent": 12,
+          "dependentGloss": "state-run"
+        },
+        {
+          "dep": "compound",
+          "governor": 14,
+          "governorGloss": "drug",
+          "dependent": 13,
+          "dependentGloss": "prescription"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 10,
+          "governorGloss": "review",
+          "dependent": 14,
+          "dependentGloss": "drug"
+        },
+        {
+          "dep": "acl",
+          "governor": 14,
+          "governorGloss": "drug",
+          "dependent": 15,
+          "dependentGloss": "monitoring"
+        },
+        {
+          "dep": "compound",
+          "governor": 17,
+          "governorGloss": "data",
+          "dependent": 16,
+          "dependentGloss": "program"
+        },
+        {
+          "dep": "dobj",
+          "governor": 15,
+          "governorGloss": "monitoring",
+          "dependent": 17,
+          "dependentGloss": "data"
+        },
+        {
+          "dep": "cc",
+          "governor": 17,
+          "governorGloss": "data",
+          "dependent": 18,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 21,
+          "governorGloss": "laws",
+          "dependent": 19,
+          "dependentGloss": "pain"
+        },
+        {
+          "dep": "compound",
+          "governor": 21,
+          "governorGloss": "laws",
+          "dependent": 20,
+          "dependentGloss": "clinic"
+        },
+        {
+          "dep": "dobj",
+          "governor": 15,
+          "governorGloss": "monitoring",
+          "dependent": 21,
+          "dependentGloss": "laws"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 17,
+          "governorGloss": "data",
+          "dependent": 21,
+          "dependentGloss": "laws"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 3,
+          "governorGloss": "revealed",
+          "dependent": 22,
+          "dependentGloss": "reduced"
+        },
+        {
+          "dep": "amod",
+          "governor": 24,
+          "governorGloss": "amounts",
+          "dependent": 23,
+          "dependentGloss": "opioid"
+        },
+        {
+          "dep": "dobj",
+          "governor": 22,
+          "governorGloss": "reduced",
+          "dependent": 24,
+          "dependentGloss": "amounts"
+        },
+        {
+          "dep": "acl",
+          "governor": 24,
+          "governorGloss": "amounts",
+          "dependent": 25,
+          "dependentGloss": "prescribed"
+        },
+        {
+          "dep": "case",
+          "governor": 28,
+          "governorGloss": "percent",
+          "dependent": 26,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "nummod",
+          "governor": 28,
+          "governorGloss": "percent",
+          "dependent": 27,
+          "dependentGloss": "8"
+        },
+        {
+          "dep": "nmod:by",
+          "governor": 25,
+          "governorGloss": "prescribed",
+          "dependent": 28,
+          "dependentGloss": "percent"
+        },
+        {
+          "dep": "cc",
+          "governor": 28,
+          "governorGloss": "percent",
+          "dependent": 29,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 34,
+          "governorGloss": "rates",
+          "dependent": 30,
+          "dependentGloss": "prescription"
+        },
+        {
+          "dep": "compound",
+          "governor": 34,
+          "governorGloss": "rates",
+          "dependent": 31,
+          "dependentGloss": "opioid"
+        },
+        {
+          "dep": "compound",
+          "governor": 34,
+          "governorGloss": "rates",
+          "dependent": 32,
+          "dependentGloss": "overdose"
+        },
+        {
+          "dep": "compound",
+          "governor": 34,
+          "governorGloss": "rates",
+          "dependent": 33,
+          "dependentGloss": "death"
+        },
+        {
+          "dep": "nmod:by",
+          "governor": 25,
+          "governorGloss": "prescribed",
+          "dependent": 34,
+          "dependentGloss": "rates"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 28,
+          "governorGloss": "percent",
+          "dependent": 34,
+          "dependentGloss": "rates"
+        },
+        {
+          "dep": "case",
+          "governor": 37,
+          "governorGloss": "percent",
+          "dependent": 35,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "nummod",
+          "governor": 37,
+          "governorGloss": "percent",
+          "dependent": 36,
+          "dependentGloss": "12"
+        },
+        {
+          "dep": "nmod:by",
+          "governor": 25,
+          "governorGloss": "prescribed",
+          "dependent": 37,
+          "dependentGloss": "percent"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "revealed",
+          "dependent": 38,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "revealed"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "analysis",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "revealed",
+          "dependent": 2,
+          "dependentGloss": "analysis"
+        },
+        {
+          "dep": "mark",
+          "governor": 22,
+          "governorGloss": "reduced",
+          "dependent": 4,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "amod",
+          "governor": 6,
+          "governorGloss": "implementation",
+          "dependent": 5,
+          "dependentGloss": "combined"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 22,
+          "governorGloss": "reduced",
+          "dependent": 6,
+          "dependentGloss": "implementation"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "review",
+          "dependent": 7,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "review",
+          "dependent": 8,
+          "dependentGloss": "mandated"
+        },
+        {
+          "dep": "compound",
+          "governor": 10,
+          "governorGloss": "review",
+          "dependent": 9,
+          "dependentGloss": "provider"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 6,
+          "governorGloss": "implementation",
+          "dependent": 10,
+          "dependentGloss": "review"
+        },
+        {
+          "dep": "case",
+          "governor": 14,
+          "governorGloss": "drug",
+          "dependent": 11,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 14,
+          "governorGloss": "drug",
+          "dependent": 12,
+          "dependentGloss": "state-run"
+        },
+        {
+          "dep": "compound",
+          "governor": 14,
+          "governorGloss": "drug",
+          "dependent": 13,
+          "dependentGloss": "prescription"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 10,
+          "governorGloss": "review",
+          "dependent": 14,
+          "dependentGloss": "drug"
+        },
+        {
+          "dep": "acl",
+          "governor": 14,
+          "governorGloss": "drug",
+          "dependent": 15,
+          "dependentGloss": "monitoring"
+        },
+        {
+          "dep": "compound",
+          "governor": 17,
+          "governorGloss": "data",
+          "dependent": 16,
+          "dependentGloss": "program"
+        },
+        {
+          "dep": "dobj",
+          "governor": 15,
+          "governorGloss": "monitoring",
+          "dependent": 17,
+          "dependentGloss": "data"
+        },
+        {
+          "dep": "cc",
+          "governor": 17,
+          "governorGloss": "data",
+          "dependent": 18,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 21,
+          "governorGloss": "laws",
+          "dependent": 19,
+          "dependentGloss": "pain"
+        },
+        {
+          "dep": "compound",
+          "governor": 21,
+          "governorGloss": "laws",
+          "dependent": 20,
+          "dependentGloss": "clinic"
+        },
+        {
+          "dep": "dobj",
+          "governor": 15,
+          "governorGloss": "monitoring",
+          "dependent": 21,
+          "dependentGloss": "laws"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 17,
+          "governorGloss": "data",
+          "dependent": 21,
+          "dependentGloss": "laws"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 3,
+          "governorGloss": "revealed",
+          "dependent": 22,
+          "dependentGloss": "reduced"
+        },
+        {
+          "dep": "amod",
+          "governor": 24,
+          "governorGloss": "amounts",
+          "dependent": 23,
+          "dependentGloss": "opioid"
+        },
+        {
+          "dep": "dobj",
+          "governor": 22,
+          "governorGloss": "reduced",
+          "dependent": 24,
+          "dependentGloss": "amounts"
+        },
+        {
+          "dep": "acl",
+          "governor": 24,
+          "governorGloss": "amounts",
+          "dependent": 25,
+          "dependentGloss": "prescribed"
+        },
+        {
+          "dep": "case",
+          "governor": 28,
+          "governorGloss": "percent",
+          "dependent": 26,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "nummod",
+          "governor": 28,
+          "governorGloss": "percent",
+          "dependent": 27,
+          "dependentGloss": "8"
+        },
+        {
+          "dep": "nmod:by",
+          "governor": 25,
+          "governorGloss": "prescribed",
+          "dependent": 28,
+          "dependentGloss": "percent"
+        },
+        {
+          "dep": "cc",
+          "governor": 28,
+          "governorGloss": "percent",
+          "dependent": 29,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 34,
+          "governorGloss": "rates",
+          "dependent": 30,
+          "dependentGloss": "prescription"
+        },
+        {
+          "dep": "compound",
+          "governor": 34,
+          "governorGloss": "rates",
+          "dependent": 31,
+          "dependentGloss": "opioid"
+        },
+        {
+          "dep": "compound",
+          "governor": 34,
+          "governorGloss": "rates",
+          "dependent": 32,
+          "dependentGloss": "overdose"
+        },
+        {
+          "dep": "compound",
+          "governor": 34,
+          "governorGloss": "rates",
+          "dependent": 33,
+          "dependentGloss": "death"
+        },
+        {
+          "dep": "nmod:by",
+          "governor": 25,
+          "governorGloss": "prescribed",
+          "dependent": 34,
+          "dependentGloss": "rates"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 28,
+          "governorGloss": "percent",
+          "dependent": 34,
+          "dependentGloss": "rates"
+        },
+        {
+          "dep": "case",
+          "governor": 37,
+          "governorGloss": "percent",
+          "dependent": 35,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "nummod",
+          "governor": 37,
+          "governorGloss": "percent",
+          "dependent": 36,
+          "dependentGloss": "12"
+        },
+        {
+          "dep": "nmod:by",
+          "governor": 25,
+          "governorGloss": "prescribed",
+          "dependent": 37,
+          "dependentGloss": "percent"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "revealed",
+          "dependent": 38,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -1616,6 +4808,447 @@
     },
     {
       "index": 6,
+      "parse": "(ROOT\n  (S\n    (NP (PRP We))\n    (ADVP (RB also))\n    (VP (VBD observed)\n      (NP\n        (ADJP\n          (ADJP (RB relatively) (JJ large))\n          (CC but)\n          (ADJP (RB statistically) (JJ insignificant)))\n        (NNS reductions))\n      (PP (IN in)\n        (NP (NN heroin) (NN overdose) (NN death) (NNS rates)))\n      (PP (IN after)\n        (NP\n          (NP (NN implementation))\n          (PP (IN of)\n            (NP (DT these) (NNS policies))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "observed"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "observed",
+          "dependent": 1,
+          "dependentGloss": "We"
+        },
+        {
+          "dep": "advmod",
+          "governor": 3,
+          "governorGloss": "observed",
+          "dependent": 2,
+          "dependentGloss": "also"
+        },
+        {
+          "dep": "advmod",
+          "governor": 5,
+          "governorGloss": "large",
+          "dependent": 4,
+          "dependentGloss": "relatively"
+        },
+        {
+          "dep": "amod",
+          "governor": 9,
+          "governorGloss": "reductions",
+          "dependent": 5,
+          "dependentGloss": "large"
+        },
+        {
+          "dep": "cc",
+          "governor": 5,
+          "governorGloss": "large",
+          "dependent": 6,
+          "dependentGloss": "but"
+        },
+        {
+          "dep": "advmod",
+          "governor": 8,
+          "governorGloss": "insignificant",
+          "dependent": 7,
+          "dependentGloss": "statistically"
+        },
+        {
+          "dep": "conj",
+          "governor": 5,
+          "governorGloss": "large",
+          "dependent": 8,
+          "dependentGloss": "insignificant"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "observed",
+          "dependent": 9,
+          "dependentGloss": "reductions"
+        },
+        {
+          "dep": "case",
+          "governor": 14,
+          "governorGloss": "rates",
+          "dependent": 10,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "compound",
+          "governor": 14,
+          "governorGloss": "rates",
+          "dependent": 11,
+          "dependentGloss": "heroin"
+        },
+        {
+          "dep": "compound",
+          "governor": 14,
+          "governorGloss": "rates",
+          "dependent": 12,
+          "dependentGloss": "overdose"
+        },
+        {
+          "dep": "compound",
+          "governor": 14,
+          "governorGloss": "rates",
+          "dependent": 13,
+          "dependentGloss": "death"
+        },
+        {
+          "dep": "nmod",
+          "governor": 3,
+          "governorGloss": "observed",
+          "dependent": 14,
+          "dependentGloss": "rates"
+        },
+        {
+          "dep": "case",
+          "governor": 16,
+          "governorGloss": "implementation",
+          "dependent": 15,
+          "dependentGloss": "after"
+        },
+        {
+          "dep": "nmod",
+          "governor": 3,
+          "governorGloss": "observed",
+          "dependent": 16,
+          "dependentGloss": "implementation"
+        },
+        {
+          "dep": "case",
+          "governor": 19,
+          "governorGloss": "policies",
+          "dependent": 17,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 19,
+          "governorGloss": "policies",
+          "dependent": 18,
+          "dependentGloss": "these"
+        },
+        {
+          "dep": "nmod",
+          "governor": 16,
+          "governorGloss": "implementation",
+          "dependent": 19,
+          "dependentGloss": "policies"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "observed",
+          "dependent": 20,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "observed"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "observed",
+          "dependent": 1,
+          "dependentGloss": "We"
+        },
+        {
+          "dep": "advmod",
+          "governor": 3,
+          "governorGloss": "observed",
+          "dependent": 2,
+          "dependentGloss": "also"
+        },
+        {
+          "dep": "advmod",
+          "governor": 5,
+          "governorGloss": "large",
+          "dependent": 4,
+          "dependentGloss": "relatively"
+        },
+        {
+          "dep": "amod",
+          "governor": 9,
+          "governorGloss": "reductions",
+          "dependent": 5,
+          "dependentGloss": "large"
+        },
+        {
+          "dep": "cc",
+          "governor": 5,
+          "governorGloss": "large",
+          "dependent": 6,
+          "dependentGloss": "but"
+        },
+        {
+          "dep": "advmod",
+          "governor": 8,
+          "governorGloss": "insignificant",
+          "dependent": 7,
+          "dependentGloss": "statistically"
+        },
+        {
+          "dep": "conj:but",
+          "governor": 5,
+          "governorGloss": "large",
+          "dependent": 8,
+          "dependentGloss": "insignificant"
+        },
+        {
+          "dep": "amod",
+          "governor": 9,
+          "governorGloss": "reductions",
+          "dependent": 8,
+          "dependentGloss": "insignificant"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "observed",
+          "dependent": 9,
+          "dependentGloss": "reductions"
+        },
+        {
+          "dep": "case",
+          "governor": 14,
+          "governorGloss": "rates",
+          "dependent": 10,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "compound",
+          "governor": 14,
+          "governorGloss": "rates",
+          "dependent": 11,
+          "dependentGloss": "heroin"
+        },
+        {
+          "dep": "compound",
+          "governor": 14,
+          "governorGloss": "rates",
+          "dependent": 12,
+          "dependentGloss": "overdose"
+        },
+        {
+          "dep": "compound",
+          "governor": 14,
+          "governorGloss": "rates",
+          "dependent": 13,
+          "dependentGloss": "death"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 3,
+          "governorGloss": "observed",
+          "dependent": 14,
+          "dependentGloss": "rates"
+        },
+        {
+          "dep": "case",
+          "governor": 16,
+          "governorGloss": "implementation",
+          "dependent": 15,
+          "dependentGloss": "after"
+        },
+        {
+          "dep": "nmod:after",
+          "governor": 3,
+          "governorGloss": "observed",
+          "dependent": 16,
+          "dependentGloss": "implementation"
+        },
+        {
+          "dep": "case",
+          "governor": 19,
+          "governorGloss": "policies",
+          "dependent": 17,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 19,
+          "governorGloss": "policies",
+          "dependent": 18,
+          "dependentGloss": "these"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 16,
+          "governorGloss": "implementation",
+          "dependent": 19,
+          "dependentGloss": "policies"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "observed",
+          "dependent": 20,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "observed"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "observed",
+          "dependent": 1,
+          "dependentGloss": "We"
+        },
+        {
+          "dep": "advmod",
+          "governor": 3,
+          "governorGloss": "observed",
+          "dependent": 2,
+          "dependentGloss": "also"
+        },
+        {
+          "dep": "advmod",
+          "governor": 5,
+          "governorGloss": "large",
+          "dependent": 4,
+          "dependentGloss": "relatively"
+        },
+        {
+          "dep": "amod",
+          "governor": 9,
+          "governorGloss": "reductions",
+          "dependent": 5,
+          "dependentGloss": "large"
+        },
+        {
+          "dep": "cc",
+          "governor": 5,
+          "governorGloss": "large",
+          "dependent": 6,
+          "dependentGloss": "but"
+        },
+        {
+          "dep": "advmod",
+          "governor": 8,
+          "governorGloss": "insignificant",
+          "dependent": 7,
+          "dependentGloss": "statistically"
+        },
+        {
+          "dep": "conj:but",
+          "governor": 5,
+          "governorGloss": "large",
+          "dependent": 8,
+          "dependentGloss": "insignificant"
+        },
+        {
+          "dep": "amod",
+          "governor": 9,
+          "governorGloss": "reductions",
+          "dependent": 8,
+          "dependentGloss": "insignificant"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "observed",
+          "dependent": 9,
+          "dependentGloss": "reductions"
+        },
+        {
+          "dep": "case",
+          "governor": 14,
+          "governorGloss": "rates",
+          "dependent": 10,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "compound",
+          "governor": 14,
+          "governorGloss": "rates",
+          "dependent": 11,
+          "dependentGloss": "heroin"
+        },
+        {
+          "dep": "compound",
+          "governor": 14,
+          "governorGloss": "rates",
+          "dependent": 12,
+          "dependentGloss": "overdose"
+        },
+        {
+          "dep": "compound",
+          "governor": 14,
+          "governorGloss": "rates",
+          "dependent": 13,
+          "dependentGloss": "death"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 3,
+          "governorGloss": "observed",
+          "dependent": 14,
+          "dependentGloss": "rates"
+        },
+        {
+          "dep": "case",
+          "governor": 16,
+          "governorGloss": "implementation",
+          "dependent": 15,
+          "dependentGloss": "after"
+        },
+        {
+          "dep": "nmod:after",
+          "governor": 3,
+          "governorGloss": "observed",
+          "dependent": 16,
+          "dependentGloss": "implementation"
+        },
+        {
+          "dep": "case",
+          "governor": 19,
+          "governorGloss": "policies",
+          "dependent": 17,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 19,
+          "governorGloss": "policies",
+          "dependent": 18,
+          "dependentGloss": "these"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 16,
+          "governorGloss": "implementation",
+          "dependent": 19,
+          "dependentGloss": "policies"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "observed",
+          "dependent": 20,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -1841,6 +5474,391 @@
     },
     {
       "index": 7,
+      "parse": "(ROOT\n  (S\n    (S\n      (NP\n        (NP (DT This) (NN combination))\n        (PP (IN of)\n          (NP (NNS policies))))\n      (VP (VBD was)\n        (ADJP (JJ effective))))\n    (, ,)\n    (CC but)\n    (S\n      (NP\n        (NP (JJR broader) (NNS approaches))\n        (SBAR\n          (S\n            (VP (TO to)\n              (VP (VB address)\n                (NP (DT these) (JJ coincident) (NNS epidemics)))))))\n      (VP (VBP are)\n        (VP (VBN needed))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "effective"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "combination",
+          "dependent": 1,
+          "dependentGloss": "This"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "effective",
+          "dependent": 2,
+          "dependentGloss": "combination"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "policies",
+          "dependent": 3,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod",
+          "governor": 2,
+          "governorGloss": "combination",
+          "dependent": 4,
+          "dependentGloss": "policies"
+        },
+        {
+          "dep": "cop",
+          "governor": 6,
+          "governorGloss": "effective",
+          "dependent": 5,
+          "dependentGloss": "was"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "effective",
+          "dependent": 7,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 6,
+          "governorGloss": "effective",
+          "dependent": 8,
+          "dependentGloss": "but"
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "approaches",
+          "dependent": 9,
+          "dependentGloss": "broader"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 17,
+          "governorGloss": "needed",
+          "dependent": 10,
+          "dependentGloss": "approaches"
+        },
+        {
+          "dep": "mark",
+          "governor": 12,
+          "governorGloss": "address",
+          "dependent": 11,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "acl",
+          "governor": 10,
+          "governorGloss": "approaches",
+          "dependent": 12,
+          "dependentGloss": "address"
+        },
+        {
+          "dep": "det",
+          "governor": 15,
+          "governorGloss": "epidemics",
+          "dependent": 13,
+          "dependentGloss": "these"
+        },
+        {
+          "dep": "amod",
+          "governor": 15,
+          "governorGloss": "epidemics",
+          "dependent": 14,
+          "dependentGloss": "coincident"
+        },
+        {
+          "dep": "dobj",
+          "governor": 12,
+          "governorGloss": "address",
+          "dependent": 15,
+          "dependentGloss": "epidemics"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 17,
+          "governorGloss": "needed",
+          "dependent": 16,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "conj",
+          "governor": 6,
+          "governorGloss": "effective",
+          "dependent": 17,
+          "dependentGloss": "needed"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "effective",
+          "dependent": 18,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "effective"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "combination",
+          "dependent": 1,
+          "dependentGloss": "This"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "effective",
+          "dependent": 2,
+          "dependentGloss": "combination"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "policies",
+          "dependent": 3,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 2,
+          "governorGloss": "combination",
+          "dependent": 4,
+          "dependentGloss": "policies"
+        },
+        {
+          "dep": "cop",
+          "governor": 6,
+          "governorGloss": "effective",
+          "dependent": 5,
+          "dependentGloss": "was"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "effective",
+          "dependent": 7,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 6,
+          "governorGloss": "effective",
+          "dependent": 8,
+          "dependentGloss": "but"
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "approaches",
+          "dependent": 9,
+          "dependentGloss": "broader"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 17,
+          "governorGloss": "needed",
+          "dependent": 10,
+          "dependentGloss": "approaches"
+        },
+        {
+          "dep": "mark",
+          "governor": 12,
+          "governorGloss": "address",
+          "dependent": 11,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "acl:to",
+          "governor": 10,
+          "governorGloss": "approaches",
+          "dependent": 12,
+          "dependentGloss": "address"
+        },
+        {
+          "dep": "det",
+          "governor": 15,
+          "governorGloss": "epidemics",
+          "dependent": 13,
+          "dependentGloss": "these"
+        },
+        {
+          "dep": "amod",
+          "governor": 15,
+          "governorGloss": "epidemics",
+          "dependent": 14,
+          "dependentGloss": "coincident"
+        },
+        {
+          "dep": "dobj",
+          "governor": 12,
+          "governorGloss": "address",
+          "dependent": 15,
+          "dependentGloss": "epidemics"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 17,
+          "governorGloss": "needed",
+          "dependent": 16,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "conj:but",
+          "governor": 6,
+          "governorGloss": "effective",
+          "dependent": 17,
+          "dependentGloss": "needed"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "effective",
+          "dependent": 18,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "effective"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "combination",
+          "dependent": 1,
+          "dependentGloss": "This"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "effective",
+          "dependent": 2,
+          "dependentGloss": "combination"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "policies",
+          "dependent": 3,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 2,
+          "governorGloss": "combination",
+          "dependent": 4,
+          "dependentGloss": "policies"
+        },
+        {
+          "dep": "cop",
+          "governor": 6,
+          "governorGloss": "effective",
+          "dependent": 5,
+          "dependentGloss": "was"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "effective",
+          "dependent": 7,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 6,
+          "governorGloss": "effective",
+          "dependent": 8,
+          "dependentGloss": "but"
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "approaches",
+          "dependent": 9,
+          "dependentGloss": "broader"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 17,
+          "governorGloss": "needed",
+          "dependent": 10,
+          "dependentGloss": "approaches"
+        },
+        {
+          "dep": "mark",
+          "governor": 12,
+          "governorGloss": "address",
+          "dependent": 11,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "acl:to",
+          "governor": 10,
+          "governorGloss": "approaches",
+          "dependent": 12,
+          "dependentGloss": "address"
+        },
+        {
+          "dep": "det",
+          "governor": 15,
+          "governorGloss": "epidemics",
+          "dependent": 13,
+          "dependentGloss": "these"
+        },
+        {
+          "dep": "amod",
+          "governor": 15,
+          "governorGloss": "epidemics",
+          "dependent": 14,
+          "dependentGloss": "coincident"
+        },
+        {
+          "dep": "dobj",
+          "governor": 12,
+          "governorGloss": "address",
+          "dependent": 15,
+          "dependentGloss": "epidemics"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 17,
+          "governorGloss": "needed",
+          "dependent": 16,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "conj:but",
+          "governor": 6,
+          "governorGloss": "effective",
+          "dependent": 17,
+          "dependentGloss": "needed"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "effective",
+          "dependent": 18,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,

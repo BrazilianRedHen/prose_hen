@@ -2,6 +2,76 @@
   "sentences": [
     {
       "index": 0,
+      "parse": "(ROOT\n  (NP\n    (NP (NNP Ieee))\n    (NP (NN network))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "Ieee"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "Ieee",
+          "dependent": 2,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "Ieee",
+          "dependent": 3,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "Ieee"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "Ieee",
+          "dependent": 2,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "Ieee",
+          "dependent": 3,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "Ieee"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "Ieee",
+          "dependent": 2,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "Ieee",
+          "dependent": 3,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -40,6 +110,223 @@
     },
     {
       "index": 1,
+      "parse": "(ROOT\n  (NP\n    (NP (NNP Information-Centric) (NNP Network))\n    (NP\n      (NP (NN Function) (NN Virtualization))\n      (PP (IN over)\n        (NP (NN 5G) (NNP Mobile) (NNP Wireless) (NNP Networks))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "Network"
+        },
+        {
+          "dep": "compound",
+          "governor": 2,
+          "governorGloss": "Network",
+          "dependent": 1,
+          "dependentGloss": "Information-Centric"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "Virtualization",
+          "dependent": 3,
+          "dependentGloss": "Function"
+        },
+        {
+          "dep": "dep",
+          "governor": 2,
+          "governorGloss": "Network",
+          "dependent": 4,
+          "dependentGloss": "Virtualization"
+        },
+        {
+          "dep": "case",
+          "governor": 9,
+          "governorGloss": "Networks",
+          "dependent": 5,
+          "dependentGloss": "over"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "Networks",
+          "dependent": 6,
+          "dependentGloss": "5G"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "Networks",
+          "dependent": 7,
+          "dependentGloss": "Mobile"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "Networks",
+          "dependent": 8,
+          "dependentGloss": "Wireless"
+        },
+        {
+          "dep": "nmod",
+          "governor": 4,
+          "governorGloss": "Virtualization",
+          "dependent": 9,
+          "dependentGloss": "Networks"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "Network",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "Network"
+        },
+        {
+          "dep": "compound",
+          "governor": 2,
+          "governorGloss": "Network",
+          "dependent": 1,
+          "dependentGloss": "Information-Centric"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "Virtualization",
+          "dependent": 3,
+          "dependentGloss": "Function"
+        },
+        {
+          "dep": "dep",
+          "governor": 2,
+          "governorGloss": "Network",
+          "dependent": 4,
+          "dependentGloss": "Virtualization"
+        },
+        {
+          "dep": "case",
+          "governor": 9,
+          "governorGloss": "Networks",
+          "dependent": 5,
+          "dependentGloss": "over"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "Networks",
+          "dependent": 6,
+          "dependentGloss": "5G"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "Networks",
+          "dependent": 7,
+          "dependentGloss": "Mobile"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "Networks",
+          "dependent": 8,
+          "dependentGloss": "Wireless"
+        },
+        {
+          "dep": "nmod:over",
+          "governor": 4,
+          "governorGloss": "Virtualization",
+          "dependent": 9,
+          "dependentGloss": "Networks"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "Network",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "Network"
+        },
+        {
+          "dep": "compound",
+          "governor": 2,
+          "governorGloss": "Network",
+          "dependent": 1,
+          "dependentGloss": "Information-Centric"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "Virtualization",
+          "dependent": 3,
+          "dependentGloss": "Function"
+        },
+        {
+          "dep": "dep",
+          "governor": 2,
+          "governorGloss": "Network",
+          "dependent": 4,
+          "dependentGloss": "Virtualization"
+        },
+        {
+          "dep": "case",
+          "governor": 9,
+          "governorGloss": "Networks",
+          "dependent": 5,
+          "dependentGloss": "over"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "Networks",
+          "dependent": 6,
+          "dependentGloss": "5G"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "Networks",
+          "dependent": 7,
+          "dependentGloss": "Mobile"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "Networks",
+          "dependent": 8,
+          "dependentGloss": "Wireless"
+        },
+        {
+          "dep": "nmod:over",
+          "governor": 4,
+          "governorGloss": "Virtualization",
+          "dependent": 9,
+          "dependentGloss": "Networks"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "Network",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -155,6 +442,447 @@
     },
     {
       "index": 2,
+      "parse": "(ROOT\n  (S\n    (NP\n      (NP\n        (NP (NNP Wireless) (NN network) (NN virtualization))\n        (CC and)\n        (NP (JJ information-centric) (NN networking)))\n      (PRN (-LRB- -LRB-)\n        (NP (NN ICN))\n        (-RRB- -RRB-)))\n    (VP (VBP are)\n      (NP\n        (NP (CD two) (JJ promising) (NNS techniques))\n        (PP (IN in)\n          (NP\n            (NP (JJ software-defined) (NN 5G))\n            (NP (JJ mobile) (JJ wireless) (NNS networks))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 13,
+          "dependentGloss": "techniques"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "virtualization",
+          "dependent": 1,
+          "dependentGloss": "Wireless"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "virtualization",
+          "dependent": 2,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 3,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "cc",
+          "governor": 3,
+          "governorGloss": "virtualization",
+          "dependent": 4,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 6,
+          "governorGloss": "networking",
+          "dependent": 5,
+          "dependentGloss": "information-centric"
+        },
+        {
+          "dep": "conj",
+          "governor": 3,
+          "governorGloss": "virtualization",
+          "dependent": 6,
+          "dependentGloss": "networking"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "ICN",
+          "dependent": 7,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "appos",
+          "governor": 3,
+          "governorGloss": "virtualization",
+          "dependent": 8,
+          "dependentGloss": "ICN"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "ICN",
+          "dependent": 9,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "cop",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 10,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "nummod",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 11,
+          "dependentGloss": "two"
+        },
+        {
+          "dep": "amod",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 12,
+          "dependentGloss": "promising"
+        },
+        {
+          "dep": "case",
+          "governor": 16,
+          "governorGloss": "5G",
+          "dependent": 14,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "amod",
+          "governor": 16,
+          "governorGloss": "5G",
+          "dependent": 15,
+          "dependentGloss": "software-defined"
+        },
+        {
+          "dep": "nmod",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 16,
+          "dependentGloss": "5G"
+        },
+        {
+          "dep": "amod",
+          "governor": 19,
+          "governorGloss": "networks",
+          "dependent": 17,
+          "dependentGloss": "mobile"
+        },
+        {
+          "dep": "amod",
+          "governor": 19,
+          "governorGloss": "networks",
+          "dependent": 18,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "dep",
+          "governor": 16,
+          "governorGloss": "5G",
+          "dependent": 19,
+          "dependentGloss": "networks"
+        },
+        {
+          "dep": "punct",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 20,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 13,
+          "dependentGloss": "techniques"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "virtualization",
+          "dependent": 1,
+          "dependentGloss": "Wireless"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "virtualization",
+          "dependent": 2,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 3,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "cc",
+          "governor": 3,
+          "governorGloss": "virtualization",
+          "dependent": 4,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 6,
+          "governorGloss": "networking",
+          "dependent": 5,
+          "dependentGloss": "information-centric"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 3,
+          "governorGloss": "virtualization",
+          "dependent": 6,
+          "dependentGloss": "networking"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 6,
+          "dependentGloss": "networking"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "ICN",
+          "dependent": 7,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "appos",
+          "governor": 3,
+          "governorGloss": "virtualization",
+          "dependent": 8,
+          "dependentGloss": "ICN"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "ICN",
+          "dependent": 9,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "cop",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 10,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "nummod",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 11,
+          "dependentGloss": "two"
+        },
+        {
+          "dep": "amod",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 12,
+          "dependentGloss": "promising"
+        },
+        {
+          "dep": "case",
+          "governor": 16,
+          "governorGloss": "5G",
+          "dependent": 14,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "amod",
+          "governor": 16,
+          "governorGloss": "5G",
+          "dependent": 15,
+          "dependentGloss": "software-defined"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 16,
+          "dependentGloss": "5G"
+        },
+        {
+          "dep": "amod",
+          "governor": 19,
+          "governorGloss": "networks",
+          "dependent": 17,
+          "dependentGloss": "mobile"
+        },
+        {
+          "dep": "amod",
+          "governor": 19,
+          "governorGloss": "networks",
+          "dependent": 18,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "dep",
+          "governor": 16,
+          "governorGloss": "5G",
+          "dependent": 19,
+          "dependentGloss": "networks"
+        },
+        {
+          "dep": "punct",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 20,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 13,
+          "dependentGloss": "techniques"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "virtualization",
+          "dependent": 1,
+          "dependentGloss": "Wireless"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "virtualization",
+          "dependent": 2,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 3,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "cc",
+          "governor": 3,
+          "governorGloss": "virtualization",
+          "dependent": 4,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 6,
+          "governorGloss": "networking",
+          "dependent": 5,
+          "dependentGloss": "information-centric"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 3,
+          "governorGloss": "virtualization",
+          "dependent": 6,
+          "dependentGloss": "networking"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 6,
+          "dependentGloss": "networking"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "ICN",
+          "dependent": 7,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "appos",
+          "governor": 3,
+          "governorGloss": "virtualization",
+          "dependent": 8,
+          "dependentGloss": "ICN"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "ICN",
+          "dependent": 9,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "cop",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 10,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "nummod",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 11,
+          "dependentGloss": "two"
+        },
+        {
+          "dep": "amod",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 12,
+          "dependentGloss": "promising"
+        },
+        {
+          "dep": "case",
+          "governor": 16,
+          "governorGloss": "5G",
+          "dependent": 14,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "amod",
+          "governor": 16,
+          "governorGloss": "5G",
+          "dependent": 15,
+          "dependentGloss": "software-defined"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 16,
+          "dependentGloss": "5G"
+        },
+        {
+          "dep": "amod",
+          "governor": 19,
+          "governorGloss": "networks",
+          "dependent": 17,
+          "dependentGloss": "mobile"
+        },
+        {
+          "dep": "amod",
+          "governor": 19,
+          "governorGloss": "networks",
+          "dependent": 18,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "dep",
+          "governor": 16,
+          "governorGloss": "5G",
+          "dependent": 19,
+          "dependentGloss": "networks"
+        },
+        {
+          "dep": "punct",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 20,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -380,6 +1108,223 @@
     },
     {
       "index": 3,
+      "parse": "(ROOT\n  (S\n    (ADVP (RB Traditionally))\n    (, ,)\n    (NP (DT these) (CD two) (NNS technologies))\n    (VP (VBP have)\n      (VP (VBN been)\n        (VP (VBN addressed)\n          (ADVP (RB separately)))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 8,
+          "dependentGloss": "addressed"
+        },
+        {
+          "dep": "advmod",
+          "governor": 8,
+          "governorGloss": "addressed",
+          "dependent": 1,
+          "dependentGloss": "Traditionally"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "addressed",
+          "dependent": 2,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "technologies",
+          "dependent": 3,
+          "dependentGloss": "these"
+        },
+        {
+          "dep": "nummod",
+          "governor": 5,
+          "governorGloss": "technologies",
+          "dependent": 4,
+          "dependentGloss": "two"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 8,
+          "governorGloss": "addressed",
+          "dependent": 5,
+          "dependentGloss": "technologies"
+        },
+        {
+          "dep": "aux",
+          "governor": 8,
+          "governorGloss": "addressed",
+          "dependent": 6,
+          "dependentGloss": "have"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 8,
+          "governorGloss": "addressed",
+          "dependent": 7,
+          "dependentGloss": "been"
+        },
+        {
+          "dep": "advmod",
+          "governor": 8,
+          "governorGloss": "addressed",
+          "dependent": 9,
+          "dependentGloss": "separately"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "addressed",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 8,
+          "dependentGloss": "addressed"
+        },
+        {
+          "dep": "advmod",
+          "governor": 8,
+          "governorGloss": "addressed",
+          "dependent": 1,
+          "dependentGloss": "Traditionally"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "addressed",
+          "dependent": 2,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "technologies",
+          "dependent": 3,
+          "dependentGloss": "these"
+        },
+        {
+          "dep": "nummod",
+          "governor": 5,
+          "governorGloss": "technologies",
+          "dependent": 4,
+          "dependentGloss": "two"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 8,
+          "governorGloss": "addressed",
+          "dependent": 5,
+          "dependentGloss": "technologies"
+        },
+        {
+          "dep": "aux",
+          "governor": 8,
+          "governorGloss": "addressed",
+          "dependent": 6,
+          "dependentGloss": "have"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 8,
+          "governorGloss": "addressed",
+          "dependent": 7,
+          "dependentGloss": "been"
+        },
+        {
+          "dep": "advmod",
+          "governor": 8,
+          "governorGloss": "addressed",
+          "dependent": 9,
+          "dependentGloss": "separately"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "addressed",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 8,
+          "dependentGloss": "addressed"
+        },
+        {
+          "dep": "advmod",
+          "governor": 8,
+          "governorGloss": "addressed",
+          "dependent": 1,
+          "dependentGloss": "Traditionally"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "addressed",
+          "dependent": 2,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "technologies",
+          "dependent": 3,
+          "dependentGloss": "these"
+        },
+        {
+          "dep": "nummod",
+          "governor": 5,
+          "governorGloss": "technologies",
+          "dependent": 4,
+          "dependentGloss": "two"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 8,
+          "governorGloss": "addressed",
+          "dependent": 5,
+          "dependentGloss": "technologies"
+        },
+        {
+          "dep": "aux",
+          "governor": 8,
+          "governorGloss": "addressed",
+          "dependent": 6,
+          "dependentGloss": "have"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 8,
+          "governorGloss": "addressed",
+          "dependent": 7,
+          "dependentGloss": "been"
+        },
+        {
+          "dep": "advmod",
+          "governor": 8,
+          "governorGloss": "addressed",
+          "dependent": 9,
+          "dependentGloss": "separately"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "addressed",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -495,6 +1440,454 @@
     },
     {
       "index": 4,
+      "parse": "(ROOT\n  (S\n    (PP (IN In)\n      (NP (DT this) (NN paper)))\n    (NP (PRP we))\n    (VP (VBP show)\n      (SBAR (IN that)\n        (S\n          (S\n            (VP (VBG integrating)\n              (NP (JJ wireless) (NN network) (NN virtualization))\n              (PP (IN with)\n                (NP (NN ICN) (NNS techniques)))))\n          (VP (MD can)\n            (ADVP (RB significantly))\n            (VP (VB improve)\n              (NP (DT the) (JJ end-to-end) (NN network) (NN performance)))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "show"
+        },
+        {
+          "dep": "case",
+          "governor": 3,
+          "governorGloss": "paper",
+          "dependent": 1,
+          "dependentGloss": "In"
+        },
+        {
+          "dep": "det",
+          "governor": 3,
+          "governorGloss": "paper",
+          "dependent": 2,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "nmod",
+          "governor": 5,
+          "governorGloss": "show",
+          "dependent": 3,
+          "dependentGloss": "paper"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "show",
+          "dependent": 4,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "mark",
+          "governor": 16,
+          "governorGloss": "improve",
+          "dependent": 6,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "csubj",
+          "governor": 16,
+          "governorGloss": "improve",
+          "dependent": 7,
+          "dependentGloss": "integrating"
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "virtualization",
+          "dependent": 8,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "compound",
+          "governor": 10,
+          "governorGloss": "virtualization",
+          "dependent": 9,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "dobj",
+          "governor": 7,
+          "governorGloss": "integrating",
+          "dependent": 10,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "case",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 11,
+          "dependentGloss": "with"
+        },
+        {
+          "dep": "compound",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 12,
+          "dependentGloss": "ICN"
+        },
+        {
+          "dep": "nmod",
+          "governor": 7,
+          "governorGloss": "integrating",
+          "dependent": 13,
+          "dependentGloss": "techniques"
+        },
+        {
+          "dep": "aux",
+          "governor": 16,
+          "governorGloss": "improve",
+          "dependent": 14,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "advmod",
+          "governor": 16,
+          "governorGloss": "improve",
+          "dependent": 15,
+          "dependentGloss": "significantly"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 5,
+          "governorGloss": "show",
+          "dependent": 16,
+          "dependentGloss": "improve"
+        },
+        {
+          "dep": "det",
+          "governor": 20,
+          "governorGloss": "performance",
+          "dependent": 17,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "performance",
+          "dependent": 18,
+          "dependentGloss": "end-to-end"
+        },
+        {
+          "dep": "compound",
+          "governor": 20,
+          "governorGloss": "performance",
+          "dependent": 19,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "dobj",
+          "governor": 16,
+          "governorGloss": "improve",
+          "dependent": 20,
+          "dependentGloss": "performance"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "show",
+          "dependent": 21,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "show"
+        },
+        {
+          "dep": "case",
+          "governor": 3,
+          "governorGloss": "paper",
+          "dependent": 1,
+          "dependentGloss": "In"
+        },
+        {
+          "dep": "det",
+          "governor": 3,
+          "governorGloss": "paper",
+          "dependent": 2,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 5,
+          "governorGloss": "show",
+          "dependent": 3,
+          "dependentGloss": "paper"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "show",
+          "dependent": 4,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "mark",
+          "governor": 16,
+          "governorGloss": "improve",
+          "dependent": 6,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "csubj",
+          "governor": 16,
+          "governorGloss": "improve",
+          "dependent": 7,
+          "dependentGloss": "integrating"
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "virtualization",
+          "dependent": 8,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "compound",
+          "governor": 10,
+          "governorGloss": "virtualization",
+          "dependent": 9,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "dobj",
+          "governor": 7,
+          "governorGloss": "integrating",
+          "dependent": 10,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "case",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 11,
+          "dependentGloss": "with"
+        },
+        {
+          "dep": "compound",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 12,
+          "dependentGloss": "ICN"
+        },
+        {
+          "dep": "nmod:with",
+          "governor": 7,
+          "governorGloss": "integrating",
+          "dependent": 13,
+          "dependentGloss": "techniques"
+        },
+        {
+          "dep": "aux",
+          "governor": 16,
+          "governorGloss": "improve",
+          "dependent": 14,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "advmod",
+          "governor": 16,
+          "governorGloss": "improve",
+          "dependent": 15,
+          "dependentGloss": "significantly"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 5,
+          "governorGloss": "show",
+          "dependent": 16,
+          "dependentGloss": "improve"
+        },
+        {
+          "dep": "det",
+          "governor": 20,
+          "governorGloss": "performance",
+          "dependent": 17,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "performance",
+          "dependent": 18,
+          "dependentGloss": "end-to-end"
+        },
+        {
+          "dep": "compound",
+          "governor": 20,
+          "governorGloss": "performance",
+          "dependent": 19,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "dobj",
+          "governor": 16,
+          "governorGloss": "improve",
+          "dependent": 20,
+          "dependentGloss": "performance"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "show",
+          "dependent": 21,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "show"
+        },
+        {
+          "dep": "case",
+          "governor": 3,
+          "governorGloss": "paper",
+          "dependent": 1,
+          "dependentGloss": "In"
+        },
+        {
+          "dep": "det",
+          "governor": 3,
+          "governorGloss": "paper",
+          "dependent": 2,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 5,
+          "governorGloss": "show",
+          "dependent": 3,
+          "dependentGloss": "paper"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "show",
+          "dependent": 4,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "mark",
+          "governor": 16,
+          "governorGloss": "improve",
+          "dependent": 6,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "csubj",
+          "governor": 16,
+          "governorGloss": "improve",
+          "dependent": 7,
+          "dependentGloss": "integrating"
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "virtualization",
+          "dependent": 8,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "compound",
+          "governor": 10,
+          "governorGloss": "virtualization",
+          "dependent": 9,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "dobj",
+          "governor": 7,
+          "governorGloss": "integrating",
+          "dependent": 10,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "case",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 11,
+          "dependentGloss": "with"
+        },
+        {
+          "dep": "compound",
+          "governor": 13,
+          "governorGloss": "techniques",
+          "dependent": 12,
+          "dependentGloss": "ICN"
+        },
+        {
+          "dep": "nmod:with",
+          "governor": 7,
+          "governorGloss": "integrating",
+          "dependent": 13,
+          "dependentGloss": "techniques"
+        },
+        {
+          "dep": "aux",
+          "governor": 16,
+          "governorGloss": "improve",
+          "dependent": 14,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "advmod",
+          "governor": 16,
+          "governorGloss": "improve",
+          "dependent": 15,
+          "dependentGloss": "significantly"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 5,
+          "governorGloss": "show",
+          "dependent": 16,
+          "dependentGloss": "improve"
+        },
+        {
+          "dep": "det",
+          "governor": 20,
+          "governorGloss": "performance",
+          "dependent": 17,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "performance",
+          "dependent": 18,
+          "dependentGloss": "end-to-end"
+        },
+        {
+          "dep": "compound",
+          "governor": 20,
+          "governorGloss": "performance",
+          "dependent": 19,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "dobj",
+          "governor": 16,
+          "governorGloss": "improve",
+          "dependent": 20,
+          "dependentGloss": "performance"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "show",
+          "dependent": 21,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -731,6 +2124,412 @@
     },
     {
       "index": 5,
+      "parse": "(ROOT\n  (S\n    (PP (IN In)\n      (ADJP (JJ particular)))\n    (, ,)\n    (NP (PRP we))\n    (VP (VBP propose)\n      (NP\n        (NP (DT an) (JJ information-centric) (JJ wireless) (NN network) (NN virtualization) (NN architecture))\n        (PP (IN for)\n          (S\n            (VP (VBG integrating)\n              (NP (JJ wireless) (NN network) (NN virtualization))\n              (PP (IN with)\n                (NP (NN ICN))))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "propose"
+        },
+        {
+          "dep": "case",
+          "governor": 2,
+          "governorGloss": "particular",
+          "dependent": 1,
+          "dependentGloss": "In"
+        },
+        {
+          "dep": "advcl",
+          "governor": 5,
+          "governorGloss": "propose",
+          "dependent": 2,
+          "dependentGloss": "particular"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "propose",
+          "dependent": 3,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "propose",
+          "dependent": 4,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "det",
+          "governor": 11,
+          "governorGloss": "architecture",
+          "dependent": 6,
+          "dependentGloss": "an"
+        },
+        {
+          "dep": "amod",
+          "governor": 11,
+          "governorGloss": "architecture",
+          "dependent": 7,
+          "dependentGloss": "information-centric"
+        },
+        {
+          "dep": "amod",
+          "governor": 11,
+          "governorGloss": "architecture",
+          "dependent": 8,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "architecture",
+          "dependent": 9,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "architecture",
+          "dependent": 10,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "dobj",
+          "governor": 5,
+          "governorGloss": "propose",
+          "dependent": 11,
+          "dependentGloss": "architecture"
+        },
+        {
+          "dep": "mark",
+          "governor": 13,
+          "governorGloss": "integrating",
+          "dependent": 12,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "acl",
+          "governor": 11,
+          "governorGloss": "architecture",
+          "dependent": 13,
+          "dependentGloss": "integrating"
+        },
+        {
+          "dep": "amod",
+          "governor": 16,
+          "governorGloss": "virtualization",
+          "dependent": 14,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "virtualization",
+          "dependent": 15,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "dobj",
+          "governor": 13,
+          "governorGloss": "integrating",
+          "dependent": 16,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "case",
+          "governor": 18,
+          "governorGloss": "ICN",
+          "dependent": 17,
+          "dependentGloss": "with"
+        },
+        {
+          "dep": "nmod",
+          "governor": 13,
+          "governorGloss": "integrating",
+          "dependent": 18,
+          "dependentGloss": "ICN"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "propose",
+          "dependent": 19,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "propose"
+        },
+        {
+          "dep": "case",
+          "governor": 2,
+          "governorGloss": "particular",
+          "dependent": 1,
+          "dependentGloss": "In"
+        },
+        {
+          "dep": "advcl:in",
+          "governor": 5,
+          "governorGloss": "propose",
+          "dependent": 2,
+          "dependentGloss": "particular"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "propose",
+          "dependent": 3,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "propose",
+          "dependent": 4,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "det",
+          "governor": 11,
+          "governorGloss": "architecture",
+          "dependent": 6,
+          "dependentGloss": "an"
+        },
+        {
+          "dep": "amod",
+          "governor": 11,
+          "governorGloss": "architecture",
+          "dependent": 7,
+          "dependentGloss": "information-centric"
+        },
+        {
+          "dep": "amod",
+          "governor": 11,
+          "governorGloss": "architecture",
+          "dependent": 8,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "architecture",
+          "dependent": 9,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "architecture",
+          "dependent": 10,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "dobj",
+          "governor": 5,
+          "governorGloss": "propose",
+          "dependent": 11,
+          "dependentGloss": "architecture"
+        },
+        {
+          "dep": "mark",
+          "governor": 13,
+          "governorGloss": "integrating",
+          "dependent": 12,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "acl:for",
+          "governor": 11,
+          "governorGloss": "architecture",
+          "dependent": 13,
+          "dependentGloss": "integrating"
+        },
+        {
+          "dep": "amod",
+          "governor": 16,
+          "governorGloss": "virtualization",
+          "dependent": 14,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "virtualization",
+          "dependent": 15,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "dobj",
+          "governor": 13,
+          "governorGloss": "integrating",
+          "dependent": 16,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "case",
+          "governor": 18,
+          "governorGloss": "ICN",
+          "dependent": 17,
+          "dependentGloss": "with"
+        },
+        {
+          "dep": "nmod:with",
+          "governor": 13,
+          "governorGloss": "integrating",
+          "dependent": 18,
+          "dependentGloss": "ICN"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "propose",
+          "dependent": 19,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "propose"
+        },
+        {
+          "dep": "case",
+          "governor": 2,
+          "governorGloss": "particular",
+          "dependent": 1,
+          "dependentGloss": "In"
+        },
+        {
+          "dep": "advcl:in",
+          "governor": 5,
+          "governorGloss": "propose",
+          "dependent": 2,
+          "dependentGloss": "particular"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "propose",
+          "dependent": 3,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "propose",
+          "dependent": 4,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "det",
+          "governor": 11,
+          "governorGloss": "architecture",
+          "dependent": 6,
+          "dependentGloss": "an"
+        },
+        {
+          "dep": "amod",
+          "governor": 11,
+          "governorGloss": "architecture",
+          "dependent": 7,
+          "dependentGloss": "information-centric"
+        },
+        {
+          "dep": "amod",
+          "governor": 11,
+          "governorGloss": "architecture",
+          "dependent": 8,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "architecture",
+          "dependent": 9,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "architecture",
+          "dependent": 10,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "dobj",
+          "governor": 5,
+          "governorGloss": "propose",
+          "dependent": 11,
+          "dependentGloss": "architecture"
+        },
+        {
+          "dep": "mark",
+          "governor": 13,
+          "governorGloss": "integrating",
+          "dependent": 12,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "acl:for",
+          "governor": 11,
+          "governorGloss": "architecture",
+          "dependent": 13,
+          "dependentGloss": "integrating"
+        },
+        {
+          "dep": "amod",
+          "governor": 16,
+          "governorGloss": "virtualization",
+          "dependent": 14,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "virtualization",
+          "dependent": 15,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "dobj",
+          "governor": 13,
+          "governorGloss": "integrating",
+          "dependent": 16,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "case",
+          "governor": 18,
+          "governorGloss": "ICN",
+          "dependent": 17,
+          "dependentGloss": "with"
+        },
+        {
+          "dep": "nmod:with",
+          "governor": 13,
+          "governorGloss": "integrating",
+          "dependent": 18,
+          "dependentGloss": "ICN"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "propose",
+          "dependent": 19,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -945,6 +2744,867 @@
     },
     {
       "index": 6,
+      "parse": "(ROOT\n  (S\n    (NP (PRP We))\n    (VP (VBP develop)\n      (NP\n        (NP\n          (NP (DT the) (JJ key) (NNS components))\n          (PP (IN of)\n            (NP (DT this) (NN architecture))))\n        (: :)\n        (NP\n          (NP (NN radio) (NN spectrum) (NN resource))\n          (, ,)\n          (NP (JJ wireless) (NN network) (NN infrastructure))\n          (, ,)\n          (NP (JJ virtual) (NNS resources)))\n        (PRN (-LRB- -LRB-)\n          (PP (VBG including)\n            (NP\n              (NP (JJ content-level) (VBG slicing))\n              (, ,)\n              (NP (JJ network-level) (VBG slicing))\n              (, ,)\n              (CC and)\n              (NP (JJ flow-level) (VBG slicing))))\n          (-RRB- -RRB-))\n        (, ,)\n        (CC and)\n        (NP (JJ information-centric) (JJ wireless) (NN virtualization) (NN controller))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "develop"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "develop",
+          "dependent": 1,
+          "dependentGloss": "We"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 3,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 4,
+          "dependentGloss": "key"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "develop",
+          "dependent": 5,
+          "dependentGloss": "components"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "architecture",
+          "dependent": 6,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 8,
+          "governorGloss": "architecture",
+          "dependent": 7,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "nmod",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 8,
+          "dependentGloss": "architecture"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 9,
+          "dependentGloss": ":"
+        },
+        {
+          "dep": "compound",
+          "governor": 12,
+          "governorGloss": "resource",
+          "dependent": 10,
+          "dependentGloss": "radio"
+        },
+        {
+          "dep": "compound",
+          "governor": 12,
+          "governorGloss": "resource",
+          "dependent": 11,
+          "dependentGloss": "spectrum"
+        },
+        {
+          "dep": "conj",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 12,
+          "dependentGloss": "resource"
+        },
+        {
+          "dep": "punct",
+          "governor": 12,
+          "governorGloss": "resource",
+          "dependent": 13,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "amod",
+          "governor": 16,
+          "governorGloss": "infrastructure",
+          "dependent": 14,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "infrastructure",
+          "dependent": 15,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "appos",
+          "governor": 12,
+          "governorGloss": "resource",
+          "dependent": 16,
+          "dependentGloss": "infrastructure"
+        },
+        {
+          "dep": "punct",
+          "governor": 12,
+          "governorGloss": "resource",
+          "dependent": 17,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "amod",
+          "governor": 19,
+          "governorGloss": "resources",
+          "dependent": 18,
+          "dependentGloss": "virtual"
+        },
+        {
+          "dep": "appos",
+          "governor": 12,
+          "governorGloss": "resource",
+          "dependent": 19,
+          "dependentGloss": "resources"
+        },
+        {
+          "dep": "punct",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 20,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "case",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 21,
+          "dependentGloss": "including"
+        },
+        {
+          "dep": "nmod",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 22,
+          "dependentGloss": "content-level"
+        },
+        {
+          "dep": "amod",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 23,
+          "dependentGloss": "slicing"
+        },
+        {
+          "dep": "punct",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 24,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "conj",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 25,
+          "dependentGloss": "network-level"
+        },
+        {
+          "dep": "amod",
+          "governor": 25,
+          "governorGloss": "network-level",
+          "dependent": 26,
+          "dependentGloss": "slicing"
+        },
+        {
+          "dep": "punct",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 27,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 28,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 29,
+          "dependentGloss": "flow-level"
+        },
+        {
+          "dep": "amod",
+          "governor": 29,
+          "governorGloss": "flow-level",
+          "dependent": 30,
+          "dependentGloss": "slicing"
+        },
+        {
+          "dep": "punct",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 31,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 32,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 33,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 37,
+          "governorGloss": "controller",
+          "dependent": 34,
+          "dependentGloss": "information-centric"
+        },
+        {
+          "dep": "amod",
+          "governor": 37,
+          "governorGloss": "controller",
+          "dependent": 35,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "compound",
+          "governor": 37,
+          "governorGloss": "controller",
+          "dependent": 36,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "conj",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 37,
+          "dependentGloss": "controller"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "develop",
+          "dependent": 38,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "develop"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "develop",
+          "dependent": 1,
+          "dependentGloss": "We"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 3,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 4,
+          "dependentGloss": "key"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "develop",
+          "dependent": 5,
+          "dependentGloss": "components"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "architecture",
+          "dependent": 6,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 8,
+          "governorGloss": "architecture",
+          "dependent": 7,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 8,
+          "dependentGloss": "architecture"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 9,
+          "dependentGloss": ":"
+        },
+        {
+          "dep": "compound",
+          "governor": 12,
+          "governorGloss": "resource",
+          "dependent": 10,
+          "dependentGloss": "radio"
+        },
+        {
+          "dep": "compound",
+          "governor": 12,
+          "governorGloss": "resource",
+          "dependent": 11,
+          "dependentGloss": "spectrum"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "develop",
+          "dependent": 12,
+          "dependentGloss": "resource"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 12,
+          "dependentGloss": "resource"
+        },
+        {
+          "dep": "punct",
+          "governor": 12,
+          "governorGloss": "resource",
+          "dependent": 13,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "amod",
+          "governor": 16,
+          "governorGloss": "infrastructure",
+          "dependent": 14,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "infrastructure",
+          "dependent": 15,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "appos",
+          "governor": 12,
+          "governorGloss": "resource",
+          "dependent": 16,
+          "dependentGloss": "infrastructure"
+        },
+        {
+          "dep": "punct",
+          "governor": 12,
+          "governorGloss": "resource",
+          "dependent": 17,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "amod",
+          "governor": 19,
+          "governorGloss": "resources",
+          "dependent": 18,
+          "dependentGloss": "virtual"
+        },
+        {
+          "dep": "appos",
+          "governor": 12,
+          "governorGloss": "resource",
+          "dependent": 19,
+          "dependentGloss": "resources"
+        },
+        {
+          "dep": "punct",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 20,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "case",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 21,
+          "dependentGloss": "including"
+        },
+        {
+          "dep": "nmod:including",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 22,
+          "dependentGloss": "content-level"
+        },
+        {
+          "dep": "amod",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 23,
+          "dependentGloss": "slicing"
+        },
+        {
+          "dep": "punct",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 24,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nmod:including",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 25,
+          "dependentGloss": "network-level"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 25,
+          "dependentGloss": "network-level"
+        },
+        {
+          "dep": "amod",
+          "governor": 25,
+          "governorGloss": "network-level",
+          "dependent": 26,
+          "dependentGloss": "slicing"
+        },
+        {
+          "dep": "punct",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 27,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 28,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "nmod:including",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 29,
+          "dependentGloss": "flow-level"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 29,
+          "dependentGloss": "flow-level"
+        },
+        {
+          "dep": "amod",
+          "governor": 29,
+          "governorGloss": "flow-level",
+          "dependent": 30,
+          "dependentGloss": "slicing"
+        },
+        {
+          "dep": "punct",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 31,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 32,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 33,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 37,
+          "governorGloss": "controller",
+          "dependent": 34,
+          "dependentGloss": "information-centric"
+        },
+        {
+          "dep": "amod",
+          "governor": 37,
+          "governorGloss": "controller",
+          "dependent": 35,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "compound",
+          "governor": 37,
+          "governorGloss": "controller",
+          "dependent": 36,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "develop",
+          "dependent": 37,
+          "dependentGloss": "controller"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 37,
+          "dependentGloss": "controller"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "develop",
+          "dependent": 38,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "develop"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "develop",
+          "dependent": 1,
+          "dependentGloss": "We"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 3,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 4,
+          "dependentGloss": "key"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "develop",
+          "dependent": 5,
+          "dependentGloss": "components"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "architecture",
+          "dependent": 6,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 8,
+          "governorGloss": "architecture",
+          "dependent": 7,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 8,
+          "dependentGloss": "architecture"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 9,
+          "dependentGloss": ":"
+        },
+        {
+          "dep": "compound",
+          "governor": 12,
+          "governorGloss": "resource",
+          "dependent": 10,
+          "dependentGloss": "radio"
+        },
+        {
+          "dep": "compound",
+          "governor": 12,
+          "governorGloss": "resource",
+          "dependent": 11,
+          "dependentGloss": "spectrum"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "develop",
+          "dependent": 12,
+          "dependentGloss": "resource"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 12,
+          "dependentGloss": "resource"
+        },
+        {
+          "dep": "punct",
+          "governor": 12,
+          "governorGloss": "resource",
+          "dependent": 13,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "amod",
+          "governor": 16,
+          "governorGloss": "infrastructure",
+          "dependent": 14,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "infrastructure",
+          "dependent": 15,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "appos",
+          "governor": 12,
+          "governorGloss": "resource",
+          "dependent": 16,
+          "dependentGloss": "infrastructure"
+        },
+        {
+          "dep": "punct",
+          "governor": 12,
+          "governorGloss": "resource",
+          "dependent": 17,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "amod",
+          "governor": 19,
+          "governorGloss": "resources",
+          "dependent": 18,
+          "dependentGloss": "virtual"
+        },
+        {
+          "dep": "appos",
+          "governor": 12,
+          "governorGloss": "resource",
+          "dependent": 19,
+          "dependentGloss": "resources"
+        },
+        {
+          "dep": "punct",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 20,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "case",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 21,
+          "dependentGloss": "including"
+        },
+        {
+          "dep": "nmod:including",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 22,
+          "dependentGloss": "content-level"
+        },
+        {
+          "dep": "amod",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 23,
+          "dependentGloss": "slicing"
+        },
+        {
+          "dep": "punct",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 24,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nmod:including",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 25,
+          "dependentGloss": "network-level"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 25,
+          "dependentGloss": "network-level"
+        },
+        {
+          "dep": "amod",
+          "governor": 25,
+          "governorGloss": "network-level",
+          "dependent": 26,
+          "dependentGloss": "slicing"
+        },
+        {
+          "dep": "punct",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 27,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 28,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "nmod:including",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 29,
+          "dependentGloss": "flow-level"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 29,
+          "dependentGloss": "flow-level"
+        },
+        {
+          "dep": "amod",
+          "governor": 29,
+          "governorGloss": "flow-level",
+          "dependent": 30,
+          "dependentGloss": "slicing"
+        },
+        {
+          "dep": "punct",
+          "governor": 22,
+          "governorGloss": "content-level",
+          "dependent": 31,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 32,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 33,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 37,
+          "governorGloss": "controller",
+          "dependent": 34,
+          "dependentGloss": "information-centric"
+        },
+        {
+          "dep": "amod",
+          "governor": 37,
+          "governorGloss": "controller",
+          "dependent": 35,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "compound",
+          "governor": 37,
+          "governorGloss": "controller",
+          "dependent": 36,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "develop",
+          "dependent": 37,
+          "dependentGloss": "controller"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 5,
+          "governorGloss": "components",
+          "dependent": 37,
+          "dependentGloss": "controller"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "develop",
+          "dependent": 38,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -1368,6 +4028,797 @@
     },
     {
       "index": 7,
+      "parse": "(ROOT\n  (S (RB Then)\n    (NP (PRP we))\n    (VP (VBP formulate)\n      (NP (DT the) (JJ virtual) (NN resource) (NN allocation)\n        (CC and)\n        (JJ in-network) (NN caching) (NN strategy))\n      (PP (IN as)\n        (NP (DT an) (NN optimization) (NN problem)))\n      (, ,)\n      (S\n        (VP (VBG considering)\n          (NP\n            (NP (DT the) (NN gain))\n            (PP (IN of)\n              (NP\n                (NP (RB not) (RB only) (NN virtualization))\n                (CONJP (CC but)\n                  (RB also))\n                (NP (JJ in-network) (NN caching)))))\n          (PP (IN in)\n            (NP\n              (NP (PRP$ our) (VBN proposed) (JJ information-centric) (JJ wireless) (NN network))\n              (NP (NN virtualization) (NN architecture)))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "formulate"
+        },
+        {
+          "dep": "advmod",
+          "governor": 3,
+          "governorGloss": "formulate",
+          "dependent": 1,
+          "dependentGloss": "Then"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "formulate",
+          "dependent": 2,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "det",
+          "governor": 7,
+          "governorGloss": "allocation",
+          "dependent": 4,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 7,
+          "governorGloss": "allocation",
+          "dependent": 5,
+          "dependentGloss": "virtual"
+        },
+        {
+          "dep": "compound",
+          "governor": 7,
+          "governorGloss": "allocation",
+          "dependent": 6,
+          "dependentGloss": "resource"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "formulate",
+          "dependent": 7,
+          "dependentGloss": "allocation"
+        },
+        {
+          "dep": "cc",
+          "governor": 7,
+          "governorGloss": "allocation",
+          "dependent": 8,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 11,
+          "governorGloss": "strategy",
+          "dependent": 9,
+          "dependentGloss": "in-network"
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "strategy",
+          "dependent": 10,
+          "dependentGloss": "caching"
+        },
+        {
+          "dep": "conj",
+          "governor": 7,
+          "governorGloss": "allocation",
+          "dependent": 11,
+          "dependentGloss": "strategy"
+        },
+        {
+          "dep": "case",
+          "governor": 15,
+          "governorGloss": "problem",
+          "dependent": 12,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "det",
+          "governor": 15,
+          "governorGloss": "problem",
+          "dependent": 13,
+          "dependentGloss": "an"
+        },
+        {
+          "dep": "compound",
+          "governor": 15,
+          "governorGloss": "problem",
+          "dependent": 14,
+          "dependentGloss": "optimization"
+        },
+        {
+          "dep": "nmod",
+          "governor": 3,
+          "governorGloss": "formulate",
+          "dependent": 15,
+          "dependentGloss": "problem"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "formulate",
+          "dependent": 16,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "advcl",
+          "governor": 3,
+          "governorGloss": "formulate",
+          "dependent": 17,
+          "dependentGloss": "considering"
+        },
+        {
+          "dep": "det",
+          "governor": 19,
+          "governorGloss": "gain",
+          "dependent": 18,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 17,
+          "governorGloss": "considering",
+          "dependent": 19,
+          "dependentGloss": "gain"
+        },
+        {
+          "dep": "case",
+          "governor": 23,
+          "governorGloss": "virtualization",
+          "dependent": 20,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "neg",
+          "governor": 23,
+          "governorGloss": "virtualization",
+          "dependent": 21,
+          "dependentGloss": "not"
+        },
+        {
+          "dep": "advmod",
+          "governor": 23,
+          "governorGloss": "virtualization",
+          "dependent": 22,
+          "dependentGloss": "only"
+        },
+        {
+          "dep": "nmod",
+          "governor": 19,
+          "governorGloss": "gain",
+          "dependent": 23,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "cc",
+          "governor": 23,
+          "governorGloss": "virtualization",
+          "dependent": 24,
+          "dependentGloss": "but"
+        },
+        {
+          "dep": "advmod",
+          "governor": 27,
+          "governorGloss": "caching",
+          "dependent": 25,
+          "dependentGloss": "also"
+        },
+        {
+          "dep": "amod",
+          "governor": 27,
+          "governorGloss": "caching",
+          "dependent": 26,
+          "dependentGloss": "in-network"
+        },
+        {
+          "dep": "conj",
+          "governor": 23,
+          "governorGloss": "virtualization",
+          "dependent": 27,
+          "dependentGloss": "caching"
+        },
+        {
+          "dep": "case",
+          "governor": 33,
+          "governorGloss": "network",
+          "dependent": 28,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 33,
+          "governorGloss": "network",
+          "dependent": 29,
+          "dependentGloss": "our"
+        },
+        {
+          "dep": "amod",
+          "governor": 33,
+          "governorGloss": "network",
+          "dependent": 30,
+          "dependentGloss": "proposed"
+        },
+        {
+          "dep": "amod",
+          "governor": 33,
+          "governorGloss": "network",
+          "dependent": 31,
+          "dependentGloss": "information-centric"
+        },
+        {
+          "dep": "amod",
+          "governor": 33,
+          "governorGloss": "network",
+          "dependent": 32,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "nmod",
+          "governor": 17,
+          "governorGloss": "considering",
+          "dependent": 33,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "compound",
+          "governor": 35,
+          "governorGloss": "architecture",
+          "dependent": 34,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "dep",
+          "governor": 33,
+          "governorGloss": "network",
+          "dependent": 35,
+          "dependentGloss": "architecture"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "formulate",
+          "dependent": 36,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "formulate"
+        },
+        {
+          "dep": "advmod",
+          "governor": 3,
+          "governorGloss": "formulate",
+          "dependent": 1,
+          "dependentGloss": "Then"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "formulate",
+          "dependent": 2,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "det",
+          "governor": 7,
+          "governorGloss": "allocation",
+          "dependent": 4,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 7,
+          "governorGloss": "allocation",
+          "dependent": 5,
+          "dependentGloss": "virtual"
+        },
+        {
+          "dep": "compound",
+          "governor": 7,
+          "governorGloss": "allocation",
+          "dependent": 6,
+          "dependentGloss": "resource"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "formulate",
+          "dependent": 7,
+          "dependentGloss": "allocation"
+        },
+        {
+          "dep": "cc",
+          "governor": 7,
+          "governorGloss": "allocation",
+          "dependent": 8,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 11,
+          "governorGloss": "strategy",
+          "dependent": 9,
+          "dependentGloss": "in-network"
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "strategy",
+          "dependent": 10,
+          "dependentGloss": "caching"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "formulate",
+          "dependent": 11,
+          "dependentGloss": "strategy"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 7,
+          "governorGloss": "allocation",
+          "dependent": 11,
+          "dependentGloss": "strategy"
+        },
+        {
+          "dep": "case",
+          "governor": 15,
+          "governorGloss": "problem",
+          "dependent": 12,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "det",
+          "governor": 15,
+          "governorGloss": "problem",
+          "dependent": 13,
+          "dependentGloss": "an"
+        },
+        {
+          "dep": "compound",
+          "governor": 15,
+          "governorGloss": "problem",
+          "dependent": 14,
+          "dependentGloss": "optimization"
+        },
+        {
+          "dep": "nmod:as",
+          "governor": 3,
+          "governorGloss": "formulate",
+          "dependent": 15,
+          "dependentGloss": "problem"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "formulate",
+          "dependent": 16,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "advcl",
+          "governor": 3,
+          "governorGloss": "formulate",
+          "dependent": 17,
+          "dependentGloss": "considering"
+        },
+        {
+          "dep": "det",
+          "governor": 19,
+          "governorGloss": "gain",
+          "dependent": 18,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 17,
+          "governorGloss": "considering",
+          "dependent": 19,
+          "dependentGloss": "gain"
+        },
+        {
+          "dep": "case",
+          "governor": 23,
+          "governorGloss": "virtualization",
+          "dependent": 20,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "neg",
+          "governor": 23,
+          "governorGloss": "virtualization",
+          "dependent": 21,
+          "dependentGloss": "not"
+        },
+        {
+          "dep": "advmod",
+          "governor": 23,
+          "governorGloss": "virtualization",
+          "dependent": 22,
+          "dependentGloss": "only"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 19,
+          "governorGloss": "gain",
+          "dependent": 23,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "cc",
+          "governor": 23,
+          "governorGloss": "virtualization",
+          "dependent": 24,
+          "dependentGloss": "but"
+        },
+        {
+          "dep": "advmod",
+          "governor": 27,
+          "governorGloss": "caching",
+          "dependent": 25,
+          "dependentGloss": "also"
+        },
+        {
+          "dep": "amod",
+          "governor": 27,
+          "governorGloss": "caching",
+          "dependent": 26,
+          "dependentGloss": "in-network"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 19,
+          "governorGloss": "gain",
+          "dependent": 27,
+          "dependentGloss": "caching"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 23,
+          "governorGloss": "virtualization",
+          "dependent": 27,
+          "dependentGloss": "caching"
+        },
+        {
+          "dep": "case",
+          "governor": 33,
+          "governorGloss": "network",
+          "dependent": 28,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 33,
+          "governorGloss": "network",
+          "dependent": 29,
+          "dependentGloss": "our"
+        },
+        {
+          "dep": "amod",
+          "governor": 33,
+          "governorGloss": "network",
+          "dependent": 30,
+          "dependentGloss": "proposed"
+        },
+        {
+          "dep": "amod",
+          "governor": 33,
+          "governorGloss": "network",
+          "dependent": 31,
+          "dependentGloss": "information-centric"
+        },
+        {
+          "dep": "amod",
+          "governor": 33,
+          "governorGloss": "network",
+          "dependent": 32,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 17,
+          "governorGloss": "considering",
+          "dependent": 33,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "compound",
+          "governor": 35,
+          "governorGloss": "architecture",
+          "dependent": 34,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "dep",
+          "governor": 33,
+          "governorGloss": "network",
+          "dependent": 35,
+          "dependentGloss": "architecture"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "formulate",
+          "dependent": 36,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "formulate"
+        },
+        {
+          "dep": "advmod",
+          "governor": 3,
+          "governorGloss": "formulate",
+          "dependent": 1,
+          "dependentGloss": "Then"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "formulate",
+          "dependent": 2,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "det",
+          "governor": 7,
+          "governorGloss": "allocation",
+          "dependent": 4,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 7,
+          "governorGloss": "allocation",
+          "dependent": 5,
+          "dependentGloss": "virtual"
+        },
+        {
+          "dep": "compound",
+          "governor": 7,
+          "governorGloss": "allocation",
+          "dependent": 6,
+          "dependentGloss": "resource"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "formulate",
+          "dependent": 7,
+          "dependentGloss": "allocation"
+        },
+        {
+          "dep": "cc",
+          "governor": 7,
+          "governorGloss": "allocation",
+          "dependent": 8,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 11,
+          "governorGloss": "strategy",
+          "dependent": 9,
+          "dependentGloss": "in-network"
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "strategy",
+          "dependent": 10,
+          "dependentGloss": "caching"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "formulate",
+          "dependent": 11,
+          "dependentGloss": "strategy"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 7,
+          "governorGloss": "allocation",
+          "dependent": 11,
+          "dependentGloss": "strategy"
+        },
+        {
+          "dep": "case",
+          "governor": 15,
+          "governorGloss": "problem",
+          "dependent": 12,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "det",
+          "governor": 15,
+          "governorGloss": "problem",
+          "dependent": 13,
+          "dependentGloss": "an"
+        },
+        {
+          "dep": "compound",
+          "governor": 15,
+          "governorGloss": "problem",
+          "dependent": 14,
+          "dependentGloss": "optimization"
+        },
+        {
+          "dep": "nmod:as",
+          "governor": 3,
+          "governorGloss": "formulate",
+          "dependent": 15,
+          "dependentGloss": "problem"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "formulate",
+          "dependent": 16,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "advcl",
+          "governor": 3,
+          "governorGloss": "formulate",
+          "dependent": 17,
+          "dependentGloss": "considering"
+        },
+        {
+          "dep": "det",
+          "governor": 19,
+          "governorGloss": "gain",
+          "dependent": 18,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 17,
+          "governorGloss": "considering",
+          "dependent": 19,
+          "dependentGloss": "gain"
+        },
+        {
+          "dep": "case",
+          "governor": 23,
+          "governorGloss": "virtualization",
+          "dependent": 20,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "neg",
+          "governor": 23,
+          "governorGloss": "virtualization",
+          "dependent": 21,
+          "dependentGloss": "not"
+        },
+        {
+          "dep": "advmod",
+          "governor": 23,
+          "governorGloss": "virtualization",
+          "dependent": 22,
+          "dependentGloss": "only"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 19,
+          "governorGloss": "gain",
+          "dependent": 23,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "cc",
+          "governor": 23,
+          "governorGloss": "virtualization",
+          "dependent": 24,
+          "dependentGloss": "but"
+        },
+        {
+          "dep": "advmod",
+          "governor": 27,
+          "governorGloss": "caching",
+          "dependent": 25,
+          "dependentGloss": "also"
+        },
+        {
+          "dep": "amod",
+          "governor": 27,
+          "governorGloss": "caching",
+          "dependent": 26,
+          "dependentGloss": "in-network"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 19,
+          "governorGloss": "gain",
+          "dependent": 27,
+          "dependentGloss": "caching"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 23,
+          "governorGloss": "virtualization",
+          "dependent": 27,
+          "dependentGloss": "caching"
+        },
+        {
+          "dep": "case",
+          "governor": 33,
+          "governorGloss": "network",
+          "dependent": 28,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 33,
+          "governorGloss": "network",
+          "dependent": 29,
+          "dependentGloss": "our"
+        },
+        {
+          "dep": "amod",
+          "governor": 33,
+          "governorGloss": "network",
+          "dependent": 30,
+          "dependentGloss": "proposed"
+        },
+        {
+          "dep": "amod",
+          "governor": 33,
+          "governorGloss": "network",
+          "dependent": 31,
+          "dependentGloss": "information-centric"
+        },
+        {
+          "dep": "amod",
+          "governor": 33,
+          "governorGloss": "network",
+          "dependent": 32,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 17,
+          "governorGloss": "considering",
+          "dependent": 33,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "compound",
+          "governor": 35,
+          "governorGloss": "architecture",
+          "dependent": 34,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "dep",
+          "governor": 33,
+          "governorGloss": "network",
+          "dependent": 35,
+          "dependentGloss": "architecture"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "formulate",
+          "dependent": 36,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -1769,6 +5220,531 @@
     },
     {
       "index": 8,
+      "parse": "(ROOT\n  (S\n    (NP (DT The) (VBN obtained) (NN simulation) (NNS results))\n    (VP (VBP show)\n      (SBAR (IN that)\n        (S\n          (NP\n            (NP (PRP$ our) (VBN proposed) (JJ information-centric) (JJ wireless) (NN network) (NN virtualization) (NN architecture))\n            (CC and)\n            (NP (DT the) (JJ related) (NNS schemes)))\n          (ADVP (RB significantly))\n          (VP (VBP outperform)\n            (NP (DT the) (JJ other) (VBG existing) (NNS schemes))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "show"
+        },
+        {
+          "dep": "det",
+          "governor": 4,
+          "governorGloss": "results",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "amod",
+          "governor": 4,
+          "governorGloss": "results",
+          "dependent": 2,
+          "dependentGloss": "obtained"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "results",
+          "dependent": 3,
+          "dependentGloss": "simulation"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "show",
+          "dependent": 4,
+          "dependentGloss": "results"
+        },
+        {
+          "dep": "mark",
+          "governor": 19,
+          "governorGloss": "outperform",
+          "dependent": 6,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 7,
+          "dependentGloss": "our"
+        },
+        {
+          "dep": "amod",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 8,
+          "dependentGloss": "proposed"
+        },
+        {
+          "dep": "amod",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 9,
+          "dependentGloss": "information-centric"
+        },
+        {
+          "dep": "amod",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 10,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "compound",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 11,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "compound",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 12,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 19,
+          "governorGloss": "outperform",
+          "dependent": 13,
+          "dependentGloss": "architecture"
+        },
+        {
+          "dep": "cc",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 14,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "det",
+          "governor": 17,
+          "governorGloss": "schemes",
+          "dependent": 15,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 17,
+          "governorGloss": "schemes",
+          "dependent": 16,
+          "dependentGloss": "related"
+        },
+        {
+          "dep": "conj",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 17,
+          "dependentGloss": "schemes"
+        },
+        {
+          "dep": "advmod",
+          "governor": 19,
+          "governorGloss": "outperform",
+          "dependent": 18,
+          "dependentGloss": "significantly"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 5,
+          "governorGloss": "show",
+          "dependent": 19,
+          "dependentGloss": "outperform"
+        },
+        {
+          "dep": "det",
+          "governor": 23,
+          "governorGloss": "schemes",
+          "dependent": 20,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 23,
+          "governorGloss": "schemes",
+          "dependent": 21,
+          "dependentGloss": "other"
+        },
+        {
+          "dep": "amod",
+          "governor": 23,
+          "governorGloss": "schemes",
+          "dependent": 22,
+          "dependentGloss": "existing"
+        },
+        {
+          "dep": "dobj",
+          "governor": 19,
+          "governorGloss": "outperform",
+          "dependent": 23,
+          "dependentGloss": "schemes"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "show",
+          "dependent": 24,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "show"
+        },
+        {
+          "dep": "det",
+          "governor": 4,
+          "governorGloss": "results",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "amod",
+          "governor": 4,
+          "governorGloss": "results",
+          "dependent": 2,
+          "dependentGloss": "obtained"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "results",
+          "dependent": 3,
+          "dependentGloss": "simulation"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "show",
+          "dependent": 4,
+          "dependentGloss": "results"
+        },
+        {
+          "dep": "mark",
+          "governor": 19,
+          "governorGloss": "outperform",
+          "dependent": 6,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 7,
+          "dependentGloss": "our"
+        },
+        {
+          "dep": "amod",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 8,
+          "dependentGloss": "proposed"
+        },
+        {
+          "dep": "amod",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 9,
+          "dependentGloss": "information-centric"
+        },
+        {
+          "dep": "amod",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 10,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "compound",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 11,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "compound",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 12,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 19,
+          "governorGloss": "outperform",
+          "dependent": 13,
+          "dependentGloss": "architecture"
+        },
+        {
+          "dep": "cc",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 14,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "det",
+          "governor": 17,
+          "governorGloss": "schemes",
+          "dependent": 15,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 17,
+          "governorGloss": "schemes",
+          "dependent": 16,
+          "dependentGloss": "related"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 17,
+          "dependentGloss": "schemes"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 19,
+          "governorGloss": "outperform",
+          "dependent": 17,
+          "dependentGloss": "schemes"
+        },
+        {
+          "dep": "advmod",
+          "governor": 19,
+          "governorGloss": "outperform",
+          "dependent": 18,
+          "dependentGloss": "significantly"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 5,
+          "governorGloss": "show",
+          "dependent": 19,
+          "dependentGloss": "outperform"
+        },
+        {
+          "dep": "det",
+          "governor": 23,
+          "governorGloss": "schemes",
+          "dependent": 20,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 23,
+          "governorGloss": "schemes",
+          "dependent": 21,
+          "dependentGloss": "other"
+        },
+        {
+          "dep": "amod",
+          "governor": 23,
+          "governorGloss": "schemes",
+          "dependent": 22,
+          "dependentGloss": "existing"
+        },
+        {
+          "dep": "dobj",
+          "governor": 19,
+          "governorGloss": "outperform",
+          "dependent": 23,
+          "dependentGloss": "schemes"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "show",
+          "dependent": 24,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "show"
+        },
+        {
+          "dep": "det",
+          "governor": 4,
+          "governorGloss": "results",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "amod",
+          "governor": 4,
+          "governorGloss": "results",
+          "dependent": 2,
+          "dependentGloss": "obtained"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "results",
+          "dependent": 3,
+          "dependentGloss": "simulation"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "show",
+          "dependent": 4,
+          "dependentGloss": "results"
+        },
+        {
+          "dep": "mark",
+          "governor": 19,
+          "governorGloss": "outperform",
+          "dependent": 6,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 7,
+          "dependentGloss": "our"
+        },
+        {
+          "dep": "amod",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 8,
+          "dependentGloss": "proposed"
+        },
+        {
+          "dep": "amod",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 9,
+          "dependentGloss": "information-centric"
+        },
+        {
+          "dep": "amod",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 10,
+          "dependentGloss": "wireless"
+        },
+        {
+          "dep": "compound",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 11,
+          "dependentGloss": "network"
+        },
+        {
+          "dep": "compound",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 12,
+          "dependentGloss": "virtualization"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 19,
+          "governorGloss": "outperform",
+          "dependent": 13,
+          "dependentGloss": "architecture"
+        },
+        {
+          "dep": "cc",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 14,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "det",
+          "governor": 17,
+          "governorGloss": "schemes",
+          "dependent": 15,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 17,
+          "governorGloss": "schemes",
+          "dependent": 16,
+          "dependentGloss": "related"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 13,
+          "governorGloss": "architecture",
+          "dependent": 17,
+          "dependentGloss": "schemes"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 19,
+          "governorGloss": "outperform",
+          "dependent": 17,
+          "dependentGloss": "schemes"
+        },
+        {
+          "dep": "advmod",
+          "governor": 19,
+          "governorGloss": "outperform",
+          "dependent": 18,
+          "dependentGloss": "significantly"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 5,
+          "governorGloss": "show",
+          "dependent": 19,
+          "dependentGloss": "outperform"
+        },
+        {
+          "dep": "det",
+          "governor": 23,
+          "governorGloss": "schemes",
+          "dependent": 20,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 23,
+          "governorGloss": "schemes",
+          "dependent": 21,
+          "dependentGloss": "other"
+        },
+        {
+          "dep": "amod",
+          "governor": 23,
+          "governorGloss": "schemes",
+          "dependent": 22,
+          "dependentGloss": "existing"
+        },
+        {
+          "dep": "dobj",
+          "governor": 19,
+          "governorGloss": "outperform",
+          "dependent": 23,
+          "dependentGloss": "schemes"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "show",
+          "dependent": 24,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,

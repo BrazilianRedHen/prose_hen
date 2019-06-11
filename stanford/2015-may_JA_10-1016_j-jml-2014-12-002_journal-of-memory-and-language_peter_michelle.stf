@@ -2,6 +2,153 @@
   "sentences": [
     {
       "index": 0,
+      "parse": "(ROOT\n  (NP\n    (NP (NNP Journal))\n    (PP (IN of)\n      (NP (NN memory)\n        (CC and)\n        (NN language)))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "Journal"
+        },
+        {
+          "dep": "case",
+          "governor": 3,
+          "governorGloss": "memory",
+          "dependent": 2,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod",
+          "governor": 1,
+          "governorGloss": "Journal",
+          "dependent": 3,
+          "dependentGloss": "memory"
+        },
+        {
+          "dep": "cc",
+          "governor": 3,
+          "governorGloss": "memory",
+          "dependent": 4,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj",
+          "governor": 3,
+          "governorGloss": "memory",
+          "dependent": 5,
+          "dependentGloss": "language"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "Journal",
+          "dependent": 6,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "Journal"
+        },
+        {
+          "dep": "case",
+          "governor": 3,
+          "governorGloss": "memory",
+          "dependent": 2,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 1,
+          "governorGloss": "Journal",
+          "dependent": 3,
+          "dependentGloss": "memory"
+        },
+        {
+          "dep": "cc",
+          "governor": 3,
+          "governorGloss": "memory",
+          "dependent": 4,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 1,
+          "governorGloss": "Journal",
+          "dependent": 5,
+          "dependentGloss": "language"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 3,
+          "governorGloss": "memory",
+          "dependent": 5,
+          "dependentGloss": "language"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "Journal",
+          "dependent": 6,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "Journal"
+        },
+        {
+          "dep": "case",
+          "governor": 3,
+          "governorGloss": "memory",
+          "dependent": 2,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 1,
+          "governorGloss": "Journal",
+          "dependent": 3,
+          "dependentGloss": "memory"
+        },
+        {
+          "dep": "cc",
+          "governor": 3,
+          "governorGloss": "memory",
+          "dependent": 4,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 1,
+          "governorGloss": "Journal",
+          "dependent": 5,
+          "dependentGloss": "language"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 3,
+          "governorGloss": "memory",
+          "dependent": 5,
+          "dependentGloss": "language"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "Journal",
+          "dependent": 6,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -73,6 +220,265 @@
     },
     {
       "index": 1,
+      "parse": "(ROOT\n  (SBARQ\n    (WHADVP (WRB When)\n      (CC and)\n      (WRB how))\n    (SQ (VBP do)\n      (NP (NNS children))\n      (VP (VB develop)\n        (NP\n          (NP (NN knowledge))\n          (PP (IN of)\n            (S\n              (VP (VB verb)\n                (NP (NN argument) (NN structure))))))))\n    (. ?)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "develop"
+        },
+        {
+          "dep": "advmod",
+          "governor": 6,
+          "governorGloss": "develop",
+          "dependent": 1,
+          "dependentGloss": "When"
+        },
+        {
+          "dep": "cc",
+          "governor": 1,
+          "governorGloss": "When",
+          "dependent": 2,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "When",
+          "dependent": 3,
+          "dependentGloss": "how"
+        },
+        {
+          "dep": "aux",
+          "governor": 6,
+          "governorGloss": "develop",
+          "dependent": 4,
+          "dependentGloss": "do"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "develop",
+          "dependent": 5,
+          "dependentGloss": "children"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "develop",
+          "dependent": 7,
+          "dependentGloss": "knowledge"
+        },
+        {
+          "dep": "mark",
+          "governor": 9,
+          "governorGloss": "verb",
+          "dependent": 8,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "acl",
+          "governor": 7,
+          "governorGloss": "knowledge",
+          "dependent": 9,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "structure",
+          "dependent": 10,
+          "dependentGloss": "argument"
+        },
+        {
+          "dep": "dobj",
+          "governor": 9,
+          "governorGloss": "verb",
+          "dependent": 11,
+          "dependentGloss": "structure"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "develop",
+          "dependent": 12,
+          "dependentGloss": "?"
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "develop"
+        },
+        {
+          "dep": "advmod",
+          "governor": 6,
+          "governorGloss": "develop",
+          "dependent": 1,
+          "dependentGloss": "When"
+        },
+        {
+          "dep": "cc",
+          "governor": 1,
+          "governorGloss": "When",
+          "dependent": 2,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "When",
+          "dependent": 3,
+          "dependentGloss": "how"
+        },
+        {
+          "dep": "aux",
+          "governor": 6,
+          "governorGloss": "develop",
+          "dependent": 4,
+          "dependentGloss": "do"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "develop",
+          "dependent": 5,
+          "dependentGloss": "children"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "develop",
+          "dependent": 7,
+          "dependentGloss": "knowledge"
+        },
+        {
+          "dep": "mark",
+          "governor": 9,
+          "governorGloss": "verb",
+          "dependent": 8,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "acl:of",
+          "governor": 7,
+          "governorGloss": "knowledge",
+          "dependent": 9,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "structure",
+          "dependent": 10,
+          "dependentGloss": "argument"
+        },
+        {
+          "dep": "dobj",
+          "governor": 9,
+          "governorGloss": "verb",
+          "dependent": 11,
+          "dependentGloss": "structure"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "develop",
+          "dependent": 12,
+          "dependentGloss": "?"
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "develop"
+        },
+        {
+          "dep": "advmod",
+          "governor": 6,
+          "governorGloss": "develop",
+          "dependent": 1,
+          "dependentGloss": "When"
+        },
+        {
+          "dep": "cc",
+          "governor": 1,
+          "governorGloss": "When",
+          "dependent": 2,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "When",
+          "dependent": 3,
+          "dependentGloss": "how"
+        },
+        {
+          "dep": "aux",
+          "governor": 6,
+          "governorGloss": "develop",
+          "dependent": 4,
+          "dependentGloss": "do"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "develop",
+          "dependent": 5,
+          "dependentGloss": "children"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "develop",
+          "dependent": 7,
+          "dependentGloss": "knowledge"
+        },
+        {
+          "dep": "mark",
+          "governor": 9,
+          "governorGloss": "verb",
+          "dependent": 8,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "acl:of",
+          "governor": 7,
+          "governorGloss": "knowledge",
+          "dependent": 9,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "structure",
+          "dependent": 10,
+          "dependentGloss": "argument"
+        },
+        {
+          "dep": "dobj",
+          "governor": 9,
+          "governorGloss": "verb",
+          "dependent": 11,
+          "dependentGloss": "structure"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "develop",
+          "dependent": 12,
+          "dependentGloss": "?"
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -210,6 +616,244 @@
     },
     {
       "index": 2,
+      "parse": "(ROOT\n  (NP\n    (NP (NN Evidence))\n    (PP (IN from)\n      (S\n        (VP (VB verb)\n          (NP (NN bias) (NNS effects))\n          (PP (IN in)\n            (NP (DT a) (JJ structural) (NN priming) (NN task))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "Evidence"
+        },
+        {
+          "dep": "mark",
+          "governor": 3,
+          "governorGloss": "verb",
+          "dependent": 2,
+          "dependentGloss": "from"
+        },
+        {
+          "dep": "acl",
+          "governor": 1,
+          "governorGloss": "Evidence",
+          "dependent": 3,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "compound",
+          "governor": 5,
+          "governorGloss": "effects",
+          "dependent": 4,
+          "dependentGloss": "bias"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "verb",
+          "dependent": 5,
+          "dependentGloss": "effects"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "task",
+          "dependent": 6,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "det",
+          "governor": 10,
+          "governorGloss": "task",
+          "dependent": 7,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "task",
+          "dependent": 8,
+          "dependentGloss": "structural"
+        },
+        {
+          "dep": "compound",
+          "governor": 10,
+          "governorGloss": "task",
+          "dependent": 9,
+          "dependentGloss": "priming"
+        },
+        {
+          "dep": "nmod",
+          "governor": 3,
+          "governorGloss": "verb",
+          "dependent": 10,
+          "dependentGloss": "task"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "Evidence",
+          "dependent": 11,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "Evidence"
+        },
+        {
+          "dep": "mark",
+          "governor": 3,
+          "governorGloss": "verb",
+          "dependent": 2,
+          "dependentGloss": "from"
+        },
+        {
+          "dep": "acl:from",
+          "governor": 1,
+          "governorGloss": "Evidence",
+          "dependent": 3,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "compound",
+          "governor": 5,
+          "governorGloss": "effects",
+          "dependent": 4,
+          "dependentGloss": "bias"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "verb",
+          "dependent": 5,
+          "dependentGloss": "effects"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "task",
+          "dependent": 6,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "det",
+          "governor": 10,
+          "governorGloss": "task",
+          "dependent": 7,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "task",
+          "dependent": 8,
+          "dependentGloss": "structural"
+        },
+        {
+          "dep": "compound",
+          "governor": 10,
+          "governorGloss": "task",
+          "dependent": 9,
+          "dependentGloss": "priming"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 3,
+          "governorGloss": "verb",
+          "dependent": 10,
+          "dependentGloss": "task"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "Evidence",
+          "dependent": 11,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "Evidence"
+        },
+        {
+          "dep": "mark",
+          "governor": 3,
+          "governorGloss": "verb",
+          "dependent": 2,
+          "dependentGloss": "from"
+        },
+        {
+          "dep": "acl:from",
+          "governor": 1,
+          "governorGloss": "Evidence",
+          "dependent": 3,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "compound",
+          "governor": 5,
+          "governorGloss": "effects",
+          "dependent": 4,
+          "dependentGloss": "bias"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "verb",
+          "dependent": 5,
+          "dependentGloss": "effects"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "task",
+          "dependent": 6,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "det",
+          "governor": 10,
+          "governorGloss": "task",
+          "dependent": 7,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "task",
+          "dependent": 8,
+          "dependentGloss": "structural"
+        },
+        {
+          "dep": "compound",
+          "governor": 10,
+          "governorGloss": "task",
+          "dependent": 9,
+          "dependentGloss": "priming"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 3,
+          "governorGloss": "verb",
+          "dependent": 10,
+          "dependentGloss": "task"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "Evidence",
+          "dependent": 11,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -336,6 +980,790 @@
     },
     {
       "index": 3,
+      "parse": "(ROOT\n  (S\n    (PP (IN In)\n      (NP (DT this) (NN study)))\n    (, ,)\n    (NP (PRP we))\n    (VP\n      (VP (VBD investigated)\n        (SBAR\n          (WHADVP (WRB when))\n          (S\n            (NP (NNS children))\n            (VP (VBP develop)\n              (S\n                (NP (JJ adult-like))\n                (VP (VB verb)\n                  (NP (NN structure) (NNS links))))))))\n      (, ,)\n      (CC and)\n      (VP (VBD examined)\n        (NP\n          (NP (CD two) (NNS mechanisms))\n          (, ,)\n          (NP\n            (NP\n              (ADJP (JJ associative)\n                (CC and)\n                (JJ error-based))\n              (NN learning))\n            (, ,)\n            (SBAR\n              (WHNP (WDT that))\n              (S\n                (VP (MD might)\n                  (VP (VB explain)\n                    (SBAR\n                      (WHADVP (WRB how))\n                      (S\n                        (NP (DT these))\n                        (VP (VB verb)\n                          (SBAR\n                            (S\n                              (NP (NN structure) (NNS links))\n                              (VP (VBP are)\n                                (VP (VBN learned))))))))))))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "investigated"
+        },
+        {
+          "dep": "case",
+          "governor": 3,
+          "governorGloss": "study",
+          "dependent": 1,
+          "dependentGloss": "In"
+        },
+        {
+          "dep": "det",
+          "governor": 3,
+          "governorGloss": "study",
+          "dependent": 2,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "nmod",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 3,
+          "dependentGloss": "study"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 4,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 5,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "advmod",
+          "governor": 9,
+          "governorGloss": "develop",
+          "dependent": 7,
+          "dependentGloss": "when"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 9,
+          "governorGloss": "develop",
+          "dependent": 8,
+          "dependentGloss": "children"
+        },
+        {
+          "dep": "advcl",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 9,
+          "dependentGloss": "develop"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 11,
+          "governorGloss": "verb",
+          "dependent": 10,
+          "dependentGloss": "adult-like"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 9,
+          "governorGloss": "develop",
+          "dependent": 11,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "compound",
+          "governor": 13,
+          "governorGloss": "links",
+          "dependent": 12,
+          "dependentGloss": "structure"
+        },
+        {
+          "dep": "dobj",
+          "governor": 11,
+          "governorGloss": "verb",
+          "dependent": 13,
+          "dependentGloss": "links"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 14,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 15,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 16,
+          "dependentGloss": "examined"
+        },
+        {
+          "dep": "nummod",
+          "governor": 18,
+          "governorGloss": "mechanisms",
+          "dependent": 17,
+          "dependentGloss": "two"
+        },
+        {
+          "dep": "dobj",
+          "governor": 16,
+          "governorGloss": "examined",
+          "dependent": 18,
+          "dependentGloss": "mechanisms"
+        },
+        {
+          "dep": "punct",
+          "governor": 18,
+          "governorGloss": "mechanisms",
+          "dependent": 19,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "amod",
+          "governor": 23,
+          "governorGloss": "learning",
+          "dependent": 20,
+          "dependentGloss": "associative"
+        },
+        {
+          "dep": "cc",
+          "governor": 20,
+          "governorGloss": "associative",
+          "dependent": 21,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj",
+          "governor": 20,
+          "governorGloss": "associative",
+          "dependent": 22,
+          "dependentGloss": "error-based"
+        },
+        {
+          "dep": "appos",
+          "governor": 18,
+          "governorGloss": "mechanisms",
+          "dependent": 23,
+          "dependentGloss": "learning"
+        },
+        {
+          "dep": "punct",
+          "governor": 23,
+          "governorGloss": "learning",
+          "dependent": 24,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nsubj",
+          "governor": 27,
+          "governorGloss": "explain",
+          "dependent": 25,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "aux",
+          "governor": 27,
+          "governorGloss": "explain",
+          "dependent": 26,
+          "dependentGloss": "might"
+        },
+        {
+          "dep": "acl:relcl",
+          "governor": 23,
+          "governorGloss": "learning",
+          "dependent": 27,
+          "dependentGloss": "explain"
+        },
+        {
+          "dep": "advmod",
+          "governor": 30,
+          "governorGloss": "verb",
+          "dependent": 28,
+          "dependentGloss": "how"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 30,
+          "governorGloss": "verb",
+          "dependent": 29,
+          "dependentGloss": "these"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 27,
+          "governorGloss": "explain",
+          "dependent": 30,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "compound",
+          "governor": 32,
+          "governorGloss": "links",
+          "dependent": 31,
+          "dependentGloss": "structure"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 34,
+          "governorGloss": "learned",
+          "dependent": 32,
+          "dependentGloss": "links"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 34,
+          "governorGloss": "learned",
+          "dependent": 33,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 30,
+          "governorGloss": "verb",
+          "dependent": 34,
+          "dependentGloss": "learned"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 35,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "investigated"
+        },
+        {
+          "dep": "case",
+          "governor": 3,
+          "governorGloss": "study",
+          "dependent": 1,
+          "dependentGloss": "In"
+        },
+        {
+          "dep": "det",
+          "governor": 3,
+          "governorGloss": "study",
+          "dependent": 2,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 3,
+          "dependentGloss": "study"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 4,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 5,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 16,
+          "governorGloss": "examined",
+          "dependent": 5,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "advmod",
+          "governor": 9,
+          "governorGloss": "develop",
+          "dependent": 7,
+          "dependentGloss": "when"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 9,
+          "governorGloss": "develop",
+          "dependent": 8,
+          "dependentGloss": "children"
+        },
+        {
+          "dep": "advcl",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 9,
+          "dependentGloss": "develop"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 11,
+          "governorGloss": "verb",
+          "dependent": 10,
+          "dependentGloss": "adult-like"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 9,
+          "governorGloss": "develop",
+          "dependent": 11,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "compound",
+          "governor": 13,
+          "governorGloss": "links",
+          "dependent": 12,
+          "dependentGloss": "structure"
+        },
+        {
+          "dep": "dobj",
+          "governor": 11,
+          "governorGloss": "verb",
+          "dependent": 13,
+          "dependentGloss": "links"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 14,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 15,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 16,
+          "dependentGloss": "examined"
+        },
+        {
+          "dep": "nummod",
+          "governor": 18,
+          "governorGloss": "mechanisms",
+          "dependent": 17,
+          "dependentGloss": "two"
+        },
+        {
+          "dep": "dobj",
+          "governor": 16,
+          "governorGloss": "examined",
+          "dependent": 18,
+          "dependentGloss": "mechanisms"
+        },
+        {
+          "dep": "punct",
+          "governor": 18,
+          "governorGloss": "mechanisms",
+          "dependent": 19,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "amod",
+          "governor": 23,
+          "governorGloss": "learning",
+          "dependent": 20,
+          "dependentGloss": "associative"
+        },
+        {
+          "dep": "cc",
+          "governor": 20,
+          "governorGloss": "associative",
+          "dependent": 21,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 20,
+          "governorGloss": "associative",
+          "dependent": 22,
+          "dependentGloss": "error-based"
+        },
+        {
+          "dep": "amod",
+          "governor": 23,
+          "governorGloss": "learning",
+          "dependent": 22,
+          "dependentGloss": "error-based"
+        },
+        {
+          "dep": "appos",
+          "governor": 18,
+          "governorGloss": "mechanisms",
+          "dependent": 23,
+          "dependentGloss": "learning"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 27,
+          "governorGloss": "explain",
+          "dependent": 23,
+          "dependentGloss": "learning"
+        },
+        {
+          "dep": "punct",
+          "governor": 23,
+          "governorGloss": "learning",
+          "dependent": 24,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "ref",
+          "governor": 23,
+          "governorGloss": "learning",
+          "dependent": 25,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "aux",
+          "governor": 27,
+          "governorGloss": "explain",
+          "dependent": 26,
+          "dependentGloss": "might"
+        },
+        {
+          "dep": "acl:relcl",
+          "governor": 23,
+          "governorGloss": "learning",
+          "dependent": 27,
+          "dependentGloss": "explain"
+        },
+        {
+          "dep": "advmod",
+          "governor": 30,
+          "governorGloss": "verb",
+          "dependent": 28,
+          "dependentGloss": "how"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 30,
+          "governorGloss": "verb",
+          "dependent": 29,
+          "dependentGloss": "these"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 27,
+          "governorGloss": "explain",
+          "dependent": 30,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "compound",
+          "governor": 32,
+          "governorGloss": "links",
+          "dependent": 31,
+          "dependentGloss": "structure"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 34,
+          "governorGloss": "learned",
+          "dependent": 32,
+          "dependentGloss": "links"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 34,
+          "governorGloss": "learned",
+          "dependent": 33,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 30,
+          "governorGloss": "verb",
+          "dependent": 34,
+          "dependentGloss": "learned"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 35,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "investigated"
+        },
+        {
+          "dep": "case",
+          "governor": 3,
+          "governorGloss": "study",
+          "dependent": 1,
+          "dependentGloss": "In"
+        },
+        {
+          "dep": "det",
+          "governor": 3,
+          "governorGloss": "study",
+          "dependent": 2,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 3,
+          "dependentGloss": "study"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 4,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 5,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 16,
+          "governorGloss": "examined",
+          "dependent": 5,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "advmod",
+          "governor": 9,
+          "governorGloss": "develop",
+          "dependent": 7,
+          "dependentGloss": "when"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 9,
+          "governorGloss": "develop",
+          "dependent": 8,
+          "dependentGloss": "children"
+        },
+        {
+          "dep": "advcl",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 9,
+          "dependentGloss": "develop"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 11,
+          "governorGloss": "verb",
+          "dependent": 10,
+          "dependentGloss": "adult-like"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 9,
+          "governorGloss": "develop",
+          "dependent": 11,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "compound",
+          "governor": 13,
+          "governorGloss": "links",
+          "dependent": 12,
+          "dependentGloss": "structure"
+        },
+        {
+          "dep": "dobj",
+          "governor": 11,
+          "governorGloss": "verb",
+          "dependent": 13,
+          "dependentGloss": "links"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 14,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 15,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 16,
+          "dependentGloss": "examined"
+        },
+        {
+          "dep": "nummod",
+          "governor": 18,
+          "governorGloss": "mechanisms",
+          "dependent": 17,
+          "dependentGloss": "two"
+        },
+        {
+          "dep": "dobj",
+          "governor": 16,
+          "governorGloss": "examined",
+          "dependent": 18,
+          "dependentGloss": "mechanisms"
+        },
+        {
+          "dep": "punct",
+          "governor": 18,
+          "governorGloss": "mechanisms",
+          "dependent": 19,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "amod",
+          "governor": 23,
+          "governorGloss": "learning",
+          "dependent": 20,
+          "dependentGloss": "associative"
+        },
+        {
+          "dep": "cc",
+          "governor": 20,
+          "governorGloss": "associative",
+          "dependent": 21,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 20,
+          "governorGloss": "associative",
+          "dependent": 22,
+          "dependentGloss": "error-based"
+        },
+        {
+          "dep": "amod",
+          "governor": 23,
+          "governorGloss": "learning",
+          "dependent": 22,
+          "dependentGloss": "error-based"
+        },
+        {
+          "dep": "appos",
+          "governor": 18,
+          "governorGloss": "mechanisms",
+          "dependent": 23,
+          "dependentGloss": "learning"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 27,
+          "governorGloss": "explain",
+          "dependent": 23,
+          "dependentGloss": "learning"
+        },
+        {
+          "dep": "punct",
+          "governor": 23,
+          "governorGloss": "learning",
+          "dependent": 24,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "ref",
+          "governor": 23,
+          "governorGloss": "learning",
+          "dependent": 25,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "aux",
+          "governor": 27,
+          "governorGloss": "explain",
+          "dependent": 26,
+          "dependentGloss": "might"
+        },
+        {
+          "dep": "acl:relcl",
+          "governor": 23,
+          "governorGloss": "learning",
+          "dependent": 27,
+          "dependentGloss": "explain"
+        },
+        {
+          "dep": "advmod",
+          "governor": 30,
+          "governorGloss": "verb",
+          "dependent": 28,
+          "dependentGloss": "how"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 30,
+          "governorGloss": "verb",
+          "dependent": 29,
+          "dependentGloss": "these"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 27,
+          "governorGloss": "explain",
+          "dependent": 30,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "compound",
+          "governor": 32,
+          "governorGloss": "links",
+          "dependent": 31,
+          "dependentGloss": "structure"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 34,
+          "governorGloss": "learned",
+          "dependent": 32,
+          "dependentGloss": "links"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 34,
+          "governorGloss": "learned",
+          "dependent": 33,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 30,
+          "governorGloss": "verb",
+          "dependent": 34,
+          "dependentGloss": "learned"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "investigated",
+          "dependent": 35,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -726,6 +2154,1112 @@
     },
     {
       "index": 4,
+      "parse": "(ROOT\n  (S\n    (S\n      (S\n        (VP (VBG Using)\n          (NP (JJ structural) (NN priming))))\n      (, ,)\n      (NP (PRP we))\n      (VP (VBD tested)\n        (NP\n          (NP\n            (NP (NNS children) (POS 's))\n            (CC and)\n            (NP (NNS adults) (POS ')))\n          (NN ability))\n        (S\n          (VP (TO to)\n            (VP (VB use) (VB verb)\n              (NP\n                (NP (NN structure) (NNS links))\n                (PP (IN in)\n                  (NP\n                    (NP (NN production))\n                    (PP (IN in)\n                      (NP (CD three) (NNS ways))))))\n              (: ;)\n              (PP (IN by)\n                (S\n                  (VP (VBG manipulating)))))))))\n    (: :)\n    (S\n      (LST (-LRB- -LRB-) (LS 1) (-RRB- -RRB-))\n      (NP (VB verb))\n      (VP (VBP overlap)\n        (PP (IN between)\n          (NP\n            (NP (JJ prime))\n            (CC and)\n            (NP\n              (NP (NN target))\n              (, ,)\n              (NP\n                (LST (-LRB- -LRB-) (LS 2) (-RRB- -RRB-))\n                (NP (NN target))\n                (PP (VB verb)\n                  (SBAR\n                    (WHNP\n                      (NP (NN bias))\n                      (PRN (, ,)\n                        (CC and)\n                        (NP\n                          (NP (-LRB- -LRB-) (LS 3) (-RRB- -RRB-))\n                          (NP (JJ prime)))))\n                    (S\n                      (VP (VB verb)\n                        (NP (NN bias))))))))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "tested"
+        },
+        {
+          "dep": "advcl",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 1,
+          "dependentGloss": "Using"
+        },
+        {
+          "dep": "amod",
+          "governor": 3,
+          "governorGloss": "priming",
+          "dependent": 2,
+          "dependentGloss": "structural"
+        },
+        {
+          "dep": "dobj",
+          "governor": 1,
+          "governorGloss": "Using",
+          "dependent": 3,
+          "dependentGloss": "priming"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 4,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 5,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 12,
+          "governorGloss": "ability",
+          "dependent": 7,
+          "dependentGloss": "children"
+        },
+        {
+          "dep": "case",
+          "governor": 7,
+          "governorGloss": "children",
+          "dependent": 8,
+          "dependentGloss": "'s"
+        },
+        {
+          "dep": "cc",
+          "governor": 7,
+          "governorGloss": "children",
+          "dependent": 9,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj",
+          "governor": 7,
+          "governorGloss": "children",
+          "dependent": 10,
+          "dependentGloss": "adults"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "adults",
+          "dependent": 11,
+          "dependentGloss": "'"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 12,
+          "dependentGloss": "ability"
+        },
+        {
+          "dep": "mark",
+          "governor": 14,
+          "governorGloss": "use",
+          "dependent": 13,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "advcl",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 14,
+          "dependentGloss": "use"
+        },
+        {
+          "dep": "dep",
+          "governor": 14,
+          "governorGloss": "use",
+          "dependent": 15,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "compound",
+          "governor": 17,
+          "governorGloss": "links",
+          "dependent": 16,
+          "dependentGloss": "structure"
+        },
+        {
+          "dep": "dobj",
+          "governor": 14,
+          "governorGloss": "use",
+          "dependent": 17,
+          "dependentGloss": "links"
+        },
+        {
+          "dep": "case",
+          "governor": 19,
+          "governorGloss": "production",
+          "dependent": 18,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod",
+          "governor": 17,
+          "governorGloss": "links",
+          "dependent": 19,
+          "dependentGloss": "production"
+        },
+        {
+          "dep": "case",
+          "governor": 22,
+          "governorGloss": "ways",
+          "dependent": 20,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nummod",
+          "governor": 22,
+          "governorGloss": "ways",
+          "dependent": 21,
+          "dependentGloss": "three"
+        },
+        {
+          "dep": "nmod",
+          "governor": 19,
+          "governorGloss": "production",
+          "dependent": 22,
+          "dependentGloss": "ways"
+        },
+        {
+          "dep": "punct",
+          "governor": 14,
+          "governorGloss": "use",
+          "dependent": 23,
+          "dependentGloss": ";"
+        },
+        {
+          "dep": "mark",
+          "governor": 25,
+          "governorGloss": "manipulating",
+          "dependent": 24,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "advcl",
+          "governor": 14,
+          "governorGloss": "use",
+          "dependent": 25,
+          "dependentGloss": "manipulating"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 26,
+          "dependentGloss": ":"
+        },
+        {
+          "dep": "punct",
+          "governor": 28,
+          "governorGloss": "1",
+          "dependent": 27,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "dep",
+          "governor": 31,
+          "governorGloss": "overlap",
+          "dependent": 28,
+          "dependentGloss": "1"
+        },
+        {
+          "dep": "punct",
+          "governor": 28,
+          "governorGloss": "1",
+          "dependent": 29,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 31,
+          "governorGloss": "overlap",
+          "dependent": 30,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "parataxis",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 31,
+          "dependentGloss": "overlap"
+        },
+        {
+          "dep": "case",
+          "governor": 33,
+          "governorGloss": "prime",
+          "dependent": 32,
+          "dependentGloss": "between"
+        },
+        {
+          "dep": "nmod",
+          "governor": 31,
+          "governorGloss": "overlap",
+          "dependent": 33,
+          "dependentGloss": "prime"
+        },
+        {
+          "dep": "cc",
+          "governor": 33,
+          "governorGloss": "prime",
+          "dependent": 34,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj",
+          "governor": 33,
+          "governorGloss": "prime",
+          "dependent": 35,
+          "dependentGloss": "target"
+        },
+        {
+          "dep": "punct",
+          "governor": 35,
+          "governorGloss": "target",
+          "dependent": 36,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "punct",
+          "governor": 38,
+          "governorGloss": "2",
+          "dependent": 37,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "dep",
+          "governor": 40,
+          "governorGloss": "target",
+          "dependent": 38,
+          "dependentGloss": "2"
+        },
+        {
+          "dep": "punct",
+          "governor": 38,
+          "governorGloss": "2",
+          "dependent": 39,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "appos",
+          "governor": 35,
+          "governorGloss": "target",
+          "dependent": 40,
+          "dependentGloss": "target"
+        },
+        {
+          "dep": "dep",
+          "governor": 49,
+          "governorGloss": "verb",
+          "dependent": 41,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 49,
+          "governorGloss": "verb",
+          "dependent": 42,
+          "dependentGloss": "bias"
+        },
+        {
+          "dep": "punct",
+          "governor": 46,
+          "governorGloss": "3",
+          "dependent": 43,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 46,
+          "governorGloss": "3",
+          "dependent": 44,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "punct",
+          "governor": 46,
+          "governorGloss": "3",
+          "dependent": 45,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "dep",
+          "governor": 42,
+          "governorGloss": "bias",
+          "dependent": 46,
+          "dependentGloss": "3"
+        },
+        {
+          "dep": "punct",
+          "governor": 46,
+          "governorGloss": "3",
+          "dependent": 47,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "dep",
+          "governor": 46,
+          "governorGloss": "3",
+          "dependent": 48,
+          "dependentGloss": "prime"
+        },
+        {
+          "dep": "acl",
+          "governor": 40,
+          "governorGloss": "target",
+          "dependent": 49,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "dobj",
+          "governor": 49,
+          "governorGloss": "verb",
+          "dependent": 50,
+          "dependentGloss": "bias"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 51,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "tested"
+        },
+        {
+          "dep": "advcl",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 1,
+          "dependentGloss": "Using"
+        },
+        {
+          "dep": "amod",
+          "governor": 3,
+          "governorGloss": "priming",
+          "dependent": 2,
+          "dependentGloss": "structural"
+        },
+        {
+          "dep": "dobj",
+          "governor": 1,
+          "governorGloss": "Using",
+          "dependent": 3,
+          "dependentGloss": "priming"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 4,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 5,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 12,
+          "governorGloss": "ability",
+          "dependent": 7,
+          "dependentGloss": "children"
+        },
+        {
+          "dep": "case",
+          "governor": 7,
+          "governorGloss": "children",
+          "dependent": 8,
+          "dependentGloss": "'s"
+        },
+        {
+          "dep": "cc",
+          "governor": 7,
+          "governorGloss": "children",
+          "dependent": 9,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 7,
+          "governorGloss": "children",
+          "dependent": 10,
+          "dependentGloss": "adults"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 12,
+          "governorGloss": "ability",
+          "dependent": 10,
+          "dependentGloss": "adults"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "adults",
+          "dependent": 11,
+          "dependentGloss": "'"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 12,
+          "dependentGloss": "ability"
+        },
+        {
+          "dep": "mark",
+          "governor": 14,
+          "governorGloss": "use",
+          "dependent": 13,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "advcl:to",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 14,
+          "dependentGloss": "use"
+        },
+        {
+          "dep": "dep",
+          "governor": 14,
+          "governorGloss": "use",
+          "dependent": 15,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "compound",
+          "governor": 17,
+          "governorGloss": "links",
+          "dependent": 16,
+          "dependentGloss": "structure"
+        },
+        {
+          "dep": "dobj",
+          "governor": 14,
+          "governorGloss": "use",
+          "dependent": 17,
+          "dependentGloss": "links"
+        },
+        {
+          "dep": "case",
+          "governor": 19,
+          "governorGloss": "production",
+          "dependent": 18,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 17,
+          "governorGloss": "links",
+          "dependent": 19,
+          "dependentGloss": "production"
+        },
+        {
+          "dep": "case",
+          "governor": 22,
+          "governorGloss": "ways",
+          "dependent": 20,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nummod",
+          "governor": 22,
+          "governorGloss": "ways",
+          "dependent": 21,
+          "dependentGloss": "three"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 19,
+          "governorGloss": "production",
+          "dependent": 22,
+          "dependentGloss": "ways"
+        },
+        {
+          "dep": "punct",
+          "governor": 14,
+          "governorGloss": "use",
+          "dependent": 23,
+          "dependentGloss": ";"
+        },
+        {
+          "dep": "mark",
+          "governor": 25,
+          "governorGloss": "manipulating",
+          "dependent": 24,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "advcl:by",
+          "governor": 14,
+          "governorGloss": "use",
+          "dependent": 25,
+          "dependentGloss": "manipulating"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 26,
+          "dependentGloss": ":"
+        },
+        {
+          "dep": "punct",
+          "governor": 28,
+          "governorGloss": "1",
+          "dependent": 27,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "dep",
+          "governor": 31,
+          "governorGloss": "overlap",
+          "dependent": 28,
+          "dependentGloss": "1"
+        },
+        {
+          "dep": "punct",
+          "governor": 28,
+          "governorGloss": "1",
+          "dependent": 29,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 31,
+          "governorGloss": "overlap",
+          "dependent": 30,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "parataxis",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 31,
+          "dependentGloss": "overlap"
+        },
+        {
+          "dep": "case",
+          "governor": 33,
+          "governorGloss": "prime",
+          "dependent": 32,
+          "dependentGloss": "between"
+        },
+        {
+          "dep": "nmod:between",
+          "governor": 31,
+          "governorGloss": "overlap",
+          "dependent": 33,
+          "dependentGloss": "prime"
+        },
+        {
+          "dep": "cc",
+          "governor": 33,
+          "governorGloss": "prime",
+          "dependent": 34,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "nmod:between",
+          "governor": 31,
+          "governorGloss": "overlap",
+          "dependent": 35,
+          "dependentGloss": "target"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 33,
+          "governorGloss": "prime",
+          "dependent": 35,
+          "dependentGloss": "target"
+        },
+        {
+          "dep": "punct",
+          "governor": 35,
+          "governorGloss": "target",
+          "dependent": 36,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "punct",
+          "governor": 38,
+          "governorGloss": "2",
+          "dependent": 37,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "dep",
+          "governor": 40,
+          "governorGloss": "target",
+          "dependent": 38,
+          "dependentGloss": "2"
+        },
+        {
+          "dep": "punct",
+          "governor": 38,
+          "governorGloss": "2",
+          "dependent": 39,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "appos",
+          "governor": 35,
+          "governorGloss": "target",
+          "dependent": 40,
+          "dependentGloss": "target"
+        },
+        {
+          "dep": "dep",
+          "governor": 49,
+          "governorGloss": "verb",
+          "dependent": 41,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 49,
+          "governorGloss": "verb",
+          "dependent": 42,
+          "dependentGloss": "bias"
+        },
+        {
+          "dep": "punct",
+          "governor": 46,
+          "governorGloss": "3",
+          "dependent": 43,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 46,
+          "governorGloss": "3",
+          "dependent": 44,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "punct",
+          "governor": 46,
+          "governorGloss": "3",
+          "dependent": 45,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "dep",
+          "governor": 42,
+          "governorGloss": "bias",
+          "dependent": 46,
+          "dependentGloss": "3"
+        },
+        {
+          "dep": "punct",
+          "governor": 46,
+          "governorGloss": "3",
+          "dependent": 47,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "dep",
+          "governor": 46,
+          "governorGloss": "3",
+          "dependent": 48,
+          "dependentGloss": "prime"
+        },
+        {
+          "dep": "acl",
+          "governor": 40,
+          "governorGloss": "target",
+          "dependent": 49,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "dobj",
+          "governor": 49,
+          "governorGloss": "verb",
+          "dependent": 50,
+          "dependentGloss": "bias"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 51,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "tested"
+        },
+        {
+          "dep": "advcl",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 1,
+          "dependentGloss": "Using"
+        },
+        {
+          "dep": "amod",
+          "governor": 3,
+          "governorGloss": "priming",
+          "dependent": 2,
+          "dependentGloss": "structural"
+        },
+        {
+          "dep": "dobj",
+          "governor": 1,
+          "governorGloss": "Using",
+          "dependent": 3,
+          "dependentGloss": "priming"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 4,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 5,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 12,
+          "governorGloss": "ability",
+          "dependent": 7,
+          "dependentGloss": "children"
+        },
+        {
+          "dep": "case",
+          "governor": 7,
+          "governorGloss": "children",
+          "dependent": 8,
+          "dependentGloss": "'s"
+        },
+        {
+          "dep": "cc",
+          "governor": 7,
+          "governorGloss": "children",
+          "dependent": 9,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 7,
+          "governorGloss": "children",
+          "dependent": 10,
+          "dependentGloss": "adults"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 12,
+          "governorGloss": "ability",
+          "dependent": 10,
+          "dependentGloss": "adults"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "adults",
+          "dependent": 11,
+          "dependentGloss": "'"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 12,
+          "dependentGloss": "ability"
+        },
+        {
+          "dep": "mark",
+          "governor": 14,
+          "governorGloss": "use",
+          "dependent": 13,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "advcl:to",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 14,
+          "dependentGloss": "use"
+        },
+        {
+          "dep": "dep",
+          "governor": 14,
+          "governorGloss": "use",
+          "dependent": 15,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "compound",
+          "governor": 17,
+          "governorGloss": "links",
+          "dependent": 16,
+          "dependentGloss": "structure"
+        },
+        {
+          "dep": "dobj",
+          "governor": 14,
+          "governorGloss": "use",
+          "dependent": 17,
+          "dependentGloss": "links"
+        },
+        {
+          "dep": "case",
+          "governor": 19,
+          "governorGloss": "production",
+          "dependent": 18,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 17,
+          "governorGloss": "links",
+          "dependent": 19,
+          "dependentGloss": "production"
+        },
+        {
+          "dep": "case",
+          "governor": 22,
+          "governorGloss": "ways",
+          "dependent": 20,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nummod",
+          "governor": 22,
+          "governorGloss": "ways",
+          "dependent": 21,
+          "dependentGloss": "three"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 19,
+          "governorGloss": "production",
+          "dependent": 22,
+          "dependentGloss": "ways"
+        },
+        {
+          "dep": "punct",
+          "governor": 14,
+          "governorGloss": "use",
+          "dependent": 23,
+          "dependentGloss": ";"
+        },
+        {
+          "dep": "mark",
+          "governor": 25,
+          "governorGloss": "manipulating",
+          "dependent": 24,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "advcl:by",
+          "governor": 14,
+          "governorGloss": "use",
+          "dependent": 25,
+          "dependentGloss": "manipulating"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 26,
+          "dependentGloss": ":"
+        },
+        {
+          "dep": "punct",
+          "governor": 28,
+          "governorGloss": "1",
+          "dependent": 27,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "dep",
+          "governor": 31,
+          "governorGloss": "overlap",
+          "dependent": 28,
+          "dependentGloss": "1"
+        },
+        {
+          "dep": "punct",
+          "governor": 28,
+          "governorGloss": "1",
+          "dependent": 29,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 31,
+          "governorGloss": "overlap",
+          "dependent": 30,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "parataxis",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 31,
+          "dependentGloss": "overlap"
+        },
+        {
+          "dep": "case",
+          "governor": 33,
+          "governorGloss": "prime",
+          "dependent": 32,
+          "dependentGloss": "between"
+        },
+        {
+          "dep": "nmod:between",
+          "governor": 31,
+          "governorGloss": "overlap",
+          "dependent": 33,
+          "dependentGloss": "prime"
+        },
+        {
+          "dep": "cc",
+          "governor": 33,
+          "governorGloss": "prime",
+          "dependent": 34,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "nmod:between",
+          "governor": 31,
+          "governorGloss": "overlap",
+          "dependent": 35,
+          "dependentGloss": "target"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 33,
+          "governorGloss": "prime",
+          "dependent": 35,
+          "dependentGloss": "target"
+        },
+        {
+          "dep": "punct",
+          "governor": 35,
+          "governorGloss": "target",
+          "dependent": 36,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "punct",
+          "governor": 38,
+          "governorGloss": "2",
+          "dependent": 37,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "dep",
+          "governor": 40,
+          "governorGloss": "target",
+          "dependent": 38,
+          "dependentGloss": "2"
+        },
+        {
+          "dep": "punct",
+          "governor": 38,
+          "governorGloss": "2",
+          "dependent": 39,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "appos",
+          "governor": 35,
+          "governorGloss": "target",
+          "dependent": 40,
+          "dependentGloss": "target"
+        },
+        {
+          "dep": "dep",
+          "governor": 49,
+          "governorGloss": "verb",
+          "dependent": 41,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 49,
+          "governorGloss": "verb",
+          "dependent": 42,
+          "dependentGloss": "bias"
+        },
+        {
+          "dep": "punct",
+          "governor": 46,
+          "governorGloss": "3",
+          "dependent": 43,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 46,
+          "governorGloss": "3",
+          "dependent": 44,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "punct",
+          "governor": 46,
+          "governorGloss": "3",
+          "dependent": 45,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "dep",
+          "governor": 42,
+          "governorGloss": "bias",
+          "dependent": 46,
+          "dependentGloss": "3"
+        },
+        {
+          "dep": "punct",
+          "governor": 46,
+          "governorGloss": "3",
+          "dependent": 47,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "dep",
+          "governor": 46,
+          "governorGloss": "3",
+          "dependent": 48,
+          "dependentGloss": "prime"
+        },
+        {
+          "dep": "acl",
+          "governor": 40,
+          "governorGloss": "target",
+          "dependent": 49,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "dobj",
+          "governor": 49,
+          "governorGloss": "verb",
+          "dependent": 50,
+          "dependentGloss": "bias"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "tested",
+          "dependent": 51,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -1292,6 +3826,818 @@
     },
     {
       "index": 5,
+      "parse": "(ROOT\n  (S\n    (NP\n      (NP\n        (NP (NNS Children))\n        (PRN (-LRB- -LRB-)\n          (S\n            (NP\n              (NP (JJ aged) (CD 3-4))\n              (CC and)\n              (NP (CD 5-6) (NNS years)))\n            (ADJP (JJ old)))\n          (-RRB- -RRB-)))\n      (CC and)\n      (NP\n        (NP\n          (NP (NNS adults))\n          (VP (VBN heard)\n            (CC and)\n            (VBN produced)\n            (NP\n              (NP (JJ double) (NN object) (NN dative))\n              (PRN (-LRB- -LRB-)\n                (NP (NN DOD))\n                (-RRB- -RRB-))\n              (CC and)\n              (NP (JJ prepositional) (NN object) (NN dative)))))\n        (PRN (-LRB- -LRB-)\n          (NP (NN PD))\n          (-RRB- -RRB-))))\n    (VP (VBZ primes)\n      (PP (IN with)\n        (NP (NN DOD) (: -)\n          (CC and)\n          (JJ PD-biased) (NNS verbs))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 28,
+          "dependentGloss": "primes"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 28,
+          "governorGloss": "primes",
+          "dependent": 1,
+          "dependentGloss": "Children"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "old",
+          "dependent": 2,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "amod",
+          "governor": 4,
+          "governorGloss": "3-4",
+          "dependent": 3,
+          "dependentGloss": "aged"
+        },
+        {
+          "dep": "dep",
+          "governor": 8,
+          "governorGloss": "old",
+          "dependent": 4,
+          "dependentGloss": "3-4"
+        },
+        {
+          "dep": "cc",
+          "governor": 4,
+          "governorGloss": "3-4",
+          "dependent": 5,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "nummod",
+          "governor": 7,
+          "governorGloss": "years",
+          "dependent": 6,
+          "dependentGloss": "5-6"
+        },
+        {
+          "dep": "conj",
+          "governor": 4,
+          "governorGloss": "3-4",
+          "dependent": 7,
+          "dependentGloss": "years"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "Children",
+          "dependent": 8,
+          "dependentGloss": "old"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "old",
+          "dependent": 9,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "cc",
+          "governor": 1,
+          "governorGloss": "Children",
+          "dependent": 10,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj",
+          "governor": 1,
+          "governorGloss": "Children",
+          "dependent": 11,
+          "dependentGloss": "adults"
+        },
+        {
+          "dep": "acl",
+          "governor": 11,
+          "governorGloss": "adults",
+          "dependent": 12,
+          "dependentGloss": "heard"
+        },
+        {
+          "dep": "cc",
+          "governor": 12,
+          "governorGloss": "heard",
+          "dependent": 13,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj",
+          "governor": 12,
+          "governorGloss": "heard",
+          "dependent": 14,
+          "dependentGloss": "produced"
+        },
+        {
+          "dep": "amod",
+          "governor": 17,
+          "governorGloss": "dative",
+          "dependent": 15,
+          "dependentGloss": "double"
+        },
+        {
+          "dep": "compound",
+          "governor": 17,
+          "governorGloss": "dative",
+          "dependent": 16,
+          "dependentGloss": "object"
+        },
+        {
+          "dep": "dobj",
+          "governor": 12,
+          "governorGloss": "heard",
+          "dependent": 17,
+          "dependentGloss": "dative"
+        },
+        {
+          "dep": "punct",
+          "governor": 19,
+          "governorGloss": "DOD",
+          "dependent": 18,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "appos",
+          "governor": 17,
+          "governorGloss": "dative",
+          "dependent": 19,
+          "dependentGloss": "DOD"
+        },
+        {
+          "dep": "punct",
+          "governor": 19,
+          "governorGloss": "DOD",
+          "dependent": 20,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "cc",
+          "governor": 17,
+          "governorGloss": "dative",
+          "dependent": 21,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 24,
+          "governorGloss": "dative",
+          "dependent": 22,
+          "dependentGloss": "prepositional"
+        },
+        {
+          "dep": "compound",
+          "governor": 24,
+          "governorGloss": "dative",
+          "dependent": 23,
+          "dependentGloss": "object"
+        },
+        {
+          "dep": "conj",
+          "governor": 17,
+          "governorGloss": "dative",
+          "dependent": 24,
+          "dependentGloss": "dative"
+        },
+        {
+          "dep": "punct",
+          "governor": 26,
+          "governorGloss": "PD",
+          "dependent": 25,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "appos",
+          "governor": 11,
+          "governorGloss": "adults",
+          "dependent": 26,
+          "dependentGloss": "PD"
+        },
+        {
+          "dep": "punct",
+          "governor": 26,
+          "governorGloss": "PD",
+          "dependent": 27,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "case",
+          "governor": 30,
+          "governorGloss": "DOD",
+          "dependent": 29,
+          "dependentGloss": "with"
+        },
+        {
+          "dep": "nmod",
+          "governor": 28,
+          "governorGloss": "primes",
+          "dependent": 30,
+          "dependentGloss": "DOD"
+        },
+        {
+          "dep": "punct",
+          "governor": 30,
+          "governorGloss": "DOD",
+          "dependent": 31,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "cc",
+          "governor": 30,
+          "governorGloss": "DOD",
+          "dependent": 32,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 34,
+          "governorGloss": "verbs",
+          "dependent": 33,
+          "dependentGloss": "PD-biased"
+        },
+        {
+          "dep": "conj",
+          "governor": 30,
+          "governorGloss": "DOD",
+          "dependent": 34,
+          "dependentGloss": "verbs"
+        },
+        {
+          "dep": "punct",
+          "governor": 28,
+          "governorGloss": "primes",
+          "dependent": 35,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 28,
+          "dependentGloss": "primes"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 28,
+          "governorGloss": "primes",
+          "dependent": 1,
+          "dependentGloss": "Children"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "old",
+          "dependent": 2,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "amod",
+          "governor": 4,
+          "governorGloss": "3-4",
+          "dependent": 3,
+          "dependentGloss": "aged"
+        },
+        {
+          "dep": "dep",
+          "governor": 8,
+          "governorGloss": "old",
+          "dependent": 4,
+          "dependentGloss": "3-4"
+        },
+        {
+          "dep": "cc",
+          "governor": 4,
+          "governorGloss": "3-4",
+          "dependent": 5,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "nummod",
+          "governor": 7,
+          "governorGloss": "years",
+          "dependent": 6,
+          "dependentGloss": "5-6"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 4,
+          "governorGloss": "3-4",
+          "dependent": 7,
+          "dependentGloss": "years"
+        },
+        {
+          "dep": "dep",
+          "governor": 8,
+          "governorGloss": "old",
+          "dependent": 7,
+          "dependentGloss": "years"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "Children",
+          "dependent": 8,
+          "dependentGloss": "old"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "old",
+          "dependent": 9,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "cc",
+          "governor": 1,
+          "governorGloss": "Children",
+          "dependent": 10,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 1,
+          "governorGloss": "Children",
+          "dependent": 11,
+          "dependentGloss": "adults"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 28,
+          "governorGloss": "primes",
+          "dependent": 11,
+          "dependentGloss": "adults"
+        },
+        {
+          "dep": "acl",
+          "governor": 11,
+          "governorGloss": "adults",
+          "dependent": 12,
+          "dependentGloss": "heard"
+        },
+        {
+          "dep": "cc",
+          "governor": 12,
+          "governorGloss": "heard",
+          "dependent": 13,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "acl",
+          "governor": 11,
+          "governorGloss": "adults",
+          "dependent": 14,
+          "dependentGloss": "produced"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 12,
+          "governorGloss": "heard",
+          "dependent": 14,
+          "dependentGloss": "produced"
+        },
+        {
+          "dep": "amod",
+          "governor": 17,
+          "governorGloss": "dative",
+          "dependent": 15,
+          "dependentGloss": "double"
+        },
+        {
+          "dep": "compound",
+          "governor": 17,
+          "governorGloss": "dative",
+          "dependent": 16,
+          "dependentGloss": "object"
+        },
+        {
+          "dep": "dobj",
+          "governor": 12,
+          "governorGloss": "heard",
+          "dependent": 17,
+          "dependentGloss": "dative"
+        },
+        {
+          "dep": "punct",
+          "governor": 19,
+          "governorGloss": "DOD",
+          "dependent": 18,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "appos",
+          "governor": 17,
+          "governorGloss": "dative",
+          "dependent": 19,
+          "dependentGloss": "DOD"
+        },
+        {
+          "dep": "punct",
+          "governor": 19,
+          "governorGloss": "DOD",
+          "dependent": 20,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "cc",
+          "governor": 17,
+          "governorGloss": "dative",
+          "dependent": 21,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 24,
+          "governorGloss": "dative",
+          "dependent": 22,
+          "dependentGloss": "prepositional"
+        },
+        {
+          "dep": "compound",
+          "governor": 24,
+          "governorGloss": "dative",
+          "dependent": 23,
+          "dependentGloss": "object"
+        },
+        {
+          "dep": "dobj",
+          "governor": 12,
+          "governorGloss": "heard",
+          "dependent": 24,
+          "dependentGloss": "dative"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 17,
+          "governorGloss": "dative",
+          "dependent": 24,
+          "dependentGloss": "dative"
+        },
+        {
+          "dep": "punct",
+          "governor": 26,
+          "governorGloss": "PD",
+          "dependent": 25,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "appos",
+          "governor": 11,
+          "governorGloss": "adults",
+          "dependent": 26,
+          "dependentGloss": "PD"
+        },
+        {
+          "dep": "punct",
+          "governor": 26,
+          "governorGloss": "PD",
+          "dependent": 27,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "case",
+          "governor": 30,
+          "governorGloss": "DOD",
+          "dependent": 29,
+          "dependentGloss": "with"
+        },
+        {
+          "dep": "nmod:with",
+          "governor": 28,
+          "governorGloss": "primes",
+          "dependent": 30,
+          "dependentGloss": "DOD"
+        },
+        {
+          "dep": "punct",
+          "governor": 30,
+          "governorGloss": "DOD",
+          "dependent": 31,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "cc",
+          "governor": 30,
+          "governorGloss": "DOD",
+          "dependent": 32,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 34,
+          "governorGloss": "verbs",
+          "dependent": 33,
+          "dependentGloss": "PD-biased"
+        },
+        {
+          "dep": "nmod:with",
+          "governor": 28,
+          "governorGloss": "primes",
+          "dependent": 34,
+          "dependentGloss": "verbs"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 30,
+          "governorGloss": "DOD",
+          "dependent": 34,
+          "dependentGloss": "verbs"
+        },
+        {
+          "dep": "punct",
+          "governor": 28,
+          "governorGloss": "primes",
+          "dependent": 35,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 28,
+          "dependentGloss": "primes"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 28,
+          "governorGloss": "primes",
+          "dependent": 1,
+          "dependentGloss": "Children"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "old",
+          "dependent": 2,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "amod",
+          "governor": 4,
+          "governorGloss": "3-4",
+          "dependent": 3,
+          "dependentGloss": "aged"
+        },
+        {
+          "dep": "dep",
+          "governor": 8,
+          "governorGloss": "old",
+          "dependent": 4,
+          "dependentGloss": "3-4"
+        },
+        {
+          "dep": "cc",
+          "governor": 4,
+          "governorGloss": "3-4",
+          "dependent": 5,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "nummod",
+          "governor": 7,
+          "governorGloss": "years",
+          "dependent": 6,
+          "dependentGloss": "5-6"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 4,
+          "governorGloss": "3-4",
+          "dependent": 7,
+          "dependentGloss": "years"
+        },
+        {
+          "dep": "dep",
+          "governor": 8,
+          "governorGloss": "old",
+          "dependent": 7,
+          "dependentGloss": "years"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "Children",
+          "dependent": 8,
+          "dependentGloss": "old"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "old",
+          "dependent": 9,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "cc",
+          "governor": 1,
+          "governorGloss": "Children",
+          "dependent": 10,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 1,
+          "governorGloss": "Children",
+          "dependent": 11,
+          "dependentGloss": "adults"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 28,
+          "governorGloss": "primes",
+          "dependent": 11,
+          "dependentGloss": "adults"
+        },
+        {
+          "dep": "acl",
+          "governor": 11,
+          "governorGloss": "adults",
+          "dependent": 12,
+          "dependentGloss": "heard"
+        },
+        {
+          "dep": "cc",
+          "governor": 12,
+          "governorGloss": "heard",
+          "dependent": 13,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "acl",
+          "governor": 11,
+          "governorGloss": "adults",
+          "dependent": 14,
+          "dependentGloss": "produced"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 12,
+          "governorGloss": "heard",
+          "dependent": 14,
+          "dependentGloss": "produced"
+        },
+        {
+          "dep": "amod",
+          "governor": 17,
+          "governorGloss": "dative",
+          "dependent": 15,
+          "dependentGloss": "double"
+        },
+        {
+          "dep": "compound",
+          "governor": 17,
+          "governorGloss": "dative",
+          "dependent": 16,
+          "dependentGloss": "object"
+        },
+        {
+          "dep": "dobj",
+          "governor": 12,
+          "governorGloss": "heard",
+          "dependent": 17,
+          "dependentGloss": "dative"
+        },
+        {
+          "dep": "punct",
+          "governor": 19,
+          "governorGloss": "DOD",
+          "dependent": 18,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "appos",
+          "governor": 17,
+          "governorGloss": "dative",
+          "dependent": 19,
+          "dependentGloss": "DOD"
+        },
+        {
+          "dep": "punct",
+          "governor": 19,
+          "governorGloss": "DOD",
+          "dependent": 20,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "cc",
+          "governor": 17,
+          "governorGloss": "dative",
+          "dependent": 21,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 24,
+          "governorGloss": "dative",
+          "dependent": 22,
+          "dependentGloss": "prepositional"
+        },
+        {
+          "dep": "compound",
+          "governor": 24,
+          "governorGloss": "dative",
+          "dependent": 23,
+          "dependentGloss": "object"
+        },
+        {
+          "dep": "dobj",
+          "governor": 12,
+          "governorGloss": "heard",
+          "dependent": 24,
+          "dependentGloss": "dative"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 17,
+          "governorGloss": "dative",
+          "dependent": 24,
+          "dependentGloss": "dative"
+        },
+        {
+          "dep": "punct",
+          "governor": 26,
+          "governorGloss": "PD",
+          "dependent": 25,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "appos",
+          "governor": 11,
+          "governorGloss": "adults",
+          "dependent": 26,
+          "dependentGloss": "PD"
+        },
+        {
+          "dep": "punct",
+          "governor": 26,
+          "governorGloss": "PD",
+          "dependent": 27,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "case",
+          "governor": 30,
+          "governorGloss": "DOD",
+          "dependent": 29,
+          "dependentGloss": "with"
+        },
+        {
+          "dep": "nmod:with",
+          "governor": 28,
+          "governorGloss": "primes",
+          "dependent": 30,
+          "dependentGloss": "DOD"
+        },
+        {
+          "dep": "punct",
+          "governor": 30,
+          "governorGloss": "DOD",
+          "dependent": 31,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "cc",
+          "governor": 30,
+          "governorGloss": "DOD",
+          "dependent": 32,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 34,
+          "governorGloss": "verbs",
+          "dependent": 33,
+          "dependentGloss": "PD-biased"
+        },
+        {
+          "dep": "nmod:with",
+          "governor": 28,
+          "governorGloss": "primes",
+          "dependent": 34,
+          "dependentGloss": "verbs"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 30,
+          "governorGloss": "DOD",
+          "dependent": 34,
+          "dependentGloss": "verbs"
+        },
+        {
+          "dep": "punct",
+          "governor": 28,
+          "governorGloss": "primes",
+          "dependent": 35,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -1682,6 +5028,699 @@
     },
     {
       "index": 6,
+      "parse": "(ROOT\n  (S\n    (SBAR (IN Although)\n      (S\n        (NP (DT all) (NN age) (NNS groups))\n        (VP (VBD showed)\n          (NP\n            (NP (JJ significant) (NN evidence))\n            (PP (IN of)\n              (NP (JJ structural) (NN priming)))))))\n    (, ,)\n    (NP (RB only) (NNS adults))\n    (VP (VBD showed)\n      (SBAR\n        (S\n          (NP\n            (NP (VBN increased) (NN priming))\n            (SBAR\n              (WHADVP (WRB when))\n              (S\n                (NP (EX there))\n                (VP (VBD was)\n                  (S\n                    (VP (VB verb)))))))\n          (VP (VBP overlap)\n            (PP (IN between)\n              (NP\n                (NP (JJ prime)\n                  (CC and)\n                  (NN target) (NNS sentences))\n                (PRN (-LRB- -LRB-)\n                  (NP (DT the) (JJ lexical) (NN boost))\n                  (-RRB- -RRB-))))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 14,
+          "dependentGloss": "showed"
+        },
+        {
+          "dep": "mark",
+          "governor": 5,
+          "governorGloss": "showed",
+          "dependent": 1,
+          "dependentGloss": "Although"
+        },
+        {
+          "dep": "det",
+          "governor": 4,
+          "governorGloss": "groups",
+          "dependent": 2,
+          "dependentGloss": "all"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "groups",
+          "dependent": 3,
+          "dependentGloss": "age"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "showed",
+          "dependent": 4,
+          "dependentGloss": "groups"
+        },
+        {
+          "dep": "advcl",
+          "governor": 14,
+          "governorGloss": "showed",
+          "dependent": 5,
+          "dependentGloss": "showed"
+        },
+        {
+          "dep": "amod",
+          "governor": 7,
+          "governorGloss": "evidence",
+          "dependent": 6,
+          "dependentGloss": "significant"
+        },
+        {
+          "dep": "dobj",
+          "governor": 5,
+          "governorGloss": "showed",
+          "dependent": 7,
+          "dependentGloss": "evidence"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "priming",
+          "dependent": 8,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "priming",
+          "dependent": 9,
+          "dependentGloss": "structural"
+        },
+        {
+          "dep": "nmod",
+          "governor": 7,
+          "governorGloss": "evidence",
+          "dependent": 10,
+          "dependentGloss": "priming"
+        },
+        {
+          "dep": "punct",
+          "governor": 14,
+          "governorGloss": "showed",
+          "dependent": 11,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "advmod",
+          "governor": 13,
+          "governorGloss": "adults",
+          "dependent": 12,
+          "dependentGloss": "only"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 14,
+          "governorGloss": "showed",
+          "dependent": 13,
+          "dependentGloss": "adults"
+        },
+        {
+          "dep": "amod",
+          "governor": 16,
+          "governorGloss": "priming",
+          "dependent": 15,
+          "dependentGloss": "increased"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 21,
+          "governorGloss": "overlap",
+          "dependent": 16,
+          "dependentGloss": "priming"
+        },
+        {
+          "dep": "advmod",
+          "governor": 19,
+          "governorGloss": "was",
+          "dependent": 17,
+          "dependentGloss": "when"
+        },
+        {
+          "dep": "expl",
+          "governor": 19,
+          "governorGloss": "was",
+          "dependent": 18,
+          "dependentGloss": "there"
+        },
+        {
+          "dep": "acl:relcl",
+          "governor": 16,
+          "governorGloss": "priming",
+          "dependent": 19,
+          "dependentGloss": "was"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 19,
+          "governorGloss": "was",
+          "dependent": 20,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 14,
+          "governorGloss": "showed",
+          "dependent": 21,
+          "dependentGloss": "overlap"
+        },
+        {
+          "dep": "case",
+          "governor": 26,
+          "governorGloss": "sentences",
+          "dependent": 22,
+          "dependentGloss": "between"
+        },
+        {
+          "dep": "amod",
+          "governor": 26,
+          "governorGloss": "sentences",
+          "dependent": 23,
+          "dependentGloss": "prime"
+        },
+        {
+          "dep": "cc",
+          "governor": 23,
+          "governorGloss": "prime",
+          "dependent": 24,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj",
+          "governor": 23,
+          "governorGloss": "prime",
+          "dependent": 25,
+          "dependentGloss": "target"
+        },
+        {
+          "dep": "nmod",
+          "governor": 21,
+          "governorGloss": "overlap",
+          "dependent": 26,
+          "dependentGloss": "sentences"
+        },
+        {
+          "dep": "punct",
+          "governor": 30,
+          "governorGloss": "boost",
+          "dependent": 27,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "det",
+          "governor": 30,
+          "governorGloss": "boost",
+          "dependent": 28,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 30,
+          "governorGloss": "boost",
+          "dependent": 29,
+          "dependentGloss": "lexical"
+        },
+        {
+          "dep": "appos",
+          "governor": 26,
+          "governorGloss": "sentences",
+          "dependent": 30,
+          "dependentGloss": "boost"
+        },
+        {
+          "dep": "punct",
+          "governor": 30,
+          "governorGloss": "boost",
+          "dependent": 31,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "punct",
+          "governor": 14,
+          "governorGloss": "showed",
+          "dependent": 32,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 14,
+          "dependentGloss": "showed"
+        },
+        {
+          "dep": "mark",
+          "governor": 5,
+          "governorGloss": "showed",
+          "dependent": 1,
+          "dependentGloss": "Although"
+        },
+        {
+          "dep": "det",
+          "governor": 4,
+          "governorGloss": "groups",
+          "dependent": 2,
+          "dependentGloss": "all"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "groups",
+          "dependent": 3,
+          "dependentGloss": "age"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "showed",
+          "dependent": 4,
+          "dependentGloss": "groups"
+        },
+        {
+          "dep": "advcl:although",
+          "governor": 14,
+          "governorGloss": "showed",
+          "dependent": 5,
+          "dependentGloss": "showed"
+        },
+        {
+          "dep": "amod",
+          "governor": 7,
+          "governorGloss": "evidence",
+          "dependent": 6,
+          "dependentGloss": "significant"
+        },
+        {
+          "dep": "dobj",
+          "governor": 5,
+          "governorGloss": "showed",
+          "dependent": 7,
+          "dependentGloss": "evidence"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "priming",
+          "dependent": 8,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "priming",
+          "dependent": 9,
+          "dependentGloss": "structural"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 7,
+          "governorGloss": "evidence",
+          "dependent": 10,
+          "dependentGloss": "priming"
+        },
+        {
+          "dep": "punct",
+          "governor": 14,
+          "governorGloss": "showed",
+          "dependent": 11,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "advmod",
+          "governor": 13,
+          "governorGloss": "adults",
+          "dependent": 12,
+          "dependentGloss": "only"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 14,
+          "governorGloss": "showed",
+          "dependent": 13,
+          "dependentGloss": "adults"
+        },
+        {
+          "dep": "amod",
+          "governor": 16,
+          "governorGloss": "priming",
+          "dependent": 15,
+          "dependentGloss": "increased"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 21,
+          "governorGloss": "overlap",
+          "dependent": 16,
+          "dependentGloss": "priming"
+        },
+        {
+          "dep": "advmod",
+          "governor": 19,
+          "governorGloss": "was",
+          "dependent": 17,
+          "dependentGloss": "when"
+        },
+        {
+          "dep": "expl",
+          "governor": 19,
+          "governorGloss": "was",
+          "dependent": 18,
+          "dependentGloss": "there"
+        },
+        {
+          "dep": "acl:relcl",
+          "governor": 16,
+          "governorGloss": "priming",
+          "dependent": 19,
+          "dependentGloss": "was"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 19,
+          "governorGloss": "was",
+          "dependent": 20,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 14,
+          "governorGloss": "showed",
+          "dependent": 21,
+          "dependentGloss": "overlap"
+        },
+        {
+          "dep": "case",
+          "governor": 26,
+          "governorGloss": "sentences",
+          "dependent": 22,
+          "dependentGloss": "between"
+        },
+        {
+          "dep": "amod",
+          "governor": 26,
+          "governorGloss": "sentences",
+          "dependent": 23,
+          "dependentGloss": "prime"
+        },
+        {
+          "dep": "cc",
+          "governor": 23,
+          "governorGloss": "prime",
+          "dependent": 24,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 23,
+          "governorGloss": "prime",
+          "dependent": 25,
+          "dependentGloss": "target"
+        },
+        {
+          "dep": "amod",
+          "governor": 26,
+          "governorGloss": "sentences",
+          "dependent": 25,
+          "dependentGloss": "target"
+        },
+        {
+          "dep": "nmod:between",
+          "governor": 21,
+          "governorGloss": "overlap",
+          "dependent": 26,
+          "dependentGloss": "sentences"
+        },
+        {
+          "dep": "punct",
+          "governor": 30,
+          "governorGloss": "boost",
+          "dependent": 27,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "det",
+          "governor": 30,
+          "governorGloss": "boost",
+          "dependent": 28,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 30,
+          "governorGloss": "boost",
+          "dependent": 29,
+          "dependentGloss": "lexical"
+        },
+        {
+          "dep": "appos",
+          "governor": 26,
+          "governorGloss": "sentences",
+          "dependent": 30,
+          "dependentGloss": "boost"
+        },
+        {
+          "dep": "punct",
+          "governor": 30,
+          "governorGloss": "boost",
+          "dependent": 31,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "punct",
+          "governor": 14,
+          "governorGloss": "showed",
+          "dependent": 32,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 14,
+          "dependentGloss": "showed"
+        },
+        {
+          "dep": "mark",
+          "governor": 5,
+          "governorGloss": "showed",
+          "dependent": 1,
+          "dependentGloss": "Although"
+        },
+        {
+          "dep": "det",
+          "governor": 4,
+          "governorGloss": "groups",
+          "dependent": 2,
+          "dependentGloss": "all"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "groups",
+          "dependent": 3,
+          "dependentGloss": "age"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "showed",
+          "dependent": 4,
+          "dependentGloss": "groups"
+        },
+        {
+          "dep": "advcl:although",
+          "governor": 14,
+          "governorGloss": "showed",
+          "dependent": 5,
+          "dependentGloss": "showed"
+        },
+        {
+          "dep": "amod",
+          "governor": 7,
+          "governorGloss": "evidence",
+          "dependent": 6,
+          "dependentGloss": "significant"
+        },
+        {
+          "dep": "dobj",
+          "governor": 5,
+          "governorGloss": "showed",
+          "dependent": 7,
+          "dependentGloss": "evidence"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "priming",
+          "dependent": 8,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "priming",
+          "dependent": 9,
+          "dependentGloss": "structural"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 7,
+          "governorGloss": "evidence",
+          "dependent": 10,
+          "dependentGloss": "priming"
+        },
+        {
+          "dep": "punct",
+          "governor": 14,
+          "governorGloss": "showed",
+          "dependent": 11,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "advmod",
+          "governor": 13,
+          "governorGloss": "adults",
+          "dependent": 12,
+          "dependentGloss": "only"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 14,
+          "governorGloss": "showed",
+          "dependent": 13,
+          "dependentGloss": "adults"
+        },
+        {
+          "dep": "amod",
+          "governor": 16,
+          "governorGloss": "priming",
+          "dependent": 15,
+          "dependentGloss": "increased"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 21,
+          "governorGloss": "overlap",
+          "dependent": 16,
+          "dependentGloss": "priming"
+        },
+        {
+          "dep": "advmod",
+          "governor": 19,
+          "governorGloss": "was",
+          "dependent": 17,
+          "dependentGloss": "when"
+        },
+        {
+          "dep": "expl",
+          "governor": 19,
+          "governorGloss": "was",
+          "dependent": 18,
+          "dependentGloss": "there"
+        },
+        {
+          "dep": "acl:relcl",
+          "governor": 16,
+          "governorGloss": "priming",
+          "dependent": 19,
+          "dependentGloss": "was"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 19,
+          "governorGloss": "was",
+          "dependent": 20,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 14,
+          "governorGloss": "showed",
+          "dependent": 21,
+          "dependentGloss": "overlap"
+        },
+        {
+          "dep": "case",
+          "governor": 26,
+          "governorGloss": "sentences",
+          "dependent": 22,
+          "dependentGloss": "between"
+        },
+        {
+          "dep": "amod",
+          "governor": 26,
+          "governorGloss": "sentences",
+          "dependent": 23,
+          "dependentGloss": "prime"
+        },
+        {
+          "dep": "cc",
+          "governor": 23,
+          "governorGloss": "prime",
+          "dependent": 24,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 23,
+          "governorGloss": "prime",
+          "dependent": 25,
+          "dependentGloss": "target"
+        },
+        {
+          "dep": "amod",
+          "governor": 26,
+          "governorGloss": "sentences",
+          "dependent": 25,
+          "dependentGloss": "target"
+        },
+        {
+          "dep": "nmod:between",
+          "governor": 21,
+          "governorGloss": "overlap",
+          "dependent": 26,
+          "dependentGloss": "sentences"
+        },
+        {
+          "dep": "punct",
+          "governor": 30,
+          "governorGloss": "boost",
+          "dependent": 27,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "det",
+          "governor": 30,
+          "governorGloss": "boost",
+          "dependent": 28,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 30,
+          "governorGloss": "boost",
+          "dependent": 29,
+          "dependentGloss": "lexical"
+        },
+        {
+          "dep": "appos",
+          "governor": 26,
+          "governorGloss": "sentences",
+          "dependent": 30,
+          "dependentGloss": "boost"
+        },
+        {
+          "dep": "punct",
+          "governor": 30,
+          "governorGloss": "boost",
+          "dependent": 31,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "punct",
+          "governor": 14,
+          "governorGloss": "showed",
+          "dependent": 32,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -2039,6 +6078,244 @@
     },
     {
       "index": 7,
+      "parse": "(ROOT\n  (S\n    (NP\n      (NP (DT The) (NN effect))\n      (PP (IN of)\n        (NP (NN target))))\n    (VP (VBP verb)\n      (SBAR\n        (S\n          (NP (NN bias))\n          (ADVP (RB also))\n          (VP (VBD grew)\n            (PP (IN with)\n              (NP (NN development)))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "effect",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "verb",
+          "dependent": 2,
+          "dependentGloss": "effect"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "target",
+          "dependent": 3,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod",
+          "governor": 2,
+          "governorGloss": "effect",
+          "dependent": 4,
+          "dependentGloss": "target"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 8,
+          "governorGloss": "grew",
+          "dependent": 6,
+          "dependentGloss": "bias"
+        },
+        {
+          "dep": "advmod",
+          "governor": 8,
+          "governorGloss": "grew",
+          "dependent": 7,
+          "dependentGloss": "also"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 5,
+          "governorGloss": "verb",
+          "dependent": 8,
+          "dependentGloss": "grew"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "development",
+          "dependent": 9,
+          "dependentGloss": "with"
+        },
+        {
+          "dep": "nmod",
+          "governor": 8,
+          "governorGloss": "grew",
+          "dependent": 10,
+          "dependentGloss": "development"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "verb",
+          "dependent": 11,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "effect",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "verb",
+          "dependent": 2,
+          "dependentGloss": "effect"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "target",
+          "dependent": 3,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 2,
+          "governorGloss": "effect",
+          "dependent": 4,
+          "dependentGloss": "target"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 8,
+          "governorGloss": "grew",
+          "dependent": 6,
+          "dependentGloss": "bias"
+        },
+        {
+          "dep": "advmod",
+          "governor": 8,
+          "governorGloss": "grew",
+          "dependent": 7,
+          "dependentGloss": "also"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 5,
+          "governorGloss": "verb",
+          "dependent": 8,
+          "dependentGloss": "grew"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "development",
+          "dependent": 9,
+          "dependentGloss": "with"
+        },
+        {
+          "dep": "nmod:with",
+          "governor": 8,
+          "governorGloss": "grew",
+          "dependent": 10,
+          "dependentGloss": "development"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "verb",
+          "dependent": 11,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "effect",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "verb",
+          "dependent": 2,
+          "dependentGloss": "effect"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "target",
+          "dependent": 3,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 2,
+          "governorGloss": "effect",
+          "dependent": 4,
+          "dependentGloss": "target"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 8,
+          "governorGloss": "grew",
+          "dependent": 6,
+          "dependentGloss": "bias"
+        },
+        {
+          "dep": "advmod",
+          "governor": 8,
+          "governorGloss": "grew",
+          "dependent": 7,
+          "dependentGloss": "also"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 5,
+          "governorGloss": "verb",
+          "dependent": 8,
+          "dependentGloss": "grew"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "development",
+          "dependent": 9,
+          "dependentGloss": "with"
+        },
+        {
+          "dep": "nmod:with",
+          "governor": 8,
+          "governorGloss": "grew",
+          "dependent": 10,
+          "dependentGloss": "development"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "verb",
+          "dependent": 11,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -2165,6 +6442,895 @@
     },
     {
       "index": 8,
+      "parse": "(ROOT\n  (S\n    (ADVP (RB Critically))\n    (, ,)\n    (ADVP (RB however))\n    (, ,)\n    (NP\n      (NP (DT the) (NN effect))\n      (PP (IN of)\n        (NP (JJ prime)))\n      (S\n        (VP (VB verb)\n          (NP (NN bias))\n          (PP (IN on)\n            (NP\n              (NP (DT the) (NN size))\n              (PP (IN of)\n                (NP\n                  (NP (DT the) (NN priming) (NN effect))\n                  (PRN (-LRB- -LRB-)\n                    (NP (JJ prime) (NN surprisal))\n                    (-RRB- -RRB-)))))))))\n    (VP (VBD was)\n      (ADJP\n        (ADJP (JJR larger))\n        (PP (IN in)\n          (NP (NNS children))))\n      (PP (IN than)\n        (PP (IN in)\n          (NP (NNS adults))))\n      (, ,)\n      (S\n        (VP (VBG suggesting)\n          (SBAR (IN that)\n            (S\n              (NP (VB verb) (NN structure) (NNS links))\n              (VP (VBP are)\n                (ADJP (JJ present)\n                  (PP (IN at)\n                    (NP\n                      (NP (DT the) (JJS earliest) (NN age))\n                      (VP (VBN tested)))))))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 23,
+          "dependentGloss": "larger"
+        },
+        {
+          "dep": "advmod",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 1,
+          "dependentGloss": "Critically"
+        },
+        {
+          "dep": "punct",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 2,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "advmod",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 3,
+          "dependentGloss": "however"
+        },
+        {
+          "dep": "punct",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 4,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "effect",
+          "dependent": 5,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 6,
+          "dependentGloss": "effect"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "prime",
+          "dependent": 7,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod",
+          "governor": 6,
+          "governorGloss": "effect",
+          "dependent": 8,
+          "dependentGloss": "prime"
+        },
+        {
+          "dep": "dep",
+          "governor": 6,
+          "governorGloss": "effect",
+          "dependent": 9,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "dobj",
+          "governor": 9,
+          "governorGloss": "verb",
+          "dependent": 10,
+          "dependentGloss": "bias"
+        },
+        {
+          "dep": "case",
+          "governor": 13,
+          "governorGloss": "size",
+          "dependent": 11,
+          "dependentGloss": "on"
+        },
+        {
+          "dep": "det",
+          "governor": 13,
+          "governorGloss": "size",
+          "dependent": 12,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nmod",
+          "governor": 9,
+          "governorGloss": "verb",
+          "dependent": 13,
+          "dependentGloss": "size"
+        },
+        {
+          "dep": "case",
+          "governor": 17,
+          "governorGloss": "effect",
+          "dependent": 14,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 17,
+          "governorGloss": "effect",
+          "dependent": 15,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "compound",
+          "governor": 17,
+          "governorGloss": "effect",
+          "dependent": 16,
+          "dependentGloss": "priming"
+        },
+        {
+          "dep": "nmod",
+          "governor": 13,
+          "governorGloss": "size",
+          "dependent": 17,
+          "dependentGloss": "effect"
+        },
+        {
+          "dep": "punct",
+          "governor": 20,
+          "governorGloss": "surprisal",
+          "dependent": 18,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "surprisal",
+          "dependent": 19,
+          "dependentGloss": "prime"
+        },
+        {
+          "dep": "appos",
+          "governor": 17,
+          "governorGloss": "effect",
+          "dependent": 20,
+          "dependentGloss": "surprisal"
+        },
+        {
+          "dep": "punct",
+          "governor": 20,
+          "governorGloss": "surprisal",
+          "dependent": 21,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "cop",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 22,
+          "dependentGloss": "was"
+        },
+        {
+          "dep": "case",
+          "governor": 25,
+          "governorGloss": "children",
+          "dependent": 24,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 25,
+          "dependentGloss": "children"
+        },
+        {
+          "dep": "case",
+          "governor": 28,
+          "governorGloss": "adults",
+          "dependent": 26,
+          "dependentGloss": "than"
+        },
+        {
+          "dep": "case",
+          "governor": 28,
+          "governorGloss": "adults",
+          "dependent": 27,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 28,
+          "dependentGloss": "adults"
+        },
+        {
+          "dep": "punct",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 29,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "xcomp",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 30,
+          "dependentGloss": "suggesting"
+        },
+        {
+          "dep": "mark",
+          "governor": 36,
+          "governorGloss": "present",
+          "dependent": 31,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "dep",
+          "governor": 34,
+          "governorGloss": "links",
+          "dependent": 32,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "compound",
+          "governor": 34,
+          "governorGloss": "links",
+          "dependent": 33,
+          "dependentGloss": "structure"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 36,
+          "governorGloss": "present",
+          "dependent": 34,
+          "dependentGloss": "links"
+        },
+        {
+          "dep": "cop",
+          "governor": 36,
+          "governorGloss": "present",
+          "dependent": 35,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 30,
+          "governorGloss": "suggesting",
+          "dependent": 36,
+          "dependentGloss": "present"
+        },
+        {
+          "dep": "case",
+          "governor": 40,
+          "governorGloss": "age",
+          "dependent": 37,
+          "dependentGloss": "at"
+        },
+        {
+          "dep": "det",
+          "governor": 40,
+          "governorGloss": "age",
+          "dependent": 38,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 40,
+          "governorGloss": "age",
+          "dependent": 39,
+          "dependentGloss": "earliest"
+        },
+        {
+          "dep": "nmod",
+          "governor": 36,
+          "governorGloss": "present",
+          "dependent": 40,
+          "dependentGloss": "age"
+        },
+        {
+          "dep": "acl",
+          "governor": 40,
+          "governorGloss": "age",
+          "dependent": 41,
+          "dependentGloss": "tested"
+        },
+        {
+          "dep": "punct",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 42,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 23,
+          "dependentGloss": "larger"
+        },
+        {
+          "dep": "advmod",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 1,
+          "dependentGloss": "Critically"
+        },
+        {
+          "dep": "punct",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 2,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "advmod",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 3,
+          "dependentGloss": "however"
+        },
+        {
+          "dep": "punct",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 4,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "effect",
+          "dependent": 5,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 6,
+          "dependentGloss": "effect"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "prime",
+          "dependent": 7,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 6,
+          "governorGloss": "effect",
+          "dependent": 8,
+          "dependentGloss": "prime"
+        },
+        {
+          "dep": "dep",
+          "governor": 6,
+          "governorGloss": "effect",
+          "dependent": 9,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "dobj",
+          "governor": 9,
+          "governorGloss": "verb",
+          "dependent": 10,
+          "dependentGloss": "bias"
+        },
+        {
+          "dep": "case",
+          "governor": 13,
+          "governorGloss": "size",
+          "dependent": 11,
+          "dependentGloss": "on"
+        },
+        {
+          "dep": "det",
+          "governor": 13,
+          "governorGloss": "size",
+          "dependent": 12,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nmod:on",
+          "governor": 9,
+          "governorGloss": "verb",
+          "dependent": 13,
+          "dependentGloss": "size"
+        },
+        {
+          "dep": "case",
+          "governor": 17,
+          "governorGloss": "effect",
+          "dependent": 14,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 17,
+          "governorGloss": "effect",
+          "dependent": 15,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "compound",
+          "governor": 17,
+          "governorGloss": "effect",
+          "dependent": 16,
+          "dependentGloss": "priming"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 13,
+          "governorGloss": "size",
+          "dependent": 17,
+          "dependentGloss": "effect"
+        },
+        {
+          "dep": "punct",
+          "governor": 20,
+          "governorGloss": "surprisal",
+          "dependent": 18,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "surprisal",
+          "dependent": 19,
+          "dependentGloss": "prime"
+        },
+        {
+          "dep": "appos",
+          "governor": 17,
+          "governorGloss": "effect",
+          "dependent": 20,
+          "dependentGloss": "surprisal"
+        },
+        {
+          "dep": "punct",
+          "governor": 20,
+          "governorGloss": "surprisal",
+          "dependent": 21,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "cop",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 22,
+          "dependentGloss": "was"
+        },
+        {
+          "dep": "case",
+          "governor": 25,
+          "governorGloss": "children",
+          "dependent": 24,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 25,
+          "dependentGloss": "children"
+        },
+        {
+          "dep": "case",
+          "governor": 28,
+          "governorGloss": "adults",
+          "dependent": 26,
+          "dependentGloss": "than"
+        },
+        {
+          "dep": "case",
+          "governor": 28,
+          "governorGloss": "adults",
+          "dependent": 27,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 28,
+          "dependentGloss": "adults"
+        },
+        {
+          "dep": "punct",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 29,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "xcomp",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 30,
+          "dependentGloss": "suggesting"
+        },
+        {
+          "dep": "mark",
+          "governor": 36,
+          "governorGloss": "present",
+          "dependent": 31,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "dep",
+          "governor": 34,
+          "governorGloss": "links",
+          "dependent": 32,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "compound",
+          "governor": 34,
+          "governorGloss": "links",
+          "dependent": 33,
+          "dependentGloss": "structure"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 36,
+          "governorGloss": "present",
+          "dependent": 34,
+          "dependentGloss": "links"
+        },
+        {
+          "dep": "cop",
+          "governor": 36,
+          "governorGloss": "present",
+          "dependent": 35,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 30,
+          "governorGloss": "suggesting",
+          "dependent": 36,
+          "dependentGloss": "present"
+        },
+        {
+          "dep": "case",
+          "governor": 40,
+          "governorGloss": "age",
+          "dependent": 37,
+          "dependentGloss": "at"
+        },
+        {
+          "dep": "det",
+          "governor": 40,
+          "governorGloss": "age",
+          "dependent": 38,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 40,
+          "governorGloss": "age",
+          "dependent": 39,
+          "dependentGloss": "earliest"
+        },
+        {
+          "dep": "nmod:at",
+          "governor": 36,
+          "governorGloss": "present",
+          "dependent": 40,
+          "dependentGloss": "age"
+        },
+        {
+          "dep": "acl",
+          "governor": 40,
+          "governorGloss": "age",
+          "dependent": 41,
+          "dependentGloss": "tested"
+        },
+        {
+          "dep": "punct",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 42,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 23,
+          "dependentGloss": "larger"
+        },
+        {
+          "dep": "advmod",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 1,
+          "dependentGloss": "Critically"
+        },
+        {
+          "dep": "punct",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 2,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "advmod",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 3,
+          "dependentGloss": "however"
+        },
+        {
+          "dep": "punct",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 4,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "effect",
+          "dependent": 5,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 6,
+          "dependentGloss": "effect"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "prime",
+          "dependent": 7,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 6,
+          "governorGloss": "effect",
+          "dependent": 8,
+          "dependentGloss": "prime"
+        },
+        {
+          "dep": "dep",
+          "governor": 6,
+          "governorGloss": "effect",
+          "dependent": 9,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "dobj",
+          "governor": 9,
+          "governorGloss": "verb",
+          "dependent": 10,
+          "dependentGloss": "bias"
+        },
+        {
+          "dep": "case",
+          "governor": 13,
+          "governorGloss": "size",
+          "dependent": 11,
+          "dependentGloss": "on"
+        },
+        {
+          "dep": "det",
+          "governor": 13,
+          "governorGloss": "size",
+          "dependent": 12,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nmod:on",
+          "governor": 9,
+          "governorGloss": "verb",
+          "dependent": 13,
+          "dependentGloss": "size"
+        },
+        {
+          "dep": "case",
+          "governor": 17,
+          "governorGloss": "effect",
+          "dependent": 14,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 17,
+          "governorGloss": "effect",
+          "dependent": 15,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "compound",
+          "governor": 17,
+          "governorGloss": "effect",
+          "dependent": 16,
+          "dependentGloss": "priming"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 13,
+          "governorGloss": "size",
+          "dependent": 17,
+          "dependentGloss": "effect"
+        },
+        {
+          "dep": "punct",
+          "governor": 20,
+          "governorGloss": "surprisal",
+          "dependent": 18,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "surprisal",
+          "dependent": 19,
+          "dependentGloss": "prime"
+        },
+        {
+          "dep": "appos",
+          "governor": 17,
+          "governorGloss": "effect",
+          "dependent": 20,
+          "dependentGloss": "surprisal"
+        },
+        {
+          "dep": "punct",
+          "governor": 20,
+          "governorGloss": "surprisal",
+          "dependent": 21,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "cop",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 22,
+          "dependentGloss": "was"
+        },
+        {
+          "dep": "case",
+          "governor": 25,
+          "governorGloss": "children",
+          "dependent": 24,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 25,
+          "dependentGloss": "children"
+        },
+        {
+          "dep": "case",
+          "governor": 28,
+          "governorGloss": "adults",
+          "dependent": 26,
+          "dependentGloss": "than"
+        },
+        {
+          "dep": "case",
+          "governor": 28,
+          "governorGloss": "adults",
+          "dependent": 27,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 28,
+          "dependentGloss": "adults"
+        },
+        {
+          "dep": "punct",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 29,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "xcomp",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 30,
+          "dependentGloss": "suggesting"
+        },
+        {
+          "dep": "mark",
+          "governor": 36,
+          "governorGloss": "present",
+          "dependent": 31,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "dep",
+          "governor": 34,
+          "governorGloss": "links",
+          "dependent": 32,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "compound",
+          "governor": 34,
+          "governorGloss": "links",
+          "dependent": 33,
+          "dependentGloss": "structure"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 36,
+          "governorGloss": "present",
+          "dependent": 34,
+          "dependentGloss": "links"
+        },
+        {
+          "dep": "cop",
+          "governor": 36,
+          "governorGloss": "present",
+          "dependent": 35,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 30,
+          "governorGloss": "suggesting",
+          "dependent": 36,
+          "dependentGloss": "present"
+        },
+        {
+          "dep": "case",
+          "governor": 40,
+          "governorGloss": "age",
+          "dependent": 37,
+          "dependentGloss": "at"
+        },
+        {
+          "dep": "det",
+          "governor": 40,
+          "governorGloss": "age",
+          "dependent": 38,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 40,
+          "governorGloss": "age",
+          "dependent": 39,
+          "dependentGloss": "earliest"
+        },
+        {
+          "dep": "nmod:at",
+          "governor": 36,
+          "governorGloss": "present",
+          "dependent": 40,
+          "dependentGloss": "age"
+        },
+        {
+          "dep": "acl",
+          "governor": 40,
+          "governorGloss": "age",
+          "dependent": 41,
+          "dependentGloss": "tested"
+        },
+        {
+          "dep": "punct",
+          "governor": 23,
+          "governorGloss": "larger",
+          "dependent": 42,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -2632,6 +7798,839 @@
     },
     {
       "index": 9,
+      "parse": "(ROOT\n  (S\n    (S\n      (VP (VBN Taken)\n        (PP (IN as)\n          (NP (DT a) (JJ whole)))))\n    (, ,)\n    (NP (DT the) (NNS results))\n    (VP (VBP suggest)\n      (SBAR\n        (SBAR (IN that)\n          (S\n            (NP (NNS children))\n            (VP (VBP begin)\n              (S\n                (VP (TO to)\n                  (VP (VB acquire)\n                    (NP\n                      (NP (NN knowledge))\n                      (PP (IN about)\n                        (NP (JJ verb-argument) (NN structure) (NNS preferences))))\n                    (ADVP (RB early)\n                      (PP (IN in)\n                        (NP (NN acquisition))))))))))\n        (, ,)\n        (CC but)\n        (SBAR (IN that)\n          (S\n            (NP (DT the) (NN ability)\n              (S\n                (VP (TO to)\n                  (VP (VB use)\n                    (S\n                      (NP (JJ adult-like))\n                      (VP (VB verb)\n                        (NP (NN bias))\n                        (PP (IN in)\n                          (NP (NN production)))))))))\n            (ADVP (RB gradually))\n            (VP (VBZ improves)\n              (PP (IN over)\n                (NP (NN development))))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 8,
+          "dependentGloss": "suggest"
+        },
+        {
+          "dep": "advcl",
+          "governor": 8,
+          "governorGloss": "suggest",
+          "dependent": 1,
+          "dependentGloss": "Taken"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "whole",
+          "dependent": 2,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "det",
+          "governor": 4,
+          "governorGloss": "whole",
+          "dependent": 3,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "nmod",
+          "governor": 1,
+          "governorGloss": "Taken",
+          "dependent": 4,
+          "dependentGloss": "whole"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "suggest",
+          "dependent": 5,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "det",
+          "governor": 7,
+          "governorGloss": "results",
+          "dependent": 6,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 8,
+          "governorGloss": "suggest",
+          "dependent": 7,
+          "dependentGloss": "results"
+        },
+        {
+          "dep": "mark",
+          "governor": 11,
+          "governorGloss": "begin",
+          "dependent": 9,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 11,
+          "governorGloss": "begin",
+          "dependent": 10,
+          "dependentGloss": "children"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 8,
+          "governorGloss": "suggest",
+          "dependent": 11,
+          "dependentGloss": "begin"
+        },
+        {
+          "dep": "mark",
+          "governor": 13,
+          "governorGloss": "acquire",
+          "dependent": 12,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 11,
+          "governorGloss": "begin",
+          "dependent": 13,
+          "dependentGloss": "acquire"
+        },
+        {
+          "dep": "dobj",
+          "governor": 13,
+          "governorGloss": "acquire",
+          "dependent": 14,
+          "dependentGloss": "knowledge"
+        },
+        {
+          "dep": "case",
+          "governor": 18,
+          "governorGloss": "preferences",
+          "dependent": 15,
+          "dependentGloss": "about"
+        },
+        {
+          "dep": "amod",
+          "governor": 18,
+          "governorGloss": "preferences",
+          "dependent": 16,
+          "dependentGloss": "verb-argument"
+        },
+        {
+          "dep": "compound",
+          "governor": 18,
+          "governorGloss": "preferences",
+          "dependent": 17,
+          "dependentGloss": "structure"
+        },
+        {
+          "dep": "nmod",
+          "governor": 14,
+          "governorGloss": "knowledge",
+          "dependent": 18,
+          "dependentGloss": "preferences"
+        },
+        {
+          "dep": "advmod",
+          "governor": 13,
+          "governorGloss": "acquire",
+          "dependent": 19,
+          "dependentGloss": "early"
+        },
+        {
+          "dep": "case",
+          "governor": 21,
+          "governorGloss": "acquisition",
+          "dependent": 20,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod",
+          "governor": 19,
+          "governorGloss": "early",
+          "dependent": 21,
+          "dependentGloss": "acquisition"
+        },
+        {
+          "dep": "punct",
+          "governor": 11,
+          "governorGloss": "begin",
+          "dependent": 22,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 11,
+          "governorGloss": "begin",
+          "dependent": 23,
+          "dependentGloss": "but"
+        },
+        {
+          "dep": "mark",
+          "governor": 35,
+          "governorGloss": "improves",
+          "dependent": 24,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "det",
+          "governor": 26,
+          "governorGloss": "ability",
+          "dependent": 25,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 35,
+          "governorGloss": "improves",
+          "dependent": 26,
+          "dependentGloss": "ability"
+        },
+        {
+          "dep": "mark",
+          "governor": 28,
+          "governorGloss": "use",
+          "dependent": 27,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "acl",
+          "governor": 26,
+          "governorGloss": "ability",
+          "dependent": 28,
+          "dependentGloss": "use"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 30,
+          "governorGloss": "verb",
+          "dependent": 29,
+          "dependentGloss": "adult-like"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 28,
+          "governorGloss": "use",
+          "dependent": 30,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "dobj",
+          "governor": 30,
+          "governorGloss": "verb",
+          "dependent": 31,
+          "dependentGloss": "bias"
+        },
+        {
+          "dep": "case",
+          "governor": 33,
+          "governorGloss": "production",
+          "dependent": 32,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod",
+          "governor": 30,
+          "governorGloss": "verb",
+          "dependent": 33,
+          "dependentGloss": "production"
+        },
+        {
+          "dep": "advmod",
+          "governor": 35,
+          "governorGloss": "improves",
+          "dependent": 34,
+          "dependentGloss": "gradually"
+        },
+        {
+          "dep": "conj",
+          "governor": 11,
+          "governorGloss": "begin",
+          "dependent": 35,
+          "dependentGloss": "improves"
+        },
+        {
+          "dep": "case",
+          "governor": 37,
+          "governorGloss": "development",
+          "dependent": 36,
+          "dependentGloss": "over"
+        },
+        {
+          "dep": "nmod",
+          "governor": 35,
+          "governorGloss": "improves",
+          "dependent": 37,
+          "dependentGloss": "development"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "suggest",
+          "dependent": 38,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 8,
+          "dependentGloss": "suggest"
+        },
+        {
+          "dep": "advcl",
+          "governor": 8,
+          "governorGloss": "suggest",
+          "dependent": 1,
+          "dependentGloss": "Taken"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "whole",
+          "dependent": 2,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "det",
+          "governor": 4,
+          "governorGloss": "whole",
+          "dependent": 3,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "nmod:as",
+          "governor": 1,
+          "governorGloss": "Taken",
+          "dependent": 4,
+          "dependentGloss": "whole"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "suggest",
+          "dependent": 5,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "det",
+          "governor": 7,
+          "governorGloss": "results",
+          "dependent": 6,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 8,
+          "governorGloss": "suggest",
+          "dependent": 7,
+          "dependentGloss": "results"
+        },
+        {
+          "dep": "mark",
+          "governor": 11,
+          "governorGloss": "begin",
+          "dependent": 9,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 11,
+          "governorGloss": "begin",
+          "dependent": 10,
+          "dependentGloss": "children"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 13,
+          "governorGloss": "acquire",
+          "dependent": 10,
+          "dependentGloss": "children"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 8,
+          "governorGloss": "suggest",
+          "dependent": 11,
+          "dependentGloss": "begin"
+        },
+        {
+          "dep": "mark",
+          "governor": 13,
+          "governorGloss": "acquire",
+          "dependent": 12,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 11,
+          "governorGloss": "begin",
+          "dependent": 13,
+          "dependentGloss": "acquire"
+        },
+        {
+          "dep": "dobj",
+          "governor": 13,
+          "governorGloss": "acquire",
+          "dependent": 14,
+          "dependentGloss": "knowledge"
+        },
+        {
+          "dep": "case",
+          "governor": 18,
+          "governorGloss": "preferences",
+          "dependent": 15,
+          "dependentGloss": "about"
+        },
+        {
+          "dep": "amod",
+          "governor": 18,
+          "governorGloss": "preferences",
+          "dependent": 16,
+          "dependentGloss": "verb-argument"
+        },
+        {
+          "dep": "compound",
+          "governor": 18,
+          "governorGloss": "preferences",
+          "dependent": 17,
+          "dependentGloss": "structure"
+        },
+        {
+          "dep": "nmod:about",
+          "governor": 14,
+          "governorGloss": "knowledge",
+          "dependent": 18,
+          "dependentGloss": "preferences"
+        },
+        {
+          "dep": "advmod",
+          "governor": 13,
+          "governorGloss": "acquire",
+          "dependent": 19,
+          "dependentGloss": "early"
+        },
+        {
+          "dep": "case",
+          "governor": 21,
+          "governorGloss": "acquisition",
+          "dependent": 20,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 19,
+          "governorGloss": "early",
+          "dependent": 21,
+          "dependentGloss": "acquisition"
+        },
+        {
+          "dep": "punct",
+          "governor": 11,
+          "governorGloss": "begin",
+          "dependent": 22,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 11,
+          "governorGloss": "begin",
+          "dependent": 23,
+          "dependentGloss": "but"
+        },
+        {
+          "dep": "mark",
+          "governor": 35,
+          "governorGloss": "improves",
+          "dependent": 24,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "det",
+          "governor": 26,
+          "governorGloss": "ability",
+          "dependent": 25,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 35,
+          "governorGloss": "improves",
+          "dependent": 26,
+          "dependentGloss": "ability"
+        },
+        {
+          "dep": "mark",
+          "governor": 28,
+          "governorGloss": "use",
+          "dependent": 27,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "acl:to",
+          "governor": 26,
+          "governorGloss": "ability",
+          "dependent": 28,
+          "dependentGloss": "use"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 30,
+          "governorGloss": "verb",
+          "dependent": 29,
+          "dependentGloss": "adult-like"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 28,
+          "governorGloss": "use",
+          "dependent": 30,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "dobj",
+          "governor": 30,
+          "governorGloss": "verb",
+          "dependent": 31,
+          "dependentGloss": "bias"
+        },
+        {
+          "dep": "case",
+          "governor": 33,
+          "governorGloss": "production",
+          "dependent": 32,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 30,
+          "governorGloss": "verb",
+          "dependent": 33,
+          "dependentGloss": "production"
+        },
+        {
+          "dep": "advmod",
+          "governor": 35,
+          "governorGloss": "improves",
+          "dependent": 34,
+          "dependentGloss": "gradually"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 8,
+          "governorGloss": "suggest",
+          "dependent": 35,
+          "dependentGloss": "improves"
+        },
+        {
+          "dep": "conj:but",
+          "governor": 11,
+          "governorGloss": "begin",
+          "dependent": 35,
+          "dependentGloss": "improves"
+        },
+        {
+          "dep": "case",
+          "governor": 37,
+          "governorGloss": "development",
+          "dependent": 36,
+          "dependentGloss": "over"
+        },
+        {
+          "dep": "nmod:over",
+          "governor": 35,
+          "governorGloss": "improves",
+          "dependent": 37,
+          "dependentGloss": "development"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "suggest",
+          "dependent": 38,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 8,
+          "dependentGloss": "suggest"
+        },
+        {
+          "dep": "advcl",
+          "governor": 8,
+          "governorGloss": "suggest",
+          "dependent": 1,
+          "dependentGloss": "Taken"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "whole",
+          "dependent": 2,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "det",
+          "governor": 4,
+          "governorGloss": "whole",
+          "dependent": 3,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "nmod:as",
+          "governor": 1,
+          "governorGloss": "Taken",
+          "dependent": 4,
+          "dependentGloss": "whole"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "suggest",
+          "dependent": 5,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "det",
+          "governor": 7,
+          "governorGloss": "results",
+          "dependent": 6,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 8,
+          "governorGloss": "suggest",
+          "dependent": 7,
+          "dependentGloss": "results"
+        },
+        {
+          "dep": "mark",
+          "governor": 11,
+          "governorGloss": "begin",
+          "dependent": 9,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 11,
+          "governorGloss": "begin",
+          "dependent": 10,
+          "dependentGloss": "children"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 13,
+          "governorGloss": "acquire",
+          "dependent": 10,
+          "dependentGloss": "children"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 8,
+          "governorGloss": "suggest",
+          "dependent": 11,
+          "dependentGloss": "begin"
+        },
+        {
+          "dep": "mark",
+          "governor": 13,
+          "governorGloss": "acquire",
+          "dependent": 12,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 11,
+          "governorGloss": "begin",
+          "dependent": 13,
+          "dependentGloss": "acquire"
+        },
+        {
+          "dep": "dobj",
+          "governor": 13,
+          "governorGloss": "acquire",
+          "dependent": 14,
+          "dependentGloss": "knowledge"
+        },
+        {
+          "dep": "case",
+          "governor": 18,
+          "governorGloss": "preferences",
+          "dependent": 15,
+          "dependentGloss": "about"
+        },
+        {
+          "dep": "amod",
+          "governor": 18,
+          "governorGloss": "preferences",
+          "dependent": 16,
+          "dependentGloss": "verb-argument"
+        },
+        {
+          "dep": "compound",
+          "governor": 18,
+          "governorGloss": "preferences",
+          "dependent": 17,
+          "dependentGloss": "structure"
+        },
+        {
+          "dep": "nmod:about",
+          "governor": 14,
+          "governorGloss": "knowledge",
+          "dependent": 18,
+          "dependentGloss": "preferences"
+        },
+        {
+          "dep": "advmod",
+          "governor": 13,
+          "governorGloss": "acquire",
+          "dependent": 19,
+          "dependentGloss": "early"
+        },
+        {
+          "dep": "case",
+          "governor": 21,
+          "governorGloss": "acquisition",
+          "dependent": 20,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 19,
+          "governorGloss": "early",
+          "dependent": 21,
+          "dependentGloss": "acquisition"
+        },
+        {
+          "dep": "punct",
+          "governor": 11,
+          "governorGloss": "begin",
+          "dependent": 22,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 11,
+          "governorGloss": "begin",
+          "dependent": 23,
+          "dependentGloss": "but"
+        },
+        {
+          "dep": "mark",
+          "governor": 35,
+          "governorGloss": "improves",
+          "dependent": 24,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "det",
+          "governor": 26,
+          "governorGloss": "ability",
+          "dependent": 25,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 35,
+          "governorGloss": "improves",
+          "dependent": 26,
+          "dependentGloss": "ability"
+        },
+        {
+          "dep": "mark",
+          "governor": 28,
+          "governorGloss": "use",
+          "dependent": 27,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "acl:to",
+          "governor": 26,
+          "governorGloss": "ability",
+          "dependent": 28,
+          "dependentGloss": "use"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 30,
+          "governorGloss": "verb",
+          "dependent": 29,
+          "dependentGloss": "adult-like"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 28,
+          "governorGloss": "use",
+          "dependent": 30,
+          "dependentGloss": "verb"
+        },
+        {
+          "dep": "dobj",
+          "governor": 30,
+          "governorGloss": "verb",
+          "dependent": 31,
+          "dependentGloss": "bias"
+        },
+        {
+          "dep": "case",
+          "governor": 33,
+          "governorGloss": "production",
+          "dependent": 32,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 30,
+          "governorGloss": "verb",
+          "dependent": 33,
+          "dependentGloss": "production"
+        },
+        {
+          "dep": "advmod",
+          "governor": 35,
+          "governorGloss": "improves",
+          "dependent": 34,
+          "dependentGloss": "gradually"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 8,
+          "governorGloss": "suggest",
+          "dependent": 35,
+          "dependentGloss": "improves"
+        },
+        {
+          "dep": "conj:but",
+          "governor": 11,
+          "governorGloss": "begin",
+          "dependent": 35,
+          "dependentGloss": "improves"
+        },
+        {
+          "dep": "case",
+          "governor": 37,
+          "governorGloss": "development",
+          "dependent": 36,
+          "dependentGloss": "over"
+        },
+        {
+          "dep": "nmod:over",
+          "governor": 35,
+          "governorGloss": "improves",
+          "dependent": 37,
+          "dependentGloss": "development"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "suggest",
+          "dependent": 38,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -3055,6 +9054,489 @@
     },
     {
       "index": 10,
+      "parse": "(ROOT\n  (S\n    (NP (PRP We))\n    (ADVP (RB also))\n    (VP (VBP argue)\n      (SBAR (IN that)\n        (S\n          (NP\n            (NP (DT this) (NN pattern))\n            (PP (IN of)\n              (NP (NNS results))))\n          (VP (VBZ is)\n            (NP\n              (NP (JJS best))\n              (VP (VBN explained)\n                (PP (IN by)\n                  (NP\n                    (NP (DT a) (NN learning) (NN model))\n                    (SBAR\n                      (WHNP (WDT that))\n                      (S\n                        (VP (VBZ uses)\n                          (NP (DT an) (JJ error-based) (NN learning) (NN mechanism)))))))))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "argue"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "argue",
+          "dependent": 1,
+          "dependentGloss": "We"
+        },
+        {
+          "dep": "advmod",
+          "governor": 3,
+          "governorGloss": "argue",
+          "dependent": 2,
+          "dependentGloss": "also"
+        },
+        {
+          "dep": "mark",
+          "governor": 10,
+          "governorGloss": "best",
+          "dependent": 4,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "pattern",
+          "dependent": 5,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 10,
+          "governorGloss": "best",
+          "dependent": 6,
+          "dependentGloss": "pattern"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "results",
+          "dependent": 7,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod",
+          "governor": 6,
+          "governorGloss": "pattern",
+          "dependent": 8,
+          "dependentGloss": "results"
+        },
+        {
+          "dep": "cop",
+          "governor": 10,
+          "governorGloss": "best",
+          "dependent": 9,
+          "dependentGloss": "is"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 3,
+          "governorGloss": "argue",
+          "dependent": 10,
+          "dependentGloss": "best"
+        },
+        {
+          "dep": "acl",
+          "governor": 10,
+          "governorGloss": "best",
+          "dependent": 11,
+          "dependentGloss": "explained"
+        },
+        {
+          "dep": "case",
+          "governor": 15,
+          "governorGloss": "model",
+          "dependent": 12,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "det",
+          "governor": 15,
+          "governorGloss": "model",
+          "dependent": 13,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "compound",
+          "governor": 15,
+          "governorGloss": "model",
+          "dependent": 14,
+          "dependentGloss": "learning"
+        },
+        {
+          "dep": "nmod",
+          "governor": 11,
+          "governorGloss": "explained",
+          "dependent": 15,
+          "dependentGloss": "model"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 17,
+          "governorGloss": "uses",
+          "dependent": 16,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "acl:relcl",
+          "governor": 15,
+          "governorGloss": "model",
+          "dependent": 17,
+          "dependentGloss": "uses"
+        },
+        {
+          "dep": "det",
+          "governor": 21,
+          "governorGloss": "mechanism",
+          "dependent": 18,
+          "dependentGloss": "an"
+        },
+        {
+          "dep": "amod",
+          "governor": 21,
+          "governorGloss": "mechanism",
+          "dependent": 19,
+          "dependentGloss": "error-based"
+        },
+        {
+          "dep": "compound",
+          "governor": 21,
+          "governorGloss": "mechanism",
+          "dependent": 20,
+          "dependentGloss": "learning"
+        },
+        {
+          "dep": "dobj",
+          "governor": 17,
+          "governorGloss": "uses",
+          "dependent": 21,
+          "dependentGloss": "mechanism"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "argue",
+          "dependent": 22,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "argue"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "argue",
+          "dependent": 1,
+          "dependentGloss": "We"
+        },
+        {
+          "dep": "advmod",
+          "governor": 3,
+          "governorGloss": "argue",
+          "dependent": 2,
+          "dependentGloss": "also"
+        },
+        {
+          "dep": "mark",
+          "governor": 10,
+          "governorGloss": "best",
+          "dependent": 4,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "pattern",
+          "dependent": 5,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 10,
+          "governorGloss": "best",
+          "dependent": 6,
+          "dependentGloss": "pattern"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "results",
+          "dependent": 7,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 6,
+          "governorGloss": "pattern",
+          "dependent": 8,
+          "dependentGloss": "results"
+        },
+        {
+          "dep": "cop",
+          "governor": 10,
+          "governorGloss": "best",
+          "dependent": 9,
+          "dependentGloss": "is"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 3,
+          "governorGloss": "argue",
+          "dependent": 10,
+          "dependentGloss": "best"
+        },
+        {
+          "dep": "acl",
+          "governor": 10,
+          "governorGloss": "best",
+          "dependent": 11,
+          "dependentGloss": "explained"
+        },
+        {
+          "dep": "case",
+          "governor": 15,
+          "governorGloss": "model",
+          "dependent": 12,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "det",
+          "governor": 15,
+          "governorGloss": "model",
+          "dependent": 13,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "compound",
+          "governor": 15,
+          "governorGloss": "model",
+          "dependent": 14,
+          "dependentGloss": "learning"
+        },
+        {
+          "dep": "nmod:by",
+          "governor": 11,
+          "governorGloss": "explained",
+          "dependent": 15,
+          "dependentGloss": "model"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 17,
+          "governorGloss": "uses",
+          "dependent": 15,
+          "dependentGloss": "model"
+        },
+        {
+          "dep": "ref",
+          "governor": 15,
+          "governorGloss": "model",
+          "dependent": 16,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "acl:relcl",
+          "governor": 15,
+          "governorGloss": "model",
+          "dependent": 17,
+          "dependentGloss": "uses"
+        },
+        {
+          "dep": "det",
+          "governor": 21,
+          "governorGloss": "mechanism",
+          "dependent": 18,
+          "dependentGloss": "an"
+        },
+        {
+          "dep": "amod",
+          "governor": 21,
+          "governorGloss": "mechanism",
+          "dependent": 19,
+          "dependentGloss": "error-based"
+        },
+        {
+          "dep": "compound",
+          "governor": 21,
+          "governorGloss": "mechanism",
+          "dependent": 20,
+          "dependentGloss": "learning"
+        },
+        {
+          "dep": "dobj",
+          "governor": 17,
+          "governorGloss": "uses",
+          "dependent": 21,
+          "dependentGloss": "mechanism"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "argue",
+          "dependent": 22,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "argue"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "argue",
+          "dependent": 1,
+          "dependentGloss": "We"
+        },
+        {
+          "dep": "advmod",
+          "governor": 3,
+          "governorGloss": "argue",
+          "dependent": 2,
+          "dependentGloss": "also"
+        },
+        {
+          "dep": "mark",
+          "governor": 10,
+          "governorGloss": "best",
+          "dependent": 4,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "pattern",
+          "dependent": 5,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 10,
+          "governorGloss": "best",
+          "dependent": 6,
+          "dependentGloss": "pattern"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "results",
+          "dependent": 7,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 6,
+          "governorGloss": "pattern",
+          "dependent": 8,
+          "dependentGloss": "results"
+        },
+        {
+          "dep": "cop",
+          "governor": 10,
+          "governorGloss": "best",
+          "dependent": 9,
+          "dependentGloss": "is"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 3,
+          "governorGloss": "argue",
+          "dependent": 10,
+          "dependentGloss": "best"
+        },
+        {
+          "dep": "acl",
+          "governor": 10,
+          "governorGloss": "best",
+          "dependent": 11,
+          "dependentGloss": "explained"
+        },
+        {
+          "dep": "case",
+          "governor": 15,
+          "governorGloss": "model",
+          "dependent": 12,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "det",
+          "governor": 15,
+          "governorGloss": "model",
+          "dependent": 13,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "compound",
+          "governor": 15,
+          "governorGloss": "model",
+          "dependent": 14,
+          "dependentGloss": "learning"
+        },
+        {
+          "dep": "nmod:by",
+          "governor": 11,
+          "governorGloss": "explained",
+          "dependent": 15,
+          "dependentGloss": "model"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 17,
+          "governorGloss": "uses",
+          "dependent": 15,
+          "dependentGloss": "model"
+        },
+        {
+          "dep": "ref",
+          "governor": 15,
+          "governorGloss": "model",
+          "dependent": 16,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "acl:relcl",
+          "governor": 15,
+          "governorGloss": "model",
+          "dependent": 17,
+          "dependentGloss": "uses"
+        },
+        {
+          "dep": "det",
+          "governor": 21,
+          "governorGloss": "mechanism",
+          "dependent": 18,
+          "dependentGloss": "an"
+        },
+        {
+          "dep": "amod",
+          "governor": 21,
+          "governorGloss": "mechanism",
+          "dependent": 19,
+          "dependentGloss": "error-based"
+        },
+        {
+          "dep": "compound",
+          "governor": 21,
+          "governorGloss": "mechanism",
+          "dependent": 20,
+          "dependentGloss": "learning"
+        },
+        {
+          "dep": "dobj",
+          "governor": 17,
+          "governorGloss": "uses",
+          "dependent": 21,
+          "dependentGloss": "mechanism"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "argue",
+          "dependent": 22,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -3302,6 +9784,160 @@
     },
     {
       "index": 11,
+      "parse": "(ROOT\n  (NP\n    (NP (-LRB- -LRB-) (NN C) (-RRB- -RRB-))\n    (NP (CD 2014) (NNP Elsevier) (NNP Inc.))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "C"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "C",
+          "dependent": 1,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "C",
+          "dependent": 3,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "nummod",
+          "governor": 6,
+          "governorGloss": "Inc.",
+          "dependent": 4,
+          "dependentGloss": "2014"
+        },
+        {
+          "dep": "compound",
+          "governor": 6,
+          "governorGloss": "Inc.",
+          "dependent": 5,
+          "dependentGloss": "Elsevier"
+        },
+        {
+          "dep": "dep",
+          "governor": 2,
+          "governorGloss": "C",
+          "dependent": 6,
+          "dependentGloss": "Inc."
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "C",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "C"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "C",
+          "dependent": 1,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "C",
+          "dependent": 3,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "nummod",
+          "governor": 6,
+          "governorGloss": "Inc.",
+          "dependent": 4,
+          "dependentGloss": "2014"
+        },
+        {
+          "dep": "compound",
+          "governor": 6,
+          "governorGloss": "Inc.",
+          "dependent": 5,
+          "dependentGloss": "Elsevier"
+        },
+        {
+          "dep": "dep",
+          "governor": 2,
+          "governorGloss": "C",
+          "dependent": 6,
+          "dependentGloss": "Inc."
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "C",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "C"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "C",
+          "dependent": 1,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "C",
+          "dependent": 3,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "nummod",
+          "governor": 6,
+          "governorGloss": "Inc.",
+          "dependent": 4,
+          "dependentGloss": "2014"
+        },
+        {
+          "dep": "compound",
+          "governor": 6,
+          "governorGloss": "Inc.",
+          "dependent": 5,
+          "dependentGloss": "Elsevier"
+        },
+        {
+          "dep": "dep",
+          "governor": 2,
+          "governorGloss": "C",
+          "dependent": 6,
+          "dependentGloss": "Inc."
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "C",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -3384,6 +10020,97 @@
     },
     {
       "index": 12,
+      "parse": "(ROOT\n  (S\n    (NP (DT All) (NNS rights))\n    (VP (VBN reserved))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "reserved"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "rights",
+          "dependent": 1,
+          "dependentGloss": "All"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "reserved",
+          "dependent": 2,
+          "dependentGloss": "rights"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "reserved",
+          "dependent": 4,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "reserved"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "rights",
+          "dependent": 1,
+          "dependentGloss": "All"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "reserved",
+          "dependent": 2,
+          "dependentGloss": "rights"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "reserved",
+          "dependent": 4,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "reserved"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "rights",
+          "dependent": 1,
+          "dependentGloss": "All"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "reserved",
+          "dependent": 2,
+          "dependentGloss": "rights"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "reserved",
+          "dependent": 4,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,

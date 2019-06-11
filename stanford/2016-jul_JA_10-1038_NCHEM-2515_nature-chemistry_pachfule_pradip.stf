@@ -2,6 +2,76 @@
   "sentences": [
     {
       "index": 0,
+      "parse": "(ROOT\n  (NP\n    (NP (NNP Nature))\n    (NP (NN chemistry))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "Nature"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "Nature",
+          "dependent": 2,
+          "dependentGloss": "chemistry"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "Nature",
+          "dependent": 3,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "Nature"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "Nature",
+          "dependent": 2,
+          "dependentGloss": "chemistry"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "Nature",
+          "dependent": 3,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "Nature"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "Nature",
+          "dependent": 2,
+          "dependentGloss": "chemistry"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "Nature",
+          "dependent": 3,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -40,6 +110,279 @@
     },
     {
       "index": 1,
+      "parse": "(ROOT\n  (NP\n    (NP (NN Fabrication))\n    (PP (IN of)\n      (NP (NN carbon) (NNS nanorods)\n        (CC and)\n        (NN graphene) (NNS nanoribbons)))\n    (PP (IN from)\n      (NP (DT a) (JJ metal-organic) (NN framework)))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "Fabrication"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "nanorods",
+          "dependent": 2,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "nanorods",
+          "dependent": 3,
+          "dependentGloss": "carbon"
+        },
+        {
+          "dep": "nmod",
+          "governor": 1,
+          "governorGloss": "Fabrication",
+          "dependent": 4,
+          "dependentGloss": "nanorods"
+        },
+        {
+          "dep": "cc",
+          "governor": 4,
+          "governorGloss": "nanorods",
+          "dependent": 5,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 7,
+          "governorGloss": "nanoribbons",
+          "dependent": 6,
+          "dependentGloss": "graphene"
+        },
+        {
+          "dep": "conj",
+          "governor": 4,
+          "governorGloss": "nanorods",
+          "dependent": 7,
+          "dependentGloss": "nanoribbons"
+        },
+        {
+          "dep": "case",
+          "governor": 11,
+          "governorGloss": "framework",
+          "dependent": 8,
+          "dependentGloss": "from"
+        },
+        {
+          "dep": "det",
+          "governor": 11,
+          "governorGloss": "framework",
+          "dependent": 9,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "amod",
+          "governor": 11,
+          "governorGloss": "framework",
+          "dependent": 10,
+          "dependentGloss": "metal-organic"
+        },
+        {
+          "dep": "nmod",
+          "governor": 1,
+          "governorGloss": "Fabrication",
+          "dependent": 11,
+          "dependentGloss": "framework"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "Fabrication",
+          "dependent": 12,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "Fabrication"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "nanorods",
+          "dependent": 2,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "nanorods",
+          "dependent": 3,
+          "dependentGloss": "carbon"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 1,
+          "governorGloss": "Fabrication",
+          "dependent": 4,
+          "dependentGloss": "nanorods"
+        },
+        {
+          "dep": "cc",
+          "governor": 4,
+          "governorGloss": "nanorods",
+          "dependent": 5,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 7,
+          "governorGloss": "nanoribbons",
+          "dependent": 6,
+          "dependentGloss": "graphene"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 1,
+          "governorGloss": "Fabrication",
+          "dependent": 7,
+          "dependentGloss": "nanoribbons"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 4,
+          "governorGloss": "nanorods",
+          "dependent": 7,
+          "dependentGloss": "nanoribbons"
+        },
+        {
+          "dep": "case",
+          "governor": 11,
+          "governorGloss": "framework",
+          "dependent": 8,
+          "dependentGloss": "from"
+        },
+        {
+          "dep": "det",
+          "governor": 11,
+          "governorGloss": "framework",
+          "dependent": 9,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "amod",
+          "governor": 11,
+          "governorGloss": "framework",
+          "dependent": 10,
+          "dependentGloss": "metal-organic"
+        },
+        {
+          "dep": "nmod:from",
+          "governor": 1,
+          "governorGloss": "Fabrication",
+          "dependent": 11,
+          "dependentGloss": "framework"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "Fabrication",
+          "dependent": 12,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "Fabrication"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "nanorods",
+          "dependent": 2,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "nanorods",
+          "dependent": 3,
+          "dependentGloss": "carbon"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 1,
+          "governorGloss": "Fabrication",
+          "dependent": 4,
+          "dependentGloss": "nanorods"
+        },
+        {
+          "dep": "cc",
+          "governor": 4,
+          "governorGloss": "nanorods",
+          "dependent": 5,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 7,
+          "governorGloss": "nanoribbons",
+          "dependent": 6,
+          "dependentGloss": "graphene"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 1,
+          "governorGloss": "Fabrication",
+          "dependent": 7,
+          "dependentGloss": "nanoribbons"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 4,
+          "governorGloss": "nanorods",
+          "dependent": 7,
+          "dependentGloss": "nanoribbons"
+        },
+        {
+          "dep": "case",
+          "governor": 11,
+          "governorGloss": "framework",
+          "dependent": 8,
+          "dependentGloss": "from"
+        },
+        {
+          "dep": "det",
+          "governor": 11,
+          "governorGloss": "framework",
+          "dependent": 9,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "amod",
+          "governor": 11,
+          "governorGloss": "framework",
+          "dependent": 10,
+          "dependentGloss": "metal-organic"
+        },
+        {
+          "dep": "nmod:from",
+          "governor": 1,
+          "governorGloss": "Fabrication",
+          "dependent": 11,
+          "dependentGloss": "framework"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "Fabrication",
+          "dependent": 12,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -177,6 +520,727 @@
     },
     {
       "index": 2,
+      "parse": "(ROOT\n  (S\n    (NP\n      (NP (CD One))\n      (: -)\n      (CC and)\n      (NP (JJ two-dimensional) (NN carbon) (NNS nanomaterials)))\n    (VP (VBP are)\n      (VP (VBG attracting)\n        (NP (JJ considerable) (NN attention))\n        (PP (IN because)\n          (PP (IN of)\n            (NP (PRP$ their) (JJ extraordinary) (JJ electrical) (, ,) (JJ mechanical)\n              (CC and)\n              (JJ thermal) (NNS properties))))\n        (, ,)\n        (SBAR\n          (WHNP (WDT which))\n          (S\n            (VP (MD could)\n              (VP (VB lead)\n                (PP (TO to)\n                  (NP\n                    (NP (DT a) (NN range))\n                    (PP (IN of)\n                      (NP (JJ important) (JJ potential) (NNS applications)))))))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 8,
+          "dependentGloss": "attracting"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 8,
+          "governorGloss": "attracting",
+          "dependent": 1,
+          "dependentGloss": "One"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "One",
+          "dependent": 2,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "cc",
+          "governor": 1,
+          "governorGloss": "One",
+          "dependent": 3,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 6,
+          "governorGloss": "nanomaterials",
+          "dependent": 4,
+          "dependentGloss": "two-dimensional"
+        },
+        {
+          "dep": "compound",
+          "governor": 6,
+          "governorGloss": "nanomaterials",
+          "dependent": 5,
+          "dependentGloss": "carbon"
+        },
+        {
+          "dep": "conj",
+          "governor": 1,
+          "governorGloss": "One",
+          "dependent": 6,
+          "dependentGloss": "nanomaterials"
+        },
+        {
+          "dep": "aux",
+          "governor": 8,
+          "governorGloss": "attracting",
+          "dependent": 7,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "attention",
+          "dependent": 9,
+          "dependentGloss": "considerable"
+        },
+        {
+          "dep": "dobj",
+          "governor": 8,
+          "governorGloss": "attracting",
+          "dependent": 10,
+          "dependentGloss": "attention"
+        },
+        {
+          "dep": "case",
+          "governor": 20,
+          "governorGloss": "properties",
+          "dependent": 11,
+          "dependentGloss": "because"
+        },
+        {
+          "dep": "case",
+          "governor": 20,
+          "governorGloss": "properties",
+          "dependent": 12,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 20,
+          "governorGloss": "properties",
+          "dependent": 13,
+          "dependentGloss": "their"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "properties",
+          "dependent": 14,
+          "dependentGloss": "extraordinary"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "properties",
+          "dependent": 15,
+          "dependentGloss": "electrical"
+        },
+        {
+          "dep": "punct",
+          "governor": 15,
+          "governorGloss": "electrical",
+          "dependent": 16,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "conj",
+          "governor": 15,
+          "governorGloss": "electrical",
+          "dependent": 17,
+          "dependentGloss": "mechanical"
+        },
+        {
+          "dep": "cc",
+          "governor": 15,
+          "governorGloss": "electrical",
+          "dependent": 18,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj",
+          "governor": 15,
+          "governorGloss": "electrical",
+          "dependent": 19,
+          "dependentGloss": "thermal"
+        },
+        {
+          "dep": "nmod",
+          "governor": 8,
+          "governorGloss": "attracting",
+          "dependent": 20,
+          "dependentGloss": "properties"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "attracting",
+          "dependent": 21,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nsubj",
+          "governor": 24,
+          "governorGloss": "lead",
+          "dependent": 22,
+          "dependentGloss": "which"
+        },
+        {
+          "dep": "aux",
+          "governor": 24,
+          "governorGloss": "lead",
+          "dependent": 23,
+          "dependentGloss": "could"
+        },
+        {
+          "dep": "dep",
+          "governor": 8,
+          "governorGloss": "attracting",
+          "dependent": 24,
+          "dependentGloss": "lead"
+        },
+        {
+          "dep": "case",
+          "governor": 27,
+          "governorGloss": "range",
+          "dependent": 25,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "det",
+          "governor": 27,
+          "governorGloss": "range",
+          "dependent": 26,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "nmod",
+          "governor": 24,
+          "governorGloss": "lead",
+          "dependent": 27,
+          "dependentGloss": "range"
+        },
+        {
+          "dep": "case",
+          "governor": 31,
+          "governorGloss": "applications",
+          "dependent": 28,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 31,
+          "governorGloss": "applications",
+          "dependent": 29,
+          "dependentGloss": "important"
+        },
+        {
+          "dep": "amod",
+          "governor": 31,
+          "governorGloss": "applications",
+          "dependent": 30,
+          "dependentGloss": "potential"
+        },
+        {
+          "dep": "nmod",
+          "governor": 27,
+          "governorGloss": "range",
+          "dependent": 31,
+          "dependentGloss": "applications"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "attracting",
+          "dependent": 32,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 8,
+          "dependentGloss": "attracting"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 8,
+          "governorGloss": "attracting",
+          "dependent": 1,
+          "dependentGloss": "One"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "One",
+          "dependent": 2,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "cc",
+          "governor": 1,
+          "governorGloss": "One",
+          "dependent": 3,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 6,
+          "governorGloss": "nanomaterials",
+          "dependent": 4,
+          "dependentGloss": "two-dimensional"
+        },
+        {
+          "dep": "compound",
+          "governor": 6,
+          "governorGloss": "nanomaterials",
+          "dependent": 5,
+          "dependentGloss": "carbon"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 1,
+          "governorGloss": "One",
+          "dependent": 6,
+          "dependentGloss": "nanomaterials"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 8,
+          "governorGloss": "attracting",
+          "dependent": 6,
+          "dependentGloss": "nanomaterials"
+        },
+        {
+          "dep": "aux",
+          "governor": 8,
+          "governorGloss": "attracting",
+          "dependent": 7,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "attention",
+          "dependent": 9,
+          "dependentGloss": "considerable"
+        },
+        {
+          "dep": "dobj",
+          "governor": 8,
+          "governorGloss": "attracting",
+          "dependent": 10,
+          "dependentGloss": "attention"
+        },
+        {
+          "dep": "case",
+          "governor": 20,
+          "governorGloss": "properties",
+          "dependent": 11,
+          "dependentGloss": "because"
+        },
+        {
+          "dep": "case",
+          "governor": 20,
+          "governorGloss": "properties",
+          "dependent": 12,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 20,
+          "governorGloss": "properties",
+          "dependent": 13,
+          "dependentGloss": "their"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "properties",
+          "dependent": 14,
+          "dependentGloss": "extraordinary"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "properties",
+          "dependent": 15,
+          "dependentGloss": "electrical"
+        },
+        {
+          "dep": "punct",
+          "governor": 15,
+          "governorGloss": "electrical",
+          "dependent": 16,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "conj:and",
+          "governor": 15,
+          "governorGloss": "electrical",
+          "dependent": 17,
+          "dependentGloss": "mechanical"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "properties",
+          "dependent": 17,
+          "dependentGloss": "mechanical"
+        },
+        {
+          "dep": "cc",
+          "governor": 15,
+          "governorGloss": "electrical",
+          "dependent": 18,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 15,
+          "governorGloss": "electrical",
+          "dependent": 19,
+          "dependentGloss": "thermal"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "properties",
+          "dependent": 19,
+          "dependentGloss": "thermal"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 8,
+          "governorGloss": "attracting",
+          "dependent": 20,
+          "dependentGloss": "properties"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "attracting",
+          "dependent": 21,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nsubj",
+          "governor": 24,
+          "governorGloss": "lead",
+          "dependent": 22,
+          "dependentGloss": "which"
+        },
+        {
+          "dep": "aux",
+          "governor": 24,
+          "governorGloss": "lead",
+          "dependent": 23,
+          "dependentGloss": "could"
+        },
+        {
+          "dep": "dep",
+          "governor": 8,
+          "governorGloss": "attracting",
+          "dependent": 24,
+          "dependentGloss": "lead"
+        },
+        {
+          "dep": "case",
+          "governor": 27,
+          "governorGloss": "range",
+          "dependent": 25,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "det",
+          "governor": 27,
+          "governorGloss": "range",
+          "dependent": 26,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "nmod:to",
+          "governor": 24,
+          "governorGloss": "lead",
+          "dependent": 27,
+          "dependentGloss": "range"
+        },
+        {
+          "dep": "case",
+          "governor": 31,
+          "governorGloss": "applications",
+          "dependent": 28,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 31,
+          "governorGloss": "applications",
+          "dependent": 29,
+          "dependentGloss": "important"
+        },
+        {
+          "dep": "amod",
+          "governor": 31,
+          "governorGloss": "applications",
+          "dependent": 30,
+          "dependentGloss": "potential"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 27,
+          "governorGloss": "range",
+          "dependent": 31,
+          "dependentGloss": "applications"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "attracting",
+          "dependent": 32,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 8,
+          "dependentGloss": "attracting"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 8,
+          "governorGloss": "attracting",
+          "dependent": 1,
+          "dependentGloss": "One"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "One",
+          "dependent": 2,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "cc",
+          "governor": 1,
+          "governorGloss": "One",
+          "dependent": 3,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "amod",
+          "governor": 6,
+          "governorGloss": "nanomaterials",
+          "dependent": 4,
+          "dependentGloss": "two-dimensional"
+        },
+        {
+          "dep": "compound",
+          "governor": 6,
+          "governorGloss": "nanomaterials",
+          "dependent": 5,
+          "dependentGloss": "carbon"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 1,
+          "governorGloss": "One",
+          "dependent": 6,
+          "dependentGloss": "nanomaterials"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 8,
+          "governorGloss": "attracting",
+          "dependent": 6,
+          "dependentGloss": "nanomaterials"
+        },
+        {
+          "dep": "aux",
+          "governor": 8,
+          "governorGloss": "attracting",
+          "dependent": 7,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "attention",
+          "dependent": 9,
+          "dependentGloss": "considerable"
+        },
+        {
+          "dep": "dobj",
+          "governor": 8,
+          "governorGloss": "attracting",
+          "dependent": 10,
+          "dependentGloss": "attention"
+        },
+        {
+          "dep": "case",
+          "governor": 20,
+          "governorGloss": "properties",
+          "dependent": 11,
+          "dependentGloss": "because"
+        },
+        {
+          "dep": "case",
+          "governor": 20,
+          "governorGloss": "properties",
+          "dependent": 12,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 20,
+          "governorGloss": "properties",
+          "dependent": 13,
+          "dependentGloss": "their"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "properties",
+          "dependent": 14,
+          "dependentGloss": "extraordinary"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "properties",
+          "dependent": 15,
+          "dependentGloss": "electrical"
+        },
+        {
+          "dep": "punct",
+          "governor": 15,
+          "governorGloss": "electrical",
+          "dependent": 16,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "conj:and",
+          "governor": 15,
+          "governorGloss": "electrical",
+          "dependent": 17,
+          "dependentGloss": "mechanical"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "properties",
+          "dependent": 17,
+          "dependentGloss": "mechanical"
+        },
+        {
+          "dep": "cc",
+          "governor": 15,
+          "governorGloss": "electrical",
+          "dependent": 18,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 15,
+          "governorGloss": "electrical",
+          "dependent": 19,
+          "dependentGloss": "thermal"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "properties",
+          "dependent": 19,
+          "dependentGloss": "thermal"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 8,
+          "governorGloss": "attracting",
+          "dependent": 20,
+          "dependentGloss": "properties"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "attracting",
+          "dependent": 21,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nsubj",
+          "governor": 24,
+          "governorGloss": "lead",
+          "dependent": 22,
+          "dependentGloss": "which"
+        },
+        {
+          "dep": "aux",
+          "governor": 24,
+          "governorGloss": "lead",
+          "dependent": 23,
+          "dependentGloss": "could"
+        },
+        {
+          "dep": "dep",
+          "governor": 8,
+          "governorGloss": "attracting",
+          "dependent": 24,
+          "dependentGloss": "lead"
+        },
+        {
+          "dep": "case",
+          "governor": 27,
+          "governorGloss": "range",
+          "dependent": 25,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "det:qmod",
+          "governor": 31,
+          "governorGloss": "applications",
+          "dependent": 26,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "mwe",
+          "governor": 26,
+          "governorGloss": "a",
+          "dependent": 27,
+          "dependentGloss": "range"
+        },
+        {
+          "dep": "mwe",
+          "governor": 26,
+          "governorGloss": "a",
+          "dependent": 28,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 31,
+          "governorGloss": "applications",
+          "dependent": 29,
+          "dependentGloss": "important"
+        },
+        {
+          "dep": "amod",
+          "governor": 31,
+          "governorGloss": "applications",
+          "dependent": 30,
+          "dependentGloss": "potential"
+        },
+        {
+          "dep": "nmod",
+          "governor": 24,
+          "governorGloss": "lead",
+          "dependent": 31,
+          "dependentGloss": "applications"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "attracting",
+          "dependent": 32,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -534,6 +1598,769 @@
     },
     {
       "index": 3,
+      "parse": "(ROOT\n  (S\n    (S\n      (NP\n        (NP (JJ Synthetic) (NNS processes))\n        (VP (VBN associated)\n          (PP (IN with)\n            (S\n              (VP (VBG making)\n                (NP (DT these) (NNS materials)))))))\n      (VP\n        (VP (MD can)\n          (VP (VB be)\n            (ADJP (RB quite) (JJ complex))))\n        (CC and)\n        (VP\n          (ADVP (RB also))\n          (VBP consume)\n          (NP\n            (NP (JJ large) (NNS amounts))\n            (PP (IN of)\n              (NP (NN energy)))))))\n    (, ,) (IN so)\n    (S\n      (NP (DT a) (JJ major) (NN challenge))\n      (VP (VBZ is)\n        (S\n          (VP (TO to)\n            (VP (VB develop)\n              (NP\n                (ADJP (JJ simple)\n                  (CC and)\n                  (JJ efficient))\n                (NNS methods))\n              (S\n                (VP (TO to)\n                  (VP (VB produce)\n                    (NP (PRP them))))))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 11,
+          "dependentGloss": "complex"
+        },
+        {
+          "dep": "amod",
+          "governor": 2,
+          "governorGloss": "processes",
+          "dependent": 1,
+          "dependentGloss": "Synthetic"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 2,
+          "dependentGloss": "processes"
+        },
+        {
+          "dep": "acl",
+          "governor": 2,
+          "governorGloss": "processes",
+          "dependent": 3,
+          "dependentGloss": "associated"
+        },
+        {
+          "dep": "mark",
+          "governor": 5,
+          "governorGloss": "making",
+          "dependent": 4,
+          "dependentGloss": "with"
+        },
+        {
+          "dep": "advcl",
+          "governor": 3,
+          "governorGloss": "associated",
+          "dependent": 5,
+          "dependentGloss": "making"
+        },
+        {
+          "dep": "det",
+          "governor": 7,
+          "governorGloss": "materials",
+          "dependent": 6,
+          "dependentGloss": "these"
+        },
+        {
+          "dep": "dobj",
+          "governor": 5,
+          "governorGloss": "making",
+          "dependent": 7,
+          "dependentGloss": "materials"
+        },
+        {
+          "dep": "aux",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 8,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "cop",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 9,
+          "dependentGloss": "be"
+        },
+        {
+          "dep": "advmod",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 10,
+          "dependentGloss": "quite"
+        },
+        {
+          "dep": "cc",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 12,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "advmod",
+          "governor": 14,
+          "governorGloss": "consume",
+          "dependent": 13,
+          "dependentGloss": "also"
+        },
+        {
+          "dep": "conj",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 14,
+          "dependentGloss": "consume"
+        },
+        {
+          "dep": "amod",
+          "governor": 16,
+          "governorGloss": "amounts",
+          "dependent": 15,
+          "dependentGloss": "large"
+        },
+        {
+          "dep": "dobj",
+          "governor": 14,
+          "governorGloss": "consume",
+          "dependent": 16,
+          "dependentGloss": "amounts"
+        },
+        {
+          "dep": "case",
+          "governor": 18,
+          "governorGloss": "energy",
+          "dependent": 17,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod",
+          "governor": 16,
+          "governorGloss": "amounts",
+          "dependent": 18,
+          "dependentGloss": "energy"
+        },
+        {
+          "dep": "punct",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 19,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "dep",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 20,
+          "dependentGloss": "so"
+        },
+        {
+          "dep": "det",
+          "governor": 23,
+          "governorGloss": "challenge",
+          "dependent": 21,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "amod",
+          "governor": 23,
+          "governorGloss": "challenge",
+          "dependent": 22,
+          "dependentGloss": "major"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 24,
+          "governorGloss": "is",
+          "dependent": 23,
+          "dependentGloss": "challenge"
+        },
+        {
+          "dep": "parataxis",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 24,
+          "dependentGloss": "is"
+        },
+        {
+          "dep": "mark",
+          "governor": 26,
+          "governorGloss": "develop",
+          "dependent": 25,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 24,
+          "governorGloss": "is",
+          "dependent": 26,
+          "dependentGloss": "develop"
+        },
+        {
+          "dep": "amod",
+          "governor": 30,
+          "governorGloss": "methods",
+          "dependent": 27,
+          "dependentGloss": "simple"
+        },
+        {
+          "dep": "cc",
+          "governor": 27,
+          "governorGloss": "simple",
+          "dependent": 28,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj",
+          "governor": 27,
+          "governorGloss": "simple",
+          "dependent": 29,
+          "dependentGloss": "efficient"
+        },
+        {
+          "dep": "dobj",
+          "governor": 26,
+          "governorGloss": "develop",
+          "dependent": 30,
+          "dependentGloss": "methods"
+        },
+        {
+          "dep": "mark",
+          "governor": 32,
+          "governorGloss": "produce",
+          "dependent": 31,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "advcl",
+          "governor": 26,
+          "governorGloss": "develop",
+          "dependent": 32,
+          "dependentGloss": "produce"
+        },
+        {
+          "dep": "dobj",
+          "governor": 32,
+          "governorGloss": "produce",
+          "dependent": 33,
+          "dependentGloss": "them"
+        },
+        {
+          "dep": "punct",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 34,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 11,
+          "dependentGloss": "complex"
+        },
+        {
+          "dep": "amod",
+          "governor": 2,
+          "governorGloss": "processes",
+          "dependent": 1,
+          "dependentGloss": "Synthetic"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 2,
+          "dependentGloss": "processes"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 14,
+          "governorGloss": "consume",
+          "dependent": 2,
+          "dependentGloss": "processes"
+        },
+        {
+          "dep": "acl",
+          "governor": 2,
+          "governorGloss": "processes",
+          "dependent": 3,
+          "dependentGloss": "associated"
+        },
+        {
+          "dep": "mark",
+          "governor": 5,
+          "governorGloss": "making",
+          "dependent": 4,
+          "dependentGloss": "with"
+        },
+        {
+          "dep": "advcl:with",
+          "governor": 3,
+          "governorGloss": "associated",
+          "dependent": 5,
+          "dependentGloss": "making"
+        },
+        {
+          "dep": "det",
+          "governor": 7,
+          "governorGloss": "materials",
+          "dependent": 6,
+          "dependentGloss": "these"
+        },
+        {
+          "dep": "dobj",
+          "governor": 5,
+          "governorGloss": "making",
+          "dependent": 7,
+          "dependentGloss": "materials"
+        },
+        {
+          "dep": "aux",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 8,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "cop",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 9,
+          "dependentGloss": "be"
+        },
+        {
+          "dep": "advmod",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 10,
+          "dependentGloss": "quite"
+        },
+        {
+          "dep": "cc",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 12,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "advmod",
+          "governor": 14,
+          "governorGloss": "consume",
+          "dependent": 13,
+          "dependentGloss": "also"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 14,
+          "dependentGloss": "consume"
+        },
+        {
+          "dep": "amod",
+          "governor": 16,
+          "governorGloss": "amounts",
+          "dependent": 15,
+          "dependentGloss": "large"
+        },
+        {
+          "dep": "dobj",
+          "governor": 14,
+          "governorGloss": "consume",
+          "dependent": 16,
+          "dependentGloss": "amounts"
+        },
+        {
+          "dep": "case",
+          "governor": 18,
+          "governorGloss": "energy",
+          "dependent": 17,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 16,
+          "governorGloss": "amounts",
+          "dependent": 18,
+          "dependentGloss": "energy"
+        },
+        {
+          "dep": "punct",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 19,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "dep",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 20,
+          "dependentGloss": "so"
+        },
+        {
+          "dep": "det",
+          "governor": 23,
+          "governorGloss": "challenge",
+          "dependent": 21,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "amod",
+          "governor": 23,
+          "governorGloss": "challenge",
+          "dependent": 22,
+          "dependentGloss": "major"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 24,
+          "governorGloss": "is",
+          "dependent": 23,
+          "dependentGloss": "challenge"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 26,
+          "governorGloss": "develop",
+          "dependent": 23,
+          "dependentGloss": "challenge"
+        },
+        {
+          "dep": "parataxis",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 24,
+          "dependentGloss": "is"
+        },
+        {
+          "dep": "mark",
+          "governor": 26,
+          "governorGloss": "develop",
+          "dependent": 25,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 24,
+          "governorGloss": "is",
+          "dependent": 26,
+          "dependentGloss": "develop"
+        },
+        {
+          "dep": "amod",
+          "governor": 30,
+          "governorGloss": "methods",
+          "dependent": 27,
+          "dependentGloss": "simple"
+        },
+        {
+          "dep": "cc",
+          "governor": 27,
+          "governorGloss": "simple",
+          "dependent": 28,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 27,
+          "governorGloss": "simple",
+          "dependent": 29,
+          "dependentGloss": "efficient"
+        },
+        {
+          "dep": "amod",
+          "governor": 30,
+          "governorGloss": "methods",
+          "dependent": 29,
+          "dependentGloss": "efficient"
+        },
+        {
+          "dep": "dobj",
+          "governor": 26,
+          "governorGloss": "develop",
+          "dependent": 30,
+          "dependentGloss": "methods"
+        },
+        {
+          "dep": "mark",
+          "governor": 32,
+          "governorGloss": "produce",
+          "dependent": 31,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "advcl:to",
+          "governor": 26,
+          "governorGloss": "develop",
+          "dependent": 32,
+          "dependentGloss": "produce"
+        },
+        {
+          "dep": "dobj",
+          "governor": 32,
+          "governorGloss": "produce",
+          "dependent": 33,
+          "dependentGloss": "them"
+        },
+        {
+          "dep": "punct",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 34,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 11,
+          "dependentGloss": "complex"
+        },
+        {
+          "dep": "amod",
+          "governor": 2,
+          "governorGloss": "processes",
+          "dependent": 1,
+          "dependentGloss": "Synthetic"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 2,
+          "dependentGloss": "processes"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 14,
+          "governorGloss": "consume",
+          "dependent": 2,
+          "dependentGloss": "processes"
+        },
+        {
+          "dep": "acl",
+          "governor": 2,
+          "governorGloss": "processes",
+          "dependent": 3,
+          "dependentGloss": "associated"
+        },
+        {
+          "dep": "mark",
+          "governor": 5,
+          "governorGloss": "making",
+          "dependent": 4,
+          "dependentGloss": "with"
+        },
+        {
+          "dep": "advcl:with",
+          "governor": 3,
+          "governorGloss": "associated",
+          "dependent": 5,
+          "dependentGloss": "making"
+        },
+        {
+          "dep": "det",
+          "governor": 7,
+          "governorGloss": "materials",
+          "dependent": 6,
+          "dependentGloss": "these"
+        },
+        {
+          "dep": "dobj",
+          "governor": 5,
+          "governorGloss": "making",
+          "dependent": 7,
+          "dependentGloss": "materials"
+        },
+        {
+          "dep": "aux",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 8,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "cop",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 9,
+          "dependentGloss": "be"
+        },
+        {
+          "dep": "advmod",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 10,
+          "dependentGloss": "quite"
+        },
+        {
+          "dep": "cc",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 12,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "advmod",
+          "governor": 14,
+          "governorGloss": "consume",
+          "dependent": 13,
+          "dependentGloss": "also"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 14,
+          "dependentGloss": "consume"
+        },
+        {
+          "dep": "amod",
+          "governor": 16,
+          "governorGloss": "amounts",
+          "dependent": 15,
+          "dependentGloss": "large"
+        },
+        {
+          "dep": "dobj",
+          "governor": 14,
+          "governorGloss": "consume",
+          "dependent": 16,
+          "dependentGloss": "amounts"
+        },
+        {
+          "dep": "case",
+          "governor": 18,
+          "governorGloss": "energy",
+          "dependent": 17,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 16,
+          "governorGloss": "amounts",
+          "dependent": 18,
+          "dependentGloss": "energy"
+        },
+        {
+          "dep": "punct",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 19,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "dep",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 20,
+          "dependentGloss": "so"
+        },
+        {
+          "dep": "det",
+          "governor": 23,
+          "governorGloss": "challenge",
+          "dependent": 21,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "amod",
+          "governor": 23,
+          "governorGloss": "challenge",
+          "dependent": 22,
+          "dependentGloss": "major"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 24,
+          "governorGloss": "is",
+          "dependent": 23,
+          "dependentGloss": "challenge"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 26,
+          "governorGloss": "develop",
+          "dependent": 23,
+          "dependentGloss": "challenge"
+        },
+        {
+          "dep": "parataxis",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 24,
+          "dependentGloss": "is"
+        },
+        {
+          "dep": "mark",
+          "governor": 26,
+          "governorGloss": "develop",
+          "dependent": 25,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 24,
+          "governorGloss": "is",
+          "dependent": 26,
+          "dependentGloss": "develop"
+        },
+        {
+          "dep": "amod",
+          "governor": 30,
+          "governorGloss": "methods",
+          "dependent": 27,
+          "dependentGloss": "simple"
+        },
+        {
+          "dep": "cc",
+          "governor": 27,
+          "governorGloss": "simple",
+          "dependent": 28,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 27,
+          "governorGloss": "simple",
+          "dependent": 29,
+          "dependentGloss": "efficient"
+        },
+        {
+          "dep": "amod",
+          "governor": 30,
+          "governorGloss": "methods",
+          "dependent": 29,
+          "dependentGloss": "efficient"
+        },
+        {
+          "dep": "dobj",
+          "governor": 26,
+          "governorGloss": "develop",
+          "dependent": 30,
+          "dependentGloss": "methods"
+        },
+        {
+          "dep": "mark",
+          "governor": 32,
+          "governorGloss": "produce",
+          "dependent": 31,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "advcl:to",
+          "governor": 26,
+          "governorGloss": "develop",
+          "dependent": 32,
+          "dependentGloss": "produce"
+        },
+        {
+          "dep": "dobj",
+          "governor": 32,
+          "governorGloss": "produce",
+          "dependent": 33,
+          "dependentGloss": "them"
+        },
+        {
+          "dep": "punct",
+          "governor": 11,
+          "governorGloss": "complex",
+          "dependent": 34,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -913,6 +2740,538 @@
     },
     {
       "index": 4,
+      "parse": "(ROOT\n  (S\n    (ADVP (RB Here))\n    (, ,)\n    (NP (PRP we))\n    (VP (VBP present)\n      (NP\n        (NP (DT a) (JJ self-templated) (, ,) (JJ catalyst-free) (NN strategy))\n        (PP (IN for)\n          (NP\n            (NP (DT the) (NN synthesis))\n            (PP (IN of)\n              (NP (JJ one-dimensional) (NN carbon) (NNS nanorods))))))\n      (PP (IN by)\n        (NP\n          (NP (JJ morphology-preserved) (JJ thermal) (NN transformation))\n          (PP (IN of)\n            (NP (JJ rod-shaped) (JJ metal-organic) (NNS frameworks))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "present"
+        },
+        {
+          "dep": "advmod",
+          "governor": 4,
+          "governorGloss": "present",
+          "dependent": 1,
+          "dependentGloss": "Here"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "present",
+          "dependent": 2,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "present",
+          "dependent": 3,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "det",
+          "governor": 9,
+          "governorGloss": "strategy",
+          "dependent": 5,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "amod",
+          "governor": 9,
+          "governorGloss": "strategy",
+          "dependent": 6,
+          "dependentGloss": "self-templated"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "strategy",
+          "dependent": 7,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "amod",
+          "governor": 9,
+          "governorGloss": "strategy",
+          "dependent": 8,
+          "dependentGloss": "catalyst-free"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "present",
+          "dependent": 9,
+          "dependentGloss": "strategy"
+        },
+        {
+          "dep": "case",
+          "governor": 12,
+          "governorGloss": "synthesis",
+          "dependent": 10,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "det",
+          "governor": 12,
+          "governorGloss": "synthesis",
+          "dependent": 11,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nmod",
+          "governor": 9,
+          "governorGloss": "strategy",
+          "dependent": 12,
+          "dependentGloss": "synthesis"
+        },
+        {
+          "dep": "case",
+          "governor": 16,
+          "governorGloss": "nanorods",
+          "dependent": 13,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 16,
+          "governorGloss": "nanorods",
+          "dependent": 14,
+          "dependentGloss": "one-dimensional"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "nanorods",
+          "dependent": 15,
+          "dependentGloss": "carbon"
+        },
+        {
+          "dep": "nmod",
+          "governor": 12,
+          "governorGloss": "synthesis",
+          "dependent": 16,
+          "dependentGloss": "nanorods"
+        },
+        {
+          "dep": "case",
+          "governor": 20,
+          "governorGloss": "transformation",
+          "dependent": 17,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "transformation",
+          "dependent": 18,
+          "dependentGloss": "morphology-preserved"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "transformation",
+          "dependent": 19,
+          "dependentGloss": "thermal"
+        },
+        {
+          "dep": "nmod",
+          "governor": 4,
+          "governorGloss": "present",
+          "dependent": 20,
+          "dependentGloss": "transformation"
+        },
+        {
+          "dep": "case",
+          "governor": 24,
+          "governorGloss": "frameworks",
+          "dependent": 21,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 24,
+          "governorGloss": "frameworks",
+          "dependent": 22,
+          "dependentGloss": "rod-shaped"
+        },
+        {
+          "dep": "amod",
+          "governor": 24,
+          "governorGloss": "frameworks",
+          "dependent": 23,
+          "dependentGloss": "metal-organic"
+        },
+        {
+          "dep": "nmod",
+          "governor": 20,
+          "governorGloss": "transformation",
+          "dependent": 24,
+          "dependentGloss": "frameworks"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "present",
+          "dependent": 25,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "present"
+        },
+        {
+          "dep": "advmod",
+          "governor": 4,
+          "governorGloss": "present",
+          "dependent": 1,
+          "dependentGloss": "Here"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "present",
+          "dependent": 2,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "present",
+          "dependent": 3,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "det",
+          "governor": 9,
+          "governorGloss": "strategy",
+          "dependent": 5,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "amod",
+          "governor": 9,
+          "governorGloss": "strategy",
+          "dependent": 6,
+          "dependentGloss": "self-templated"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "strategy",
+          "dependent": 7,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "amod",
+          "governor": 9,
+          "governorGloss": "strategy",
+          "dependent": 8,
+          "dependentGloss": "catalyst-free"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "present",
+          "dependent": 9,
+          "dependentGloss": "strategy"
+        },
+        {
+          "dep": "case",
+          "governor": 12,
+          "governorGloss": "synthesis",
+          "dependent": 10,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "det",
+          "governor": 12,
+          "governorGloss": "synthesis",
+          "dependent": 11,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nmod:for",
+          "governor": 9,
+          "governorGloss": "strategy",
+          "dependent": 12,
+          "dependentGloss": "synthesis"
+        },
+        {
+          "dep": "case",
+          "governor": 16,
+          "governorGloss": "nanorods",
+          "dependent": 13,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 16,
+          "governorGloss": "nanorods",
+          "dependent": 14,
+          "dependentGloss": "one-dimensional"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "nanorods",
+          "dependent": 15,
+          "dependentGloss": "carbon"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 12,
+          "governorGloss": "synthesis",
+          "dependent": 16,
+          "dependentGloss": "nanorods"
+        },
+        {
+          "dep": "case",
+          "governor": 20,
+          "governorGloss": "transformation",
+          "dependent": 17,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "transformation",
+          "dependent": 18,
+          "dependentGloss": "morphology-preserved"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "transformation",
+          "dependent": 19,
+          "dependentGloss": "thermal"
+        },
+        {
+          "dep": "nmod:by",
+          "governor": 4,
+          "governorGloss": "present",
+          "dependent": 20,
+          "dependentGloss": "transformation"
+        },
+        {
+          "dep": "case",
+          "governor": 24,
+          "governorGloss": "frameworks",
+          "dependent": 21,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 24,
+          "governorGloss": "frameworks",
+          "dependent": 22,
+          "dependentGloss": "rod-shaped"
+        },
+        {
+          "dep": "amod",
+          "governor": 24,
+          "governorGloss": "frameworks",
+          "dependent": 23,
+          "dependentGloss": "metal-organic"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 20,
+          "governorGloss": "transformation",
+          "dependent": 24,
+          "dependentGloss": "frameworks"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "present",
+          "dependent": 25,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "present"
+        },
+        {
+          "dep": "advmod",
+          "governor": 4,
+          "governorGloss": "present",
+          "dependent": 1,
+          "dependentGloss": "Here"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "present",
+          "dependent": 2,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "present",
+          "dependent": 3,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "det",
+          "governor": 9,
+          "governorGloss": "strategy",
+          "dependent": 5,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "amod",
+          "governor": 9,
+          "governorGloss": "strategy",
+          "dependent": 6,
+          "dependentGloss": "self-templated"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "strategy",
+          "dependent": 7,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "amod",
+          "governor": 9,
+          "governorGloss": "strategy",
+          "dependent": 8,
+          "dependentGloss": "catalyst-free"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "present",
+          "dependent": 9,
+          "dependentGloss": "strategy"
+        },
+        {
+          "dep": "case",
+          "governor": 12,
+          "governorGloss": "synthesis",
+          "dependent": 10,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "det",
+          "governor": 12,
+          "governorGloss": "synthesis",
+          "dependent": 11,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nmod:for",
+          "governor": 9,
+          "governorGloss": "strategy",
+          "dependent": 12,
+          "dependentGloss": "synthesis"
+        },
+        {
+          "dep": "case",
+          "governor": 16,
+          "governorGloss": "nanorods",
+          "dependent": 13,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 16,
+          "governorGloss": "nanorods",
+          "dependent": 14,
+          "dependentGloss": "one-dimensional"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "nanorods",
+          "dependent": 15,
+          "dependentGloss": "carbon"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 12,
+          "governorGloss": "synthesis",
+          "dependent": 16,
+          "dependentGloss": "nanorods"
+        },
+        {
+          "dep": "case",
+          "governor": 20,
+          "governorGloss": "transformation",
+          "dependent": 17,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "transformation",
+          "dependent": 18,
+          "dependentGloss": "morphology-preserved"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "transformation",
+          "dependent": 19,
+          "dependentGloss": "thermal"
+        },
+        {
+          "dep": "nmod:by",
+          "governor": 4,
+          "governorGloss": "present",
+          "dependent": 20,
+          "dependentGloss": "transformation"
+        },
+        {
+          "dep": "case",
+          "governor": 24,
+          "governorGloss": "frameworks",
+          "dependent": 21,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "amod",
+          "governor": 24,
+          "governorGloss": "frameworks",
+          "dependent": 22,
+          "dependentGloss": "rod-shaped"
+        },
+        {
+          "dep": "amod",
+          "governor": 24,
+          "governorGloss": "frameworks",
+          "dependent": 23,
+          "dependentGloss": "metal-organic"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 20,
+          "governorGloss": "transformation",
+          "dependent": 24,
+          "dependentGloss": "frameworks"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "present",
+          "dependent": 25,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -1193,6 +3552,517 @@
     },
     {
       "index": 5,
+      "parse": "(ROOT\n  (S\n    (NP (DT The)\n      (ADJP\n        (ADJP (JJ as-synthesized) (JJ non-hollow))\n        (PRN (-LRB- -LRB-)\n          (ADJP (JJ solid))\n          (-RRB- -RRB-)))\n      (NN carbon) (NNS nanorods))\n    (VP (MD can)\n      (VP (VB be)\n        (VP (VBN transformed)\n          (PP (IN into)\n            (NP (CD two-to) (JJ six-layered) (NN graphene) (NNS nanoribbons)))\n          (PP (IN through)\n            (NP\n              (NP (JJ sonochemical) (NN treatment))\n              (VP (VBN followed)\n                (PP (IN by)\n                  (NP (NN chemical) (NN activation)))))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 11,
+          "dependentGloss": "transformed"
+        },
+        {
+          "dep": "det",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "amod",
+          "governor": 3,
+          "governorGloss": "non-hollow",
+          "dependent": 2,
+          "dependentGloss": "as-synthesized"
+        },
+        {
+          "dep": "amod",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 3,
+          "dependentGloss": "non-hollow"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "solid",
+          "dependent": 4,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "dep",
+          "governor": 3,
+          "governorGloss": "non-hollow",
+          "dependent": 5,
+          "dependentGloss": "solid"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "solid",
+          "dependent": 6,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "compound",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 7,
+          "dependentGloss": "carbon"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 11,
+          "governorGloss": "transformed",
+          "dependent": 8,
+          "dependentGloss": "nanorods"
+        },
+        {
+          "dep": "aux",
+          "governor": 11,
+          "governorGloss": "transformed",
+          "dependent": 9,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 11,
+          "governorGloss": "transformed",
+          "dependent": 10,
+          "dependentGloss": "be"
+        },
+        {
+          "dep": "case",
+          "governor": 16,
+          "governorGloss": "nanoribbons",
+          "dependent": 12,
+          "dependentGloss": "into"
+        },
+        {
+          "dep": "nummod",
+          "governor": 16,
+          "governorGloss": "nanoribbons",
+          "dependent": 13,
+          "dependentGloss": "two-to"
+        },
+        {
+          "dep": "amod",
+          "governor": 16,
+          "governorGloss": "nanoribbons",
+          "dependent": 14,
+          "dependentGloss": "six-layered"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "nanoribbons",
+          "dependent": 15,
+          "dependentGloss": "graphene"
+        },
+        {
+          "dep": "nmod",
+          "governor": 11,
+          "governorGloss": "transformed",
+          "dependent": 16,
+          "dependentGloss": "nanoribbons"
+        },
+        {
+          "dep": "case",
+          "governor": 19,
+          "governorGloss": "treatment",
+          "dependent": 17,
+          "dependentGloss": "through"
+        },
+        {
+          "dep": "amod",
+          "governor": 19,
+          "governorGloss": "treatment",
+          "dependent": 18,
+          "dependentGloss": "sonochemical"
+        },
+        {
+          "dep": "nmod",
+          "governor": 11,
+          "governorGloss": "transformed",
+          "dependent": 19,
+          "dependentGloss": "treatment"
+        },
+        {
+          "dep": "acl",
+          "governor": 19,
+          "governorGloss": "treatment",
+          "dependent": 20,
+          "dependentGloss": "followed"
+        },
+        {
+          "dep": "case",
+          "governor": 23,
+          "governorGloss": "activation",
+          "dependent": 21,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "compound",
+          "governor": 23,
+          "governorGloss": "activation",
+          "dependent": 22,
+          "dependentGloss": "chemical"
+        },
+        {
+          "dep": "nmod",
+          "governor": 20,
+          "governorGloss": "followed",
+          "dependent": 23,
+          "dependentGloss": "activation"
+        },
+        {
+          "dep": "punct",
+          "governor": 11,
+          "governorGloss": "transformed",
+          "dependent": 24,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 11,
+          "dependentGloss": "transformed"
+        },
+        {
+          "dep": "det",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "amod",
+          "governor": 3,
+          "governorGloss": "non-hollow",
+          "dependent": 2,
+          "dependentGloss": "as-synthesized"
+        },
+        {
+          "dep": "amod",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 3,
+          "dependentGloss": "non-hollow"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "solid",
+          "dependent": 4,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "dep",
+          "governor": 3,
+          "governorGloss": "non-hollow",
+          "dependent": 5,
+          "dependentGloss": "solid"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "solid",
+          "dependent": 6,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "compound",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 7,
+          "dependentGloss": "carbon"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 11,
+          "governorGloss": "transformed",
+          "dependent": 8,
+          "dependentGloss": "nanorods"
+        },
+        {
+          "dep": "aux",
+          "governor": 11,
+          "governorGloss": "transformed",
+          "dependent": 9,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 11,
+          "governorGloss": "transformed",
+          "dependent": 10,
+          "dependentGloss": "be"
+        },
+        {
+          "dep": "case",
+          "governor": 16,
+          "governorGloss": "nanoribbons",
+          "dependent": 12,
+          "dependentGloss": "into"
+        },
+        {
+          "dep": "nummod",
+          "governor": 16,
+          "governorGloss": "nanoribbons",
+          "dependent": 13,
+          "dependentGloss": "two-to"
+        },
+        {
+          "dep": "amod",
+          "governor": 16,
+          "governorGloss": "nanoribbons",
+          "dependent": 14,
+          "dependentGloss": "six-layered"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "nanoribbons",
+          "dependent": 15,
+          "dependentGloss": "graphene"
+        },
+        {
+          "dep": "nmod:into",
+          "governor": 11,
+          "governorGloss": "transformed",
+          "dependent": 16,
+          "dependentGloss": "nanoribbons"
+        },
+        {
+          "dep": "case",
+          "governor": 19,
+          "governorGloss": "treatment",
+          "dependent": 17,
+          "dependentGloss": "through"
+        },
+        {
+          "dep": "amod",
+          "governor": 19,
+          "governorGloss": "treatment",
+          "dependent": 18,
+          "dependentGloss": "sonochemical"
+        },
+        {
+          "dep": "nmod:through",
+          "governor": 11,
+          "governorGloss": "transformed",
+          "dependent": 19,
+          "dependentGloss": "treatment"
+        },
+        {
+          "dep": "acl",
+          "governor": 19,
+          "governorGloss": "treatment",
+          "dependent": 20,
+          "dependentGloss": "followed"
+        },
+        {
+          "dep": "case",
+          "governor": 23,
+          "governorGloss": "activation",
+          "dependent": 21,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "compound",
+          "governor": 23,
+          "governorGloss": "activation",
+          "dependent": 22,
+          "dependentGloss": "chemical"
+        },
+        {
+          "dep": "nmod:by",
+          "governor": 20,
+          "governorGloss": "followed",
+          "dependent": 23,
+          "dependentGloss": "activation"
+        },
+        {
+          "dep": "punct",
+          "governor": 11,
+          "governorGloss": "transformed",
+          "dependent": 24,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 11,
+          "dependentGloss": "transformed"
+        },
+        {
+          "dep": "det",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "amod",
+          "governor": 3,
+          "governorGloss": "non-hollow",
+          "dependent": 2,
+          "dependentGloss": "as-synthesized"
+        },
+        {
+          "dep": "amod",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 3,
+          "dependentGloss": "non-hollow"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "solid",
+          "dependent": 4,
+          "dependentGloss": "-LRB-"
+        },
+        {
+          "dep": "dep",
+          "governor": 3,
+          "governorGloss": "non-hollow",
+          "dependent": 5,
+          "dependentGloss": "solid"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "solid",
+          "dependent": 6,
+          "dependentGloss": "-RRB-"
+        },
+        {
+          "dep": "compound",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 7,
+          "dependentGloss": "carbon"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 11,
+          "governorGloss": "transformed",
+          "dependent": 8,
+          "dependentGloss": "nanorods"
+        },
+        {
+          "dep": "aux",
+          "governor": 11,
+          "governorGloss": "transformed",
+          "dependent": 9,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 11,
+          "governorGloss": "transformed",
+          "dependent": 10,
+          "dependentGloss": "be"
+        },
+        {
+          "dep": "case",
+          "governor": 16,
+          "governorGloss": "nanoribbons",
+          "dependent": 12,
+          "dependentGloss": "into"
+        },
+        {
+          "dep": "nummod",
+          "governor": 16,
+          "governorGloss": "nanoribbons",
+          "dependent": 13,
+          "dependentGloss": "two-to"
+        },
+        {
+          "dep": "amod",
+          "governor": 16,
+          "governorGloss": "nanoribbons",
+          "dependent": 14,
+          "dependentGloss": "six-layered"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "nanoribbons",
+          "dependent": 15,
+          "dependentGloss": "graphene"
+        },
+        {
+          "dep": "nmod:into",
+          "governor": 11,
+          "governorGloss": "transformed",
+          "dependent": 16,
+          "dependentGloss": "nanoribbons"
+        },
+        {
+          "dep": "case",
+          "governor": 19,
+          "governorGloss": "treatment",
+          "dependent": 17,
+          "dependentGloss": "through"
+        },
+        {
+          "dep": "amod",
+          "governor": 19,
+          "governorGloss": "treatment",
+          "dependent": 18,
+          "dependentGloss": "sonochemical"
+        },
+        {
+          "dep": "nmod:through",
+          "governor": 11,
+          "governorGloss": "transformed",
+          "dependent": 19,
+          "dependentGloss": "treatment"
+        },
+        {
+          "dep": "acl",
+          "governor": 19,
+          "governorGloss": "treatment",
+          "dependent": 20,
+          "dependentGloss": "followed"
+        },
+        {
+          "dep": "case",
+          "governor": 23,
+          "governorGloss": "activation",
+          "dependent": 21,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "compound",
+          "governor": 23,
+          "governorGloss": "activation",
+          "dependent": 22,
+          "dependentGloss": "chemical"
+        },
+        {
+          "dep": "nmod:by",
+          "governor": 20,
+          "governorGloss": "followed",
+          "dependent": 23,
+          "dependentGloss": "activation"
+        },
+        {
+          "dep": "punct",
+          "governor": 11,
+          "governorGloss": "transformed",
+          "dependent": 24,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -1462,6 +4332,552 @@
     },
     {
       "index": 6,
+      "parse": "(ROOT\n  (S\n    (NP\n      (NP (DT The) (NN performance))\n      (PP (IN of)\n        (NP\n          (NP (DT these) (JJ metal-organic) (JJ framework-derived) (NN carbon) (NNS nanorods)\n            (CC and)\n            (NN graphene) (NNS nanoribbons))\n          (PP (IN in)\n            (NP (NN supercapacitor) (NNS electrodes))))))\n    (VP (VBZ demonstrates)\n      (SBAR (IN that)\n        (S\n          (NP (DT this) (JJ synthetic) (NN approach))\n          (VP (MD can)\n            (VP (VB produce)\n              (NP\n                (ADJP (RB functionally) (JJ useful))\n                (NNS materials)))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 15,
+          "dependentGloss": "demonstrates"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "performance",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 15,
+          "governorGloss": "demonstrates",
+          "dependent": 2,
+          "dependentGloss": "performance"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 3,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 4,
+          "dependentGloss": "these"
+        },
+        {
+          "dep": "amod",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 5,
+          "dependentGloss": "metal-organic"
+        },
+        {
+          "dep": "amod",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 6,
+          "dependentGloss": "framework-derived"
+        },
+        {
+          "dep": "compound",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 7,
+          "dependentGloss": "carbon"
+        },
+        {
+          "dep": "nmod",
+          "governor": 2,
+          "governorGloss": "performance",
+          "dependent": 8,
+          "dependentGloss": "nanorods"
+        },
+        {
+          "dep": "cc",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 9,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "nanoribbons",
+          "dependent": 10,
+          "dependentGloss": "graphene"
+        },
+        {
+          "dep": "conj",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 11,
+          "dependentGloss": "nanoribbons"
+        },
+        {
+          "dep": "case",
+          "governor": 14,
+          "governorGloss": "electrodes",
+          "dependent": 12,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "compound",
+          "governor": 14,
+          "governorGloss": "electrodes",
+          "dependent": 13,
+          "dependentGloss": "supercapacitor"
+        },
+        {
+          "dep": "nmod",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 14,
+          "dependentGloss": "electrodes"
+        },
+        {
+          "dep": "mark",
+          "governor": 21,
+          "governorGloss": "produce",
+          "dependent": 16,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "det",
+          "governor": 19,
+          "governorGloss": "approach",
+          "dependent": 17,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "amod",
+          "governor": 19,
+          "governorGloss": "approach",
+          "dependent": 18,
+          "dependentGloss": "synthetic"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 21,
+          "governorGloss": "produce",
+          "dependent": 19,
+          "dependentGloss": "approach"
+        },
+        {
+          "dep": "aux",
+          "governor": 21,
+          "governorGloss": "produce",
+          "dependent": 20,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 15,
+          "governorGloss": "demonstrates",
+          "dependent": 21,
+          "dependentGloss": "produce"
+        },
+        {
+          "dep": "advmod",
+          "governor": 23,
+          "governorGloss": "useful",
+          "dependent": 22,
+          "dependentGloss": "functionally"
+        },
+        {
+          "dep": "amod",
+          "governor": 24,
+          "governorGloss": "materials",
+          "dependent": 23,
+          "dependentGloss": "useful"
+        },
+        {
+          "dep": "dobj",
+          "governor": 21,
+          "governorGloss": "produce",
+          "dependent": 24,
+          "dependentGloss": "materials"
+        },
+        {
+          "dep": "punct",
+          "governor": 15,
+          "governorGloss": "demonstrates",
+          "dependent": 25,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 15,
+          "dependentGloss": "demonstrates"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "performance",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 15,
+          "governorGloss": "demonstrates",
+          "dependent": 2,
+          "dependentGloss": "performance"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 3,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 4,
+          "dependentGloss": "these"
+        },
+        {
+          "dep": "amod",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 5,
+          "dependentGloss": "metal-organic"
+        },
+        {
+          "dep": "amod",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 6,
+          "dependentGloss": "framework-derived"
+        },
+        {
+          "dep": "compound",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 7,
+          "dependentGloss": "carbon"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 2,
+          "governorGloss": "performance",
+          "dependent": 8,
+          "dependentGloss": "nanorods"
+        },
+        {
+          "dep": "cc",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 9,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "nanoribbons",
+          "dependent": 10,
+          "dependentGloss": "graphene"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 2,
+          "governorGloss": "performance",
+          "dependent": 11,
+          "dependentGloss": "nanoribbons"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 11,
+          "dependentGloss": "nanoribbons"
+        },
+        {
+          "dep": "case",
+          "governor": 14,
+          "governorGloss": "electrodes",
+          "dependent": 12,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "compound",
+          "governor": 14,
+          "governorGloss": "electrodes",
+          "dependent": 13,
+          "dependentGloss": "supercapacitor"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 14,
+          "dependentGloss": "electrodes"
+        },
+        {
+          "dep": "mark",
+          "governor": 21,
+          "governorGloss": "produce",
+          "dependent": 16,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "det",
+          "governor": 19,
+          "governorGloss": "approach",
+          "dependent": 17,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "amod",
+          "governor": 19,
+          "governorGloss": "approach",
+          "dependent": 18,
+          "dependentGloss": "synthetic"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 21,
+          "governorGloss": "produce",
+          "dependent": 19,
+          "dependentGloss": "approach"
+        },
+        {
+          "dep": "aux",
+          "governor": 21,
+          "governorGloss": "produce",
+          "dependent": 20,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 15,
+          "governorGloss": "demonstrates",
+          "dependent": 21,
+          "dependentGloss": "produce"
+        },
+        {
+          "dep": "advmod",
+          "governor": 23,
+          "governorGloss": "useful",
+          "dependent": 22,
+          "dependentGloss": "functionally"
+        },
+        {
+          "dep": "amod",
+          "governor": 24,
+          "governorGloss": "materials",
+          "dependent": 23,
+          "dependentGloss": "useful"
+        },
+        {
+          "dep": "dobj",
+          "governor": 21,
+          "governorGloss": "produce",
+          "dependent": 24,
+          "dependentGloss": "materials"
+        },
+        {
+          "dep": "punct",
+          "governor": 15,
+          "governorGloss": "demonstrates",
+          "dependent": 25,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 15,
+          "dependentGloss": "demonstrates"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "performance",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 15,
+          "governorGloss": "demonstrates",
+          "dependent": 2,
+          "dependentGloss": "performance"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 3,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 4,
+          "dependentGloss": "these"
+        },
+        {
+          "dep": "amod",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 5,
+          "dependentGloss": "metal-organic"
+        },
+        {
+          "dep": "amod",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 6,
+          "dependentGloss": "framework-derived"
+        },
+        {
+          "dep": "compound",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 7,
+          "dependentGloss": "carbon"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 2,
+          "governorGloss": "performance",
+          "dependent": 8,
+          "dependentGloss": "nanorods"
+        },
+        {
+          "dep": "cc",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 9,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 11,
+          "governorGloss": "nanoribbons",
+          "dependent": 10,
+          "dependentGloss": "graphene"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 2,
+          "governorGloss": "performance",
+          "dependent": 11,
+          "dependentGloss": "nanoribbons"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 11,
+          "dependentGloss": "nanoribbons"
+        },
+        {
+          "dep": "case",
+          "governor": 14,
+          "governorGloss": "electrodes",
+          "dependent": 12,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "compound",
+          "governor": 14,
+          "governorGloss": "electrodes",
+          "dependent": 13,
+          "dependentGloss": "supercapacitor"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 8,
+          "governorGloss": "nanorods",
+          "dependent": 14,
+          "dependentGloss": "electrodes"
+        },
+        {
+          "dep": "mark",
+          "governor": 21,
+          "governorGloss": "produce",
+          "dependent": 16,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "det",
+          "governor": 19,
+          "governorGloss": "approach",
+          "dependent": 17,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "amod",
+          "governor": 19,
+          "governorGloss": "approach",
+          "dependent": 18,
+          "dependentGloss": "synthetic"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 21,
+          "governorGloss": "produce",
+          "dependent": 19,
+          "dependentGloss": "approach"
+        },
+        {
+          "dep": "aux",
+          "governor": 21,
+          "governorGloss": "produce",
+          "dependent": 20,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 15,
+          "governorGloss": "demonstrates",
+          "dependent": 21,
+          "dependentGloss": "produce"
+        },
+        {
+          "dep": "advmod",
+          "governor": 23,
+          "governorGloss": "useful",
+          "dependent": 22,
+          "dependentGloss": "functionally"
+        },
+        {
+          "dep": "amod",
+          "governor": 24,
+          "governorGloss": "materials",
+          "dependent": 23,
+          "dependentGloss": "useful"
+        },
+        {
+          "dep": "dobj",
+          "governor": 21,
+          "governorGloss": "produce",
+          "dependent": 24,
+          "dependentGloss": "materials"
+        },
+        {
+          "dep": "punct",
+          "governor": 15,
+          "governorGloss": "demonstrates",
+          "dependent": 25,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,
@@ -1742,6 +5158,517 @@
     },
     {
       "index": 7,
+      "parse": "(ROOT\n  (S\n    (ADVP (RB Moreover))\n    (, ,)\n    (NP (DT this) (NN approach))\n    (VP\n      (VP (VBZ is)\n        (ADJP (RB readily) (JJ scalable)))\n      (CC and)\n      (VP (MD could)\n        (VP (VB be)\n          (VP (VBN used)\n            (S\n              (VP (TO to)\n                (VP (VB produce)\n                  (NP (NN carbon) (NNS nanorods)\n                    (CC and)\n                    (NN graphene) (NNS nanoribbons))\n                  (PP (IN on)\n                    (NP (JJ industrial) (NNS levels))))))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 7,
+          "dependentGloss": "scalable"
+        },
+        {
+          "dep": "advmod",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 1,
+          "dependentGloss": "Moreover"
+        },
+        {
+          "dep": "punct",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 2,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "det",
+          "governor": 4,
+          "governorGloss": "approach",
+          "dependent": 3,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 4,
+          "dependentGloss": "approach"
+        },
+        {
+          "dep": "cop",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 5,
+          "dependentGloss": "is"
+        },
+        {
+          "dep": "advmod",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 6,
+          "dependentGloss": "readily"
+        },
+        {
+          "dep": "cc",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 8,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "aux",
+          "governor": 11,
+          "governorGloss": "used",
+          "dependent": 9,
+          "dependentGloss": "could"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 11,
+          "governorGloss": "used",
+          "dependent": 10,
+          "dependentGloss": "be"
+        },
+        {
+          "dep": "conj",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 11,
+          "dependentGloss": "used"
+        },
+        {
+          "dep": "mark",
+          "governor": 13,
+          "governorGloss": "produce",
+          "dependent": 12,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 11,
+          "governorGloss": "used",
+          "dependent": 13,
+          "dependentGloss": "produce"
+        },
+        {
+          "dep": "compound",
+          "governor": 15,
+          "governorGloss": "nanorods",
+          "dependent": 14,
+          "dependentGloss": "carbon"
+        },
+        {
+          "dep": "dobj",
+          "governor": 13,
+          "governorGloss": "produce",
+          "dependent": 15,
+          "dependentGloss": "nanorods"
+        },
+        {
+          "dep": "cc",
+          "governor": 15,
+          "governorGloss": "nanorods",
+          "dependent": 16,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 18,
+          "governorGloss": "nanoribbons",
+          "dependent": 17,
+          "dependentGloss": "graphene"
+        },
+        {
+          "dep": "conj",
+          "governor": 15,
+          "governorGloss": "nanorods",
+          "dependent": 18,
+          "dependentGloss": "nanoribbons"
+        },
+        {
+          "dep": "case",
+          "governor": 21,
+          "governorGloss": "levels",
+          "dependent": 19,
+          "dependentGloss": "on"
+        },
+        {
+          "dep": "amod",
+          "governor": 21,
+          "governorGloss": "levels",
+          "dependent": 20,
+          "dependentGloss": "industrial"
+        },
+        {
+          "dep": "nmod",
+          "governor": 13,
+          "governorGloss": "produce",
+          "dependent": 21,
+          "dependentGloss": "levels"
+        },
+        {
+          "dep": "punct",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 22,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 7,
+          "dependentGloss": "scalable"
+        },
+        {
+          "dep": "advmod",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 1,
+          "dependentGloss": "Moreover"
+        },
+        {
+          "dep": "punct",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 2,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "det",
+          "governor": 4,
+          "governorGloss": "approach",
+          "dependent": 3,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 4,
+          "dependentGloss": "approach"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 11,
+          "governorGloss": "used",
+          "dependent": 4,
+          "dependentGloss": "approach"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 13,
+          "governorGloss": "produce",
+          "dependent": 4,
+          "dependentGloss": "approach"
+        },
+        {
+          "dep": "cop",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 5,
+          "dependentGloss": "is"
+        },
+        {
+          "dep": "advmod",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 6,
+          "dependentGloss": "readily"
+        },
+        {
+          "dep": "cc",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 8,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "aux",
+          "governor": 11,
+          "governorGloss": "used",
+          "dependent": 9,
+          "dependentGloss": "could"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 11,
+          "governorGloss": "used",
+          "dependent": 10,
+          "dependentGloss": "be"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 11,
+          "dependentGloss": "used"
+        },
+        {
+          "dep": "mark",
+          "governor": 13,
+          "governorGloss": "produce",
+          "dependent": 12,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 11,
+          "governorGloss": "used",
+          "dependent": 13,
+          "dependentGloss": "produce"
+        },
+        {
+          "dep": "compound",
+          "governor": 15,
+          "governorGloss": "nanorods",
+          "dependent": 14,
+          "dependentGloss": "carbon"
+        },
+        {
+          "dep": "dobj",
+          "governor": 13,
+          "governorGloss": "produce",
+          "dependent": 15,
+          "dependentGloss": "nanorods"
+        },
+        {
+          "dep": "cc",
+          "governor": 15,
+          "governorGloss": "nanorods",
+          "dependent": 16,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 18,
+          "governorGloss": "nanoribbons",
+          "dependent": 17,
+          "dependentGloss": "graphene"
+        },
+        {
+          "dep": "dobj",
+          "governor": 13,
+          "governorGloss": "produce",
+          "dependent": 18,
+          "dependentGloss": "nanoribbons"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 15,
+          "governorGloss": "nanorods",
+          "dependent": 18,
+          "dependentGloss": "nanoribbons"
+        },
+        {
+          "dep": "case",
+          "governor": 21,
+          "governorGloss": "levels",
+          "dependent": 19,
+          "dependentGloss": "on"
+        },
+        {
+          "dep": "amod",
+          "governor": 21,
+          "governorGloss": "levels",
+          "dependent": 20,
+          "dependentGloss": "industrial"
+        },
+        {
+          "dep": "nmod:on",
+          "governor": 13,
+          "governorGloss": "produce",
+          "dependent": 21,
+          "dependentGloss": "levels"
+        },
+        {
+          "dep": "punct",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 22,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 7,
+          "dependentGloss": "scalable"
+        },
+        {
+          "dep": "advmod",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 1,
+          "dependentGloss": "Moreover"
+        },
+        {
+          "dep": "punct",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 2,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "det",
+          "governor": 4,
+          "governorGloss": "approach",
+          "dependent": 3,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 4,
+          "dependentGloss": "approach"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 11,
+          "governorGloss": "used",
+          "dependent": 4,
+          "dependentGloss": "approach"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 13,
+          "governorGloss": "produce",
+          "dependent": 4,
+          "dependentGloss": "approach"
+        },
+        {
+          "dep": "cop",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 5,
+          "dependentGloss": "is"
+        },
+        {
+          "dep": "advmod",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 6,
+          "dependentGloss": "readily"
+        },
+        {
+          "dep": "cc",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 8,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "aux",
+          "governor": 11,
+          "governorGloss": "used",
+          "dependent": 9,
+          "dependentGloss": "could"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 11,
+          "governorGloss": "used",
+          "dependent": 10,
+          "dependentGloss": "be"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 11,
+          "dependentGloss": "used"
+        },
+        {
+          "dep": "mark",
+          "governor": 13,
+          "governorGloss": "produce",
+          "dependent": 12,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 11,
+          "governorGloss": "used",
+          "dependent": 13,
+          "dependentGloss": "produce"
+        },
+        {
+          "dep": "compound",
+          "governor": 15,
+          "governorGloss": "nanorods",
+          "dependent": 14,
+          "dependentGloss": "carbon"
+        },
+        {
+          "dep": "dobj",
+          "governor": 13,
+          "governorGloss": "produce",
+          "dependent": 15,
+          "dependentGloss": "nanorods"
+        },
+        {
+          "dep": "cc",
+          "governor": 15,
+          "governorGloss": "nanorods",
+          "dependent": 16,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "compound",
+          "governor": 18,
+          "governorGloss": "nanoribbons",
+          "dependent": 17,
+          "dependentGloss": "graphene"
+        },
+        {
+          "dep": "dobj",
+          "governor": 13,
+          "governorGloss": "produce",
+          "dependent": 18,
+          "dependentGloss": "nanoribbons"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 15,
+          "governorGloss": "nanorods",
+          "dependent": 18,
+          "dependentGloss": "nanoribbons"
+        },
+        {
+          "dep": "case",
+          "governor": 21,
+          "governorGloss": "levels",
+          "dependent": 19,
+          "dependentGloss": "on"
+        },
+        {
+          "dep": "amod",
+          "governor": 21,
+          "governorGloss": "levels",
+          "dependent": 20,
+          "dependentGloss": "industrial"
+        },
+        {
+          "dep": "nmod:on",
+          "governor": 13,
+          "governorGloss": "produce",
+          "dependent": 21,
+          "dependentGloss": "levels"
+        },
+        {
+          "dep": "punct",
+          "governor": 7,
+          "governorGloss": "scalable",
+          "dependent": 22,
+          "dependentGloss": "."
+        }
+      ],
       "tokens": [
         {
           "index": 1,

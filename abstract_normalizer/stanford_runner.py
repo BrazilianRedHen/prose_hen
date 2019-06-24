@@ -5,10 +5,10 @@ from stanfordcorenlp import StanfordCoreNLP
 
 nlp = StanfordCoreNLP(r'/var/python/stanford-corenlp-full-2018-10-05')
 
-props={'annotators': 'tokenize, ssplit, pos, lemma, parse','pipelineLanguage':'en','outputFormat':'json'}
+props={'timeout': '999999999','annotators': 'tokenize, ssplit, pos, lemma, parse','pipelineLanguage':'en','outputFormat':'json'}
 
 listOfFiles = list()
-for (dirpath, dirnamonth, filenamonth) in os.walk("../pragmatic"):
+for (dirpath, dirnamonth, filenamonth) in os.walk("../pragmatic/"):
 	listOfFiles += [os.path.join(dirpath, file) for file in filenamonth]
 
 

@@ -1,6 +1,9 @@
 import os
 import uuid
 import re
+import json
+import xml.etree.cElementTree as ET
+
 
 import dictionaries
 
@@ -16,75 +19,40 @@ for file in listOfFiles:
 
         fileNameNoExt = path[path.__len__()-1].split(".")[0]
 
+        print(fileNameNoExt)
+
         publicationYear = path[path.__len__()-1].split("_")[0].split("-")[0]
 
         f=open("../headers/"+publicationYear+"/"+fileNameNoExt+".txt", "r")
 
-
-
+        #dealing with the first sets of metadata.
         headerLines = f.readlines()
         for line in headerLines:
 
             if line.startswith("TTL|"):
-                abstractName = line[4:]
+                abstractName = line[4:].replace("&#10", "")
                 
-                print("Abstract Name: "+ abstractName)
+                
 
             if line.startswith("SRC|"):
                 journalName = line[4:].rstrip().replace("-"," ").upper()
                 field = dictionaries.dictionaryFields()[journalName]
                 discipline = dictionaries.dictionaryDisciplines()[field]
-                
-                print("Journal Name: "+ journalName+ "\nField Name: "+ field + "\nDiscipline Name: "+  discipline+"\n\n")
+        
+  
+        with open(file) as json_file:
+
+            data = json.load(json_file)
+            for sentence in data['sentences']:
+                for word in sentence['tokens']:
+                    print (word['word'])
 
 
+        #inputing metadata text tags on file.
+        text = ET.Element('text', abstrct_name=abstractName,  jounal_name=journalName, field=field, discipline=discipline)
 
-        # completeDate = path[path.__len__()-1].split("_")[0]
+    
+        #dealing with the stanfordCoreNLP sstricture and files.
 
-        # completePath = path[path.__len__()-2]+"/   "+path[path.__len__()-1]
-        # completePath = completePath.replace("..", ".")
-        # completePath = completePath.replace(" ", "")
-
-        # print(completePath)
-
-        # line1 = "TOP|"+completeDate+"|"+completePath+'\n'
-
-        # line2 = "COL|Journal Abstracts, Red Hen Lab"+'\n'
-
-        # line3 = "UID|"+uuid.uuid4().hex+'\n'
-
-        # line5 = "CMT|"+'\n'
-
-        # line6 = "CC1|ENG"+'\n'
-
-        # line9 = "END|"+completeDate+"|"+completePath+'\n'
-
-
-        # with open(file) as f:
-        #     lines = [line.rstrip('\n') for line in open(file)]
-
-        #     #SEARCH FOR TITLE
-        #     r = re.search("TI ((.*?\n)+)SO", "\n".join(map(str, lines)))
-
-        #     if r:
-        #         line7 = "TTL|"+r.group(1).strip().replace("\n", " ").replace("    ", " ")+"\n"
-
-        #     #SEARCH FOR ABSTRACT CONTENTS
-        #     r = re.search("AB ([\w\W]*?)(?=\n[A-Z]{2}\s)", "\n".join(map(str, lines)))            
-
-        #     if r: 
-        #         line8 = "CON|"+ r.group(1).strip().replace("\n", " ").replace("    ", " ")+"\n"
-
-        #     #FOREACH LINE TO GATHER NAME OF
-        #     for l in lines:
-        #         l.replace("\ufeff", "")
-
-        #         if l.startswith("SO "):
-        #             subLine = l[2:]
-        #             trimmedSubLine = subLine.strip()
-        #             line4 = "SRC|"+trimmedSubLine+'\n'
-
-        #     stringFinal = line1 + line2 + line3 + line4 + line5 + line6 + line7 + line8 + line9
-        #     with open("../headers/" + completePath, "w+") as fileReady:
-        #         fileReady.write(stringFinal)
-
+        tree = ET.ElementTree(text)
+        tree.write("../vrt/" + fileNameNoExt+".vrt",  encoding="utf8", xml_declaration=True, method="xml")

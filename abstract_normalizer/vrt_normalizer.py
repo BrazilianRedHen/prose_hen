@@ -3,6 +3,7 @@ import uuid
 import re
 import json
 import xml.etree.cElementTree as ET
+import xml.etree.ElementTree as ET2
 
 
 import dictionaries
@@ -30,13 +31,13 @@ for (dirpath, dirnamonth, filenamonth) in os.walk("../stanford"):
 
 lines = []
 
+completeVrtString = ""
+
 for file in listOfFiles:
     if file.endswith(".stf"):
         path = file.split('/')
 
         fileNameNoExt = path[path.__len__()-1].split(".")[0]
-
-        print(fileNameNoExt)
 
         publicationYear = path[path.__len__()-1].split("_")[0].split("-")[0]
 
@@ -78,4 +79,10 @@ for file in listOfFiles:
         
         tree = ET.ElementTree(text)
 
+        completeVrtString += ET.tostring(text, encoding='utf-8')
+
         tree.write("../vrt/" + fileNameNoExt+".vrt",  encoding="utf8", xml_declaration=True, method="xml")
+
+text_file = open("../vrt/completeVrtString.vrt", "w")
+text_file.write("<?xml version='1.0' encoding='utf8'?>\n"+completeVrtString)
+text_file.close()

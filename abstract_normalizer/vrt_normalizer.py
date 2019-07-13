@@ -2,8 +2,8 @@ import os
 import uuid
 import re
 import json
+import hashlib
 import xml.etree.cElementTree as ET
-import xml.etree.ElementTree as ET2
 
 
 import dictionaries
@@ -58,8 +58,11 @@ for file in listOfFiles:
                 discipline = dictionaries.dictionaryDisciplines()[field]
   
 
+        string_id_hash = hashlib.md5(fileNameNoExt.encode()).hexdigest()
+        print(fileNameNoExt+"  "+string_id_hash+"\n")
+
         #inputing metadata text tags on file.
-        text = ET.Element('text', abstrct_name=abstractName,  jounal_name=journalName, field=field, discipline=discipline)      
+        text = ET.Element('text', _id=string_id_hash, abstract_name=abstractName,  jounal_name=journalName, field=field, discipline=discipline)      
         
         #dealing with the stanfordCoreNLP sstricture and files.
         with open(file) as json_file:

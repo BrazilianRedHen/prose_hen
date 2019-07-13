@@ -32,6 +32,8 @@ for (dirpath, dirnamonth, filenamonth) in os.walk("../stanford"):
 lines = []
 
 completeVrtString = ""
+metadataString = ""
+
 
 for file in listOfFiles:
     if file.endswith(".stf"):
@@ -48,21 +50,24 @@ for file in listOfFiles:
         for line in headerLines:
 
             if line.startswith("TTL|"):
-                abstractName = line[4:].replace("&#10", "")
+                abstractName = line[4:].replace("&#10", "").replace("\ufeff", "").replace("\n","")
                 
                 
 
             if line.startswith("SRC|"):
-                journalName = line[4:].rstrip().replace("-"," ").upper()
-                field = dictionaries.dictionaryFields()[journalName]
-                discipline = dictionaries.dictionaryDisciplines()[field]
-  
+                journalName = line[4:].rstrip().replace("-"," ").upper().replace("\n","")
+                field = dictionaries.dictionaryFields()[journalName].replace("\n","")
+                discipline = dictionaries.dictionaryDisciplines()[field].replace("\n","")
 
-        string_id_hash = hashlib.md5(fileNameNoExt.encode()).hexdigest()
-        print(fileNameNoExt+"  "+string_id_hash+"\n")
+
+        stringIdHash = hashlib.md5(fileNameNoExt.encode()).hexdigest()
+
+        metadataString += stringIdHash+ "\t" + abstractName + "\t" + journalName + "\t" + field + "\t" + discipline + "\n"
+
+        print(fileNameNoExt+"  "+stringIdHash)
 
         #inputing metadata text tags on file.
-        text = ET.Element('text', _id=string_id_hash, abstract_name=abstractName,  jounal_name=journalName, field=field, discipline=discipline)      
+        text = ET.Element('text', _id=stringIdHash, abstract_name=abstractName,  jounal_name=journalName, field=field, discipline=discipline)      
         
         #dealing with the stanfordCoreNLP sstricture and files.
         with open(file) as json_file:
@@ -82,10 +87,14 @@ for file in listOfFiles:
         
         tree = ET.ElementTree(text)
 
-        completeVrtString += ET.tostring(text, encoding='utf-8')
+        completeVrtString += ET.tostring(text, encoding='utf-8').replace("_id", "id")
 
         tree.write("../vrt/" + fileNameNoExt+".vrt",  encoding="utf8", xml_declaration=True, method="xml")
 
-text_file = open("../vrt/completeVrtString.vrt", "w")
-text_file.write("<?xml version='1.0' encoding='utf8'?>\n"+completeVrtString)
-text_file.close()
+vrt_file = open("../vrt/completeVrtString.vrt", "w")
+vrt_file.write("<?xml version='1.0' encoding='utf8'?>\n"+completeVrtString)
+vrt_file.close()
+
+meta_file = open("../vrt/completeMetaString.meta", "w")
+meta_file.write(metadataString)
+meta_file.close()

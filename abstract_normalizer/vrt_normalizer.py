@@ -57,27 +57,38 @@ for file in listOfFiles:
             if line.startswith("SRC|"):
                 journalName = line[4:].rstrip().replace("-"," ").upper().replace("\n","")
                 field = dictionaries.dictionaryFields()[journalName].replace("\n","")
+                classification_field = dictionaries.dictionaryFields()[journalName].replace("\n","").replace(" ", "_").replace("&", "AND")
                 discipline = dictionaries.dictionaryDisciplines()[field].replace("\n","")
+                classification_discipline = dictionaries.dictionaryDisciplines()[field].replace("\n","").replace(" ", "_").replace("&", "AND")
+                
 
 
         stringIdHash = hashlib.md5(fileNameNoExt.encode()).hexdigest()
 
-        metadataString += stringIdHash+ "\t" + abstractName + "\t" + journalName + "\t" + field + "\t" + discipline + "\n"
+        metadataString += stringIdHash+ "\t" + abstractName + "\t" + journalName + "\t" + field + "\t" + discipline + "\t" + classification_discipline + "\t" + classification_field + "\n"
 
         print(fileNameNoExt+"  "+stringIdHash)
 
         #inputing metadata text tags on file.
-        text = ET.Element('text', _id=stringIdHash, abstract_name=abstractName,  jounal_name=journalName, field=field, discipline=discipline)      
+        text = ET.Element('text', 
+            _id=stringIdHash, 
+            abstract_name=abstractName, 
+            jounal_name=journalName, 
+            field=field, 
+            discipline=discipline,
+            classification_discipline=classification_discipline,
+            classification_field=classification_field)      
         
         #dealing with the stanfordCoreNLP sstricture and files.
         with open(file) as json_file:
             data = json.load(json_file)
+            data['sentences'].pop(0)
             # tag <p>
             p = ET.SubElement(text, 'p')
             for sentence in data['sentences']:
 
                 for token in sentence['tokens']:
-                    lines.append(token['word'] + "\t" + token['pos'] + "\t" + token['lemma'] + "\t" + token['originalText'])
+                    lines.append(token['originalText'] + "\t" + token['pos'] + "\t" + token['lemma'] + "\t" + token['word'])
                 # tag <s>
                 s = ET.SubElement(p, 's').text = "\n"+"\n".join(lines)+"\n"
                 lines = []

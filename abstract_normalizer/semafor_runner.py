@@ -10,7 +10,7 @@ def run():
 	for file in list_of_files:
 		if file.endswith(".seg"):
 			file_name = os.path.splitext(file)[0]
-			command = './home/zilli/semafor/bin/runSemafor.sh' + str('../pragmatic/'+file + ' ../semafor_output/new_run/'+file_name + '.sem' + ' 1')
+			command = 'nohup ./home/zilli/semafor/bin/runSemafor.sh' + str('../pragmatic/'+file + ' ../semafor_output/new_run/'+file_name + '.sem' + ' 1') + '&'
 			os.system(command)
 
 p1 = multiprocessing.Process(target=run)

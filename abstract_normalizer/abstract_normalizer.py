@@ -12,6 +12,7 @@ ano = ""
 fonte = ""
 autor = ""
 doi = ""
+qtdFiles = 0
 
 for file in listOfFiles:
     if file.endswith(".txt"):
@@ -95,14 +96,24 @@ for file in listOfFiles:
             stringFileName = stringFileName.replace("/", "_")
             stringFileName = stringFileName.replace(".", "-")
 
+            
+            if '&' in stringFileName:
+                stringFileName = stringFileName.replace("&", "and")
+
+            if stringFileName in nameOfFiles:
+                stringFileName += '2'
+
+            nameOfFiles.append(stringFileName)
+
             #adding extention
             stringFileName += ".txt"
 
 
-            nameOfFiles.append(stringFileName)
+            qtdFiles += 1
 
             with open("../abstracts/"+ano+"/"+stringFileName, "w+") as fileReady:
                 for lineInFile in f:
                     fileReady.write(lineInFile)
 
-print(nameOfFiles)
+#print(nameOfFiles)
+print(qtdFiles)

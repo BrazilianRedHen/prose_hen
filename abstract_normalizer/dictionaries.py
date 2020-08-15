@@ -63,7 +63,7 @@ def dictionaryFields():
 
 def dictionaryDisciplines():
 	return {
-	"AGRONOMY" : "BIOLOGICAL SCIENCES",
+	"AGRONOMY" : "HARD SCIENCES",
 	"BUSINESS" : "SOCIAL & HUMAN SCIENCES",
 	"CHEMISTRY" : "HARD SCIENCES",
 	"COGNITIVE LINGUISTICS" : "SOCIAL & HUMAN SCIENCES",

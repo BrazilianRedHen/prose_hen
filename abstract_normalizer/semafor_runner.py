@@ -2,6 +2,8 @@ import os
 import multiprocessing
 
 def run():
+	command = 'dois cores'
+	os.system(command)
 	os.chdir('../pragmatic')
 	list_of_files = list()
 	for (dirpath, dirname, filename) in os.walk("../pragmatic"):
@@ -12,6 +14,7 @@ def run():
 			file_name = os.path.splitext(file)[0]
 			command = './home/zilli/semafor/bin/runSemafor.sh' + str('../pragmatic/'+file + ' ../semafor_output/'+file_name + '.sem' + ' 1')
 			os.system(command)
+	os.system('exit')
 
 p1 = multiprocessing.Process(target=run)
 

@@ -7,10 +7,13 @@ import pandas as pd
 
 
 import dictionaries
+import data_gatherer
+
 
 listOfFiles = list()
-for (dirpath, dirnamonth, filenamonth) in os.walk("../semafor_output/new_run/"):
-    listOfFiles += [os.path.join(dirpath, file) for file in filenamonth]
+listOfFileInformation = data_gatherer.gather_file_data_by_discipline("HARD SCIENCES")
+for fileInformation in listOfFileInformation:
+    listOfFiles.append("../semafor_output/new_run/" + fileInformation["name"] + ".sem")
 
 semafor_list = list()
 metadata_list = list()

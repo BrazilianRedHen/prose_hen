@@ -56,9 +56,6 @@ for file in listOfFiles:
 
         count = count + 1
 
-        if count == 20:
-            break
-
 allFilesSemafor = json.loads("{\"all_files_semafor\": ["+", ".join(semafor_list)+"]}")
 
 
@@ -147,6 +144,8 @@ for index, abstract in enumerate(allFilesSemafor["all_files_semafor"]):
         #break
 
     count_abstracts = count_abstracts + 1
+
+    print(count_abstracts)
 
 my_dict = {  "filename": filename_list,
             "abstract_name": abstract_name_list,

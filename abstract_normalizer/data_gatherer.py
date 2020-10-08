@@ -8,15 +8,15 @@ import pandas as pd
 
 import dictionaries
 
-def gather_all_files():
+def gather_all_files(folder_name):
     listOfFiles = list()
-    for (dirpath, dirnamonth, filenamonth) in os.walk("../headers"):
+    for (dirpath, dirnamonth, filenamonth) in os.walk("../"+folder_name):
         listOfFiles += [os.path.join(dirpath, file) for file in filenamonth]
     return listOfFiles
 
 def gather_file_data():
     file_list = list()
-    for file in gather_all_files():
+    for file in gather_all_files("headers"):
         if file.endswith(".txt"):
             this_file = {}
             path = file.split('/')
@@ -39,6 +39,35 @@ def gather_file_data():
 
 def gather_file_data_by_discipline(discipline):    
     return [file for file in gather_file_data() if file["discipline"] == discipline]
-        
 
-print(gather_file_data_by_discipline("HARD SCIENCES"))
+def get_file_names_list(folder_name, file_extension):
+    file_names = list()
+    for file in gather_all_files(folder_name):
+        if file.endswith("."+file_extension):
+            this_file = {}
+            path = file.split('/')
+            path = path[path.__len__()-1]
+            path = path.replace("..", ".")
+            path = path.replace("."+file_extension, "")
+            file_names.append(path)
+    return file_names
+
+def get_files_need_parsing(parser_folder, extension_parsed):
+    pragmatic_files = get_file_names_list("pragmatic", "seg")
+    frame_parsed_files = get_file_names_list(parser_folder, extension_parsed)
+    
+    need_parsing = list()
+
+    for file in pragmatic_files:
+        if file not in frame_parsed_files:
+            need_parsing.append(file)
+
+    return need_parsing
+    
+
+
+#TESTS        
+
+get_files_need_parsing("semafor_output/new_run", "sem")
+
+#print(gather_file_data_by_discipline("HARD SCIENCES"))

@@ -7,10 +7,13 @@ import pandas as pd
 
 
 import dictionaries
+import data_gatherer
+
 
 listOfFiles = list()
-for (dirpath, dirnamonth, filenamonth) in os.walk("../semafor_output/new_run/"):
-    listOfFiles += [os.path.join(dirpath, file) for file in filenamonth]
+listOfFileInformation = data_gatherer.gather_file_data_by_discipline("HARD SCIENCES")
+for fileInformation in listOfFileInformation:
+    listOfFiles.append("../semafor_output/new_run/" + fileInformation["name"] + ".sem")
 
 semafor_list = list()
 metadata_list = list()
@@ -52,9 +55,6 @@ for file in listOfFiles:
         metadata_list.append(this_file)
 
         count = count + 1
-
-        if count == 20:
-            break
 
 allFilesSemafor = json.loads("{\"all_files_semafor\": ["+", ".join(semafor_list)+"]}")
 
@@ -144,6 +144,8 @@ for index, abstract in enumerate(allFilesSemafor["all_files_semafor"]):
         #break
 
     count_abstracts = count_abstracts + 1
+
+    print(count_abstracts)
 
 my_dict = {  "filename": filename_list,
             "abstract_name": abstract_name_list,

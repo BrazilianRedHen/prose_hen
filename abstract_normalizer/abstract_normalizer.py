@@ -95,6 +95,9 @@ for file in listOfFiles:
             #dots are dashes
             stringFileName = stringFileName.replace("/", "_")
             stringFileName = stringFileName.replace(".", "-")
+            stringFileName = stringFileName.replace("(", "")
+            stringFileName = stringFileName.replace(")", "")
+            stringFileName = stringFileName.replace(",", "")
 
             
             if '&' in stringFileName:

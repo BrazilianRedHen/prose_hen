@@ -13,6 +13,8 @@ def run():
 	list_of_files = data_gatherer.get_files_need_parsing("semafor_output/new_run", "sem") 
 
 	broken_list = np.array_split(list_of_files, 5)
+	#broken_list = list()
+	#broken_list.append(list_of_files)
 
 	slurm_count = 0
 	for small_list_of_files in broken_list:

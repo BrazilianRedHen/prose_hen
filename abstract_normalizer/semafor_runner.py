@@ -24,7 +24,7 @@ def run():
 
 """
 		for file in small_list_of_files:
-			shell_file += '/mnt/rds/redhen/gallina/home/ngc17/semafor/bin/.runSemafor.sh' + str('/mnt/rds/redhen/gallina/home/ngc17/prose_hen/pragmatic/' + file + '.seg /mnt/rds/redhen/gallina/home/ngc17/prose_hen/semafor_output/' + file + '.sem' + ' 1 \n')
+			shell_file += '/mnt/rds/redhen/gallina/home/ngc17/semafor/bin/runSemafor.sh' + str('/mnt/rds/redhen/gallina/home/ngc17/prose_hen/pragmatic/' + file + '.seg /mnt/rds/redhen/gallina/home/ngc17/prose_hen/semafor_output/' + file + '.sem' + ' 1 \n')
 	
 		print(shell_file)
 		with open("../semafor"+str(slurm_count)+".slurm", "w+") as file_ready:

@@ -10,7 +10,7 @@ def run():
 	# list_of_files = list()
 	# for (dirpath, dirname, filename) in os.walk("../pragmatic"):
 	# 	list_of_files += [file for file in filename]
-	list_of_files = data_gatherer.get_files_need_parsing("semafor_output/new_run", "sem") 
+	list_of_files = data_gatherer.get_files_need_parsing("semafor_output", "sem") 
 
 	broken_list = np.array_split(list_of_files, 5)
 	#broken_list = list()

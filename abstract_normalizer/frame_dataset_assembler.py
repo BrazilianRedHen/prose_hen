@@ -6,73 +6,69 @@ import json
 import pandas as pd
 
 
-import dictionaries
-import data_gatherer
+from abstract_normalizer.dictionaries import Dictionaries
+from abstract_normalizer import data_gatherer
 
 
-listOfFiles = list()
-listOfFileInformation = data_gatherer.gather_file_data_by_discipline("HARD SCIENCES")
-for fileInformation in listOfFileInformation:
-    listOfFiles.append("../semafor_output/new_run/" + fileInformation["name"] + ".sem")
+def gather_list_of_files():
+    listOfFiles = list()
+    listOfFileInformation = data_gatherer.gather_file_data()
+    for fileInformation in listOfFileInformation:
+        listOfFiles.append("../semafor_output/" + fileInformation["name"] + ".sem")
+
+    return listOfFiles
+
+
+def solving_complete_path(file_name):
+    complete_path = file_name.replace("..", ".")
+    complete_path = complete_path.replace(" ", "")
+    complete_path = complete_path.replace(".sem", "")
+
+    return complete_path
+
+
+def solving_metadata(header_lines):
+    this_file = {}
+    for line in header_lines:
+        
+        if line.startswith("TTL|"):
+            this_file["abstractName"] = line[4:].replace("&#10", "").replace("\ufeff", "").replace("\n","")
+            
+        if line.startswith("SRC|"):
+            this_file["journalName"] = line[4:].rstrip().replace("-"," ").upper().replace("\n","")
+            this_file["field"] = Dictionaries.dictionaryFields()[this_file["journalName"]].replace("\n","")
+            this_file["discipline"] = Dictionaries.dictionaryDisciplines()[this_file["field"]].replace("\n","")
+
+    return this_file
+
 
 semafor_list = list()
 metadata_list = list()
 count = 0
-for file in listOfFiles:
+for file in gather_list_of_files():
     if file.endswith(".sem"):
         path = file.split('/')
+        file = file.replace("'", "")
 
-        completePath = path[len(path)-1]
-        completePath = completePath.replace("..", ".")
-        completePath = completePath.replace(" ", "")
-        completePath = completePath.replace(".sem", "")
+        completePath = solving_complete_path(path[len(path)-1])
 
         publicationYear = path[path.__len__()-1].split("_")[0].split("-")[0]
 
         with open(file) as f:
-            lines = [line.rstrip('\n') for line in open(file)]
+            lines = [line.rstrip('\n') for line in f]
             
-            semafor_list.append("{\"" +completePath+"\": [" + ", ".join(lines)+ "]}")
+            semafor_list.append("{\"" + completePath + "\": [" + ", ".join(lines) + "]}")
 
+        f = open("../headers/" + publicationYear + "/" + completePath + ".txt", "r")
 
-        f=open("../headers/"+publicationYear+"/"+completePath+".txt", "r")
-
-        #dealing with the first sets of metadata.
-        headerLines = f.readlines()
-
-        this_file = {}
-        for line in headerLines:
-            if line.startswith("TTL|"):
-                this_file["abstractName"] = line[4:].replace("&#10", "").replace("\ufeff", "").replace("\n","")
-                
-                
-
-            if line.startswith("SRC|"):
-                this_file["journalName"] = line[4:].rstrip().replace("-"," ").upper().replace("\n","")
-                this_file["field"] = dictionaries.dictionaryFields()[this_file["journalName"]].replace("\n","")
-                this_file["discipline"] = dictionaries.dictionaryDisciplines()[this_file["field"]].replace("\n","")
-
-        metadata_list.append(this_file)
+        metadata_list.append(solving_metadata(f.readlines))
 
         count = count + 1
 
 allFilesSemafor = json.loads("{\"all_files_semafor\": ["+", ".join(semafor_list)+"]}")
 
 
-#allFilesMetadata = json.loads("{\"all_files_metadata\": ["+", ".join(metadata_list)+"]}")
-
-
-#column order: 
-#filename with no extension
-#abstract name ok
-#jounal name ok
-#field ok
-#discipline ok
-#sentence_count ok
-#frame ok
-#lexical units ok
-#compleate phrase ok
-
+print("ammount of files in semafor_output: "+str(count))
 
 filename_list = list()
 abstract_name_list = list() 
@@ -145,7 +141,7 @@ for index, abstract in enumerate(allFilesSemafor["all_files_semafor"]):
 
     count_abstracts = count_abstracts + 1
 
-    print(count_abstracts)
+print("Number of processed files: "+ str(count_abstracts))
 
 my_dict = {  "filename": filename_list,
             "abstract_name": abstract_name_list,
@@ -162,12 +158,4 @@ my_dict = {  "filename": filename_list,
 
 df = pd.DataFrame(my_dict)
 
-df.to_csv('../datasets/frames.csv', index=False)
-
-exit()
-
-csv_file = open("../datasets/frames.csv", "w")
-csv_file.write(string_csv)
-csv_file.close()
-
-exit()
+df.to_csv('../datasets/datamodel.csv', index=False) 

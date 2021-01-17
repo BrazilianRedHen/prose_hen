@@ -5,7 +5,8 @@ import re
 import json
 import pandas as pd
 
-from abstract_normalizer.dictionaries import Dictionaries
+import dictionaries
+# from abstract_normalizer.dictionaries import Dictionaries
 
 
 def gather_all_files(folder_name):
@@ -32,8 +33,8 @@ def gather_file_data():
             for line in lines:
                 if line.startswith("SRC|"):
                     this_file["journalName"] = line[4:].rstrip().replace("-", " ").upper().replace("\n", "")
-                    this_file["field"] = Dictionaries.dictionaryFields()[this_file["journalName"]].replace("\n", "")
-                    this_file["discipline"] = Dictionaries.dictionaryDisciplines()[this_file["field"]].replace("\n", "")
+                    this_file["field"] = dictionaries.dictionaryFields()[this_file["journalName"]].replace("\n", "")
+                    this_file["discipline"] = dictionaries.dictionaryDisciplines()[this_file["field"]].replace("\n", "")
                     file_list.append(this_file)
     return file_list
 

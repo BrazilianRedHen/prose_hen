@@ -6,8 +6,8 @@ import json
 import pandas as pd
 
 
-from abstract_normalizer.dictionaries import Dictionaries
-from abstract_normalizer import data_gatherer
+import dictionaries
+import data_gatherer
 
 
 def gather_list_of_files():
@@ -36,8 +36,8 @@ def solving_metadata(header_lines):
             
         if line.startswith("SRC|"):
             this_file["journalName"] = line[4:].rstrip().replace("-"," ").upper().replace("\n","")
-            this_file["field"] = Dictionaries.dictionaryFields()[this_file["journalName"]].replace("\n","")
-            this_file["discipline"] = Dictionaries.dictionaryDisciplines()[this_file["field"]].replace("\n","")
+            this_file["field"] = dictionaries.dictionaryFields()[this_file["journalName"]].replace("\n","")
+            this_file["discipline"] = dictionaries.dictionaryDisciplines()[this_file["field"]].replace("\n","")
 
     return this_file
 
@@ -46,13 +46,17 @@ semafor_list = list()
 metadata_list = list()
 count = 0
 for file in gather_list_of_files():
+
     if file.endswith(".sem"):
+    #if file == "../semafor_output/2015-jun_JA_10-1097_ACM-0000000000000700_academic-medicine_cruess_richard2.sem":
         path = file.split('/')
         file = file.replace("'", "")
+
 
         completePath = solving_complete_path(path[len(path)-1])
 
         publicationYear = path[path.__len__()-1].split("_")[0].split("-")[0]
+
 
         with open(file) as f:
             lines = [line.rstrip('\n') for line in f]
@@ -61,7 +65,11 @@ for file in gather_list_of_files():
 
         f = open("../headers/" + publicationYear + "/" + completePath + ".txt", "r")
 
-        metadata_list.append(solving_metadata(f.readlines))
+        print(f.readlines) 
+
+        metadata_list.append(solving_metadata(f))
+
+        print(metadata_list)
 
         count = count + 1
 
@@ -154,8 +162,12 @@ my_dict = {  "filename": filename_list,
             "lexical_unit_start": lexical_unit_start_list,
             "lexical_unit_end": lexical_unit_end_list,
             "frame_elements": frame_elements_list,
-            "compleate_phrase": complete_phrase_list}
+            "complete_phrase": complete_phrase_list}
+
+for phrase in my_dict["complete_phrase"]:
+
+    print(phrase)
 
 df = pd.DataFrame(my_dict)
 
-df.to_csv('../datasets/datamodel.csv', index=False) 
+df.to_csv('../datasets/datamodel_tmp.csv', index=False) 

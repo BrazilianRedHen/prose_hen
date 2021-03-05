@@ -65,13 +65,10 @@ for file in gather_list_of_files():
 
         f = open("../headers/" + publicationYear + "/" + completePath + ".txt", "r")
 
-        print(f.readlines) 
-
         metadata_list.append(solving_metadata(f))
 
-        print(metadata_list)
-
         count = count + 1
+        print(count)
 
 allFilesSemafor = json.loads("{\"all_files_semafor\": ["+", ".join(semafor_list)+"]}")
 

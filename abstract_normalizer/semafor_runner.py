@@ -1,8 +1,7 @@
 import os
 import multiprocessing
-import numpy as np
 
-import data_gatherer
+
 
 def run():
 	
@@ -32,9 +31,9 @@ def run():
 		slurm_count = slurm_count + 1
 
 
+
 p1 = multiprocessing.Process(target=run)
 
 p1.start()
 p1.join()
 p1.terminate()
-
